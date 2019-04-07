@@ -26,3 +26,30 @@ Lots more.
 ## What can it NOT do?
 Converting programs or combis from one model to another.
 Editing all program or combi parameters.
+
+## List of Supported Synths
+
+Supported Series	| Supported Korg Models	| Supported File Types
+--- | --- | ---
+Korg 01 |	Korg 01/W, Korg 01/W FD, Korg 01/W pro, Korg 01/W pro X, Korg 01R/W	| syx, mid (sysex), 01p, 01W, ALL, RAW
+Korg 03R/W |	Korg 03R/W	| syx, mid (sysex)
+Korg microKorg |	Korg microKORG	| syx
+Korg microKorg |	Korg microKORG XL| 	mkxl_all
+Korg microKorg |	Korg microKORG XL | Plus	mkxlp_prog, mkxlp_all
+Korg microSTATION |	Korg microSTATION	| pcg
+Korg microX |	Korg microX (Triton compatible) | 	pcg
+Korg Karma |	Korg Karma	| pcg
+Korg Krome |	Korg Krome	| pcg
+Korg Kronos | 	Korg Kronos (OS1.x, OS2.x, OS3.0), Korg Kronos X (OS2.x, OS3.0), Korg Kronos 2 (OS3.0), Korg Kronos LS	| pcg
+Korg Kross |	Korg Kross, Korg Kross 2	| pcg, KRSall, KRSapr, KRSbpr, KRSpr, KRSacm, KRSbcm, KRScm
+Korg M1 | 	Korg M1, Korg M1R, Korg M1EX, Korg M1R-EX	| syx, mid (sysex)
+Korg M3 | 	Korg M3, Korg M3-M	| pcg
+Korg M3R |	Korg M3R	| syx
+Korg M50 |	Korg M50	| pcg
+Korg MS2000 |	Korg MS2000, Korg MS2000R, Korg MS2000B, Korg MS2000BR	| syx, prg, mid (sysex), LIB
+Korg Oasys |	Korg Oasys	| pcg
+Korg T |	Korg T1, Korg T1EX, Korg T2, Korg T2EX, Korg T3, Korg T3EX	|syx, mid (sysex)
+Korg Triton |	Korg Triton, Korg Triton Pro, Korg Triton Pro X, Korg Triton Extreme, Korg Triton Studio, Korg Triton Classic, Korg Triton LE, Korg Triton Rack, Korg Triton TR	| pcg
+Korg Trinity |	Korg Trinity V1, Korg Trinity Plus, Korg Trinity Pro, Korg Trinity Pro X, Korg Trinity V2, Korg Trinity SOLO-TRI, Korg Trinity V3, Korg (Trinity) TR Rack	| pcg
+Korg X-50 |	Korg X-50 (Triton compatible)	| pcg
+Korg Z1 |	Korg Z1, Korg Z1EX	| syx, mid (sysex)
