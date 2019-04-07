@@ -1,0 +1,71 @@
+﻿<Window x:Class="PcgTools.Edit.WindowEditSingleProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding EditSingleProgram, Source={StaticResource LocStrings}}" 
+        Name="windowEdit" ResizeMode="NoResize" ShowInTaskbar="True" 
+        Loaded="WindowEditLoaded" Icon="/PcgTools;component/Gui/pcgtools.ico"
+        WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <Label Content="{Binding ID, Source={StaticResource LocStrings}}" HorizontalAlignment="Left" Name="label1" 
+               VerticalAlignment="Top" Margin="4" />
+                <TextBox HorizontalAlignment="Left" Margin="4" Name="textBoxId" VerticalAlignment="Top"
+                 IsReadOnly="True" />
+            </StackPanel>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="{Binding Name, Source={StaticResource LocStrings}}" HorizontalAlignment="Left"
+                    Margin="4" Name="label2"  VerticalAlignment="Top" />
+                    <TextBlock HorizontalAlignment="Left" Margin="4" Name="labelNameLength" Text="(X of Y Characters)" VerticalAlignment="Top"
+                            Background="{x:Static SystemColors.ControlLightBrush}"/>
+                </StackPanel>
+                    
+                <TextBox HorizontalAlignment="Left" IsReadOnly="False" Margin="4" Name="textBoxName" 
+                    VerticalAlignment="Top" TextChanged="TextBoxNameTextChanged" />
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Bottom">
+                <CheckBox Content="{Binding IsFavorite, Source={StaticResource LocStrings}}"  
+                  HorizontalAlignment="Left" Margin="4"
+                  Name="threeStateCheckBoxIsFavorite" IsThreeState="False" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <Label Content="{Binding CategoryControl, Source={StaticResource LocStrings}}" 
+                 HorizontalAlignment="Left" Margin="4"
+                 Name="labelCategory" VerticalAlignment="Top" />
+                <ComboBox HorizontalAlignment="Left" Margin="4" Name="comboBoxCategory" 
+                  VerticalAlignment="Top" 
+                  SelectionChanged="ComboBoxCategorySelectionChanged" />
+
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="{Binding SubCategoryControl, Source={StaticResource LocStrings}}" 
+                   HorizontalAlignment="Left" Margin="4"
+                   Name="labelSubCategory" VerticalAlignment="Top" />
+                <ComboBox HorizontalAlignment="Left" Margin="4" Name="comboBoxSubCategory" 
+                      VerticalAlignment="Top"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Foreground="#FFD80000" HorizontalAlignment="Left" Margin="4"
+               Name="labelError" VerticalAlignment="Top">
+                <Label.Background>
+                    <SolidColorBrush />
+                </Label.Background>
+            </Label>
+            <Button Content="{Binding Cancel, Source={StaticResource LocStrings}}" HorizontalAlignment="Left" 
+                IsDefault="False"
+                Margin="4" Name="buttonCancel" VerticalAlignment="Top" Width="75" IsCancel="True" 
+                Click="ButtonCancelClick" />
+            <Button Content="{Binding OK, Source={StaticResource LocStrings}}" HorizontalAlignment="Left"
+                Margin="4" Name="buttonOk" 
+                VerticalAlignment="Top" Width="75" IsDefault="True" Click="ButtonOkClick" />
+        </StackPanel>
+    </StackPanel>
+</Window>

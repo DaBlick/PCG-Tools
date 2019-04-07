@@ -1,0 +1,40 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:help="clr-namespace:PcgTools.Help"
+        x:Class="PcgTools.Help.ExternalLinksTranslatorsWindow"
+        Title="{Binding ExternalLinksTranslators, Source={StaticResource LocStrings}}" 
+        ResizeMode="CanResize" SizeToContent="Height" Width="970" 
+        ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+    <WrapPanel Margin="4">
+        <help:UserControlExternalLink x:Name="ButtonLink1"/>
+        <help:UserControlExternalLink x:Name="ButtonLink2"/>
+        <help:UserControlExternalLink x:Name="ButtonLink3"/>
+        <help:UserControlExternalLink x:Name="ButtonLink4"/>
+        <help:UserControlExternalLink x:Name="ButtonLink5"/>
+        <help:UserControlExternalLink x:Name="ButtonLink6"/>
+        <help:UserControlExternalLink x:Name="ButtonLink7"/>
+        <help:UserControlExternalLink x:Name="ButtonLink8"/>
+        <help:UserControlExternalLink x:Name="ButtonLink9"/>
+        <help:UserControlExternalLink x:Name="ButtonLink10"/>
+        <help:UserControlExternalLink x:Name="ButtonLink11"/>
+        <help:UserControlExternalLink x:Name="ButtonLink12"/>
+        <help:UserControlExternalLink x:Name="ButtonLink13"/>
+        <help:UserControlExternalLink x:Name="ButtonLink14"/>
+        <help:UserControlExternalLink x:Name="ButtonLink15"/>
+        <help:UserControlExternalLink x:Name="ButtonLink16"/>
+        <help:UserControlExternalLink x:Name="ButtonLink17"/>
+        <help:UserControlExternalLink x:Name="ButtonLink18"/>
+        <help:UserControlExternalLink x:Name="ButtonLink19"/>
+        <help:UserControlExternalLink x:Name="ButtonLink20"/>
+        <help:UserControlExternalLink x:Name="ButtonLink21"/>
+        <help:UserControlExternalLink x:Name="ButtonLink22"/>
+        <help:UserControlExternalLink x:Name="ButtonLink23"/>
+        <help:UserControlExternalLink x:Name="ButtonLink24"/>
+        <help:UserControlExternalLink x:Name="ButtonLink25"/>
+        <help:UserControlExternalLink x:Name="ButtonLink26"/>
+        <help:UserControlExternalLink x:Name="ButtonLink27"/>
+        <help:UserControlExternalLink x:Name="ButtonLink28"/>
+        <help:UserControlExternalLink x:Name="ButtonLink29"/>
+        <help:UserControlExternalLink x:Name="ButtonLink30"/>
+    </WrapPanel>
+</Window>

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="PcgTools.SongTimbresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  Height="Auto" Width="Auto" Loaded="Window_Loaded">
+
+    <Grid MinWidth="400" MinHeight="200" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ListView HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Margin="4" Name="listViewTimbres" SelectionMode="Extended" 
+                    VerticalContentAlignment="Stretch" SelectionChanged="ListViewTimbresSelectionChanged">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="IsSelected" Value="{Binding Path=IsSelected}" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="#" Width="30" DisplayMemberBinding="{Binding Path=ColumnIndex}"/>
+                    <GridViewColumn Header="{Binding PrgId, Source={StaticResource LocStrings}}"
+                                    Width="80" DisplayMemberBinding="{Binding Path=ColumnProgramId}"/>
+                    <GridViewColumn Header="{Binding ProgramName, Source={StaticResource LocStrings}}"
+                                    Width="150" DisplayMemberBinding="{Binding Path=ColumnProgramName}"/>
+                    <GridViewColumn Header="{Binding Category, Source={StaticResource LocStrings}}" 
+                                    Width="150" DisplayMemberBinding="{Binding Path=ColumnCategory}"/>
+                    <GridViewColumn Header="{Binding SubCategory, Source={StaticResource LocStrings}}"
+                                    Width="150" DisplayMemberBinding="{Binding Path=ColumnSubCategory}"/>
+                    <GridViewColumn Header="Vol" Width="35" DisplayMemberBinding="{Binding Path=ColumnVolume}"/>
+                    <GridViewColumn Header="Sta" Width="30" DisplayMemberBinding="{Binding Path=ColumnStatus}"/>
+                    <GridViewColumn Header="Mute" Width="35" DisplayMemberBinding="{Binding Path=ColumnMute}"/>
+                    <GridViewColumn Header="Pri" Width="30" DisplayMemberBinding="{Binding Path=ColumnPriority}"/>
+                    <GridViewColumn Header="MIDI" Width="35" DisplayMemberBinding="{Binding Path=ColumnMidiChannel}"/>
+                    <GridViewColumn Header="Key Zone" Width="80" DisplayMemberBinding="{Binding Path=ColumnKeyZone}"/>
+                    <GridViewColumn Header="Vel. Zone" Width="60" DisplayMemberBinding="{Binding Path=ColumnVelocityZone}"/>
+                    <GridViewColumn Header="OSC Mode" Width="75" DisplayMemberBinding="{Binding Path=ColumnOscMode}"/>
+                    <GridViewColumn Header="OSC Sel" Width="70" DisplayMemberBinding="{Binding Path=ColumnOscSelect}"/>
+                    <GridViewColumn Header="Trans" Width="45" DisplayMemberBinding="{Binding Path=ColumnTranspose}"/>
+                    <GridViewColumn Header="Detune" Width="45" DisplayMemberBinding="{Binding Path=ColumnDetune}"/>
+                    <GridViewColumn Header="Porta" Width="50" DisplayMemberBinding="{Binding Path=ColumnPortamento}"/>
+                    <GridViewColumn Header="BRng" Width="35" DisplayMemberBinding="{Binding Path=ColumnBendRange}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

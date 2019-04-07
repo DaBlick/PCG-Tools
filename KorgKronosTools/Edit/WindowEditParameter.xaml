@@ -1,0 +1,60 @@
+﻿<Window x:Class="PcgTools.Edit.WindowEditParameter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding ___EditParameterWindow, Source={StaticResource LocStrings}}" 
+        Icon="/PcgTools;component/Gui/pcgtools.ico" WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight"
+        >
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="{Binding ___NumberOfSelectedPatches, Source={StaticResource LocStrings}}" Margin="4"/>
+            <Label Content="{Binding Patches.Count}" Margin="4"/>
+        </StackPanel>
+
+        <GroupBox Header="{Binding ___EditParameterParameterChangeRule, Source={StaticResource LocStrings}}" Margin="4">
+            <StackPanel Orientation="Vertical">
+                <TextBox Margin="4" IsReadOnly="True" Text="{Binding ParameterChangeRule}" Focusable="True"/>
+                <Label Margin="4"  Content="{Binding ErrorText}" Focusable="False" Foreground="Red"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="{Binding ___EditParameterPreview, Source={StaticResource LocStrings}}" Margin="4">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Button Content="{Binding ___EditParameterUpdate, Source={StaticResource LocStrings}}"
+                                    Command="{Binding UpdateCommand}"
+                                    IsEnabled="{Binding IsChecked, ElementName=ButtonCalculateManually}"
+                                    Padding="4" Margin="4" VerticalAlignment="Top" Height="46" />
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding ___EditParameterValueRangeBeforeChange, 
+                        Source={StaticResource LocStrings}}" Margin="4"/>
+                    <TextBox Text="{Binding ValueRangeBeforeChange}" Margin="4" IsReadOnly="True" Focusable="False"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding ___EditParameterValueRangeAfterChange, 
+                        Source={StaticResource LocStrings}}" Margin="4"/>
+                    <TextBox Text="{Binding ValueRangeAfterChange}" Margin="4" IsReadOnly="True" 
+                                Focusable="False"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding ___EditParameterNumberOfClippedPatches,
+                                    Source={StaticResource LocStrings}}" Margin="4"/>
+                    <TextBox Text="{Binding NumberOfClippedPatches}"
+                                        Foreground="{Binding NumberOfClippedPatchesBackground}" 
+                                        IsReadOnly="True" Focusable="False" Margin="4"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="{Binding Cancel, Source={StaticResource LocStrings}}" HorizontalAlignment="Right" 
+                    IsDefault="False" Margin="4" VerticalAlignment="Top" Width="75" IsCancel="True"/>
+            <Button Content="{Binding OK, Source={StaticResource LocStrings}}"
+                    Margin="4" VerticalAlignment="Top" Width="75" IsDefault="True" HorizontalAlignment="Right" />
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="PcgTools.CommandLineInterfaceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding CliWindow, Source={StaticResource LocStrings}}" Height="486" Width="719" Loaded="Window_Loaded"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Stretch" Margin="0,0,0,29" Name="scrollViewer1" VerticalAlignment="Stretch">
+            <TextBlock HorizontalAlignment="Stretch" Name="textBlock" Text="" VerticalAlignment="Stretch" Margin="0,0,0,0" />
+        </ScrollViewer>
+        <Button Content="Close" Height="23" HorizontalAlignment="Right" Margin="0,0,0,0" Name="buttonClose" 
+                VerticalAlignment="Bottom" Width="75" Click="ButtonCloseClick" />
+    </Grid>
+</Window>

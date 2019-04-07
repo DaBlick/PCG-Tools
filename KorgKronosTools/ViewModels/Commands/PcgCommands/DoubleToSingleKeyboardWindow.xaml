@@ -1,0 +1,59 @@
+﻿<Window x:Class="PcgTools.ViewModels.Commands.PcgCommands.DoubleToSingleKeyboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="{Binding DoubleToSingleKeyboardWindowTitle, Source={StaticResource LocStrings}}"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Height="229" Width="424" Loaded="WindowLoaded">
+    <Grid Height="Auto" Width="Auto">
+        <StackPanel Orientation="Vertical" Height="Auto" Width="Auto">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding SourceSetList, Source={StaticResource LocStrings}}" Margin="4"/>
+                    <ComboBox Name="SourceSetListListBox" Margin="4"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding TargetSetList, Source={StaticResource LocStrings}}" Margin="4"/>
+                    <ComboBox  Name="TargetSetListListBox" Margin ="4"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding TargetCombiBank, Source={StaticResource LocStrings}}" Margin ="4"/>
+                    <ComboBox  Name="TargetCombiBankListBox" Margin ="4"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding MidiChannelMainKeyboard, Source={StaticResource LocStrings}}" Margin ="4"/>
+                    <xctk:IntegerUpDown Name="NumericUpDownMidiChannelMainKeyboard" Increment="1" 
+                                            IsEnabled="{Binding ElementName=CheckBoxAutoBackupFilesEnabled, Path=IsChecked}"
+                                            Maximum="60" Minimum="1" Margin="4"  HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="{Binding MidiChannelSecondaryKeyboard, Source={StaticResource LocStrings}}" Margin ="4"/>
+                    <xctk:IntegerUpDown Name="NumericUpDownMidiChannelSecondaryKeyboard" Increment="1" 
+                                            IsEnabled="{Binding ElementName=CheckBoxAutoBackupFilesEnabled, Path=IsChecked}"
+                                            Maximum="60" Minimum="1" Margin="4"  HorizontalAlignment="Left"/>
+                </StackPanel>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="{Binding Cancel, Source={StaticResource LocStrings}}"
+                HorizontalAlignment="Left" 
+                IsDefault="False" Margin="4" Name="buttonCancel" 
+                VerticalAlignment="Top" Width="75" IsCancel="True" 
+                Click="ButtonCancelClick"/>
+                <Button Content="{Binding OK, Source={StaticResource LocStrings}}" 
+                HorizontalAlignment="Left" 
+                Margin="4" Name="buttonOk" VerticalAlignment="Top" 
+                Width="75" IsDefault="True" Click="ButtonOkClick"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

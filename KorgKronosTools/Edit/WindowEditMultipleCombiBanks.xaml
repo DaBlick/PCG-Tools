@@ -1,0 +1,11 @@
+﻿<Window x:Class="PcgTools.Edit.WindowEditMultipleCombiBanks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding EditSingleCombi, Source={StaticResource LocStrings}}" Name="windowEdit" 
+         ResizeMode="NoResize" ShowInTaskbar="True" Loaded="WindowEditLoaded" 
+        Icon="/PcgTools;component/Gui/pcgtools.ico" WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight">
+    <StackPanel >
+        <Label Content="TEXT IN GREEN WITH ORANGE BACKGROUND" HorizontalAlignment="Stretch"  Foreground="Green" Background="Orange"/>
+        <TextBox Text="TEXT IN GREEN WITH ORANGE BACKGROUND" HorizontalAlignment="Stretch"  Foreground="Green" Background="Orange"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,1483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D18ED6C7-B8D0-4D9E-B498-744DC88A06AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PcgTools</RootNamespace>
+    <AssemblyName>PcgTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>c:\PcgTools Publish2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://pcgtools.mkspace.nl/</UpdateUrl>
+    <ProductName>PCG Tools</ProductName>
+    <PublisherName>MiKeSoft</PublisherName>
+    <SuiteName>PCG Tools</SuiteName>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>220</ApplicationRevision>
+    <ApplicationVersion>2.0.4.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>42DDFAF854FB3072541F1B1729572CAF2829DDAD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PcgTools_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PcgTools.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PcgTools.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PcgTools_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Debug\PcgTools.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PcgTools.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Debug\PcgTools.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PcgTools.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Paper, Version=4.0.3852.25197, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Paper.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFControls">
+      <HintPath>.\WPFControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock">
+      <HintPath>..\Extended WPF Toolkit Binaries\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero">
+      <HintPath>..\Extended WPF Toolkit Binaries\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro">
+      <HintPath>..\Extended WPF Toolkit Binaries\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010">
+      <HintPath>..\Extended WPF Toolkit Binaries\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=2.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extended WPF Toolkit Binaries\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.2.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Extended WPF Toolkit Binaries\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ClipBoard\ClipBoardDrumPattern.cs" />
+    <Compile Include="ClipBoard\ClipBoardDrumKit.cs" />
+    <Compile Include="ClipBoard\ClipBoardWaveSequence.cs" />
+    <Compile Include="ClipBoard\IClipBoardDrumPattern.cs" />
+    <Compile Include="ClipBoard\IClipBoardPatches.cs" />
+    <Compile Include="ClipBoard\ClipBoardProgram.cs" />
+    <Compile Include="ClipBoard\IClipBoardDrumKit.cs" />
+    <Compile Include="ClipBoard\IClipBoardSetListSlot .cs" />
+    <Compile Include="ClipBoard\IClipBoardPatch.cs" />
+    <Compile Include="ClipBoard\IClipBoardCombi.cs" />
+    <Compile Include="ClipBoard\CopyPaste.cs" />
+    <Compile Include="ClipBoard\IPcgClipBoard.cs" />
+    <Compile Include="Common\BoolExtensions.cs" />
+    <Compile Include="Common\EnumExtensions.cs" />
+    <Compile Include="Edit\WindowEditMultipleCombiBanks.xaml.cs">
+      <DependentUpon>WindowEditMultipleCombiBanks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WindowEditMultipleCombis.xaml.cs">
+      <DependentUpon>WindowEditMultipleCombis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WindowEditMultipleSetListSlots.xaml.cs">
+      <DependentUpon>WindowEditMultipleSetListSlots.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WindowEditParameterOld.xaml.cs">
+      <DependentUpon>WindowEditParameterOld.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WindowEditParameter.xaml.cs">
+      <DependentUpon>WindowEditParameter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SelectSortWindow.xaml.cs">
+      <DependentUpon>SelectSortWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksVideoCreatorsWindow.xaml.cs">
+      <DependentUpon>ExternalLinksVideoCreatorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksPersonalWindow.xaml.cs">
+      <DependentUpon>ExternalLinksPersonalWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksThirdPartiesWindow.xaml.cs">
+      <DependentUpon>ExternalLinksThirdPartiesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksKorgRelatedWindow.xaml.cs">
+      <DependentUpon>ExternalLinksKorgRelatedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksOasysVoucherCodeSponsorsWindow.xaml.cs">
+      <DependentUpon>ExternalLinksOasysVoucherCodeSponsorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksContributorsWindow.xaml.cs">
+      <DependentUpon>ExternalLinksContributorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksTranslatorsWindow.xaml.cs">
+      <DependentUpon>ExternalLinksTranslatorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalItem.cs" />
+    <Compile Include="Help\UserControlExternalLink.xaml.cs">
+      <DependentUpon>UserControlExternalLink.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HexExportDlg.xaml.cs">
+      <DependentUpon>HexExportDlg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListGenerator\IListGenerator.cs" />
+    <Compile Include="ListGenerator\ListGeneratorFileContentList.cs" />
+    <Compile Include="Help\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClipBoard\PcgClipBoard.cs" />
+    <Compile Include="ClipBoard\ClipBoardPatch.cs" />
+    <Compile Include="ClipBoard\IClipBoardProgram.cs" />
+    <Compile Include="ClipBoard\ClipBoardCombi.cs" />
+    <Compile Include="ClipBoard\ClipBoardSetListSlot.cs" />
+    <Compile Include="ClipBoard\ClipBoardPatches.cs" />
+    <Compile Include="MasterFiles\IMasterFile.cs" />
+    <Compile Include="MasterFiles\MasterFilesWindow.xaml.cs">
+      <DependentUpon>MasterFilesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MasterFiles\MasterFile.cs" />
+    <Compile Include="MasterFiles\MasterFiles.cs" />
+    <Compile Include="Model\Common\File\FileReader.cs" />
+    <Compile Include="Model\Common\File\ISongFileReader.cs" />
+    <Compile Include="Model\Common\File\TrFileReader.cs" />
+    <Compile Include="Model\Common\File\SysExFileReader.cs" />
+    <Compile Include="Model\Common\File\MkxlpFileReader.cs" />
+    <Compile Include="Model\Common\File\MkxlFileReader.cs" />
+    <Compile Include="Model\Common\File\PatchesFileReader.cs" />
+    <Compile Include="Model\Common\File\MkxlAllFileReader.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IChunk.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\ISysExMemory.cs" />
+    <Compile Include="Model\Common\Synth\Meta\Banks.cs" />
+    <Compile Include="Model\Common\Synth\Meta\BankType.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IChunks.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\IFixedParameter.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\IFixedParameterValue.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\ParameterNames.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumPatterns\DrumPattern.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumPatterns\DrumPatternBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumPatterns\DrumPatternBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumPatterns\IDrumPattern.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumPatterns\IDrumPatternBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumPatterns\IDrumPatternBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ICompleteInPcgable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IArtistable.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\ICombiBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumKits\IDrumKitBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IFillable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IParameterSettable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IReferencable.cs" />
+    <Compile Include="Model\Common\Synth\DrumTrack\IDrumTrackReference.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\IProgramBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchSetLists\ISetLists.cs" />
+    <Compile Include="Model\Common\Synth\PatchWaveSequences\IWaveSequence.cs" />
+    <Compile Include="Model\Common\Synth\Global\IGlobal.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ICategoriesNamable.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\ICombiBank.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IFactory.cs" />
+    <Compile Include="Model\Common\File\IPatchesFileReader.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IMemoryInit.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IIsEmptyCheckable.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IPcgMemoryInit.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumKits\IDrumKit.cs" />
+    <Compile Include="Model\Common\Synth\PatchSetLists\ISetList.cs" />
+    <Compile Include="Model\Common\Synth\PatchSetLists\ISetListSlot.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\ISongMemoryInit.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\ISongMemory.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\ITimbre.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IUpdatable.cs" />
+    <Compile Include="Model\Common\Synth\PatchWaveSequences\IWaveSequenceBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchWaveSequences\IWaveSequenceBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IPcgNavigable.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\ICombi.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\IProgram.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumKits\IDrumKitBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\IProgramBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IWritable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ILoadable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IClearable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\INotificatable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ISupportedFeatures.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IIndexable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ILocatable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\IDirtiable.cs" />
+    <Compile Include="Model\Common\Synth\Meta\IBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\ITimbres.cs" />
+    <Compile Include="Model\Common\Synth\Meta\IBank.cs" />
+    <Compile Include="Model\Common\Synth\Meta\IPatch.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IMemory.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ICountable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\INamable.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\ISelectable.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IPcgMemory.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\IModel.cs" />
+    <Compile Include="Model\Common\Synth\NewParameters\IntParameterBitsInByte.cs" />
+    <Compile Include="Model\Common\Synth\NewParameters\IIntParameter.cs" />
+    <Compile Include="Model\Common\Synth\Meta\IObservableBankCollection.cs" />
+    <Compile Include="Model\Common\Synth\Meta\ObservableBankCollection.cs" />
+    <Compile Include="Model\Common\Synth\Meta\ObservablePatchCollection.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\CategoricalComparer.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\ArtistComparer.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\CompositeComparer.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\EmptyOrInitComparer.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\TitleComparer.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\NameComparer.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\IRegions.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\IRegion.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\ISongs.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\ISong.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\SysExMemory.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\SysExFactory.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\MkxlAllMemory.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\FixedParameter.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\TimbreComparer.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\TimbreSorting.cs" />
+    <Compile Include="Model\Common\Synth\PatchSorting\PatchSorter.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Model.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumKits\DrumKit.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumKits\DrumKitBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchDrumKits\DrumKitBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchWaveSequences\WaveSequence.cs" />
+    <Compile Include="Model\Common\Synth\PatchWaveSequences\WaveSequenceBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchWaveSequences\WaveSequenceBanks.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\ISongTimbre.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\ISongTimbres.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\SongTimbre.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\SongTimbres.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeDrumPattern.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeDrumPatternBank.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeDrumPatternBanks.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysDrumPattern.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysDrumPatternBank.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysDrumPatternBanks.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosDrumPattern.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosDrumPatternBank.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosDrumPatternBanks.cs" />
+    <Compile Include="Model\Kross2Specific\Pcg\Kross2PcgFileReader.cs" />
+    <Compile Include="Model\Kross2Specific\Pcg\Kross2PcgMemory.cs" />
+    <Compile Include="Model\Kross2Specific\Pcg\Kross2TrFileReader.cs" />
+    <Compile Include="Model\Kross2Specific\Song\Kross2SongFileReader.cs" />
+    <Compile Include="Model\Kross2Specific\Song\Kross2SongMemory.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2Combi.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2CombiBank.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2CombiBanks.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2DrumKit.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2DrumKitBank.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2DrumKitBanks.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2Factory.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2Global.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2GmProgram.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2GmProgramBank.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2Program.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2ProgramBank.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2ProgramBanks.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2Timbre.cs" />
+    <Compile Include="Model\Kross2Specific\Synth\Kross2Timbres.cs" />
+    <Compile Include="Model\KrossSpecific\Pcg\KrossTrFileReader.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3DrumPatternBank.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3DrumPatternBanks.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3DrumPattern.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50DrumPatternBank.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50DrumPatternBanks.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50DrumPattern.cs" />
+    <Compile Include="Model\MSpecific\Synth\MDrumPattern.cs" />
+    <Compile Include="Model\MSpecific\Synth\MDrumPatternBank.cs" />
+    <Compile Include="Model\MSpecific\Synth\MDrumPatternBanks.cs" />
+    <Compile Include="Model\XSeries\Pcg\XSeriesFileReader.cs" />
+    <Compile Include="Model\XSeries\Pcg\XSeriesSysExMemory.cs" />
+    <Compile Include="Model\XSeries\Song\XSeriesSongFileReader.cs" />
+    <Compile Include="Model\XSeries\Song\XSeriesSongMemory.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesCombi.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesCombiBank.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesCombiBanks.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesFactory.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesGlobal.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesProgram.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesProgramBank.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesProgramBanks.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesTimbre.cs" />
+    <Compile Include="Model\XSeries\Synth\XSeriesTimbres.cs" />
+    <Compile Include="Model\Z1Specific\Pcg\Z1FileReader.cs" />
+    <Compile Include="Model\Z1Specific\Pcg\Z1SysExMemory.cs" />
+    <Compile Include="Model\Z1Specific\Song\Z1SongFileReader.cs" />
+    <Compile Include="Model\Z1Specific\Song\Z1SongMemory.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1Combi.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1CombiBank.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1CombiBanks.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1Factory.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1Global.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1Program.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1ProgramBank.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1ProgramBanks.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1Timbre.cs" />
+    <Compile Include="Model\Z1Specific\Synth\Z1Timbres.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwGmProgram.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwGmProgramBank.cs" />
+    <Compile Include="Model\ZeroSeries\Pcg\0SeriesFileReader.cs" />
+    <Compile Include="Model\ZeroSeries\Pcg\0SeriesSysExMemory.cs" />
+    <Compile Include="Model\ZeroSeries\Song\0SeriesSongFileReader.cs" />
+    <Compile Include="Model\ZeroSeries\Song\0SeriesSongMemory.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesCombi.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesCombiBank.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesCombiBanks.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesFactory.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesGlobal.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesProgram.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesProgramBank.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesProgramBanks.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesTimbre.cs" />
+    <Compile Include="Model\ZeroSeries\Synth\0SeriesTimbres.cs" />
+    <Compile Include="Model\Zero3Rw\Pcg\03RwFileReader.cs" />
+    <Compile Include="Model\Zero3Rw\Pcg\03RwSysExMemory.cs" />
+    <Compile Include="Model\Zero3Rw\Song\03RwSongFileReader.cs" />
+    <Compile Include="Model\Zero3Rw\Song\03RwSongMemory.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwCombi.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwCombiBank.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwCombiBanks.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwFactory.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwGlobal.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwProgram.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwProgramBank.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwProgramBanks.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwTimbre.cs" />
+    <Compile Include="Model\Zero3Rw\Synth\03RwTimbres.cs" />
+    <Compile Include="Model\TSeries\Pcg\TSeriesFileReader.cs" />
+    <Compile Include="Model\TSeries\Pcg\TSeriesSysExMemory.cs" />
+    <Compile Include="Model\TSeries\Song\TSeriesSongFileReader.cs" />
+    <Compile Include="Model\TSeries\Song\TSeriesSongMemory.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesCombi.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesCombiBank.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesCombiBanks.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesFactory.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesGlobal.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesProgram.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesProgramBank.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesProgramBanks.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesTimbre.cs" />
+    <Compile Include="Model\TSeries\Synth\TSeriesTimbres.cs" />
+    <Compile Include="Model\M1Specific\Pcg\M1FileReader.cs" />
+    <Compile Include="Model\M1Specific\Pcg\M1SysExMemory.cs" />
+    <Compile Include="Model\M1Specific\Song\M1SongFileReader.cs" />
+    <Compile Include="Model\M1Specific\Song\M1SongMemory.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1Combi.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1CombiBank.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1CombiBanks.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1Factory.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1Global.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1Program.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1ProgramBank.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1ProgramBanks.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1Timbre.cs" />
+    <Compile Include="Model\M1Specific\Synth\M1Timbres.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Pcg\MntxSysExMemory.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Song\MntxSongFileReader.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Song\MntxSongMemory.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxCombi.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxCombiBank.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxCombiBanks.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxFactory.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxGlobal.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxProgram.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxProgramBank.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxProgramBanks.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxTimbre.cs" />
+    <Compile Include="Model\MntxSeriesSpecific\Synth\MntxTimbres.cs" />
+    <Compile Include="Model\M3RSpecific\Pcg\M3RFileReader.cs" />
+    <Compile Include="Model\M3RSpecific\Pcg\M3RSysExMemory.cs" />
+    <Compile Include="Model\M3RSpecific\Song\M3RSongMemory.cs" />
+    <Compile Include="Model\M3RSpecific\Song\M3RSongFileReader.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RFactory.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RGlobal.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RProgram.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RProgramBank.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RProgramBanks.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RCombi.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RCombiBank.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RCombiBanks.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RTimbre.cs" />
+    <Compile Include="Model\M3RSpecific\Synth\M3RTimbres.cs" />
+    <Compile Include="Model\Ms2000Specific\Pcg\Ms2000MkP0Memory.cs" />
+    <Compile Include="Model\Ms2000Specific\Pcg\Ms2000FileReader.cs" />
+    <Compile Include="Model\Ms2000Specific\Pcg\Ms2000SysExMemory.cs" />
+    <Compile Include="Model\Ms2000Specific\Song\Ms2000SongFileReader.cs" />
+    <Compile Include="Model\Ms2000Specific\Song\Ms2000Memory.cs" />
+    <Compile Include="Model\Ms2000Specific\Synth\Ms2000Program.cs" />
+    <Compile Include="Model\Ms2000Specific\Synth\Ms2000Factory.cs" />
+    <Compile Include="Model\Ms2000Specific\Synth\Ms2000Global.cs" />
+    <Compile Include="Model\Ms2000Specific\Synth\Ms2000ProgramBank.cs" />
+    <Compile Include="Model\Ms2000Specific\Synth\Ms2000ProgramBanks.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Pcg\MicroKorgXlMkxlPAllFileReader.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Pcg\MicroKorgXlMkxlPAllMemory.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Pcg\MicroKorgXlMkxlPProgMemory.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Pcg\MicroKorgXlMkxlAllFileReader.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Pcg\MicroKorgXlMkxlAllMemory.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Pcg\MicroKorgXlMkxlPProgFileReader.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Song\MicroKorgXlSongFileReader.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Song\MicroKorgXlSongMemory.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlPlusProgramBank.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlPlusProgramBanks.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlPlusFactory.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlFactory.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlGlobal.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlProgram.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlProgramBank.cs" />
+    <Compile Include="Model\MicroKorgXlSpecific\Synth\MicroKorgXlProgramBanks.cs" />
+    <Compile Include="Model\KrossSpecific\Pcg\KrossPcgFileReader.cs" />
+    <Compile Include="Model\KrossSpecific\Pcg\KrossPcgMemory.cs" />
+    <Compile Include="Model\KrossSpecific\Song\KrossSongFileReader.cs" />
+    <Compile Include="Model\KrossSpecific\Song\KrossSongMemory.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossCombi.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossCombiBank.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossCombiBanks.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossDrumKit.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossDrumKitBank.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossDrumKitBanks.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossFactory.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossGlobal.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossGmProgram.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossGmProgramBank.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossProgram.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossProgramBank.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossProgramBanks.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossTimbre.cs" />
+    <Compile Include="Model\KrossSpecific\Synth\KrossTimbres.cs" />
+    <Compile Include="Model\TrinitySpecific\Pcg\TrinityPcgFileReader.cs" />
+    <Compile Include="Model\TrinitySpecific\Pcg\TrinityPcgMemory.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityCombi.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityCombiBank.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityCombiBanks.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityDrumKit.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityDrumKitBank.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityDrumKitBanks.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityFactory.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityGlobal.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityGmProgram.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityGmProgramBank.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityProgram.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityProgramBank.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityProgramBanks.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityTimbre.cs" />
+    <Compile Include="Model\TrinitySpecific\Synth\TrinityTimbres.cs" />
+    <Compile Include="Model\KromeSpecific\Pcg\KromePcgFileReader.cs" />
+    <Compile Include="Model\KromeSpecific\Pcg\KromePcgMemory.cs" />
+    <Compile Include="Model\KromeSpecific\Song\KromeSongFileReader.cs" />
+    <Compile Include="Model\KromeSpecific\Song\KromeSongMemory.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeCombi.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeCombiBank.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeCombiBanks.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeFactory.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeGlobal.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeGmProgram.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeGmProgramBank.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeProgram.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeProgramBank.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeProgramBanks.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeTimbre.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeTimbres.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeDrumKit.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeDrumKitBank.cs" />
+    <Compile Include="Model\KromeSpecific\Synth\KromeDrumKitBanks.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysDrumKit.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysDrumKitBank.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysDrumKitBanks.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysWaveSequence.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysWaveSequenceBank.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysWaveSequenceBanks.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosDrumKit.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosDrumKitBank.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosDrumKitBanks.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosWaveSequence.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosWaveSequenceBank.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosWaveSequenceBanks.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3DrumKit.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3DrumKitBank.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3DrumKitBanks.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50DrumKit.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50DrumKitBank.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50DrumKitBanks.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationDrumKit.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationDrumKitBank.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationDrumKitBanks.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Models.cs" />
+    <Compile Include="Model\MSpecific\Synth\MDrumKit.cs" />
+    <Compile Include="Model\MSpecific\Synth\MDrumKitBank.cs" />
+    <Compile Include="Model\MSpecific\Synth\MDrumKitBanks.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysDrumKit.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysDrumKitBank.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysDrumKitBanks.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysWaveSequence.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysWaveSequenceBank.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysWaveSequenceBanks.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Pcg\TritonTrClassicStudioRackPcgFileReader.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Pcg\TritonTrClassicStudioRackPcgMemory.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Song\TritonTrClassicStudioRackSongFileReader.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Song\TritonTrClassicStudioRackSongMemory.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioDrumKit.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioDrumKitBank.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioDrumKitBanks.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackCombi.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackCombiBank.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackCombiBanks.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackFactory.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackGlobal.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackGmProgram.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackGmProgramBank.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackProgram.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackProgramBank.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackProgramBanks.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackTimbre.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackTimbres.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackDrumKit.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackDrumKitBank.cs" />
+    <Compile Include="Model\TritonTrClassicStudioRackSpecific\Synth\TritonTrClassicStudioRackDrumKitBanks.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeDrumKit.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeDrumKitBank.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeDrumKitBanks.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaDrumKit.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaDrumKitBank.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaDrumKitBanks.cs" />
+    <Compile Include="Model\TritonLeSpecific\Pcg\TritonLePcgFileReader.cs" />
+    <Compile Include="Model\TritonLeSpecific\Pcg\TritonLePcgMemory.cs" />
+    <Compile Include="Model\TritonLeSpecific\Song\TritonLeSongFileReader.cs" />
+    <Compile Include="Model\TritonLeSpecific\Song\TritonLeSongMemory.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeCombi.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeCombiBank.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeCombiBanks.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeDrumKit.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeDrumKitBank.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeDrumKitBanks.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeFactory.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeGlobal.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeGmProgram.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeGmProgramBank.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeProgram.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeProgramBank.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeProgramBanks.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeTimbre.cs" />
+    <Compile Include="Model\TritonLeSpecific\Synth\TritonLeTimbres.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonDrumKit.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonDrumKitBank.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonDrumKitBanks.cs" />
+    <Compile Include="PcgToolsResources\Strings.it.Designer.cs">
+      <DependentUpon>Strings.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.ru.Designer.cs">
+      <DependentUpon>Strings.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.pl.Designer.cs">
+      <DependentUpon>Strings.pl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.el.Designer.cs">
+      <DependentUpon>Strings.el.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.sr-Latn-RS.Designer.cs">
+      <DependentUpon>Strings.sr-Latn-RS.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.cs.Designer.cs">
+      <DependentUpon>Strings.cs.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.pt-PT.Designer.cs">
+      <DependentUpon>Strings.pt-PT.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.en-TT.Designer.cs">
+      <DependentUpon>Strings.en-TT.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.de.Designer.cs">
+      <DependentUpon>Strings.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.pt-BR.Designer.cs">
+      <DependentUpon>Strings.pt-BR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PcgToolsResources\StringResourceHelper.cs" />
+    <Compile Include="PcgToolsResources\Strings.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.nl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PcgToolsResources\Strings2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PcgToolsResources\StringsWrapper.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommandLineArguments.cs" />
+    <Compile Include="CommandLineInterfaceWindow.xaml.cs">
+      <DependentUpon>CommandLineInterfaceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CombiWindow.xaml.cs">
+      <DependentUpon>CombiWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Logo.cs" />
+    <Compile Include="Gui\Logos.cs" />
+    <Compile Include="OpenedFiles\OpenedPcgWindow.cs" />
+    <Compile Include="OpenedFiles\OpenedPcgWindows.cs" />
+    <Compile Include="SongTimbresWindow.xaml.cs" />
+    <Compile Include="SongWindow.xaml.cs">
+      <DependentUpon>SongWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WindowEditSingleSetList.xaml.cs">
+      <DependentUpon>WindowEditSingleSetList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\ExternalLinksDonatorsWindow.xaml.cs">
+      <DependentUpon>ExternalLinksDonatorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\EditUtils.cs" />
+    <Compile Include="Edit\WindowEditSingleSetListSlot.xaml.cs">
+      <DependentUpon>WindowEditSingleSetListSlot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\WindowEditSingleCombi.xaml.cs">
+      <DependentUpon>WindowEditSingleCombi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListGenerator\ListGeneratorDifferencesList.cs" />
+    <Compile Include="ListGenerator\ListGeneratorCombiContentList.cs" />
+    <Compile Include="ListGenerator\ListGenerator.cs" />
+    <Compile Include="ListGenerator\ListGeneratorPatchList.cs" />
+    <Compile Include="ListGenerator\ListGeneratorProgramUsageList.cs" />
+    <Compile Include="ListGenerator\ListGeneratorWindow.xaml.cs">
+      <DependentUpon>ListGeneratorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IChildWindow.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Common\File\SongFileReader.cs" />
+    <Compile Include="Model\Common\Synth\Meta\Bank.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\Region.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\Regions.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\Song.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\Songs.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Memory.cs" />
+    <Compile Include="Model\Common\Synth\SongsRelated\SongMemory.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\GmPrograms.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\BoolParameter.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Chunk.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Chunks.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\WordParameter.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\ParameterValues.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\EnumParameter.cs" />
+    <Compile Include="Model\Common\Synth\Global\Global.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\IntParameter.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\IParameter.cs" />
+    <Compile Include="Model\Common\Synth\OldParameters\Parameter.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Song\KronosOasysSongFileReader.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Song\KronosOasysSongMemory.cs" />
+    <Compile Include="Model\KronosSpecific\Song\KronosSongMemory.cs" />
+    <Compile Include="Model\KronosSpecific\Song\KronosSongFileReader.cs" />
+    <Compile Include="Model\M3Specific\Song\M3SongFileReader.cs" />
+    <Compile Include="Model\M3Specific\Song\M3SongMemory.cs" />
+    <Compile Include="Model\M50Specific\Song\M50SongFileReader.cs" />
+    <Compile Include="Model\M50Specific\Song\M50SongMemory.cs" />
+    <Compile Include="Model\MicroStationSpecific\Song\MicroStationSongFileReader.cs" />
+    <Compile Include="Model\MicroStationSpecific\Song\MicroStationSongMemory.cs" />
+    <Compile Include="Model\MSpecific\Song\MSongFileReader.cs" />
+    <Compile Include="Model\MSpecific\Song\MSongMemory.cs" />
+    <Compile Include="Model\OasysSpecific\Song\OasysSongFileReader.cs" />
+    <Compile Include="Model\OasysSpecific\Song\OasysSongMemory.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Song\TritonExtremeSongFileReader.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Song\TritonExtremeSongMemory.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Pcg\TritonKarmaPcgFileReader.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Song\TritonKarmaSongFileReader.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Song\TritonKarmaSongMemory.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaCombi.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaCombiBank.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaCombiBanks.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaFactory.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaGlobal.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaGmProgram.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaGmProgramBank.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Pcg\TritonKarmaPcgMemory.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaProgram.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaProgramBank.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaProgramBanks.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaTimbre.cs" />
+    <Compile Include="Model\TritonKarmaSpecific\Synth\TritonKarmaTimbres.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysGlobal.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosGlobal.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3Global.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50Global.cs" />
+    <Compile Include="Model\MicroStationSpecific\Pcg\MicroStationPcgFileReader.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationCombi.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationCombiBank.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationCombiBanks.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationFactory.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationGmProgram.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationGmProgramBank.cs" />
+    <Compile Include="Model\MicroStationSpecific\Pcg\MicroStationPcgMemory.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationProgram.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationProgramBank.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationProgramBanks.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationTimbre.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationTimbres.cs" />
+    <Compile Include="Model\MicroStationSpecific\Synth\MicroStationGlobal.cs" />
+    <Compile Include="Model\MSpecific\Synth\MGlobal.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysGlobal.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeGlobal.cs" />
+    <Compile Include="Model\TritonSpecific\Pcg\TritonPcgFileReader.cs" />
+    <Compile Include="Model\TritonSpecific\Song\TritonSongFileReader.cs" />
+    <Compile Include="Model\TritonSpecific\Song\TritonSongMemory.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonGlobal.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonCombi.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonCombiBank.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonCombiBanks.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonFactory.cs" />
+    <Compile Include="Model\TritonSpecific\Pcg\TritonPcgMemory.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonProgram.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonProgramBank.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonProgramBanks.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonTimbre.cs" />
+    <Compile Include="Model\TritonSpecific\Synth\TritonTimbres.cs" />
+    <Compile Include="Model\MSpecific\Pcg\MPcgFileReader.cs" />
+    <Compile Include="Model\MSpecific\Synth\MCombi.cs" />
+    <Compile Include="Model\MSpecific\Synth\MCombiBank.cs" />
+    <Compile Include="Model\MSpecific\Synth\MCombiBanks.cs" />
+    <Compile Include="Model\MSpecific\Synth\MFactory.cs" />
+    <Compile Include="Model\MSpecific\Pcg\MPcgMemory.cs" />
+    <Compile Include="Model\MSpecific\Synth\MProgram.cs" />
+    <Compile Include="Model\MSpecific\Synth\MProgramBank.cs" />
+    <Compile Include="Model\MSpecific\Synth\MProgramBanks.cs" />
+    <Compile Include="Model\MSpecific\Synth\MTimbre.cs" />
+    <Compile Include="Model\MSpecific\Synth\MTimbres.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Pcg\KronosOasysPcgFileReader.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysCombi.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysCombiBank.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysCombiBanks.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysFactory.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Pcg\KronosOasysPcgMemory.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysProgram.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysProgramBank.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysProgramBanks.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysTimbre.cs" />
+    <Compile Include="Model\KronosOasysSpecific\Synth\KronosOasysTimbres.cs" />
+    <Compile Include="Edit\WindowEditSingleProgram.xaml.cs">
+      <DependentUpon>WindowEditSingleProgram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashWindow.xaml.cs">
+      <DependentUpon>SplashWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ProgramPatchParser.cs" />
+    <Compile Include="Tools\ProgramReferenceChangerWindow.xaml.cs">
+      <DependentUpon>ProgramReferenceChangerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ReferenceChanger.cs" />
+    <Compile Include="Tools\RuleParser.cs" />
+    <Compile Include="ViewModels\CombiViewModel.cs" />
+    <Compile Include="ViewModels\Commands\PcgCommands\ClearCommands.cs" />
+    <Compile Include="ViewModels\Commands\PcgCommands\DoubleToSingleKeyboardCommands.cs" />
+    <Compile Include="ViewModels\Commands\PcgCommands\DoubleToSingleKeyboardWindow.xaml.cs">
+      <DependentUpon>DoubleToSingleKeyboardWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Commands\PcgCommands\ModelCompatibility.cs" />
+    <Compile Include="ViewModels\Commands\PcgCommands\PcgFileCommands.cs" />
+    <Compile Include="ViewModels\Converters\EnumToBooleanConverter.cs" />
+    <Compile Include="ViewModels\ICombiViewModel.cs" />
+    <Compile Include="ViewModels\ISngTimbresViewModel.cs" />
+    <Compile Include="ViewModels\ISongViewModel.cs" />
+    <Compile Include="ViewModels\IViewModel.cs" />
+    <Compile Include="ViewModels\IMainViewModel.cs" />
+    <Compile Include="ViewModels\MasterFilesViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\Commands\PcgCommands\CopyPasteCommands.cs" />
+    <Compile Include="ViewModels\IPcgViewModel.cs" />
+    <Compile Include="ViewModels\EditParameterViewModel.cs" />
+    <Compile Include="ViewModels\ParameterChange\ParameterChangeParser.cs" />
+    <Compile Include="ViewModels\ParameterChange\ParameterChangeSettings.cs" />
+    <Compile Include="ViewModels\PcgViewModel.cs" />
+    <Compile Include="ViewModels\SngTimbresViewModel.cs" />
+    <Compile Include="ViewModels\SongViewModel.cs" />
+    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="Windows\IWindow.cs" />
+    <Compile Include="Windows\IPcgWindow.cs" />
+    <Page Include="Edit\WindowEditMultipleCombiBanks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditMultipleCombis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditMultipleSetListSlots.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditParameterOld.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditParameter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gui\SelectSortWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\ExternalLinksVideoCreatorsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksPersonalWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksThirdPartiesWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksKorgRelatedWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksOasysVoucherCodeSponsorsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksContributorsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksTranslatorsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\UserControlExternalLink.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HexExportDlg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MasterFiles\MasterFilesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommandLineInterfaceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CombiWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SongTimbresWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SongWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditSingleSetList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\ExternalLinksDonatorsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditSingleSetListSlot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Edit\WindowEditSingleCombi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PcgWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Common\File\KorgFileReader.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Client.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\CombiBanks.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\CombiBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\Combi.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\Timbres.cs" />
+    <Compile Include="Model\Common\Synth\PatchCombis\Timbre.cs" />
+    <Compile Include="Model\Common\Synth\PatchSetLists\SetListSlot.cs" />
+    <Compile Include="Model\Common\Synth\PatchSetLists\SetList.cs" />
+    <Compile Include="Model\Common\Synth\PatchSetLists\SetLists.cs" />
+    <Compile Include="Model\Common\Synth\PatchInterfaces\INavigable.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\Factory.cs" />
+    <Compile Include="Model\Common\Synth\Meta\Patch.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\Program.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\ProgramBank.cs" />
+    <Compile Include="Model\Common\Synth\PatchPrograms\ProgramBanks.cs" />
+    <Compile Include="Model\Common\File\PcgFileReader.cs" />
+    <Compile Include="Model\Common\Synth\MemoryAndFactory\PcgMemory.cs" />
+    <Compile Include="Model\Common\Util.cs" />
+    <Compile Include="Model\M3Specific\Pcg\M3PcgFileReader.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3Combi.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3CombiBank.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3CombiBanks.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3Factory.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3GmProgram.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3GmProgramBank.cs" />
+    <Compile Include="Model\M3Specific\Pcg\M3PcgMemory.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3Program.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3ProgramBank.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3ProgramBanks.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3Timbre.cs" />
+    <Compile Include="Model\M3Specific\Synth\M3Timbres.cs" />
+    <Compile Include="Model\M50Specific\Pcg\M50PcgFileReader.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50Combi.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50CombiBank.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50CombiBanks.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50Factory.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50GmProgram.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50GmProgramBank.cs" />
+    <Compile Include="Model\M50Specific\Pcg\M50PcgMemory.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50Program.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50ProgramBank.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50ProgramBanks.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50Timbre.cs" />
+    <Compile Include="Model\M50Specific\Synth\M50Timbres.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Pcg\TritonExtremePcgFileReader.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeCombi.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeCombiBank.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeCombiBanks.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeFactory.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeGmProgram.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeGmProgramBank.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Pcg\TritonExtremePcgMemory.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeProgram.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeProgramBank.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeProgramBanks.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeTimbre.cs" />
+    <Compile Include="Model\TritonExtremeSpecific\Synth\TritonExtremeTimbres.cs" />
+    <Compile Include="Model\OasysSpecific\Pcg\OasysPcgFileReader.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysCombi.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysCombiBank.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysCombiBanks.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysFactory.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysGmProgram.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysGmProgramBank.cs" />
+    <Compile Include="Model\OasysSpecific\Pcg\OasysPcgMemory.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysProgram.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysProgramBank.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysProgramBanks.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysTimbre.cs" />
+    <Compile Include="Model\OasysSpecific\Synth\OasysTimbres.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosSetListSlot.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosSetList.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosSetLists.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosTimbre.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosTimbres.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosProgramBank.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosGmProgram.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosCombi.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosCombiBank.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosCombiBanks.cs" />
+    <Compile Include="Model\KronosSpecific\Pcg\KronosPcgFileReader.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosProgram.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosGmProgramBank.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosProgramBanks.cs" />
+    <Compile Include="Model\KronosSpecific\Pcg\KronosPcgMemory.cs" />
+    <Compile Include="Model\KronosSpecific\Synth\KronosFactory.cs" />
+    <Compile Include="PcgWindow.xaml.cs">
+      <DependentUpon>PcgWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ListGenerator\ListGeneratorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit\WindowEditSingleProgram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\ProgramReferenceChangerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewModels\Commands\PcgCommands\DoubleToSingleKeyboardWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="PcgToolsResources\Strings.it.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.it.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.pl.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.pl.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.el.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.el.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.sr-Latn-RS.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.sr-Latn-RS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.cs.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.cs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.pt-PT.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.pt-PT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.en-TT.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en-TT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.de.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.de.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.pt-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.pt-BR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Strings2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.nl.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.nl.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcgToolsResources\Strings.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.es.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <Resource Include="Help\External Links\cybertek.pl.png" />
+    <None Include="PcgTools_1_TemporaryKey.pfx" />
+    <None Include="PcgTools_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Common\Synth\NewParameters\SetListSlotColor\" />
+    <Folder Include="Model\Common\Synth\NewParameters\SetListSlotTranspose\" />
+    <Folder Include="Model\TrinitySpecific\Song\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PcgTools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gui\Tool Bar Icons\about.png" />
+    <Resource Include="Gui\Tool Bar Icons\disk_blue.png" />
+    <Resource Include="Gui\Tool Bar Icons\document.png" />
+    <Resource Include="Gui\Tool Bar Icons\document_edit.png" />
+    <Resource Include="Gui\Tool Bar Icons\folder_out.png" />
+    <Resource Include="Gui\Tool Bar Icons\navigate_down.png" />
+    <Resource Include="Gui\Tool Bar Icons\navigate_up.png" />
+    <Resource Include="Gui\Tool Bar Icons\save_as.png" />
+    <Resource Include="Gui\Tool Bar Icons\text_align_justified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gui\Images\korg-kronos-wnamm2011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{62D30792-A373-4C67-841C-34B2277B1807}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPF.MDI\WPF.MDI.csproj">
+      <Project>{be1ed569-5e0b-4df0-8964-33ad2aae4c4a}</Project>
+      <Name>WPF.MDI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gui\Tool Bar Icons\copy - help.png" />
+    <Resource Include="Gui\Tool Bar Icons\copy - exit.png" />
+    <Resource Include="Gui\Tool Bar Icons\copy.png" />
+    <Resource Include="Gui\Tool Bar Icons\delete.png" />
+    <Resource Include="Gui\Tool Bar Icons\paste.png" />
+    <Resource Include="Gui\Tool Bar Icons\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gui\Tool Bar Icons\document_gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Help\External Links\Lyana.png" />
+    <Resource Include="Help\External Links\al1editor.png" />
+    <Resource Include="Help\External Links\imprezariat.png" />
+    <Resource Include="Help\External Links\basaristudios.png" />
+    <Resource Include="Help\External Links\facebook.png" />
+    <Resource Include="Help\External Links\twitter.png" />
+    <Resource Include="Help\External Links\googleplus.png" />
+    <Resource Include="Help\External Links\Assembla.png" />
+    <Resource Include="Help\External Links\Git.png" />
+    <Resource Include="Help\External Links\Yuma.jpg" />
+    <Resource Include="Help\External Links\Oostendorpmuziek.jpg" />
+    <Resource Include="Help\External Links\forum_cifraclub_com_br.png" />
+    <Resource Include="Help\External Links\co-incidental.png" />
+    <Resource Include="Help\External Links\coreftple.png" />
+    <Resource Include="Help\External Links\PCGrid.png" />
+    <Resource Include="Gui\Tool Bar Icons\sort.png" />
+    <Resource Include="Help\External Links\karmalabs.png" />
+    <Resource Include="Help\External Links\KromeHeaven.png" />
+    <Resource Include="Gui\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Help\External Links\Yahoo.png" />
+    <Resource Include="Help\External Links\midiox.png" />
+    <Resource Include="Help\External Links\soundsofplanet.png" />
+    <Resource Include="Help\External Links\AudioKeys.png" />
+    <Resource Include="Help\External Links\Flexera.png" />
+    <Resource Include="Help\External Links\Kapro.png" />
+    <Resource Include="Help\External Links\deuce.png" />
+    <Resource Include="Help\External Links\UmutErhan.jpg" />
+    <Resource Include="Help\External Links\cliffcanyon.png" />
+    <Resource Include="Help\External Links\rsfmusictech.jpg" />
+    <Resource Include="Help\External Links\synthysounds.png" />
+    <Resource Include="Help\External Links\giorgostrichopoulos.png" />
+    <Resource Include="Help\External Links\LuisCosta.png" />
+    <Resource Include="Help\External Links\syntey.png" />
+    <Resource Include="Help\External Links\quirobinez.png" />
+    <Resource Include="Help\External Links\stackoverflow.png" />
+    <Resource Include="Help\External Links\VisualStudio.png" />
+    <Resource Include="Help\External Links\KronosPatchLab.png" />
+    <Resource Include="Help\External Links\IrishActsStudio.png" />
+    <Resource Include="Help\External Links\cupsandplates.png" />
+    <Resource Include="Help\External Links\rmmedia.png" />
+    <Resource Include="Help\External Links\kelfar.png" />
+    <Resource Include="Help\External Links\celticvoyager.png" />
+    <Resource Include="Help\External Links\Artlum.png" />
+    <Resource Include="Help\External Links\TidyKronos.png" />
+    <Resource Include="Help\External Links\KorgFans.png" />
+    <Resource Include="Help\External Links\altran.png" />
+    <Resource Include="Help\External Links\Coincidental.png" />
+    <Resource Include="Help\External Links\GitaarDemo.png" />
+    <Resource Include="Help\External Links\NothingElseMatters.png" />
+    <Resource Include="Help\External Links\BK-facebook.gif" />
+    <Resource Include="Help\External Links\RadiasLibrarian.png" />
+    <Resource Include="Help\External Links\AdelTannouriYouTube.png" />
+    <Resource Include="Help\External Links\MarcioBadaro.png" />
+    <Resource Include="Help\External Links\RubensFelicioYouTube.png" />
+    <Resource Include="Help\External Links\DanStesco.png" />
+    <Resource Include="Help\External Links\Synthesaurus.png" />
+    <Resource Include="Help\External Links\Audora.png" />
+    <Content Include="Paper.dll" />
+    <Resource Include="Gui\Tool Bar Icons\cut.png" />
+    <Resource Include="Help\External Links\Kronoscopie.jpg" />
+    <Resource Include="Help\External Links\keller12.jpg" />
+    <Resource Include="Gui\Images\pcgtoolsnormal.jpg" />
+    <Resource Include="Help\External Links\pcgtoolssmaller.jpg" />
+    <Resource Include="Help\External Links\pcgtoolssmall.jpg" />
+    <Resource Include="Help\External Links\Korg.jpg" />
+    <Resource Include="Help\External Links\Kronosmw.jpg" />
+    <Resource Include="Help\External Links\tmp.jpg" />
+    <Content Include="Gui\pcgtools.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Gui\Tool Bar Icons\show_timbres.png" />
+    <Resource Include="Gui\Images\paypal_donate.gif" />
+    <Resource Include="Gui\Tool Bar Icons\compact.png" />
+    <Resource Include="Gui\Tool Bar Icons\navgate_up2.png" />
+    <Resource Include="Gui\Images\SpecialEvent.jpg" />
+    <Resource Include="Help\External Links\onksor.jpg" />
+    <Resource Include="Help\External Links\dreamland.jpg" />
+    <Resource Include="Help\External Links\RobertRosen.jpg" />
+    <Resource Include="Help\External Links\kronoshaven.jpg" />
+    <Resource Include="Help\External Links\korgpatches.jpg" />
+    <Resource Include="Help\External Links\korgforums.jpg" />
+    <Resource Include="Help\External Links\KidHeadSpinSM.gif" />
+    <Resource Include="Gui\Tool Bar Icons\star_blue - remove.png" />
+    <Resource Include="Gui\Tool Bar Icons\star_blue.png" />
+    <Resource Include="Gui\Tool Bar Icons\copy - recall.png" />
+    <Resource Include="Gui\Tool Bar Icons\document_plain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".PCG">
+      <Visible>False</Visible>
+      <Description>Korg PCG File</Description>
+      <Progid>PCG_File</Progid>
+      <DefaultIcon>Gui\pcgtools.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".SNG">
+      <Visible>False</Visible>
+      <Description>Korg SNG File</Description>
+      <Progid>SNG_File</Progid>
+      <DefaultIcon>Gui\pcgtools.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Paper.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMenuItem" xml:space="preserve">
+    <value>_About...</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="Aero" xml:space="preserve">
+    <value>_Aero</value>
+    <comment>Aero graphical theme</comment>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+    <comment>in: All files</comment>
+  </data>
+  <data name="Always" xml:space="preserve">
+    <value>_Always</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="AsciiFilter" xml:space="preserve">
+    <value>ASCII Table/Text files (*.txt)|*.txt|All files (*.*)|*.*</value>
+    <comment>Be careful to leave punctuation correct</comment>
+  </data>
+  <data name="AsciiTable" xml:space="preserve">
+    <value>_ASCII Tabel</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>_Ask</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="AskForMasterFile" xml:space="preserve">
+    <value>Would you like to open the master file {0} also?</value>
+    <comment>Do not remove {0}, it will be substituted by the master file name</comment>
+  </data>
+  <data name="AssignClearProgram" xml:space="preserve">
+    <value>_Assign Clear Program...</value>
+    <comment>Assign program to be used for clearing</comment>
+  </data>
+  <data name="AssignedClearProgram" xml:space="preserve">
+    <value>Assigned Clear Program:</value>
+    <comment>Program that is assigned as clear program</comment>
+  </data>
+  <data name="AutoExtendPaste" xml:space="preserve">
+    <value>_Auto Extended Single Patch Selection Paste</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="AutoExtendPasteToolTip" xml:space="preserve">
+    <value>Continues pasting patches, even when only one patch has been selected</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="AutoLoadMasterFile" xml:space="preserve">
+    <value>Auto Load Master File</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="Banks" xml:space="preserve">
+    <value>Banks</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Button</comment>
+  </data>
+  <data name="CannotMingleOptions" xml:space="preserve">
+    <value>-h option cannot be used with other options</value>
+    <comment>Error</comment>
+  </data>
+  <data name="CaseSensitive" xml:space="preserve">
+    <value>_Case Sensitive</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+    <comment>Column name</comment>
+  </data>
+  <data name="CategoryControl" xml:space="preserve">
+    <value>_Category</value>
+    <comment>Combo box</comment>
+  </data>
+  <data name="CategoryThanPatchName" xml:space="preserve">
+    <value>_Category, then Patch Name</value>
+    <comment>Radio button, order</comment>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>_Clear</value>
+    <comment>Clear command for clearing a patch (button and menu item)</comment>
+  </data>
+  <data name="ClearSelected" xml:space="preserve">
+    <value>Clear the selected patch(es) or bankPcgId(s)</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="CliAmbiguousOption" xml:space="preserve">
+    <value>Option value {0} is ambiguous</value>
+    <comment>Error</comment>
+  </data>
+  <data name="CliIllegalBankName" xml:space="preserve">
+    <value>Illegal bankPcgId name in option {0}, value {1}, bankPcgId name {2}</value>
+    <comment>Error</comment>
+  </data>
+  <data name="CliIllegalOptionError" xml:space="preserve">
+    <value>Option {0} is either not supported, or has no value assigned.</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="CliOptionError" xml:space="preserve">
+    <value>Option {0} found after parameter(s).</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="CliOutOfRangeError" xml:space="preserve">
+    <value>Value {0} of option {1} is out of range (legal values: {2})</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Clipboard" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="CliRequiresError" xml:space="preserve">
+    <value>Option {0} requires option {1}</value>
+    <comment>Error</comment>
+  </data>
+  <data name="CliUnknownOption" xml:space="preserve">
+    <value>Option value {0} is unknown</value>
+    <comment>Error</comment>
+  </data>
+  <data name="CliWindow" xml:space="preserve">
+    <value>PCG Tools Command Line Interface Diagnostics Window</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>_Close</value>
+    <comment>Close a PCG file</comment>
+  </data>
+  <data name="Combi" xml:space="preserve">
+    <value>Combi</value>
+  </data>
+  <data name="CombiContentList" xml:space="preserve">
+    <value>_Combi Content List</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="Combis" xml:space="preserve">
+    <value>Combis</value>
+    <comment>Combis</comment>
+  </data>
+  <data name="CommaSeparatedValues" xml:space="preserve">
+    <value>_Comma Separated Values</value>
+    <comment>Radio button (CSV file)</comment>
+  </data>
+  <data name="Compact" xml:space="preserve">
+    <value>_Compact</value>
+    <comment>Compact a combi (button and menu item)</comment>
+  </data>
+  <data name="CompactSelected" xml:space="preserve">
+    <value>Compact the selected patch(es) or bankPcgId(s)</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="ContentType" xml:space="preserve">
+    <value>Content Type</value>
+    <comment>Type of bankPcgId (programmed, sampled)</comment>
+  </data>
+  <data name="ContinueWarning" xml:space="preserve">
+    <value>Are you sure you want to continue?</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+    <comment>Copy a patch</comment>
+  </data>
+  <data name="CopyIncompleteCombis" xml:space="preserve">
+    <value>_Copy Incomplete Combis</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="CopyIncompleteCombisToolTip" xml:space="preserve">
+    <value>Copies combis, even when used programs are not contained in the PCG</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="CopyIncompleteSetListSlots" xml:space="preserve">
+    <value>_Copy Incomplete Set List Slots</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="CopyIncompleteSetListSlotsToolTip" xml:space="preserve">
+    <value>Copies set list slots, even when used programs/combis are not contained in the PCG</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="CopyPatchesFromMasterFile" xml:space="preserve">
+    <value>_Copy Patches from Master File</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="CopyPatchesFromMasterFileToolTip" xml:space="preserve">
+    <value>Copies patches from the Master file, if loaded and if not present in the current PCG File</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="CopySelected" xml:space="preserve">
+    <value>Copy the selected patch(es) or bankPcgId(s)</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="CouldNotOpenManualWarning" xml:space="preserve">
+    <value>The manual could not be opened, make sure an internet connection is established. Reason: 
+{0}
+    
+Inner exception:
+{1}</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="CsvFileFilter" xml:space="preserve">
+    <value>CSV files (*.csv)|*.csv|All files (*.*)|*.*</value>
+    <comment>CSV=Comma separated value</comment>
+  </data>
+  <data name="Cubase" xml:space="preserve">
+    <value>_Cubase</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="CubaseIoError" xml:space="preserve">
+    <value>An I/O Error occurred while exporting cubase output</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+    <comment>Cut a patch</comment>
+  </data>
+  <data name="CutCopyPaste" xml:space="preserve">
+    <value>Cut/Copy/Paste</value>
+    <comment>Tab</comment>
+  </data>
+  <data name="CutCopyPasteMode" xml:space="preserve">
+    <value>Cut/Copy/Paste Mode</value>
+    <comment>Box containing the cut, copy, paste ... controls</comment>
+  </data>
+  <data name="CutCopyPasteOperationUnfinishedWarning" xml:space="preserve">
+    <value>Also a Cut/Copy/Paste operation is in unfinished</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="CutSelected" xml:space="preserve">
+    <value>Cut the selected patch(es) or bankPcgId(s)</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+    <comment>Text box</comment>
+  </data>
+  <data name="DescriptionControl" xml:space="preserve">
+    <value>_Description</value>
+  </data>
+  <data name="DeselectAll" xml:space="preserve">
+    <value>_Deselect All</value>
+    <comment>Button</comment>
+  </data>
+  <data name="DevelopedBy" xml:space="preserve">
+    <value>Developed by Michel Keijzers, MiKeSoft</value>
+    <comment>Label</comment>
+  </data>
+  <data name="DifferencesList" xml:space="preserve">
+    <value>_Differences List</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="DifferencesListOptions" xml:space="preserve">
+    <value>Differences List Options</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="DonateWarning" xml:space="preserve">
+    <value>The donate button cannot be opened</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="DonationText" xml:space="preserve">
+    <value>This app is free for everyone to use, even while I have spend hundreds of hours into designing, programming, testing and publishing the app and all of its updates. If you feel this app helps you or saves you time, please consider a donation.</value>
+    <comment>Label</comment>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>_Down</value>
+    <comment>Move a patch down</comment>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Edit a patch</comment>
+  </data>
+  <data name="EditMenu" xml:space="preserve">
+    <value>_Edit</value>
+    <comment>Edit menu</comment>
+  </data>
+  <data name="EditMenuItem" xml:space="preserve">
+    <value>_Edit</value>
+    <comment>Edit menu item (inside Edit menu)</comment>
+  </data>
+  <data name="EditSelectedPatch" xml:space="preserve">
+    <value>Edit the selected patch</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="EditSettings" xml:space="preserve">
+    <value>Edit the settings</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Empty</value>
+    <comment>Containing no elements</comment>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>_Enabled</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="ErrorOccurred" xml:space="preserve">
+    <value>Error occurred</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>PCG Tools has currently more than 1050 users!</value>
+    <comment>Special event text in message box.</comment>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>_Exit</value>
+    <comment>Exit the application</comment>
+  </data>
+  <data name="ExitCutCopyPasteMode" xml:space="preserve">
+    <value>E_xit Cut/Copy/Paste Mode</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="ExitCutCopyPasteModeToolTip" xml:space="preserve">
+    <value>Exit cut/copy/paste mode</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="ExportForSequencer" xml:space="preserve">
+    <value>E_xport for Sequencer</value>
+    <comment>Sub menu</comment>
+  </data>
+  <data name="ExternalLinksKorgRelatedMenuItem" xml:space="preserve">
+    <value>_External Links Korg Related...</value>
+    <comment>External links menu</comment>
+  </data>
+  <data name="Fav" xml:space="preserve">
+    <value>Fav</value>
+    <comment>Favorite as column header; keep as short as possible</comment>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>_Favorites</value>
+    <comment>Text box</comment>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>_File</value>
+    <comment>File menu</comment>
+  </data>
+  <data name="FileOpenException" xml:space="preserve">
+    <value>An exception occurred when reading/parsing the file {0}.
+    Probably you have selected a PCG file that is not supported by PCG Tools or a corrupted file.
+    
+    Detailed error: {0}
+    Stack trace:
+    {1}</value>
+    <comment>Exception; do NOT remove the {x} , they will be replaced for substituted texts</comment>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+    <comment>Tab</comment>
+  </data>
+  <data name="FileState" xml:space="preserve">
+    <value>File State</value>
+    <comment>Column header, Status of the master file (opened/closed)</comment>
+  </data>
+  <data name="FilterCombiNames" xml:space="preserve">
+    <value>_Filter Combi Names</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="FilterOnFavorites" xml:space="preserve">
+    <value>Filter on Favorites</value>
+    <comment>Group box name</comment>
+  </data>
+  <data name="FilterOnText" xml:space="preserve">
+    <value>Filter on Text</value>
+    <comment>Group box name</comment>
+  </data>
+  <data name="FilterOnTextControl" xml:space="preserve">
+    <value>_Filter on Text:</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="FilterProgramBanks" xml:space="preserve">
+    <value>Filter Program Banks</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="FilterProgramNames" xml:space="preserve">
+    <value>_Filter Program Names</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="FilterSetLists" xml:space="preserve">
+    <value>Filter Set Lists</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="FilterSetListSlotDescriptions" xml:space="preserve">
+    <value>_Filter Set List Slot Descriptions</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="FilterSetListSlotNames" xml:space="preserve">
+    <value>_Filter Set List Slot Names</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="ForumDiscussionLink" xml:space="preserve">
+    <value>Forum/Discussion Link:</value>
+    <comment>Label, Link is a HTTPaddress</comment>
+  </data>
+  <data name="FourParametersNeededError" xml:space="preserve">
+    <value>Exactly 4 parameters are needed (input PCG file name, list type, list sub type, output file name).</value>
+    <comment>Error (CHANGED)</comment>
+  </data>
+  <data name="Generate" xml:space="preserve">
+    <value>_Generate</value>
+    <comment>Generate button</comment>
+  </data>
+  <data name="GenerateAList" xml:space="preserve">
+    <value>Generate a list</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="GenerateList" xml:space="preserve">
+    <value>_Generate List...</value>
+    <comment>Shows the Generate List window</comment>
+  </data>
+  <data name="GenerateListError" xml:space="preserve">
+    <value>An error has occured while generating/writing the list</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Generic" xml:space="preserve">
+    <value>_Generic</value>
+    <comment>Generic graphical theme</comment>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>_Help</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+    <comment>ID of the bankPcgId/patch name (column in PCG window; keep it short)</comment>
+  </data>
+  <data name="IgnoreEmptyInitCombis" xml:space="preserve">
+    <value>_Ignore Empty/Init Combis</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="IgnoreFirstProgram" xml:space="preserve">
+    <value>_Ignore First Program</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="IgnoreMutedOffTimbres" xml:space="preserve">
+    <value>_Ignore Muted/Off Timbres</value>
+    <comment>Check box (ignore timbres that are either muted or off)</comment>
+  </data>
+  <data name="IgnorePatchNames" xml:space="preserve">
+    <value>_Ignore Patch Names</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="IgnoreSetListSlotDescriptions" xml:space="preserve">
+    <value>_Ignore Set List Slot Descriptions</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="IllegalListType" xml:space="preserve">
+    <value>Illegal list type {0}</value>
+    <comment>Error</comment>
+  </data>
+  <data name="IllegalOption" xml:space="preserve">
+    <value>Error: Illegal option {0}</value>
+    <comment>Error</comment>
+  </data>
+  <data name="IllegalSubType" xml:space="preserve">
+    <value>Illegal sub type {0}</value>
+    <comment>Error</comment>
+  </data>
+  <data name="IncompatibleModelError" xml:space="preserve">
+    <value>The patches in the clip board are from an incompatible Korg workstation model and can not be copied</value>
+    <comment>Error</comment>
+  </data>
+  <data name="IncompatibleOsVersion" xml:space="preserve">
+    <value>The patches in the clip board are from an incompatible OS version and can not be copied.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+    <comment>Column</comment>
+  </data>
+  <data name="InnerExceptionMessage" xml:space="preserve">
+    <value>Inner exception message</value>
+    <comment>Error/exception message</comment>
+  </data>
+  <data name="IsFavorite" xml:space="preserve">
+    <value>_Is Favorite</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="KorgRelated" xml:space="preserve">
+    <value>Korg Related</value>
+    <comment>Label</comment>
+  </data>
+  <data name="LinkWarning" xml:space="preserve">
+    <value>The link cannot be opened</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="ListGenerator" xml:space="preserve">
+    <value>List Generator</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ListGeneratorSongsWarning" xml:space="preserve">
+    <value>The List Generator does not support songs.</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="ListSubType" xml:space="preserve">
+    <value>_List Sub Type</value>
+    <comment>Combo box</comment>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>List Type</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="LongListGenerationWarning" xml:space="preserve">
+    <value>This kind of list can take upto several minutes to be generated, depending on the number of patches in the PCG and the number of differences selected.
+    
+    Press OK to generate the list or Cancel otherwise.</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="Luna" xml:space="preserve">
+    <value>_Luna</value>
+    <comment>Luna graphical theme</comment>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>_Manual...</value>
+  </data>
+  <data name="MarkAsFavorite" xml:space="preserve">
+    <value>Mark the selected patch(es) or bankPcgId(s) as favorite(s)</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="MasterFiles" xml:space="preserve">
+    <value>_Master Files</value>
+    <comment>Master Files sub menu</comment>
+  </data>
+  <data name="MaxNumberOfDifferences" xml:space="preserve">
+    <value>_Max Number of Differences (in bytes)</value>
+    <comment>Label</comment>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+    <comment>From exception message</comment>
+  </data>
+  <data name="ModeledProgram" xml:space="preserve">
+    <value>Model Program</value>
+    <comment>A program from a virtual modelling engine like MOSS, or non HD1 engines on Kronos</comment>
+  </data>
+  <data name="ModeledPrograms" xml:space="preserve">
+    <value>Modeled</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Move _Down</value>
+    <comment>Move patch/bankPcgId down, menu item</comment>
+  </data>
+  <data name="MoveDownToolTip" xml:space="preserve">
+    <value>Move the selected patch(es) down</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Move _Up</value>
+    <comment>Move patch/bankPcgId up, menu item</comment>
+  </data>
+  <data name="MoveUpToolTip" xml:space="preserve">
+    <value>Move the selected patch(es) up</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>Name of the patch</comment>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>_Never</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="NoContentWarning" xml:space="preserve">
+    <value>There are no programs, combis and set list slots, drum kits, drum patterns and wave sequences in PCG file:</value>
+  </data>
+  <data name="NumberOfSelectedPatches" xml:space="preserve">
+    <value># Selected Patches:</value>
+    <comment>Keep colon at end</comment>
+  </data>
+  <data name="OasysVoucherCodeSponsorMessage" xml:space="preserve">
+    <value>The following persons donated part or full of their Korg Oasys voucher codes to Kronos owners, worth up to US $750.
+On behalf of every Korg Kronos receiver of such a code, I would like to thank the following persons:</value>
+    <comment>Message</comment>
+  </data>
+  <data name="OasysVoucherCodeSponsors" xml:space="preserve">
+    <value>Oasys Codes Sponsors...</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+    <comment>Button</comment>
+  </data>
+  <data name="OnlyDifferencesError" xml:space="preserve">
+    <value>Option {0} can only be used when a differences list is selected.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+    <comment>Open a PCG file</comment>
+  </data>
+  <data name="OpenedDuplicateWarning" xml:space="preserve">
+    <value>You already have opened a PCG window with the same file name ({0}). These windows are not synchronised, so make sure you do not edit multiple PCG windows with the same file name at the same time.</value>
+    <comment>Warning; do NOTremove the {0}, it will be substituted for the file name</comment>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>_Options</value>
+  </data>
+  <data name="OsVersion" xml:space="preserve">
+    <value>OS Version</value>
+    <comment>Column header</comment>
+  </data>
+  <data name="Others" xml:space="preserve">
+    <value>Others</value>
+    <comment>Label (other items/objects/logos)</comment>
+  </data>
+  <data name="Output" xml:space="preserve">
+    <value>Output</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="OutputFile" xml:space="preserve">
+    <value>_Output File:</value>
+    <comment>Label</comment>
+  </data>
+  <data name="OutputTxt" xml:space="preserve">
+    <value>output.txt</value>
+    <comment>Default name for text file output of list generator file</comment>
+  </data>
+  <data name="OverwriteFilledCombis" xml:space="preserve">
+    <value>_Overwrite Filled Combis</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="OverwriteFilledCombisToolTip" xml:space="preserve">
+    <value>Overwrite filled (non empty/initialized) combis</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="OverwriteFilledPrograms" xml:space="preserve">
+    <value>_Overwrite Filled Programs</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="OverwriteFilledProgramsToolTip" xml:space="preserve">
+    <value>Overwrite filled (non empty/initialized) programs</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="OverwriteFilledSetListSlots" xml:space="preserve">
+    <value>_Overwrite Filled Set List Slots</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="OverwriteFilledSetListSlotsToolTip" xml:space="preserve">
+    <value>Overwrite filled (non empty/initialized) set list slots</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+    <comment>Paste a patch</comment>
+  </data>
+  <data name="PasteDuplicateProgramsToolTip" xml:space="preserve">
+    <value>Pastes programs in the PCG, even when already available in the PCG</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="PasteDuplicateCombis" xml:space="preserve">
+    <value>_Paste Duplicate Combis</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="PasteDuplicateCombisToolTip" xml:space="preserve">
+    <value>Pastes combis in the PCG, even when already available in the PCG</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="PasteDuplicatePrograms" xml:space="preserve">
+    <value>_Paste Duplicate Programs</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="PasteDuplicateSetListSlots" xml:space="preserve">
+    <value>_Paste Duplicate Set List Slots</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="PasteDuplicateSetListSlotsToolTip" xml:space="preserve">
+    <value>Pastes set list slots in the PCG, even when already available in the PCG</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="PasteSelected" xml:space="preserve">
+    <value>Paste copied patches</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="PasteWarning" xml:space="preserve">
+    <value>The paste command caused no patches to be pasted. This can have the following reasons:
+    
+    - All patches to be patched are already in the destination patch and the copy/paste settings prevents pasting duplicate patches (check the copy/paste settings). The unpasted patches are removed from the clipboard.
+    - The patches in the clipboard cannot be pasted because the copy/paste settings prevents overwriting filled patches.
+    - The patches in the clipboard cannot be pasted in the selected items because there are no suitable patches to be pasted (note that e.g. sampled programs cannot be pasted into modeled patches and vice versa). Choose the correct bankPcgId type to paste copied patches into.</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="PastingAlreadyExecutedWarning" xml:space="preserve">
+    <value>Pasting has already been executed in file {0}. You either have to continue pasting in that file or empty the clipboard by exiting the Cut/Copy/Paste mode.</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="PastingUnfinishedWarning" xml:space="preserve">
+    <value>Pasting cut or copied patches is not finished. By exiting Cut/Copy/Paste mode probably one or more combis and/or set list slot(s) will not reference to the correct programs and/or combis by exiting cut/paste mode cut patches have been deleted but not pasted yet.</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="PatchList" xml:space="preserve">
+    <value>_Patch List</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="PatchName" xml:space="preserve">
+    <value>_Patch Name</value>
+    <comment>Radio button, order</comment>
+  </data>
+  <data name="PcgFileName" xml:space="preserve">
+    <value>PCG File Name</value>
+    <comment>Column header</comment>
+  </data>
+  <data name="PcgMasterFile" xml:space="preserve">
+    <value>PCG Master File</value>
+    <comment>A PCG file used for finding missing patches</comment>
+  </data>
+  <data name="PcgTools" xml:space="preserve">
+    <value>PCG Tools</value>
+  </data>
+  <data name="PrgId" xml:space="preserve">
+    <value>Prg ID</value>
+    <comment>Column name</comment>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="ProgramCombiName" xml:space="preserve">
+    <value>Program/Combi Name</value>
+    <comment>Name of program or combi</comment>
+  </data>
+  <data name="ProgramName" xml:space="preserve">
+    <value>Program Name</value>
+    <comment>Column name</comment>
+  </data>
+  <data name="ProgramsAsRadioButton" xml:space="preserve">
+    <value>_Programs</value>
+    <comment>Programs used as radio button [CHANGED]</comment>
+  </data>
+  <data name="ProgramUsageList" xml:space="preserve">
+    <value>_Program Usage List</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>_Range</value>
+    <comment>Label</comment>
+  </data>
+  <data name="Recall" xml:space="preserve">
+    <value>_Recall</value>
+    <comment>Recalls the latest copied patches</comment>
+  </data>
+  <data name="RecallClipboard" xml:space="preserve">
+    <value>Recall copied patches to the clipboard</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>_Restore</value>
+    <comment>Button</comment>
+  </data>
+  <data name="RevertToSaved" xml:space="preserve">
+    <value>_Revert to Saved</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="RevertWarning" xml:space="preserve">
+    <value>File {0} has been changed. {1}Do you want to revert to the saved file?</value>
+  </data>
+  <data name="Sample" xml:space="preserve">
+    <value>Sample</value>
+    <comment>Sample as in a sample used by e.g. a song</comment>
+  </data>
+  <data name="SampledProgram" xml:space="preserve">
+    <value>Sampled Program</value>
+    <comment>A program from HD1, AI2, HI2 etc, based on samples</comment>
+  </data>
+  <data name="SampledPrograms" xml:space="preserve">
+    <value>Sampled</value>
+  </data>
+  <data name="SampleFileName" xml:space="preserve">
+    <value>Sample File Name</value>
+    <comment>Column header</comment>
+  </data>
+  <data name="Samples" xml:space="preserve">
+    <value>Samples</value>
+    <comment>Tab</comment>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>_Save</value>
+    <comment>Save menu option</comment>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>_Save As...</value>
+    <comment>Save as menu option</comment>
+  </data>
+  <data name="SaveFile" xml:space="preserve">
+    <value>Do you want to save file {0}?</value>
+  </data>
+  <data name="SearchBothDirections" xml:space="preserve">
+    <value>_Search Both Directions</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>_Select All</value>
+    <comment>Button</comment>
+  </data>
+  <data name="SelectFileToSaveTo" xml:space="preserve">
+    <value>Select a file to save to</value>
+  </data>
+  <data name="SelectFileToRead" xml:space="preserve">
+    <value>Select a file to read</value>
+  </data>
+  <data name="SelectWriteFile" xml:space="preserve">
+    <value>Select a file to write to</value>
+  </data>
+  <data name="SetFavorite" xml:space="preserve">
+    <value>Set _Favorite</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="SetList" xml:space="preserve">
+    <value>Set List</value>
+  </data>
+  <data name="SetListError" xml:space="preserve">
+    <value>The set list range TO value is lower than the FROM value</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetListName" xml:space="preserve">
+    <value>Set List Name</value>
+  </data>
+  <data name="SetListsAsRadioButton" xml:space="preserve">
+    <value>_Set Lists</value>
+    <comment>Set Lists [CHANGED]</comment>
+  </data>
+  <data name="SetListSlot" xml:space="preserve">
+    <value>Set List Slot</value>
+  </data>
+  <data name="SetListSlots" xml:space="preserve">
+    <value>Set List Slots</value>
+  </data>
+  <data name="SetPcgFileAsMasterFile" xml:space="preserve">
+    <value>Set _PCG File as Master File</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="SettingsCommand" xml:space="preserve">
+    <value>_Settings...</value>
+    <comment>Show the Settings window</comment>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>_Show...</value>
+    <comment>Show (master files) menu item</comment>
+  </data>
+  <data name="ShowEdit" xml:space="preserve">
+    <value>_Edit...</value>
+    <comment>Button; Show edit window</comment>
+  </data>
+  <data name="ShowInformation" xml:space="preserve">
+    <value>Show information about PCG Tools</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="ShowMenu" xml:space="preserve">
+    <value>_Show</value>
+    <comment>Show menu</comment>
+  </data>
+  <data name="ShowTimbres" xml:space="preserve">
+    <value>Show the timbres of the selected combi</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="Songs" xml:space="preserve">
+    <value>Songs</value>
+    <comment>Tab</comment>
+  </data>
+  <data name="Sorting" xml:space="preserve">
+    <value>SortMethoding</value>
+    <comment>Group box</comment>
+  </data>
+  <data name="SpecialEvent" xml:space="preserve">
+    <value>_Special Event</value>
+    <comment>Special event menu item</comment>
+  </data>
+  <data name="SpecialEventToolTip" xml:space="preserve">
+    <value>Show a special event</value>
+  </data>
+  <data name="SponsoredBy" xml:space="preserve">
+    <value>Sponsored by</value>
+    <comment>Label</comment>
+  </data>
+  <data name="StackTrace" xml:space="preserve">
+    <value>Stack trace</value>
+    <comment>Software term</comment>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>Sub Category</value>
+    <comment>Column name</comment>
+  </data>
+  <data name="SubCategoryControl" xml:space="preserve">
+    <value>_Sub Category</value>
+    <comment>Combo box</comment>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>_Text</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="TextFilesFilter" xml:space="preserve">
+    <value>Text files (*.txt)|*.txt|All files (*.*)|*.*</value>
+    <comment>Be careful to leave punctation correct</comment>
+  </data>
+  <data name="ThanksTo" xml:space="preserve">
+    <value>Thanks to</value>
+    <comment>Label [CHANGED]</comment>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>_Theme</value>
+    <comment>Graphical theme</comment>
+  </data>
+  <data name="Timbres" xml:space="preserve">
+    <value>_Timbres...</value>
+    <comment>Show the Timbres window, keep the ...</comment>
+  </data>
+  <data name="TimbresOf" xml:space="preserve">
+    <value>Timbres of</value>
+    <comment>Timbres of (a combi)</comment>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>_To</value>
+    <comment>in: from 10 TO 20</comment>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>_Tools</value>
+    <comment>Tools menu</comment>
+  </data>
+  <data name="TxtExtension" xml:space="preserve">
+    <value>txt</value>
+    <comment>Extension for text files</comment>
+  </data>
+  <data name="TypeBankIndex" xml:space="preserve">
+    <value>_Type/Bank/Index</value>
+    <comment>Radio button, order</comment>
+  </data>
+  <data name="UnmarkAsFavorite" xml:space="preserve">
+    <value>Unmark the selected patch(es) or bankPcgId(s) as favorite(s)</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="UnsetFavorite" xml:space="preserve">
+    <value>_Unset Favorite</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>_Up</value>
+    <comment>Move a patch up</comment>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+    <comment>Label</comment>
+  </data>
+  <data name="WorkstationModel" xml:space="preserve">
+    <value>Workstation Model</value>
+    <comment>Column header</comment>
+  </data>
+  <data name="Xml" xml:space="preserve">
+    <value>_XML</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="XmlFileFilter" xml:space="preserve">
+    <value>XML files (*.xml)|*.xml|All files (*.*)|*.*</value>
+    <comment>Used in open file dialog</comment>
+  </data>
+  <data name="Dutch" xml:space="preserve">
+    <value>Dutch (Dutch)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English (English)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>French (French)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="Greek" xml:space="preserve">
+    <value>Greek (Greek)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="Italian" xml:space="preserve">
+    <value>Italian (Italian)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="Polish" xml:space="preserve">
+    <value>Polish (Polish)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Russian (Russian)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Spanish (Spanish)</value>
+    <comment>Keep the word in () in English</comment>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+    <comment>Window title (as in information about PCG Tools)</comment>
+  </data>
+  <data name="EditSingleCombi" xml:space="preserve">
+    <value>Edit Single Combi</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="EditSingleProgram" xml:space="preserve">
+    <value>Edit Single Program</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="EditSingleSetList" xml:space="preserve">
+    <value>Edit Single Set List</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="EditSingleSetListSlot" xml:space="preserve">
+    <value>Edit Single Set List Slot</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksDonators" xml:space="preserve">
+    <value>External Links Donators</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksDonatorsMenuItem" xml:space="preserve">
+    <value>_External Links Donators...</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="ExternalLinksKorgRelated" xml:space="preserve">
+    <value>External Links Korg Related</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksThirdParties" xml:space="preserve">
+    <value>External Links Third Parties</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksThirdPartiesMenuItem" xml:space="preserve">
+    <value>_External Links Third Parties...</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="RestartToChangeLanguage" xml:space="preserve">
+    <value>Restart PCG Tools to change the current language to the selected language.</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Window title (settings as in preferences/options of PCG Tools)</comment>
+  </data>
+  <data name="DrumKitsInRadioButton" xml:space="preserve">
+    <value>_Drum Kits</value>
+    <comment>[NEW]</comment>
+  </data>
+  <data name="WaveSequencesInRadioButton" xml:space="preserve">
+    <value>_Wave Sequences</value>
+    <comment>[NEW]</comment>
+  </data>
+  <data name="FileContentList" xml:space="preserve">
+    <value>_File Content List</value>
+    <comment>List generator type</comment>
+  </data>
+  <data name="FilterDrumKits" xml:space="preserve">
+    <value>Filter Drum Kits</value>
+    <comment>Filter = noun; [NEW]</comment>
+  </data>
+  <data name="FilterWaveSequences" xml:space="preserve">
+    <value>Filter Wave Sequences</value>
+    <comment>Filter = Noun; [NEW]</comment>
+  </data>
+  <data name="ThanksToKorganizR" xml:space="preserve">
+    <value>Thanks to KorganizR for creating several features!</value>
+    <comment>In about window.; [NEW]</comment>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>song</value>
+    <comment>Status bar [NEW]</comment>
+  </data>
+  <data name="IgnoreEmptyInitDrumKits" xml:space="preserve">
+    <value>_Ignore Empty/Init Drum Kits</value>
+    <comment>Check box [NEW]</comment>
+  </data>
+  <data name="IgnoreEmptyInitSetListSlots" xml:space="preserve">
+    <value>_Ignore Empty/Init Set List Slots</value>
+    <comment>Check box [NEW]</comment>
+  </data>
+  <data name="IgnoreEmptyInitWaveSequences" xml:space="preserve">
+    <value>_Ignore Empty/Init Wave Sequences</value>
+    <comment>Check box [NEW]</comment>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>German (German)</value>
+  </data>
+  <data name="CompactList" xml:space="preserve">
+    <value>Compact</value>
+    <comment>List to be generated by list generator is of type compact.</comment>
+  </data>
+  <data name="LongList" xml:space="preserve">
+    <value>Long</value>
+    <comment>List to be generated by list generator is of type long.</comment>
+  </data>
+  <data name="ShortList" xml:space="preserve">
+    <value>Short</value>
+    <comment>List to be generated by list generator is of type short.</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+    <comment>Main menu item for languages.</comment>
+  </data>
+  <data name="FilterCombiBanks_slg" xml:space="preserve">
+    <value>Filter Combi Banks</value>
+  </data>
+  <data name="Loaded_mastd" xml:space="preserve">
+    <value>Loaded</value>
+  </data>
+  <data name="NotPresent_mastd" xml:space="preserve">
+    <value>Not present</value>
+  </data>
+  <data name="Unassigned_mastd" xml:space="preserve">
+    <value>Unassigned</value>
+  </data>
+  <data name="Unloaded_mastd" xml:space="preserve">
+    <value>Unloaded</value>
+  </data>
+  <data name="XOfYCharacters_editw" xml:space="preserve">
+    <value>{0} of {1} characters</value>
+  </data>
+  <data name="Aero_mainw_tt" xml:space="preserve">
+    <value>Windows Vista/Windows 7 theme</value>
+  </data>
+  <data name="Generic_mainw_tt" xml:space="preserve">
+    <value>Generic Visual Studio design theme</value>
+  </data>
+  <data name="IgnoreEmptyInitPrograms_slg" xml:space="preserve">
+    <value>_Ignore Empty/Init Programs</value>
+  </data>
+  <data name="Luna_mainw_tt" xml:space="preserve">
+    <value>Blue Windows XP theme</value>
+  </data>
+  <data name="OpenFileCommand_mainw_tt" xml:space="preserve">
+    <value>Open PCG or SNG File(s)</value>
+  </data>
+  <data name="SaveFileAsCommand_mainw_tt" xml:space="preserve">
+    <value>Save the selected PCG or SNG file to a difference file/location</value>
+  </data>
+  <data name="SaveFileCommand_mainw_tt" xml:space="preserve">
+    <value>Overwrite the selected PCG or SNG file</value>
+  </data>
+  <data name="ExternalLinksTranslators" xml:space="preserve">
+    <value>External Links Translators</value>
+  </data>
+  <data name="ExternalLinksTranslatorsMenuItem" xml:space="preserve">
+    <value>_External Links Translators...</value>
+  </data>
+  <data name="ClearProgramIsAssigned" xml:space="preserve">
+    <value>Program {0}:{1} is assigned as program for clearing timbres in a combi.</value>
+    <comment>{0} is e.g. I-A000, {1} is the name of the program.</comment>
+  </data>
+  <data name="FilterDrumKitNames" xml:space="preserve">
+    <value>_Filter Drum Kit Names</value>
+    <comment>Used in checkbox in list generator</comment>
+  </data>
+  <data name="FilterWaveSequenceNames" xml:space="preserve">
+    <value>_Filter Wave Sequence Names</value>
+    <comment>Used in checkbox in set list generator</comment>
+  </data>
+  <data name="SetPcgFileAsMasterFileLong" xml:space="preserve">
+    <value>File {0} is set as Master File for the Korg {1} with OS version {2}</value>
+  </data>
+  <data name="SetPcgFileAsMasterFileShort" xml:space="preserve">
+    <value>File {0} is set as Master File for the Korg {1}</value>
+  </data>
+  <data name="SelectAll_menu" xml:space="preserve">
+    <value>_Select All</value>
+    <comment>Select all items as menu item</comment>
+  </data>
+  <data name="Select_menu" xml:space="preserve">
+    <value>_Select</value>
+    <comment>Select main menu</comment>
+  </data>
+  <data name="Sort_menu" xml:space="preserve">
+    <value>_Sort</value>
+    <comment>SortMethod menu item</comment>
+  </data>
+  <data name="SelectSortSelection_sortw" xml:space="preserve">
+    <value>Select SortMethod Selection</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="Sort_tab" xml:space="preserve">
+    <value>SortMethod</value>
+    <comment>Tab title in settings</comment>
+  </data>
+  <data name="SplitCharacter_settw" xml:space="preserve">
+    <value>Split Character:</value>
+    <comment>Check box name in sort/settings window</comment>
+  </data>
+  <data name="Artist_settw" xml:space="preserve">
+    <value>Artist</value>
+    <comment>Artist of a song</comment>
+  </data>
+  <data name="Title_settw" xml:space="preserve">
+    <value>Title</value>
+    <comment>Title of a song</comment>
+  </data>
+  <data name="CheckTypeContainsIllegalCharacters" xml:space="preserve">
+    <value>{0} contains illegal character(s)</value>
+    <comment>Error text.</comment>
+  </data>
+  <data name="SortArtistTitleCategory_sortw" xml:space="preserve">
+    <value>Artist, Title, Category</value>
+    <comment>SortMethod order in radio button</comment>
+  </data>
+  <data name="SortCategoryArtistTitle_sortw" xml:space="preserve">
+    <value>Category, Artist, Title</value>
+    <comment>SortMethod order in radio button</comment>
+  </data>
+  <data name="SortCategoryName_sortw" xml:space="preserve">
+    <value>Category, Name</value>
+    <comment>SortMethod order in radio button</comment>
+  </data>
+  <data name="SortCategoryTitleArtist_sortw" xml:space="preserve">
+    <value>Category, Title, Artist</value>
+    <comment>SortMethod order in radio button</comment>
+  </data>
+  <data name="SortNameCategory_sortw" xml:space="preserve">
+    <value>Name, Category</value>
+    <comment>SortMethod order in radio button</comment>
+  </data>
+  <data name="SortTitleArtistCategory_sortw" xml:space="preserve">
+    <value>Title, Artist, Category</value>
+    <comment>SortMethod order in radio button</comment>
+  </data>
+  <data name="Remember_sortw" xml:space="preserve">
+    <value>_Remember</value>
+    <comment>Remember (the settings made above)</comment>
+  </data>
+  <data name="TitleArtistOrder_settw" xml:space="preserve">
+    <value>Title/Artist Order</value>
+    <comment>Order of title/artist</comment>
+  </data>
+  <data name="Categories_setw" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="CategorySetA_setw" xml:space="preserve">
+    <value>Category A</value>
+    <comment>On Trinity, two category sets are possible:Category A and B</comment>
+  </data>
+  <data name="CategorySetB_setw" xml:space="preserve">
+    <value>Category B</value>
+    <comment>On Trinity, two category sets are possible:Category A and B</comment>
+  </data>
+  <data name="CategorySetSelect_setw" xml:space="preserve">
+    <value>Select Category Set (Korg Trinity only)</value>
+    <comment>On Trinity, two category sets are possible:Category A and B</comment>
+  </data>
+  <data name="EFileTypePcg" xml:space="preserve">
+    <value>PCG</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeSng" xml:space="preserve">
+    <value>SNG</value>
+  </data>
+  <data name="EModelTypeKarma" xml:space="preserve">
+    <value>Karma</value>
+  </data>
+  <data name="EModelTypeKrome" xml:space="preserve">
+    <value>Krome</value>
+  </data>
+  <data name="EModelTypeKross" xml:space="preserve">
+    <value>Kross</value>
+  </data>
+  <data name="EModelTypeKronos" xml:space="preserve">
+    <value>Kronos</value>
+  </data>
+  <data name="EModelTypeM3" xml:space="preserve">
+    <value>M3</value>
+  </data>
+  <data name="EModelTypeM50" xml:space="preserve">
+    <value>M50</value>
+  </data>
+  <data name="EModelTypeOasys" xml:space="preserve">
+    <value>Oasys</value>
+  </data>
+  <data name="EModelTypeTrinity" xml:space="preserve">
+    <value>Trinity</value>
+  </data>
+  <data name="EModelTypeTritonTrClassicStudioRack" xml:space="preserve">
+    <value>Triton TR/Classic/Studio/Rack</value>
+  </data>
+  <data name="EModelTypeTritonExtreme" xml:space="preserve">
+    <value>Triton Extreme</value>
+  </data>
+  <data name="EModelTypeTritonLE" xml:space="preserve">
+    <value>Triton LE</value>
+  </data>
+  <data name="ESynthesisTypeAccess" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="ESynthesisTypeAi" xml:space="preserve">
+    <value>AI</value>
+  </data>
+  <data name="ESynthesisTypeAi2" xml:space="preserve">
+    <value>AI2</value>
+  </data>
+  <data name="ESynthesisTypeEds" xml:space="preserve">
+    <value>EDS</value>
+  </data>
+  <data name="ESynthesisTypeEdsi" xml:space="preserve">
+    <value>EDS-i</value>
+  </data>
+  <data name="ESynthesisTypeEdsx" xml:space="preserve">
+    <value>EDS-x</value>
+  </data>
+  <data name="ESynthesisTypeExi" xml:space="preserve">
+    <value>EXi</value>
+  </data>
+  <data name="ESynthesisTypeHd1" xml:space="preserve">
+    <value>HD-1</value>
+  </data>
+  <data name="ESynthesisTypeHi" xml:space="preserve">
+    <value>HI</value>
+  </data>
+  <data name="ESynthesisTypeMossZ1" xml:space="preserve">
+    <value>MOSS/Z1</value>
+  </data>
+  <data name="ESynthesisTypeProphecy" xml:space="preserve">
+    <value>Prophecy</value>
+  </data>
+  <data name="ESynthesisTypeRadias" xml:space="preserve">
+    <value>Radias</value>
+  </data>
+  <data name="FileTypeNotSupportedForThisWorkstation" xml:space="preserve">
+    <value>Files of type {0} from the workstation model {1} are not supported.</value>
+    <comment>Error when loading e.g. SNG files from a Trinity.</comment>
+  </data>
+  <data name="GotoNextWindow_menu" xml:space="preserve">
+    <value>Goto _Next Window</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="GotoPreviousWindow_menu" xml:space="preserve">
+    <value>Goto _Previous Window</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="SynthesisType_pcgw" xml:space="preserve">
+    <value>Synthesis Type</value>
+  </data>
+  <data name="Version1011" xml:space="preserve">
+    <value>1.0/1.1</value>
+    <comment>Version of Kronos</comment>
+  </data>
+  <data name="Version1516" xml:space="preserve">
+    <value>1.5/1.6</value>
+    <comment>Version of Kronos</comment>
+  </data>
+  <data name="Version1x" xml:space="preserve">
+    <value>1.x</value>
+    <comment>Version of M3</comment>
+  </data>
+  <data name="Version2x" xml:space="preserve">
+    <value>2.x</value>
+    <comment>Version of Kronos/M3</comment>
+  </data>
+  <data name="VersionV2" xml:space="preserve">
+    <value>V2</value>
+    <comment>Version of Trinity</comment>
+  </data>
+  <data name="VersionV3" xml:space="preserve">
+    <value>V3</value>
+    <comment>Version of Trinity</comment>
+  </data>
+  <data name="Windows_menu" xml:space="preserve">
+    <value>_Windows</value>
+    <comment>Windows menu</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="PortugueseBrazil" xml:space="preserve">
+    <value>Portuguese, Brazil (Portuguese, Brazil)</value>
+  </data>
+  <data name="PortuguesePortugal" xml:space="preserve">
+    <value>Portuguese, Portugal (Portuguese, Portugal)</value>
+  </data>
+  <data name="CouldNotOpenHomePageWarning" xml:space="preserve">
+    <value>"The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:
+{0}
+
+Inner exception:
+{1}"</value>
+  </data>
+  <data name="PcgToolsHomePage" xml:space="preserve">
+    <value>_PCG Tools Home Page</value>
+  </data>
+  <data name="DefaultOutputDirectory_settw" xml:space="preserve">
+    <value>_Default Output Directory</value>
+    <comment>Settings; Files; Label</comment>
+  </data>
+  <data name="SelectFolderForGeneratedFiles_settw" xml:space="preserve">
+    <value>Select Folder for Generated Files</value>
+    <comment>Settings; open folder dialog</comment>
+  </data>
+  <data name="SetListGenerator_settw" xml:space="preserve">
+    <value>List Generator</value>
+    <comment>Settings; Files; group box name</comment>
+  </data>
+  <data name="Bank_2str" xml:space="preserve">
+    <value>Bank</value>
+    <comment>ToString() function</comment>
+  </data>
+  <data name="SetList_2str" xml:space="preserve">
+    <value>Set List</value>
+    <comment>ToString()function</comment>
+  </data>
+  <data name="Czech" xml:space="preserve">
+    <value>Czech (Czech)</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website:</value>
+    <comment>Help page</comment>
+  </data>
+  <data name="EModelTypeMicroStation" xml:space="preserve">
+    <value>microStation</value>
+  </data>
+  <data name="Croatian" xml:space="preserve">
+    <value>Croatian (Croatian)</value>
+  </data>
+  <data name="EModelTypeMicroKorgXl" xml:space="preserve">
+    <value>microKORG XL</value>
+  </data>
+  <data name="ESynthesisTypeMmt" xml:space="preserve">
+    <value>MMT</value>
+  </data>
+  <data name="SerbianCyrillic" xml:space="preserve">
+    <value>Serbian Cyrillic (Serbian Cyrillic)</value>
+  </data>
+  <data name="SerbianLatin" xml:space="preserve">
+    <value>Serbian Latin (Serbian Latin)</value>
+  </data>
+  <data name="Swedish" xml:space="preserve">
+    <value>Swedish (Swedish)</value>
+  </data>
+  <data name="Version20" xml:space="preserve">
+    <value>2.0</value>
+  </data>
+  <data name="EFileTypeMkxlAll" xml:space="preserve">
+    <value>mkxl_all</value>
+  </data>
+  <data name="Genre" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="GenreThanPatchName_control" xml:space="preserve">
+    <value>_Genre, then Patch Name</value>
+    <comment>Radio button list generator.</comment>
+  </data>
+  <data name="Genre_control" xml:space="preserve">
+    <value>_Genre</value>
+    <comment>Genre in label</comment>
+  </data>
+  <data name="EFileTypeMkxlPAll" xml:space="preserve">
+    <value>mkxlp_all</value>
+  </data>
+  <data name="EFileTypeMkxlPProg" xml:space="preserve">
+    <value>mkxlp_prog</value>
+  </data>
+  <data name="EFileTypeMkxlp_prog" xml:space="preserve">
+    <value>mkxlp_prog</value>
+  </data>
+  <data name="EModelTypeMicroKorgXlPlus" xml:space="preserve">
+    <value>microKORG XL Plus</value>
+  </data>
+  <data name="EFileTypeMkP0" xml:space="preserve">
+    <value>MkP0</value>
+  </data>
+  <data name="EFileTypeSyx" xml:space="preserve">
+    <value>Syx</value>
+  </data>
+  <data name="EModelTypeMs2000" xml:space="preserve">
+    <value>MS2000</value>
+  </data>
+  <data name="ESynthesisTypeAnalogModeling" xml:space="preserve">
+    <value>AnalogModeling</value>
+  </data>
+  <data name="EFileTypeLib" xml:space="preserve">
+    <value>LIB</value>
+  </data>
+  <data name="EFileTypeMid" xml:space="preserve">
+    <value>Mid</value>
+  </data>
+  <data name="EFileTypeBnk" xml:space="preserve">
+    <value>Bnk</value>
+  </data>
+  <data name="EFileTypeExl" xml:space="preserve">
+    <value>Exl</value>
+  </data>
+  <data name="FileOpenDialogFiles" xml:space="preserve">
+    <value>files</value>
+  </data>
+  <data name="FileSaveDialogFile" xml:space="preserve">
+    <value>file</value>
+  </data>
+  <data name="RenameFileWhenPatchNameChanges_checkBox" xml:space="preserve">
+    <value>_Rename File when Patch Name changes</value>
+    <comment>Checkbox in settings</comment>
+  </data>
+  <data name="SinglePatchFiles_groupbox" xml:space="preserve">
+    <value>Single Patch Files</value>
+    <comment>Groupbox in settings</comment>
+  </data>
+  <data name="GM" xml:space="preserve">
+    <value>GM</value>
+  </data>
+  <data name="VirtualBanks" xml:space="preserve">
+    <value>Virtual Banks</value>
+    <comment>Radiobutton</comment>
+  </data>
+  <data name="EModelTypeM1" xml:space="preserve">
+    <value>M1</value>
+  </data>
+  <data name="EModelTypeM3R" xml:space="preserve">
+    <value>M3R</value>
+  </data>
+  <data name="ColumnCrcValueExcludingName" xml:space="preserve">
+    <value>C_RC Value Excluding Name</value>
+    <comment>Check box in list generator</comment>
+  </data>
+  <data name="ColumnCrcValueIncludingName" xml:space="preserve">
+    <value>_CRC Value Including Name</value>
+    <comment>Check box in list generator</comment>
+  </data>
+  <data name="CrcExcludingName" xml:space="preserve">
+    <value>CRC Exc</value>
+    <comment>CRC Excluding name; try to keep as short as possible</comment>
+  </data>
+  <data name="CrcIncludingName" xml:space="preserve">
+    <value>CRC Inc</value>
+    <comment>CRC Including name; try to keep as short as possible</comment>
+  </data>
+  <data name="OptionalColumns" xml:space="preserve">
+    <value>_Optional Columns</value>
+    <comment>In list generator</comment>
+  </data>
+  <data name="EModelTypeTSeries" xml:space="preserve">
+    <value>T1/T2/T3</value>
+  </data>
+  <data name="ExcludingPatchName" xml:space="preserve">
+    <value>Excluding Patch Name</value>
+    <comment>sub list for difference lists</comment>
+  </data>
+  <data name="IncludingPatchName" xml:space="preserve">
+    <value>Including Patch Name</value>
+    <comment>sub list for difference lists</comment>
+  </data>
+  <data name="EModelTypeZeroSeries" xml:space="preserve">
+    <value>01/W series</value>
+  </data>
+  <data name="EFileTypeRaw" xml:space="preserve">
+    <value>Raw</value>
+    <comment>Raw Disk Image</comment>
+  </data>
+  <data name="EModelTypeZero3Rw" xml:space="preserve">
+    <value>03R/W</value>
+  </data>
+  <data name="EModelTypeZ1" xml:space="preserve">
+    <value>Z1</value>
+  </data>
+  <data name="EModelTypeXSeries" xml:space="preserve">
+    <value>X2/X3/X3R</value>
+  </data>
+  <data name="Manual_grt" xml:space="preserve">
+    <value>Manual</value>
+    <comment>Settings / File / Groupbox title</comment>
+  </data>
+  <data name="SelectFolderOfManual_settw" xml:space="preserve">
+    <value>Select Folder of Manual</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="TimbreOff" xml:space="preserve">
+    <value>Timbre OFF</value>
+    <comment>For T series in combi view model</comment>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Turkish (Turkish)</value>
+  </data>
+  <data name="Stb_MultipleCombisInMultipleBanks" xml:space="preserve">
+    <value>{0} Combis in {1} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleCombisInOneBank" xml:space="preserve">
+    <value>{0} Combis in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleDrumKitsInMultipleBanks" xml:space="preserve">
+    <value>{0} Drum Kits in {1} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleDrumKitsInOneBank" xml:space="preserve">
+    <value>{0} Drum Kits in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleProgramsInMultipleBanks" xml:space="preserve">
+    <value>{0} Programs in {1} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleProgramsInOneBank" xml:space="preserve">
+    <value>{0} Programs in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleSetListSlotsInMultipleSetLists" xml:space="preserve">
+    <value>{0} Set List Slots in {1} Set Lists</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleSetListSlotsInOneSetList" xml:space="preserve">
+    <value>{0} Set List Slots in 1 Set List</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleWaveSequencesInMultipleBanks" xml:space="preserve">
+    <value>{0} WaveSequences in {1} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleWaveSequencesInOneBank" xml:space="preserve">
+    <value>{0} WaveSequences in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneCombiInMultipleBanks" xml:space="preserve">
+    <value>1 Combi in {0} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneCombiInOneBank" xml:space="preserve">
+    <value>1 Combi in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneDrumKitInMultipleBanks" xml:space="preserve">
+    <value>1 Drum Kit in {0} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneDrumKitInOneBank" xml:space="preserve">
+    <value>1 Drum Kit in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneProgramInMultipleBanks" xml:space="preserve">
+    <value>1 Program in {0} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneProgramInOneBank" xml:space="preserve">
+    <value>1 Program in 1 Bank</value>
+    <comment>In status bar</comment>
+  </data>
+  <data name="Stb_OneSetListSlotInMultipleSetLists" xml:space="preserve">
+    <value>1 Set List Slot in {0} Set Lists</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneSetListSlotInOneSetList" xml:space="preserve">
+    <value>1 Set List Slot in 1 Set List</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneWaveSequenceInMultipleBanks" xml:space="preserve">
+    <value>1 WaveSequence in {0} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneWaveSequenceInOneBank" xml:space="preserve">
+    <value>1 WaveSequence in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="EFileTypeTr" xml:space="preserve">
+    <value>TR</value>
+    <comment>TR file type (for Kross)</comment>
+  </data>
+  <data name="Programs" xml:space="preserve">
+    <value>programs</value>
+  </data>
+  <data name="ColumnVolume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="ControlVolume" xml:space="preserve">
+    <value>_Volume</value>
+  </data>
+  <data name="ThanksAlso" xml:space="preserve">
+    <value>Also thanks to</value>
+  </data>
+  <data name="ThanksForTranslating" xml:space="preserve">
+    <value>for translating.</value>
+  </data>
+  <data name="ThanksSpecial" xml:space="preserve">
+    <value>Special thanks to</value>
+  </data>
+  <data name="ThanksSpecialReason" xml:space="preserve">
+    <value>for testing and/or providing valuable info.</value>
+  </data>
+  <data name="ControlColor" xml:space="preserve">
+    <value>_Color</value>
+    <comment>Set list slot color</comment>
+  </data>
+  <data name="ControlTranspose" xml:space="preserve">
+    <value>_Transpose</value>
+  </data>
+  <data name="Version3x" xml:space="preserve">
+    <value>3.x</value>
+    <comment>Kronos</comment>
+  </data>
+  <data name="ColorAzure" xml:space="preserve">
+    <value>Azure</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorBrick" xml:space="preserve">
+    <value>Brick</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorBurgundy" xml:space="preserve">
+    <value>Burgundy</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorCacao" xml:space="preserve">
+    <value>Cacao</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorCharcoal" xml:space="preserve">
+    <value>Charcoal</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorDanim" xml:space="preserve">
+    <value>Danim</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorDefault" xml:space="preserve">
+    <value>Default</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorGold" xml:space="preserve">
+    <value>Gold</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorIndigo" xml:space="preserve">
+    <value>Indigo</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorIvy" xml:space="preserve">
+    <value>Ivy</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorLavender" xml:space="preserve">
+    <value>Lavender</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorNavy" xml:space="preserve">
+    <value>Navy</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorOlive" xml:space="preserve">
+    <value>Olive</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorRose" xml:space="preserve">
+    <value>Rose</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorSilver" xml:space="preserve">
+    <value>Silver</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorSlate" xml:space="preserve">
+    <value>Slate</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ControlTextSize" xml:space="preserve">
+    <value>_Text Size</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ControlTextSizeL" xml:space="preserve">
+    <value>_L</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ControlTextSizeM" xml:space="preserve">
+    <value>_M</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ControlTextSizeS" xml:space="preserve">
+    <value>_S</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ControlTextSizeXl" xml:space="preserve">
+    <value>X_L</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ControlTextSizeXs" xml:space="preserve">
+    <value>XS</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ReferenceId" xml:space="preserve">
+    <value>ID</value>
+    <comment>Id of reference from set list slot</comment>
+  </data>
+  <data name="ReferenceName" xml:space="preserve">
+    <value>Name</value>
+    <comment>Name of a (referenced) patch.</comment>
+  </data>
+  <data name="ReferenceType" xml:space="preserve">
+    <value>Selected Patch Type</value>
+    <comment>Type (program, combi or song)</comment>
+  </data>
+  <data name="ReferenceTypeCombi" xml:space="preserve">
+    <value>Combi</value>
+    <comment>For use in set list edit</comment>
+  </data>
+  <data name="ReferenceTypeProgram" xml:space="preserve">
+    <value>Program</value>
+    <comment>For use in set list edit</comment>
+  </data>
+  <data name="ReferenceTypeSong" xml:space="preserve">
+    <value>Song</value>
+    <comment>For use in set list edit</comment>
+  </data>
+  <data name="SequencerFiles" xml:space="preserve">
+    <value>Sequencer Files</value>
+    <comment>For sequencer files (in settings as group box)</comment>
+  </data>
+  <data name="ProgramReferenceChanger" xml:space="preserve">
+    <value>_Program Reference Changer</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="SortOrder_settw" xml:space="preserve">
+    <value>Sort Order</value>
+    <comment>Order of sorting (patches)</comment>
+  </data>
+  <data name="ProgramReferenceChanger_wt" xml:space="preserve">
+    <value>Program Reference Changer</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="FromFile" xml:space="preserve">
+    <value>_From File...</value>
+    <comment>In program reference changer</comment>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>_Rules</value>
+    <comment>Rules for program reference changer</comment>
+  </data>
+  <data name="ProcessingRules" xml:space="preserve">
+    <value>Processing Rules ...</value>
+    <comment>Program Reference Changer</comment>
+  </data>
+  <data name="EModelTypeMicroKorg" xml:space="preserve">
+    <value>microKORG</value>
+  </data>
+  <data name="ReferenceRules" xml:space="preserve">
+    <value>_Reference Rules...</value>
+  </data>
+  <data name="Capitalization" xml:space="preserve">
+    <value>_Capitalization</value>
+    <comment>Making names (mostly) uppercase, Menu item</comment>
+  </data>
+  <data name="CapitalizeName" xml:space="preserve">
+    <value>_Capitalize Name</value>
+    <comment>Making names uppercase, Menu item</comment>
+  </data>
+  <data name="DecapitalizeName" xml:space="preserve">
+    <value>_Decapitalize Name</value>
+    <comment>Making name in lowercase characters, Menu item</comment>
+  </data>
+  <data name="DoNotUsePatchNamesForPatchDuplicationChecking" xml:space="preserve">
+    <value>_Do Not Use Patch Names for Patch Duplication Checking</value>
+    <comment>In Settings menu</comment>
+  </data>
+  <data name="ExternalLinksContributors" xml:space="preserve">
+    <value>External Links Contributors</value>
+    <comment>Window title, links from contributors (like testers, etc).</comment>
+  </data>
+  <data name="ExternalLinksContributorsMenuItem" xml:space="preserve">
+    <value>_External Links Contributors...</value>
+  </data>
+  <data name="ExternalLinksOasysVoucherCodeSponsors" xml:space="preserve">
+    <value>External Links Oasys Voucher Code Sponsors</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksOasysVoucherCodeSponsorsMenuItem" xml:space="preserve">
+    <value>_External Links Oasys Voucher Code Sponsors...</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="IgnoreCharachtersParts" xml:space="preserve">
+    <value>_Ignore Charachters/Parts</value>
+    <comment>In Settings menu</comment>
+  </data>
+  <data name="TreatEquallyNamedPatchesAsDuplicates" xml:space="preserve">
+    <value>_Treat Equally Named Patches As Duplicates</value>
+    <comment>In Settings menu</comment>
+  </data>
+  <data name="TreatLikeNamedPatchesAsDuplicates" xml:space="preserve">
+    <value>_Treat Like-Named Patches as Duplicates</value>
+    <comment>In Settings menu</comment>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>_Assign</value>
+    <comment>For assigning programs/combis to set list slots</comment>
+  </data>
+  <data name="TitleCaseName" xml:space="preserve">
+    <value>_Title Case Name</value>
+    <comment>Makes names in titlecase (like ThisIsTheName), Menu item</comment>
+  </data>
+  <data name="AssignToSetListSlot" xml:space="preserve">
+    <value>_Assign To Set List Slot</value>
+    <comment>Assign a program/combi to a set list slot (menu item)</comment>
+  </data>
+  <data name="AutoFillInSetListSlotNames" xml:space="preserve">
+    <value>_Auto Fill In Set List Slot Names</value>
+    <comment>Automatically fill in names of set list slots (menu item)</comment>
+  </data>
+  <data name="NumberOfReferences" xml:space="preserve">
+    <value>#Refs</value>
+    <comment>Number of combi/set list slot references (header; keep short)</comment>
+  </data>
+  <data name="PcgWindow" xml:space="preserve">
+    <value>PCG Window</value>
+    <comment>Tab in settings</comment>
+  </data>
+  <data name="ShowNumberOfReferencesColumn" xml:space="preserve">
+    <value>_Show #Refs (Number Of References) Column</value>
+    <comment>Check box in settings</comment>
+  </data>
+  <data name="ShowWarningWhenClearingUsedPatches" xml:space="preserve">
+    <value>_Show Warning When Clearing Used Patches</value>
+    <comment>Shows a warning when trying to clear patches used in combis/set list slots</comment>
+  </data>
+  <data name="ClearPatches" xml:space="preserve">
+    <value>Clear Patches</value>
+    <comment>What to do when clearing patches used in other patches; settings groupbox</comment>
+  </data>
+  <data name="ClearPatchesAsk" xml:space="preserve">
+    <value>_Ask</value>
+    <comment>Radio button in settings</comment>
+  </data>
+  <data name="ClearPatchesNone" xml:space="preserve">
+    <value>_None</value>
+    <comment>Radio button in settings</comment>
+  </data>
+  <data name="ClearPatchesUnusedAndUsed" xml:space="preserve">
+    <value>_Unused And Used</value>
+    <comment>Radio button in settings</comment>
+  </data>
+  <data name="ClearPatchesUnusedOnly" xml:space="preserve">
+    <value>_Unused Only</value>
+    <comment>Radio button in settings</comment>
+  </data>
+  <data name="ClearWarning" xml:space="preserve">
+    <value>At least one patch is used as reference by another patch. Do you want to clear used patches?</value>
+    <comment>Warning for clearing patches</comment>
+  </data>
+  <data name="MasterFileClose" xml:space="preserve">
+    <value>_Close</value>
+    <comment>Close (master file)</comment>
+  </data>
+  <data name="MasterFileOpen" xml:space="preserve">
+    <value>_Open</value>
+    <comment>Open (master file)</comment>
+  </data>
+  <data name="MasterFileUnassign" xml:space="preserve">
+    <value>_Unassign</value>
+    <comment>Unassign (master file)</comment>
+  </data>
+  <data name="FixReferencesToClearedUsedPatches" xml:space="preserve">
+    <value>_Fix References To Cleared Used Patches</value>
+    <comment>Checkbox in settings (fix references to(wards)patches that have been cleared and are used by other patches)</comment>
+  </data>
+  <data name="ClearDuplicates" xml:space="preserve">
+    <value>_Clear Duplicates</value>
+    <comment>Menu (clear duplicate patches)</comment>
+  </data>
+  <data name="CombiReferenceChanger" xml:space="preserve">
+    <value>Combi Reference Changer</value>
+    <comment>Title window</comment>
+  </data>
+  <data name="AllPatchesRadioButton" xml:space="preserve">
+    <value>_All Patches</value>
+    <comment>All programs, combis, ...</comment>
+  </data>
+  <data name="PatchType" xml:space="preserve">
+    <value>Patch Type</value>
+    <comment>Column header name: type of patch (program, combi, set list slot, ...)</comment>
+  </data>
+  <data name="DrumKit" xml:space="preserve">
+    <value>Drum Kit</value>
+    <comment>Patch type</comment>
+  </data>
+  <data name="WaveSequence" xml:space="preserve">
+    <value>Wave Sequence</value>
+    <comment>Patch type</comment>
+  </data>
+  <data name="AutoBackupFiles" xml:space="preserve">
+    <value>Auto Backup Files</value>
+    <comment>Group box name in settings for auto backup files</comment>
+  </data>
+  <data name="AutoBackupIntervalTime" xml:space="preserve">
+    <value>Backup Interval Time (min)</value>
+    <comment>Time in minutes between backing up files</comment>
+  </data>
+  <data name="AutoBackupMaxStorage" xml:space="preserve">
+    <value>_Maximum Storage (MB)</value>
+    <comment>Maximum storage of backup files in MB</comment>
+  </data>
+  <data name="NumberOfPatches" xml:space="preserve">
+    <value># Patches: </value>
+    <comment>Keep colon at end</comment>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+    <comment>Unknown (program name, ID, etc) for song timbres</comment>
+  </data>
+  <data name="ChangePcgFileName" xml:space="preserve">
+    <value>_Change...</value>
+    <comment>Change PCG File name</comment>
+  </data>
+  <data name="___ConnectedPcgFile" xml:space="preserve">
+    <value>_Connected PCG File:</value>
+    <comment>File name that is connected to SNG file</comment>
+  </data>
+  <data name="___Parameter" xml:space="preserve">
+    <value>_Parameter</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="___EditParameterAbsoluteValue" xml:space="preserve">
+    <value>_Absolute Value</value>
+    <comment>Radio button name</comment>
+  </data>
+  <data name="___EditParameterByteOffset" xml:space="preserve">
+    <value>_Byte Offset</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="___EditParameterCombi" xml:space="preserve">
+    <value>_Combi</value>
+    <comment>Radio button name</comment>
+  </data>
+  <data name="___EditParameterCombiSelection" xml:space="preserve">
+    <value>Combi Selection</value>
+    <comment>Group box name</comment>
+  </data>
+  <data name="___EditParameterDecimal" xml:space="preserve">
+    <value>_Decimal</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="___EditParameterValueRangeAfterChange" xml:space="preserve">
+    <value>Value Range After Change</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="___EditParameterMask" xml:space="preserve">
+    <value>_Mask</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="EditParameterChangeEmpty" xml:space="preserve">
+    <value>Fill in a valid parameter change rule above.</value>
+    <comment>Error text (empty text).</comment>
+  </data>
+  <data name="___EditParameterMinRange" xml:space="preserve">
+    <value>Min Range</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="___EditParameterNumberOfBytes" xml:space="preserve">
+    <value>#_Bytes</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="___EditParameterParameterChangeRule" xml:space="preserve">
+    <value>Parameter Change Rule</value>
+    <comment>Group box name</comment>
+  </data>
+  <data name="___EditParameterPercentage" xml:space="preserve">
+    <value>_Percentage</value>
+    <comment>Radio button name</comment>
+  </data>
+  <data name="___EditParameterRelativeValue" xml:space="preserve">
+    <value>_Relative Value</value>
+    <comment>Radio button name</comment>
+  </data>
+  <data name="___EditParameterTimbre" xml:space="preserve">
+    <value>Timbre</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="___EditParameterTimbres" xml:space="preserve">
+    <value>_Timbres</value>
+    <comment>Button name</comment>
+  </data>
+  <data name="___EditParameterPreview" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Group box name</comment>
+  </data>
+  <data name="___EditParameterValueChange" xml:space="preserve">
+    <value>Value Change</value>
+    <comment>Group box name</comment>
+  </data>
+  <data name="___EditParameterWarningNumberOfPatchesWithClippedValues" xml:space="preserve">
+    <value>Warning: Number of Patches with Clipped Values:</value>
+    <comment>Warning/label name</comment>
+  </data>
+  <data name="___EditParameterWindow" xml:space="preserve">
+    <value>Edit Parameter</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="SelectAllExceptDrums" xml:space="preserve">
+    <value>_Select All / Drums</value>
+    <comment>Select all Except drums button name (keep short)</comment>
+  </data>
+  <data name="___EditParameterDecimalValue" xml:space="preserve">
+    <value>_Decimal Value</value>
+    <comment>Edit box (decimal value</comment>
+  </data>
+  <data name="___EditParameterValueRangeBeforeChange" xml:space="preserve">
+    <value>Value Range Before Change</value>
+    <comment>Label name</comment>
+  </data>
+  <data name="___EditParameterHexadecimalValue" xml:space="preserve">
+    <value>_Hex Value</value>
+    <comment>Edit box (hexadecimal value)</comment>
+  </data>
+  <data name="___EditParameterHexadecimalValueRange" xml:space="preserve">
+    <value>Hex Value Range</value>
+    <comment>Edit box, hexadecimal value range</comment>
+  </data>
+  <data name="___EditParameterLsbBit" xml:space="preserve">
+    <value>_LSB Bit</value>
+    <comment>Edit box</comment>
+  </data>
+  <data name="___EditParameterMaxByteOffset" xml:space="preserve">
+    <value>Max Byte Offset</value>
+    <comment>Edit box</comment>
+  </data>
+  <data name="___EditParameterMaxNumberOfBytes" xml:space="preserve">
+    <value>Max # Bytes</value>
+    <comment>Edit box</comment>
+  </data>
+  <data name="___EditParameterUpdate" xml:space="preserve">
+    <value>_Update</value>
+    <comment>Button</comment>
+  </data>
+  <data name="___EditParameterNumberOfClippedPatches" xml:space="preserve">
+    <value>#Clipped Patches</value>
+    <comment>Edit box, number of patches with clipped values</comment>
+  </data>
+  <data name="___EditParameterSigned" xml:space="preserve">
+    <value>_Signed</value>
+    <comment>Edit box, signed (pos/neg) or unsigned (pos)</comment>
+  </data>
+  <data name="___ResultAfterChange" xml:space="preserve">
+    <value>Result After Change</value>
+    <comment>Group box (results after making the changes)</comment>
+  </data>
+  <data name="___EditParameterCalculate" xml:space="preserve">
+    <value>_Calculate</value>
+    <comment>Button name (verb)</comment>
+  </data>
+  <data name="___EditParameterCalculateAutomatically" xml:space="preserve">
+    <value>Calculate _Automatically</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="___EditParameterCalculateManually" xml:space="preserve">
+    <value>Calculate _Manually</value>
+    <comment>Radio button</comment>
+  </data>
+  <data name="ShowSingleLinedSetListSlotDescriptions" xml:space="preserve">
+    <value>Single Lined Set List Slot Descriptions</value>
+    <comment>Show the descriptions of set list slots as a single line</comment>
+  </data>
+  <data name="DoubleToSingleKeyboard" xml:space="preserve">
+    <value>_Double to Single Keyboard Setup</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="DoubleToSingleKeyboardWindowTitle" xml:space="preserve">
+    <value>Double to Single Keyboard Setup</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="MidiChannelMainKeyboard" xml:space="preserve">
+    <value>MIDI Channel Main Keyboard</value>
+  </data>
+  <data name="MidiChannelSecondaryKeyboard" xml:space="preserve">
+    <value>MIDI Channel Secondary Keyboard</value>
+  </data>
+  <data name="SourceSetList" xml:space="preserve">
+    <value>Source Set List</value>
+  </data>
+  <data name="TargetCombiBank" xml:space="preserve">
+    <value>Target Combi Bank</value>
+  </data>
+  <data name="TargetSetList" xml:space="preserve">
+    <value>Target Set List</value>
+  </data>
+  <data name="ExternalLinksPersonal" xml:space="preserve">
+    <value>External Links Personal Links</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksPersonalMenuItem" xml:space="preserve">
+    <value>External Links _Personal Links</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="OverwriteFilledDrumKits" xml:space="preserve">
+    <value>_Overwrite Filled Drum Kits</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="OverwriteFilledDrumKitsToolTip" xml:space="preserve">
+    <value>Overwrite filled (non empty/initialized) drum kits</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="OverwriteFilledWaveSequences" xml:space="preserve">
+    <value>_Overwrite Filled Wave Sequences</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="OverwriteFilledWaveSequencesToolTip" xml:space="preserve">
+    <value>Overwrite filled (non empty/initialized) wave sequences</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="PasteDuplicateDrumKits" xml:space="preserve">
+    <value>_Paste Duplicate Drum Kits</value>
+  </data>
+  <data name="PasteDuplicateDrumKitsToolTip" xml:space="preserve">
+    <value>Pastes drum kits in the PCG, even when already available in the PCG</value>
+  </data>
+  <data name="PasteDuplicateWaveSequences" xml:space="preserve">
+    <value>_Paste Duplicate Wave Sequences</value>
+  </data>
+  <data name="PasteDuplicateWaveSequencesToolTip" xml:space="preserve">
+    <value>Pastes wave sequencesin the PCG, even when already available in the PCG</value>
+  </data>
+  <data name="DrumKits" xml:space="preserve">
+    <value>Drum Kits</value>
+    <comment>Patch type (plural)</comment>
+  </data>
+  <data name="InitAsMpeCombi" xml:space="preserve">
+    <value>_Init as MPE Combi</value>
+    <comment>Menu Item (MPE is a MIDI term)</comment>
+  </data>
+  <data name="WaveSequences" xml:space="preserve">
+    <value>Wave Sequences</value>
+    <comment>Patch type (plural)</comment>
+  </data>
+  <data name="DrumPattern" xml:space="preserve">
+    <value>Drum Pattern</value>
+    <comment>Patch type</comment>
+  </data>
+  <data name="DrumPatterns" xml:space="preserve">
+    <value>Drum Patterns</value>
+    <comment>Patch type plural</comment>
+  </data>
+  <data name="DrumPatternsInRadioButton" xml:space="preserve">
+    <value>_Drum Patterns</value>
+  </data>
+  <data name="FilterDrumPatternNames" xml:space="preserve">
+    <value>_Filter Drum Pattern Names</value>
+    <comment>Used in checkbox in list generator</comment>
+  </data>
+  <data name="FilterDrumPatterns" xml:space="preserve">
+    <value>Filter Drum Patterns</value>
+    <comment>Filter = noun; [NEW]</comment>
+  </data>
+  <data name="IgnoreEmptyInitDrumPatterns" xml:space="preserve">
+    <value>_Ignore Empty/Init Drum Patterns</value>
+    <comment>Check box [NEW]</comment>
+  </data>
+  <data name="OverwriteFilledDrumPatterns" xml:space="preserve">
+    <value>_Overwrite Filled Drum Patterns</value>
+    <comment>Check box</comment>
+  </data>
+  <data name="OverwriteFilledDrumPatternsToolTip" xml:space="preserve">
+    <value>Overwrite filled (non empty/initialized) drum patterns</value>
+    <comment>Tool tip</comment>
+  </data>
+  <data name="PasteDuplicateDrumPatterns" xml:space="preserve">
+    <value>_Paste Duplicate Drum Patterns</value>
+  </data>
+  <data name="PasteDuplicateDrumPatternsToolTip" xml:space="preserve">
+    <value>Pastes drum patterns in the PCG, even when already available in the PCG</value>
+  </data>
+  <data name="Stb_MultipleDrumPatternsInMultipleBanks" xml:space="preserve">
+    <value>{0} Drum Patterns in {1} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_MultipleDrumPatternsInOneBank" xml:space="preserve">
+    <value>{0} Drum Patterns in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneDrumPatternInMultipleBanks" xml:space="preserve">
+    <value>1 Drum Pattern in {0} Banks</value>
+    <comment>See google</comment>
+  </data>
+  <data name="Stb_OneDrumPatternInOneBank" xml:space="preserve">
+    <value>1 Drum Pattern in 1 Bank</value>
+    <comment>See google</comment>
+  </data>
+  <data name="HexExportDlgTitle" xml:space="preserve">
+    <value>Hex Export</value>
+    <comment>Hex export dialog title bar</comment>
+  </data>
+  <data name="ExportToFile" xml:space="preserve">
+    <value>_Export To File</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="MidiTracks" xml:space="preserve">
+    <value>_MIDI Tracks</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="EmptyOrInitPatchName" xml:space="preserve">
+    <value>Empty or initialized patch</value>
+  </data>
+  <data name="HexExport" xml:space="preserve">
+    <value>_Hex Export</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="ColumnSetListSlotReferenceId" xml:space="preserve">
+    <value>Ref ID</value>
+    <comment>Keep it short</comment>
+  </data>
+  <data name="ColumnSetListSlotReferenceName" xml:space="preserve">
+    <value>Reference Name</value>
+    <comment>Patch name of referenced set list slot</comment>
+  </data>
+  <data name="KeyboardSetupErrorNotEnoughSetListSlotsInTargetSetList" xml:space="preserve">
+    <value>There are not enough set list slots in the target set list to convert all source set list slots.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="KeyboardSetupErrorSetListsNotPresent" xml:space="preserve">
+    <value>The PCGfile does not contain any set lists.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="KeyboardSetupErrorTargetCombiBankNotPresent" xml:space="preserve">
+    <value>The target combi bank is not present.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="KeyboardSetupErrorTargetSetListNotEmpty" xml:space="preserve">
+    <value>The target set list is not empty.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="ExternalLinksVideoCreators" xml:space="preserve">
+    <value>External Links Video Creators</value>
+    <comment>Window title</comment>
+  </data>
+  <data name="ExternalLinksVideoCreatorsMenuItem" xml:space="preserve">
+    <value>_External Links Video Creators...</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="EModelTypeKross2" xml:space="preserve">
+    <value>Kross 2</value>
+  </data>
+  <data name="IgnoreMutedOffFirstProgramTimbre" xml:space="preserve">
+    <value>_Ignore Muted/Off First Program Timbre</value>
+    <comment>Check box (ignore only I-A000 muted/off timbre)</comment>
+  </data>
+</root>

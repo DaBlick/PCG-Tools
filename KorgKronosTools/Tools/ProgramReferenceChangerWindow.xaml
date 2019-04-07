@@ -1,0 +1,35 @@
+﻿<Window x:Class="PcgTools.Tools.ProgramReferenceChangerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding ProgramReferenceChanger_wt, Source={StaticResource LocStrings}}"
+        ShowInTaskbar="True"
+         Icon="/PcgTools;component/Gui/pcgtools.ico" WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight">
+    <StackPanel Orientation="Vertical" Width="500">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <Expander Header="{Binding ReferenceRules, Source={StaticResource LocStrings}}" IsExpanded="True">
+                        <TextBox x:Name="TextBoxRules" Margin="4,0" MaxHeight ="400" VerticalScrollBarVisibility="Auto"/>
+                </Expander>
+
+                <Button Content="{Binding FromFile, Source={StaticResource LocStrings}}" Margin="4" Padding="4" 
+                        Click="FromFileButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel>
+            <Label x:Name="LabelProgress" Content="{Binding ProcessingRules, Source={StaticResource LocStrings}}" Margin="4"/>
+            <ProgressBar x:Name="ProgressBarRules" Height="16" Margin="4"/>
+        </StackPanel>
+        
+        
+        <StackPanel Orientation="Horizontal">
+            <Button Content="{Binding Cancel, Source={StaticResource LocStrings}}" HorizontalAlignment="Left" 
+                IsDefault="False"
+                Margin="4" Name="buttonCancel" VerticalAlignment="Top" Width="75" IsCancel="True" 
+                Click="ButtonCancelClick" />
+            <Button Content="{Binding OK, Source={StaticResource LocStrings}}" HorizontalAlignment="Left"
+                Margin="4" Name="buttonOk" 
+                VerticalAlignment="Top" Width="75" IsDefault="True" Click="ButtonOkClick" />
+        </StackPanel>
+    </StackPanel>
+</Window>

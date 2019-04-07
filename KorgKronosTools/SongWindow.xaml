@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="PcgTools.SongWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Loaded="Window_Loaded" mc:Ignorable="d" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="84" d:DesignWidth="237" MinHeight="150" MinWidth="300">
+
+    <!--DataTemplate DataType="{x:Type ViewModels:SongViewModel}"-->
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <!--StackPanel Orientation="Horizontal">
+                <Label Content="{Binding ConnectedPcgFile, Source={StaticResource LocStrings}}" Margin="8"/>
+                <ComboBox Name="ComboBoxConnectedPcgFile" SelectionChanged="ComboBoxPcgFiles_SelectionChanged"
+                            ItemsSource="{Binding ViewComboBox.View}" DisplayMemberPath="SelectedMemory.SelectedPcgFileName" 
+                          SelectedItem="{Binding SelectedMemory.ConnectedPcgWindow}"
+                          MinWidth="100" Margin="4"/>
+            <StackPanel /-->
+        
+            <TabControl HorizontalAlignment="Stretch" Margin="4" Name="tabControl1" VerticalAlignment="Stretch" Grid.RowSpan="2">
+                <TabItem Header="{Binding Songs, Source={StaticResource LocStrings}}" Name="tabItem1">
+                    
+                    <StackPanel Orientation="Vertical">
+                        
+                        <ListView Margin="4" HorizontalAlignment="Stretch"  Name="listViewSongs" VerticalAlignment="Stretch" 
+                                  SelectionMode="Extended" VerticalContentAlignment="Stretch"
+                                  
+                                  HorizontalContentAlignment="Stretch" AlternationCount="1" 
+                                  SelectionChanged="ListViewSongs_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="{Binding Index, Source={StaticResource LocStrings}}"
+                                                        Width="40" DisplayMemberBinding="{Binding Index}" />
+                                    <GridViewColumn Header="{Binding Name, Source={StaticResource LocStrings}}" 
+                                                        Width="150" DisplayMemberBinding="{Binding Name}" />
+                                    <!--GridViewColumn  DisplayMemberBinding="{Binding Column2}"/-->
+                                    <!--GridViewColumn  DisplayMemberBinding="{Binding Column3}"/-->
+                                    <!--GridViewColumn  DisplayMemberBinding="{Binding Column4}"/-->
+                                </GridView>
+                            </ListView.View>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="IsSelected" Value="{Binding IsSelected}" />
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Name="ButtonMidiTracks" Content="{Binding MidiTracks, Source={StaticResource LocStrings}}" 
+                                    Click="Button_Click" 
+                                    HorizontalAlignment="Left" Margin="4" Padding="4"/>
+                            <Button Name="ButtonExportToFileTracks" Content="{Binding ExportToFile, Source={StaticResource LocStrings}}" 
+                                    Click="ExportToFile_Click" 
+                                    HorizontalAlignment="Left" Margin="4" Padding="4"/>
+                            
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="{Binding Samples, Source={StaticResource LocStrings}}" Name="tabItem2">
+                    <StackPanel>
+                        <ListView HorizontalAlignment="Stretch" Margin="4" Name="listViewSamples" VerticalAlignment="Stretch" 
+                                  SelectionMode="Extended" VerticalContentAlignment="Stretch"
+                                  HorizontalContentAlignment="Stretch" AlternationCount="1" >
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="{Binding Index, Source={StaticResource LocStrings}}" Width="40" DisplayMemberBinding="{Binding Index}" />
+                                    <GridViewColumn Header="{Binding Name, Source={StaticResource LocStrings}}" Width="150" DisplayMemberBinding="{Binding Name}" />
+                                    <GridViewColumn Header="{Binding SampleFileName, Source={StaticResource LocStrings}}" Width="250" DisplayMemberBinding="{Binding SampleFileName}" />
+                                    <!--GridViewColumn  DisplayMemberBinding="{Binding Column2}"/-->
+                                    <!--GridViewColumn  DisplayMemberBinding="{Binding Column3}"/-->
+                                    <!--GridViewColumn  DisplayMemberBinding="{Binding Column4}"/-->
+                                </GridView>
+                            </ListView.View>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="IsSelected" Value="{Binding IsSelected}" />
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button Name="ButtonSamplesExportToFileTracks" Content="{Binding ExportToFile, Source={StaticResource LocStrings}}" 
+                                    Click="SamplesExportToFile_Click" 
+                                    HorizontalAlignment="Left" Margin="4" Padding="4"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+        <!--/DataTemplate-->
+    </Grid>
+
+</UserControl>

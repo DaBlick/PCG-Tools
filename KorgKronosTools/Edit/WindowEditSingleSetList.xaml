@@ -1,0 +1,51 @@
+﻿<Window x:Class="PcgTools.Edit.WindowEditSingleSetList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding EditSingleSetList, Source={StaticResource LocStrings}}" 
+        Name="windowEdit" 
+        ResizeMode="NoResize" ShowInTaskbar="True"
+        Loaded="WindowEditLoaded" Icon="/PcgTools;component/Gui/pcgtools.ico" 
+        WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight">
+    <StackPanel Orientation="Vertical" Margin="4">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <Label Content="{Binding ID, Source={StaticResource LocStrings}}"  Margin="4"
+                   HorizontalAlignment="Left" Name="label1" 
+                   VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left"  Name="textBoxId"  Margin="4"
+                 VerticalAlignment="Top" 
+                 IsReadOnly="True" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="{Binding Name, Source={StaticResource LocStrings}}" Margin="4"
+                       HorizontalAlignment="Left" 
+                       Name="label2" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Name="labelNameLength" Text="(X of Y characters)"  Background="{x:Static SystemColors.ControlLightBrush}" 
+                           Margin="4" VerticalAlignment="Top"/>
+                </StackPanel>
+                <TextBox HorizontalAlignment="Left" IsReadOnly="False"  Margin="4"
+                     Name="textBoxName" VerticalAlignment="Top"
+                      TextChanged="TextBoxNameTextChanged" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Foreground="#FFD80000" HorizontalAlignment="Left"  Margin="4"
+                       Name="labelError" VerticalAlignment="Top">
+                <Label.Background>
+                    <SolidColorBrush />
+                </Label.Background>
+            </Label>
+            <Button Content="{Binding Cancel, Source={StaticResource LocStrings}}"  Margin="4" Width="75"
+                        HorizontalAlignment="Left" IsDefault="False"
+                        Name="buttonCancel" VerticalAlignment="Top"
+                        IsCancel="True" Click="ButtonCancelClick" />
+            <Button Content="{Binding OK, Source={StaticResource LocStrings}}" Margin="4" Width="75"
+                        HorizontalAlignment="Left" 
+                        Name="buttonOk" VerticalAlignment="Top" IsDefault="True" 
+                        Click="ButtonOkClick" />
+        </StackPanel>
+    </StackPanel>
+</Window>

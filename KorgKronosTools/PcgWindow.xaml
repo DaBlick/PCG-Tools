@@ -1,0 +1,191 @@
+﻿<UserControl x:Class="PcgTools.PcgWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="Auto" Width="Auto" 
+        Loaded="Window_Loaded" Name="UC" mc:Ignorable="d" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="341" IsEnabled="True">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <RadioButton Content="{Binding ProgramsAsRadioButton, Source={StaticResource LocStrings}}" 
+                         IsChecked="{Binding Path=ProgramBanksSelected}"
+                         IsEnabled="{Binding Path=ProgramsEnabled}" Margin="4" />
+            
+            <RadioButton Content="{Binding Combis, Source={StaticResource LocStrings}}"  
+                         IsChecked="{Binding Path=CombiBanksSelected}" 
+                         IsEnabled="{Binding Path=CombisEnabled}"
+                          Visibility="{Binding Path=CombiBanksSupported, 
+                          Converter={StaticResource BoolToVisibilityConverter}}" Margin="4" />
+            
+            <RadioButton Content="{Binding SetListsAsRadioButton, Source={StaticResource LocStrings}}" 
+                         IsChecked="{Binding Path=SetListsSelected}" 
+                         IsEnabled="{Binding Path=SetListSlotsEnabled}"
+                         Visibility="{Binding Path=SetListSlotsSupported, 
+                          Converter={StaticResource BoolToVisibilityConverter}}" Margin="4" />
+            
+            <RadioButton Content="{Binding WaveSequencesInRadioButton, Source={StaticResource LocStrings}}"  
+                         IsChecked="{Binding Path=WaveSequenceBanksSelected}" 
+                         IsEnabled="{Binding Path=WaveSequencesEnabled}"
+                         Visibility="{Binding Path=WaveSequencesSupported, Converter={StaticResource BoolToVisibilityConverter}}"
+                         Margin="4" />
+            
+            <RadioButton Content="{Binding DrumKitsInRadioButton, Source={StaticResource LocStrings}}"  
+                         IsChecked="{Binding Path=DrumKitBanksSelected}" 
+                         IsEnabled="{Binding Path=DrumKitsEnabled}"
+                         Visibility="{Binding Path=DrumKitsSupported, 
+                         Converter={StaticResource BoolToVisibilityConverter}}"
+                         Margin="4" />
+
+            <RadioButton Content="{Binding DrumPatternsInRadioButton, Source={StaticResource LocStrings}}"  
+                         IsChecked="{Binding Path=DrumPatternBanksSelected}" 
+                         IsEnabled="{Binding Path=DrumPatternsEnabled}"
+                         Visibility="{Binding Path=DrumPatternsSupported, 
+                         Converter={StaticResource BoolToVisibilityConverter}}"
+                         Margin="4" />
+
+            <RadioButton Content="{Binding AllPatchesRadioButton, Source={StaticResource LocStrings}}"  
+                         IsChecked="{Binding Path=AllPatchesSelected}" 
+                         Margin="4"/>
+
+            <StackPanel Margin="4">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FFFF6464" Offset="0" />
+                        <GradientStop Color="#FF960000" Offset="1" />
+                        <GradientStop Color="Red" Offset="0" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+            </StackPanel>
+            <Label  Content="{Binding NumberOfPatches, Source={StaticResource LocStrings}}" VerticalAlignment="Center"/>
+            <Label  Content="{Binding NumberOfPatches}" VerticalAlignment="Center" Margin="4, 0, 16, 0"/>
+
+            <Label  Content="{Binding NumberOfSelectedPatches, Source={StaticResource LocStrings}}" VerticalAlignment="Center"/>
+            <Label  Content="{Binding NumberOfSelectedPatches}" VerticalAlignment="Center" Margin="4, 0, 0, 0"/>
+        </StackPanel>
+
+        <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <GroupBox Header="{Binding CutCopyPasteMode, Source={StaticResource LocStrings}}" Margin="4">
+                <WrapPanel>
+                    <Button Content="{Binding Cut, Source={StaticResource LocStrings}}" Margin="4" 
+                            Command="{Binding Path=CutCommand}" Width="80"  />
+                    <Button Content="{Binding Copy, Source={StaticResource LocStrings}}" Margin="4" 
+                            Command="{Binding Path=CopyCommand}" Width="80" />
+                    <Button Content="{Binding Paste, Source={StaticResource LocStrings}}" Margin="4" 
+                            Command="{Binding Path=PasteCommand}" Width="80"/>
+                    <Button Content="{Binding Exit, Source={StaticResource LocStrings}}" Margin="4" 
+                            Command="{Binding Path=ExitCopyPasteModeCommand}" Width="80"/>
+                    <Button Content="{Binding Recall, Source={StaticResource LocStrings}}" Margin="4" 
+                            Command="{Binding Path=RecallCommand}" Width="80"/>
+                </WrapPanel>
+            </GroupBox>
+
+            <Button DockPanel.Dock="Bottom" Content="{Binding GenerateList, Source={StaticResource LocStrings}}" Margin="4" 
+                    Command="{Binding Path=RunListGeneratorCommand}" Width="128"/>
+        </WrapPanel>
+
+        <WrapPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button Content="{Binding Edit, Source={StaticResource LocStrings}}" Width="80" Margin="4"
+             Command="{Binding Path=EditSelectedItemCommand}"/>
+            <Button Content="{Binding Up, Source={StaticResource LocStrings}}" Width="80" Margin="4"
+             Command="{Binding Path=MoveUpCommand}"/>
+            <Button Content="{Binding Down, Source={StaticResource LocStrings}}" Width="80" Margin="4"
+             Command="{Binding Path=MoveDownCommand}"/>
+
+            <Button Content="{Binding Clear, Source={StaticResource LocStrings}}" Margin="4"
+             Width="80" Command="{Binding Path=ClearCommand}"/>
+            <Button Content="{Binding Compact, Source={StaticResource LocStrings}}" Margin="4"    
+             Width="80" Command="{Binding Path=CompactCommand}"/>
+            <Button Content="{Binding Sort_menu, Source={StaticResource LocStrings}}" Margin="4"    
+             Width="80" Command="{Binding Path=SortCommand}"/>
+            <Button x:Name="ButtonTimbres" Content="{Binding Timbres, Source={StaticResource LocStrings}}" Margin="4" 
+             Width="80" Command="{Binding Path=ShowTimbresCommand}"/>
+            <Button x:Name="ButtonAssign" Content="{Binding Assign, Source={StaticResource LocStrings}}" Margin="4" 
+                            Command="{Binding Path=AssignCommand}" Width="80">
+                <Button.ToolTip>
+                    <Label Content="{Binding AssignToolTipText}"/>
+                </Button.ToolTip>
+            </Button>
+
+        </WrapPanel>
+
+
+
+        <Grid HorizontalAlignment="Left">
+            <ListView HorizontalAlignment="Left" Margin="4" Name="listViewBanks" SelectionMode="Extended" 
+                      VerticalAlignment="Stretch" 
+                      SelectionChanged="ListViewBanksSelectionChanged" VerticalContentAlignment="Stretch" 
+                      GotFocus="ListViewBanksGotFocus" 
+                      MouseDoubleClick="OnBanksDoubleClick">
+
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="IsSelected" Value="{Binding Path=IsSelected, Mode=TwoWay}"/>
+                        <Setter Property="BorderBrush" Value="LightGray" />
+                        <Setter Property="BorderThickness" Value="0,0,0,1" />
+
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView AllowsColumnReorder="False">
+                        <GridViewColumn Header="{Binding ID, Source={StaticResource LocStrings}}" 
+                                        Width="80" DisplayMemberBinding="{Binding Path=Id}"/>
+                        <GridViewColumn Header="{Binding ContentType, Source={StaticResource LocStrings}}" 
+                                        Width="100" DisplayMemberBinding="{Binding Path=Column2}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+        <Grid>
+            <ListView HorizontalAlignment="Stretch" Margin="3,7,5,1" Name="listViewPatches" 
+                      VerticalAlignment="Stretch" SelectionMode="Extended" 
+                      AlternationCount="1" GotFocus="ListViewPatchGotFocus" 
+                      MouseDoubleClick="OnPatchesMouseDoubleClick" SelectionChanged="ListViewPatchesSelectionChanged"
+                      Width="Auto" 
+                      VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                <ListView.View>
+                    <GridView AllowsColumnReorder="False">
+                        <GridViewColumn Header="{Binding PatchType, Source={StaticResource LocStrings}}" 
+                                            DisplayMemberBinding="{Binding Path=PatchTypeAsString}"  />
+                        <GridViewColumn Header="{Binding ID, Source={StaticResource LocStrings}}" 
+                                            DisplayMemberBinding="{Binding Path=Id}"  />
+                        <GridViewColumn Header="{Binding Name, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=Name}" />
+                        <GridViewColumn Header="{Binding Fav, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=Favorite}" />
+                        <GridViewColumn Header="{Binding Category, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=CategoryAsName}" />
+                        <GridViewColumn Header="{Binding SubCategory, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=SubCategoryAsName}" />
+                        <GridViewColumn Header="{Binding Reference, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=Reference}" />
+                        <GridViewColumn Header="{Binding ProgramCombiName, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=ProgramCombiName}" />
+                        <GridViewColumn Header="{Binding ColumnVolume, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=VolumeAsString}" />
+                        <GridViewColumn Header="{Binding Description, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=DescriptionInList}" />
+                        <GridViewColumn Header="{Binding NumberOfReferences, Source={StaticResource LocStrings}}"  
+                                            DisplayMemberBinding="{Binding Path=NumberOfReferencesAsString}" />
+                    </GridView>
+                </ListView.View>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                        <Setter Property="IsSelected" Value="{Binding Path=IsSelected, Mode=TwoWay}"/>
+                        <Setter Property="BorderBrush" Value="LightGray" />
+                        <Setter Property="BorderThickness" Value="0,0,0,1" />
+                        <Setter Property="ToolTip" Value="{Binding Path=ToolTip}"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <Validation.ErrorTemplate>
+                        <ControlTemplate>
+                            <!--Prevent a red line (validation error)-->
+                        </ControlTemplate>
+                    </Validation.ErrorTemplate>
+                </ListView>
+            
+        </Grid>
+       
+
+
+    </DockPanel>
+</UserControl>

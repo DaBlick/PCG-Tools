@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C398A416-8FFA-4877-9DAD-E2D666158CAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCG_Tools_Unittests</RootNamespace>
+    <AssemblyName>PCG Tools Unittests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anti Crash Tests\0Series.cs" />
+    <Compile Include="Anti Crash Tests\03Rw.cs" />
+    <Compile Include="Anti Crash Tests\Kronos2.cs" />
+    <Compile Include="Anti Crash Tests\Kross2.cs" />
+    <Compile Include="Anti Crash Tests\Z1.cs" />
+    <Compile Include="Anti Crash Tests\TSeries.cs" />
+    <Compile Include="Anti Crash Tests\M3R.cs" />
+    <Compile Include="Anti Crash Tests\M1.cs" />
+    <Compile Include="Anti Crash Tests\MicroKorgXlPlus.cs" />
+    <Compile Include="Anti Crash Tests\MicroKorgXl.cs" />
+    <Compile Include="Anti Crash Tests\Kross.cs" />
+    <Compile Include="Anti Crash Tests\MS2000.cs" />
+    <Compile Include="Anti Crash Tests\MicroStation.cs" />
+    <Compile Include="Anti Crash Tests\Karma.cs" />
+    <Compile Include="Anti Crash Tests\TritonTR.cs" />
+    <Compile Include="Anti Crash Tests\TritonStudio.cs" />
+    <Compile Include="Anti Crash Tests\TritonLe.cs" />
+    <Compile Include="Anti Crash Tests\TritonExtreme.cs" />
+    <Compile Include="Anti Crash Tests\TritonClassic.cs" />
+    <Compile Include="Anti Crash Tests\TrinityV3.cs" />
+    <Compile Include="Anti Crash Tests\TrinityAndTrinityPlus.cs" />
+    <Compile Include="Anti Crash Tests\M50.cs" />
+    <Compile Include="Anti Crash Tests\M3.cs" />
+    <Compile Include="Anti Crash Tests\Krome.cs" />
+    <Compile Include="Anti Crash Tests\Oasys.cs" />
+    <Compile Include="Anti Crash Tests\Base.cs" />
+    <Compile Include="Anti Crash Tests\Kronos.cs" />
+    <Compile Include="CommandLineArgumentTest.cs" />
+    <Compile Include="BitsUtilTest.cs" />
+    <Compile Include="Copy and Paste Tests\CopyBetweenFilesTests.cs" />
+    <Compile Include="Copy and Paste Tests\SettingsLikeNamedTests.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SngFilesTest.cs" />
+    <Compile Include="KronosCompletePcgCombiContentListLongTest.cs" />
+    <Compile Include="KronosCompletePcgDifferencesListTest.cs" />
+    <Compile Include="M3Test.cs" />
+    <Compile Include="M50Test.cs" />
+    <Compile Include="KronosCompletePcgCombiContentListCompactTest.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StringUtilsTest.cs" />
+    <Compile Include="Tools Tests\ReferenceChangerTests.cs" />
+    <Compile Include="Tools Tests\RuleParserTests.cs" />
+    <Compile Include="TritonTest.cs" />
+    <Compile Include="OasysTest.cs" />
+    <Compile Include="KronosPartialPcgTest.cs" />
+    <Compile Include="KronosCompletePcgProgramUsageListTest.cs" />
+    <Compile Include="KronosCompletePcgPatchListTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{62D30792-A373-4C67-841C-34B2277B1807}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KorgKronosTools\PcgTools Application.csproj">
+      <Project>{D18ED6C7-B8D0-4D9E-B498-744DC88A06AA}</Project>
+      <Name>PcgTools Application</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

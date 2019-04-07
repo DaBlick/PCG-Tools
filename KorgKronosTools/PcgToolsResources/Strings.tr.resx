@@ -1,0 +1,1770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="AboutMenuItem" xml:space="preserve">
+    <value>_Hakkında...</value>
+  </data>
+  <data name="Aero" xml:space="preserve">
+    <value>_Aero</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tüm</value>
+  </data>
+  <data name="Always" xml:space="preserve">
+    <value>_Her zaman</value>
+  </data>
+  <data name="AsciiFilter" xml:space="preserve">
+    <value>ASCII Tablosu/Metin dosyaları (*.txt)|*.txt|Tüm dosyalar (*.*)|*.*</value>
+  </data>
+  <data name="AsciiTable" xml:space="preserve">
+    <value>_ASCII Tablosu</value>
+  </data>
+  <data name="Ask" xml:space="preserve">
+    <value>_Sor</value>
+  </data>
+  <data name="AskForMasterFile" xml:space="preserve">
+    <value>"
+{0} ana dosyasını da açmak ister misiniz?"</value>
+  </data>
+  <data name="AssignClearProgram" xml:space="preserve">
+    <value>_Temiz Program Ata...</value>
+  </data>
+  <data name="AssignedClearProgram" xml:space="preserve">
+    <value>Atanmış Temiz Program:</value>
+  </data>
+  <data name="AutoExtendPaste" xml:space="preserve">
+    <value>_Otomatik Genişletilmiş Tek Patch (Program, Combi ya da Set List ögesi) Seçimi Yapıştır</value>
+  </data>
+  <data name="AutoExtendPasteToolTip" xml:space="preserve">
+    <value>Tek bir Patch (Program, Combi ya da Set List ögesi) seçilse bile Patch'leri yapıştırmaya devam et</value>
+  </data>
+  <data name="AutoLoadMasterFile" xml:space="preserve">
+    <value>Ana Dosyayı Otomatik Aç</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Banka</value>
+  </data>
+  <data name="Banks" xml:space="preserve">
+    <value>Bankalar</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="CannotMingleOptions" xml:space="preserve">
+    <value>-h seçeneği diğer seçeneklerle birlikte kullanılamaz</value>
+  </data>
+  <data name="CaseSensitive" xml:space="preserve">
+    <value>_Büyük/Küçük Harf Duyarlı</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="CategoryControl" xml:space="preserve">
+    <value>_Kategori</value>
+  </data>
+  <data name="CategoryThanPatchName" xml:space="preserve">
+    <value>_Kategori, ardından Patch (Program, Combi ya da Set List ögesi) adı</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>_Temizle</value>
+  </data>
+  <data name="ClearSelected" xml:space="preserve">
+    <value>Seçili patchleri (Program, Combi ya da Set List ögesi) ya da bankPcgIdaları temizle</value>
+  </data>
+  <data name="CliAmbiguousOption" xml:space="preserve">
+    <value>{0} seçeneğinin değeri belirsiz</value>
+  </data>
+  <data name="CliIllegalBankName" xml:space="preserve">
+    <value>{0} seçeneği, {1} değeri, {2} bankPcgIda adında yasak bankPcgIda adı</value>
+  </data>
+  <data name="CliIllegalOptionError" xml:space="preserve">
+    <value>{0} seçeneği desteklenmiyor ya da bir değer atanmamış</value>
+  </data>
+  <data name="CliOptionError" xml:space="preserve">
+    <value>{0} seçeneği parametrelerden sonra</value>
+  </data>
+  <data name="CliOutOfRangeError" xml:space="preserve">
+    <value>{1} seçeneğinin {0} değeri aralık dışında (uygun değerler: {2})</value>
+  </data>
+  <data name="Clipboard" xml:space="preserve">
+    <value>Yapıştırma panosu</value>
+  </data>
+  <data name="CliRequiresError" xml:space="preserve">
+    <value>{0} seçeneği için {1} seçeneği gerekli</value>
+  </data>
+  <data name="CliUnknownOption" xml:space="preserve">
+    <value>{0} seçenek değeri bilinmiyor</value>
+  </data>
+  <data name="CliWindow" xml:space="preserve">
+    <value>PCG Tools Komut Satırı Arayüz Tanılama Penceresi</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>_Kapat</value>
+  </data>
+  <data name="Combi" xml:space="preserve">
+    <value>Combi</value>
+  </data>
+  <data name="CombiContentList" xml:space="preserve">
+    <value>_Combi İçerik Listesi</value>
+  </data>
+  <data name="Combis" xml:space="preserve">
+    <value>Combiler</value>
+  </data>
+  <data name="CommaSeparatedValues" xml:space="preserve">
+    <value>_Virgülle Ayırılmış Değerler</value>
+  </data>
+  <data name="Compact" xml:space="preserve">
+    <value>Sıkıştır</value>
+  </data>
+  <data name="CompactSelected" xml:space="preserve">
+    <value>Seçili patchleri (Program, Combi ya da Set List ögesi) ya da bankPcgIdaları sıkıştır</value>
+  </data>
+  <data name="ContentType" xml:space="preserve">
+    <value>İçerik Tipi</value>
+  </data>
+  <data name="ContinueWarning" xml:space="preserve">
+    <value>Devam etmek istediğinize emin misiniz?</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopyala</value>
+  </data>
+  <data name="CopyIncompleteCombis" xml:space="preserve">
+    <value>_Tamamlanmamış Combileri Kopyala</value>
+  </data>
+  <data name="CopyIncompleteCombisToolTip" xml:space="preserve">
+    <value>Kullanılan programlar PCG içinde olmasa bile Combiyi kopyalar</value>
+  </data>
+  <data name="CopyIncompleteSetListSlots" xml:space="preserve">
+    <value>_Tamamlanmamış Set List Ögelerini Kopyala</value>
+  </data>
+  <data name="CopyIncompleteSetListSlotsToolTip" xml:space="preserve">
+    <value>Kullanılan Programlar/Combiler PCG içinde olmasa bile Set List ögelerini kopyalar</value>
+  </data>
+  <data name="CopyPatchesFromMasterFile" xml:space="preserve">
+    <value>Patchleri (Program, Combi ya da Set List ögesi) Ana Dosya'dan kopyala</value>
+  </data>
+  <data name="CopyPatchesFromMasterFileToolTip" xml:space="preserve">
+    <value>Eğer PCG dosyasında bulunmuyor ve yüklenmişlerse Patchleri (Program, Combi ya da Set List ögesi) Ana Dosya'dan kopyalar</value>
+  </data>
+  <data name="CopySelected" xml:space="preserve">
+    <value>Seçili Patchleri (Program, Combi ya da Set List ögesi) ya da bankPcgIdaları kopyala</value>
+  </data>
+  <data name="CouldNotOpenManualWarning" xml:space="preserve">
+    <value>"PCG Tools Anasayfası açılamadı, internet bağlantınız olduğundan emin olun. 
+Sebep:
+{0}
+
+Inner exception:
+{1}"</value>
+  </data>
+  <data name="CsvFileFilter" xml:space="preserve">
+    <value>CSV dosyaları (*.csv)|*.csv|Tüm dosyalar (*.*)|*.*</value>
+  </data>
+  <data name="Cubase" xml:space="preserve">
+    <value>_Cubase</value>
+  </data>
+  <data name="CubaseIoError" xml:space="preserve">
+    <value>Cubase çıktısı alınırken I/O Hatası oluştu</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Kes</value>
+  </data>
+  <data name="CutCopyPaste" xml:space="preserve">
+    <value>Kes/Kopyala/Yapıştır</value>
+  </data>
+  <data name="CutCopyPasteMode" xml:space="preserve">
+    <value>Kes/Kopyala/Yapıştır Modu</value>
+  </data>
+  <data name="CutCopyPasteOperationUnfinishedWarning" xml:space="preserve">
+    <value>Kes/Kopyala/Yapıştır işi de tamamlanmadı</value>
+  </data>
+  <data name="CutSelected" xml:space="preserve">
+    <value>Seçili Patchleri (Program, Combi ya da Set List ögesi) ya da bankPcgIdaları kes</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="DescriptionControl" xml:space="preserve">
+    <value>_Açıklama</value>
+  </data>
+  <data name="DeselectAll" xml:space="preserve">
+    <value>_Hepsinin Seçimini Kaldır</value>
+  </data>
+  <data name="DevelopedBy" xml:space="preserve">
+    <value>Michel Keijzers, MiKeSoft tarafından geliştirildi</value>
+  </data>
+  <data name="DifferencesList" xml:space="preserve">
+    <value>_Farklar Listesi</value>
+  </data>
+  <data name="DifferencesListOptions" xml:space="preserve">
+    <value>Farklar Listesi Ayarlar</value>
+  </data>
+  <data name="DonateWarning" xml:space="preserve">
+    <value>Bağışla düğmesi açılamıyor</value>
+  </data>
+  <data name="DonationText" xml:space="preserve">
+    <value>Tasarımına, programlamasına, testine, yayınlanmasına ve güncellemelerine yüzlerce saat harcamış olsam da bu uygulama herkesin kullanımına ücretsiz açıktır. Eğer program işinize yarıyorsa ve size zaman kazandırıyorsa lütfen bağış yapmayı düşünün.</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>_Aşağı</value>
+  </data>
+  <data name="DrumKitsInRadioButton" xml:space="preserve">
+    <value>drum kitler</value>
+  </data>
+  <data name="Dutch" xml:space="preserve">
+    <value>Hollandaca (Dutch)</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="EditMenu" xml:space="preserve">
+    <value>_Düzenle</value>
+  </data>
+  <data name="EditMenuItem" xml:space="preserve">
+    <value>_Düzenle</value>
+  </data>
+  <data name="EditSelectedPatch" xml:space="preserve">
+    <value>Seçili Patchi (Program, Combi ya da Set List ögesi) düzenle</value>
+  </data>
+  <data name="EditSettings" xml:space="preserve">
+    <value>Ayarları düzenle</value>
+  </data>
+  <data name="EditSingleCombi" xml:space="preserve">
+    <value>Tek bir Combiyi düzenle</value>
+  </data>
+  <data name="EditSingleProgram" xml:space="preserve">
+    <value>Tek bir Programı düzenle</value>
+  </data>
+  <data name="EditSingleSetList" xml:space="preserve">
+    <value>Tek bir Set Listi düzenle</value>
+  </data>
+  <data name="EditSingleSetListSlot" xml:space="preserve">
+    <value>Tek bir Set List ögesini düzenle</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Boş</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>_Etkin</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>İngilizce (English)</value>
+  </data>
+  <data name="ErrorOccurred" xml:space="preserve">
+    <value>Hata oluştu</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>PCG Tools'un 850'den fazla kullanıcısı var!</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>_Çık</value>
+  </data>
+  <data name="ExitCutCopyPasteMode" xml:space="preserve">
+    <value>_Kes/Kopyala/Yapıştır modundan çık</value>
+  </data>
+  <data name="ExitCutCopyPasteModeToolTip" xml:space="preserve">
+    <value>Kes/Kopyala/Yapıştır modundan çık</value>
+  </data>
+  <data name="ExportForSequencer" xml:space="preserve">
+    <value>_Seqencer için dışa aktar</value>
+  </data>
+  <data name="ExternalLinksDonators" xml:space="preserve">
+    <value>Bağışçıların Linkleri</value>
+  </data>
+  <data name="ExternalLinksDonatorsMenuItem" xml:space="preserve">
+    <value>_Bağışçıların Linkleri...</value>
+  </data>
+  <data name="ExternalLinksKorgRelated" xml:space="preserve">
+    <value>Korg Bağlantılı Linkler</value>
+  </data>
+  <data name="ExternalLinksKorgRelatedMenuItem" xml:space="preserve">
+    <value>_Korg Bağlantılı Linkler...</value>
+  </data>
+  <data name="ExternalLinksThirdParties" xml:space="preserve">
+    <value>Üçüncü Şahıslar Linkleri</value>
+  </data>
+  <data name="ExternalLinksThirdPartiesMenuItem" xml:space="preserve">
+    <value>_Üçüncü Şahıslar Linkleri...</value>
+  </data>
+  <data name="Fav" xml:space="preserve">
+    <value>Fav</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>_Favoriler</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>_Dosya</value>
+  </data>
+  <data name="FileContentList" xml:space="preserve">
+    <value>_Dosya İçerik Listesi</value>
+  </data>
+  <data name="FileOpenException" xml:space="preserve">
+    <value>"{0} Dosyasını okurken/incelerken bir istisna oluştu.
+
+Muhtemelen PCG Tools'un desteklemediği ya da bozuk bir PCG dosyası seçtiniz.
+
+Hata detayı:
+{1}
+
+Stack trace:
+{2}"</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Dosyalar</value>
+  </data>
+  <data name="FileState" xml:space="preserve">
+    <value>Dosya durumu</value>
+  </data>
+  <data name="FilterCombiNames" xml:space="preserve">
+    <value>_Combi İsimlerini Filtrele</value>
+  </data>
+  <data name="FilterDrumKits" xml:space="preserve">
+    <value>Drum Kit İsimlerini Filtrele</value>
+  </data>
+  <data name="FilterOnFavorites" xml:space="preserve">
+    <value>Favorilere Göre Filtrele</value>
+  </data>
+  <data name="FilterOnText" xml:space="preserve">
+    <value>Metine Göre Filtrele</value>
+  </data>
+  <data name="FilterOnTextControl" xml:space="preserve">
+    <value>_Metine Göre Filtrele</value>
+  </data>
+  <data name="FilterProgramBanks" xml:space="preserve">
+    <value>Program Bankalarını Filtrele</value>
+  </data>
+  <data name="FilterProgramNames" xml:space="preserve">
+    <value>_Program Bankalarını Filtrele</value>
+  </data>
+  <data name="FilterSetLists" xml:space="preserve">
+    <value>Set Listleri Filtrele</value>
+  </data>
+  <data name="FilterSetListSlotDescriptions" xml:space="preserve">
+    <value>_Set List Öge Açıklamalarını Filtrele</value>
+  </data>
+  <data name="FilterSetListSlotNames" xml:space="preserve">
+    <value>_Set List Öge İsimlerini Filtrele</value>
+  </data>
+  <data name="FilterWaveSequences" xml:space="preserve">
+    <value>Wave Sequence İsimlerini Filtrele</value>
+  </data>
+  <data name="ForumDiscussionLink" xml:space="preserve">
+    <value>Forum/Tartışma Linki:</value>
+  </data>
+  <data name="FourParametersNeededError" xml:space="preserve">
+    <value>4 Parametre gerekli (PCG dosya adını, liste türünü, liste alt türünü ve çıktı dosyası adını girin)</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>French (French)</value>
+  </data>
+  <data name="Generate" xml:space="preserve">
+    <value>_Yarat</value>
+  </data>
+  <data name="GenerateAList" xml:space="preserve">
+    <value>Liste yarat</value>
+  </data>
+  <data name="GenerateList" xml:space="preserve">
+    <value>_Liste yarat...</value>
+  </data>
+  <data name="GenerateListError" xml:space="preserve">
+    <value>Liste yaratılırken/yazılırken bir hata oluştu</value>
+  </data>
+  <data name="Generic" xml:space="preserve">
+    <value>_Generic</value>
+  </data>
+  <data name="Greek" xml:space="preserve">
+    <value>Yunanca (Greek)</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>_Yardım</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IgnoreEmptyInitCombis" xml:space="preserve">
+    <value>_Boş/Sıfırlanmış Combileri Yoksay</value>
+  </data>
+  <data name="IgnoreEmptyInitDrumKits" xml:space="preserve">
+    <value>_Boş/Sıfırlanmış Drum Kitleri Yoksay</value>
+  </data>
+  <data name="IgnoreEmptyInitSetListSlots" xml:space="preserve">
+    <value>_Boş/Sıfırlanmış Set List Ögelerini Yoksay</value>
+  </data>
+  <data name="IgnoreEmptyInitWaveSequences" xml:space="preserve">
+    <value>_Boş/Sıfırlanmış Wave Sequenceleri Yoksay</value>
+  </data>
+  <data name="IgnoreFirstProgram" xml:space="preserve">
+    <value>_İlk Programı Yoksay</value>
+  </data>
+  <data name="IgnoreMutedOffTimbres" xml:space="preserve">
+    <value>_Sessiz(muted)/Kapalı Sesleri Yoksay</value>
+  </data>
+  <data name="IgnorePatchNames" xml:space="preserve">
+    <value>_Patch (Program, Combi ya da Set List ögesi) İsimlerini Yoksay</value>
+  </data>
+  <data name="IgnoreSetListSlotDescriptions" xml:space="preserve">
+    <value>_Set List Açıklamalarını Yoksay</value>
+  </data>
+  <data name="IllegalListType" xml:space="preserve">
+    <value>Yasak liste türü {0}</value>
+  </data>
+  <data name="IllegalOption" xml:space="preserve">
+    <value>Hata: Yasak seçenek {0}</value>
+  </data>
+  <data name="IllegalSubType" xml:space="preserve">
+    <value>Yasak alt tür {0}</value>
+  </data>
+  <data name="IncompatibleModelError" xml:space="preserve">
+    <value>içinde</value>
+  </data>
+  <data name="IncompatibleOsVersion" xml:space="preserve">
+    <value>içinde</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Yapıştırma panosundaki patchler uyumsuz bir Korg workstation modeline ait ve kopyalanamıyor</value>
+  </data>
+  <data name="InnerExceptionMessage" xml:space="preserve">
+    <value>Yapıştırma panosundaki patchler uyumsuz bir işletim sistemi sürümüne ait ve kopyalanamıyor</value>
+  </data>
+  <data name="IsFavorite" xml:space="preserve">
+    <value>_Favori İşaretlenmiş</value>
+  </data>
+  <data name="Italian" xml:space="preserve">
+    <value>İtalyanca (Italian)</value>
+  </data>
+  <data name="KorgRelated" xml:space="preserve">
+    <value>Korg Bağlantılı</value>
+  </data>
+  <data name="LinkWarning" xml:space="preserve">
+    <value>Link açılamıyor</value>
+  </data>
+  <data name="ListGenerator" xml:space="preserve">
+    <value>Liste Üretici</value>
+  </data>
+  <data name="ListGeneratorSongsWarning" xml:space="preserve">
+    <value>Liste Üretici şarkıları desteklemiyor</value>
+  </data>
+  <data name="ListSubType" xml:space="preserve">
+    <value>_Liste Alt Türü</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>Liste Türü</value>
+  </data>
+  <data name="LongListGenerationWarning" xml:space="preserve">
+    <value>"Bu tip listenin yaratılması PCG'deki patch sayısına ve seçili farklılıklara göre birkaç dakika sürebilir. 
+
+Listeyi yaratmak için Tamam'a, çıkmak için İptal'e basın."</value>
+  </data>
+  <data name="Luna" xml:space="preserve">
+    <value>_Luna</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>_Kullanma Kılavuzu...</value>
+  </data>
+  <data name="MarkAsFavorite" xml:space="preserve">
+    <value>Seçili patchleri (Program, Combi ya da Set List ögesi), bankPcgIdaları favori olarak işaretle</value>
+  </data>
+  <data name="MasterFiles" xml:space="preserve">
+    <value>_Ana Dosyalar</value>
+  </data>
+  <data name="MaxNumberOfDifferences" xml:space="preserve">
+    <value>_En Çok Farklılık Sayısı (byte olarak)</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Mesaj</value>
+  </data>
+  <data name="ModeledProgram" xml:space="preserve">
+    <value>Modellenmiş Program</value>
+  </data>
+  <data name="ModeledPrograms" xml:space="preserve">
+    <value>Modellenmiş</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>_Aşağı Taşı</value>
+  </data>
+  <data name="MoveDownToolTip" xml:space="preserve">
+    <value>Seçili patchleri (Program, Combi ya da Set List ögesi) aşağı taşı</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>_Yukarı Taşı</value>
+  </data>
+  <data name="MoveUpToolTip" xml:space="preserve">
+    <value>Seçili patchleri (Program, Combi ya da Set List ögesi) yukarı taşı</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>_Asla</value>
+  </data>
+  <data name="NoContentWarning" xml:space="preserve">
+    <value>PCG dosyasında program, combi ya da set list ögesi yok</value>
+  </data>
+  <data name="NumberOfSelectedPatches" xml:space="preserve">
+    <value>Seçili patch sayısı:</value>
+  </data>
+  <data name="OasysVoucherCodeSponsorMessage" xml:space="preserve">
+    <value>"Bu kişiler değeri 750$ bulan Korg Oasys kupon kodlarının bir kısmını ya da tamamını Kronos sahiplerine bağışladılar. 
+Bu kodları edinen tüm Korg Kronos kullanıcıları adına bu kişilere teşekkür etmek isterim:"</value>
+  </data>
+  <data name="ExternalLinksOasysVoucherCodeSponsors" xml:space="preserve">
+    <value>Oasys Kupon Sponsorları Linkler</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="OnlyDifferencesError" xml:space="preserve">
+    <value>{0} seçeneği yalnızca farklar listesi seçildiğinde kullanılabilir</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Aç</value>
+  </data>
+  <data name="OpenedDuplicateWarning" xml:space="preserve">
+    <value>Zaten aynı isimde bir PCG penceresi açtınız ({0}). Bu pencereler senkronize çalışmıyorlar o yüzden aynı isme sahip PCG pencerelerini aynı anda düzenlemediğinizden emin olun.</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>_Seçenekler</value>
+  </data>
+  <data name="OsVersion" xml:space="preserve">
+    <value>İşletim Sistemi versiyonu</value>
+  </data>
+  <data name="Others" xml:space="preserve">
+    <value>Diğer</value>
+  </data>
+  <data name="Output" xml:space="preserve">
+    <value>Çıktı</value>
+  </data>
+  <data name="OutputFile" xml:space="preserve">
+    <value>_Çıktı Dosyası:</value>
+  </data>
+  <data name="OutputTxt" xml:space="preserve">
+    <value>output.txt</value>
+  </data>
+  <data name="OverwriteFilledCombis" xml:space="preserve">
+    <value>_Dolu Combilerin Üzerine Yaz</value>
+  </data>
+  <data name="OverwriteFilledCombisToolTip" xml:space="preserve">
+    <value>Dolu (Boş olmayan/sıfırlanmamış) Combilerin üzerine yaz</value>
+  </data>
+  <data name="OverwriteFilledPrograms" xml:space="preserve">
+    <value>_Dolu Programların Üzerine Yaz</value>
+  </data>
+  <data name="OverwriteFilledProgramsToolTip" xml:space="preserve">
+    <value>Dolu (Boş olmayan/sıfırlanmamış) Programların üzerine yaz</value>
+  </data>
+  <data name="OverwriteFilledSetListSlots" xml:space="preserve">
+    <value>_Dolu Set List Ögelerinin Üzerine Yaz</value>
+  </data>
+  <data name="OverwriteFilledSetListSlotsToolTip" xml:space="preserve">
+    <value>Dolu (Boş olmayan/sıfırlanmamış) Set List Ögelerinin üzerine yaz</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Yapıştır</value>
+  </data>
+  <data name="PasteDuplicateProgramsToolTip" xml:space="preserve">
+    <value>PCG'de zaten bulunsalar bile Programları PCG'ye yapıştır</value>
+  </data>
+  <data name="PasteDuplicateCombis" xml:space="preserve">
+    <value>_Yinelenmiş Combileri Yapıştır</value>
+  </data>
+  <data name="PasteDuplicateCombisToolTip" xml:space="preserve">
+    <value>PCG'de zaten bulunsalar bile Combileri PCG'ye yapıştır</value>
+  </data>
+  <data name="PasteDuplicatePrograms" xml:space="preserve">
+    <value>_Yinelenmiş Programları Yapıştır</value>
+  </data>
+  <data name="PasteDuplicateSetListSlots" xml:space="preserve">
+    <value>_Yinelenmiş Set List Ögelerini Yapıştır</value>
+  </data>
+  <data name="PasteDuplicateSetListSlotsToolTip" xml:space="preserve">
+    <value>PCG'de zaten bulunsalar bile Set List Ögelerini PCG'ye yapıştır</value>
+  </data>
+  <data name="PasteSelected" xml:space="preserve">
+    <value>Kopyalanmış Patchleri (Program, Combi ya da Set List ögesi) yapıştır</value>
+  </data>
+  <data name="PasteWarning" xml:space="preserve">
+    <value>"Yapıştır komutu hiç bir Patchi (Program, Combi ya da Set List ögesi) yapıştıramadı. Şu sebeplerden dolayı olabilir: 
+
+- Kopyalanan tüm Patchler zaten hedef Patch'e yapıştırılmış ve kopyala/yapıştır ayarları yinelenmiş Patchlerin yapıştırılmasını engelliyor (kopyala/yapıştır ayarlarını kontrol edin). Yapıştırılamayan patchler yapıştırma panosundan kaldırıldı. 
+
+- Kopyala/yapıştır ayarları dolu patchlerin üzerine yazmayı engellediği için yapıştırma panosundaki patchler yapıştırılamadı.
+
+- Yapıştıralacak uygun patch bulunmadığı için yapıştırma panosundaki patchler seçilen yere yapıştırılamadı (örneğin sample programları modellenmiş patchlere yapıştırlamaz). Kopylanan patchleri yapıştırmak için doğru bankPcgIda türünü seçin."</value>
+  </data>
+  <data name="PastingAlreadyExecutedWarning" xml:space="preserve">
+    <value>Yapıştırma işlermi zaten {0} dosyasında yapıldı. Bu dosyaya yapıştırmaya devam edin ya da yapıştırma panosunu boşaltmak için kes/kopyala/yapıştır modundan çıkın.</value>
+  </data>
+  <data name="PastingUnfinishedWarning" xml:space="preserve">
+    <value>Kesilmiş ya da kopyalanmış patchlerin yapıştırılması sonlanmadı. Kes/kopyala/yapıştır modundan çıkarsanız bir veya daha fazla combi ve/veya set list ögesi doğru program ve/veya combilere referans olamayacak. Kes yapıştır modundan çıkarak kesilmiş patchler silinmiş ancak yapıştırılmamış olacak.</value>
+  </data>
+  <data name="PatchList" xml:space="preserve">
+    <value>_Patch (Program, Combi ya da Set List ögesi) Listesi</value>
+  </data>
+  <data name="PatchName" xml:space="preserve">
+    <value>_Patch (Program, Combi ya da Set List ögesi) İsmi</value>
+  </data>
+  <data name="PcgFileName" xml:space="preserve">
+    <value>PCG Dosya Adı</value>
+  </data>
+  <data name="PcgMasterFile" xml:space="preserve">
+    <value>PCG Ana Dosyası</value>
+  </data>
+  <data name="PcgTools" xml:space="preserve">
+    <value>PCG Tools</value>
+  </data>
+  <data name="Polish" xml:space="preserve">
+    <value>Lehçe (Polish)</value>
+  </data>
+  <data name="PrgId" xml:space="preserve">
+    <value>Prg ID</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="ProgramCombiName" xml:space="preserve">
+    <value>Program/Combi adı</value>
+  </data>
+  <data name="ProgramName" xml:space="preserve">
+    <value>Program Adı</value>
+  </data>
+  <data name="ProgramsAsRadioButton" xml:space="preserve">
+    <value>_Programlar</value>
+  </data>
+  <data name="ProgramUsageList" xml:space="preserve">
+    <value>_Program Kullanım Listesi</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>_Aralık</value>
+  </data>
+  <data name="Recall" xml:space="preserve">
+    <value>_Geri Çek</value>
+  </data>
+  <data name="RecallClipboard" xml:space="preserve">
+    <value>Kopyalanmış Patchleri (Program, Combi ya da Set List ögesi) yapıştırma panosuna geri çek</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Referans</value>
+  </data>
+  <data name="RestartToChangeLanguage" xml:space="preserve">
+    <value>Şuanki dili seçili dil ile değiştirmek için PCG Tools'u yeniden başlatın</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>_Sıfırla</value>
+  </data>
+  <data name="RevertToSaved" xml:space="preserve">
+    <value>_Kaydedilene Dön</value>
+  </data>
+  <data name="RevertWarning" xml:space="preserve">
+    <value>{0} dosyası değiştirildi. Kaydedilmiş dosyaya {1} dönmek ister misiniz?</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Rusça (Russian)</value>
+  </data>
+  <data name="Sample" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="SampledProgram" xml:space="preserve">
+    <value>Sample Programı</value>
+  </data>
+  <data name="SampledPrograms" xml:space="preserve">
+    <value>Sample'lı</value>
+  </data>
+  <data name="SampleFileName" xml:space="preserve">
+    <value>Sample Dosya Adı</value>
+  </data>
+  <data name="Samples" xml:space="preserve">
+    <value>Samplelar</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>_Kaydet</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>_Farklı Kaydet...</value>
+  </data>
+  <data name="SaveFile" xml:space="preserve">
+    <value>{0} dosyasını kaydetmek ister misiniz?</value>
+  </data>
+  <data name="SearchBothDirections" xml:space="preserve">
+    <value>_İki Yeri de Ara</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>_Tümünü Seç</value>
+  </data>
+  <data name="SelectFileToSaveTo" xml:space="preserve">
+    <value>Okunacak PCG veya SNG dosyası seç</value>
+  </data>
+  <data name="SelectFileToRead" xml:space="preserve">
+    <value>Kaydedilecek PCG dosyası seç</value>
+  </data>
+  <data name="SelectWriteFile" xml:space="preserve">
+    <value>Yazılacak dosya seç</value>
+  </data>
+  <data name="SetFavorite" xml:space="preserve">
+    <value>_Favori olarak işaretle</value>
+  </data>
+  <data name="SetList" xml:space="preserve">
+    <value>Set List</value>
+  </data>
+  <data name="SetListError" xml:space="preserve">
+    <value>Set list ÜST değeri ALT değerinden daha düşük</value>
+  </data>
+  <data name="SetListName" xml:space="preserve">
+    <value>Set List İsmi</value>
+  </data>
+  <data name="SetListsAsRadioButton" xml:space="preserve">
+    <value>_Set Listler</value>
+  </data>
+  <data name="SetListSlot" xml:space="preserve">
+    <value>Set List Ögesi</value>
+  </data>
+  <data name="SetListSlots" xml:space="preserve">
+    <value>Set List Ögeleri</value>
+  </data>
+  <data name="SetPcgFileAsMasterFile" xml:space="preserve">
+    <value>_PCG Dosyasını Ana Dosya Yap</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="SettingsCommand" xml:space="preserve">
+    <value>_Ayarlar...</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>_Göster...</value>
+  </data>
+  <data name="ShowEdit" xml:space="preserve">
+    <value>_Düzenle...</value>
+  </data>
+  <data name="ShowInformation" xml:space="preserve">
+    <value>PCG Tools bilgilerini göster</value>
+  </data>
+  <data name="ShowMenu" xml:space="preserve">
+    <value>_Göster</value>
+  </data>
+  <data name="ShowTimbres" xml:space="preserve">
+    <value>Seçili Combinin seslerini göster</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>şarkı</value>
+  </data>
+  <data name="Songs" xml:space="preserve">
+    <value>Şarkılar</value>
+  </data>
+  <data name="Sorting" xml:space="preserve">
+    <value>Sıralanıyor</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>İspanyolca (Spanish)</value>
+  </data>
+  <data name="SpecialEvent" xml:space="preserve">
+    <value>_Özel Olay</value>
+  </data>
+  <data name="SpecialEventToolTip" xml:space="preserve">
+    <value>Özel olay göster</value>
+  </data>
+  <data name="SponsoredBy" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="StackTrace" xml:space="preserve">
+    <value>Yığın izleme</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>Alt Kategori</value>
+  </data>
+  <data name="SubCategoryControl" xml:space="preserve">
+    <value>_Alt Kategori</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>_Metin</value>
+  </data>
+  <data name="TextFilesFilter" xml:space="preserve">
+    <value>Metin dosyaları (*.txt)|*.txt|Tüm dosyalar (*.*)|*.*</value>
+  </data>
+  <data name="ThanksTo" xml:space="preserve">
+    <value>Teşekkürler:</value>
+  </data>
+  <data name="ThanksToKorganizR" xml:space="preserve">
+    <value>Yarattığı çeşitli özellikler için KorganizR'e teşekkürler!</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>_Tema</value>
+  </data>
+  <data name="Timbres" xml:space="preserve">
+    <value>_Sesler (timbre= combinin kanalları)</value>
+  </data>
+  <data name="TimbresOf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>'den</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>_Araçlar</value>
+  </data>
+  <data name="TxtExtension" xml:space="preserve">
+    <value>txt</value>
+  </data>
+  <data name="TypeBankIndex" xml:space="preserve">
+    <value>_Tür/Banka/İndeks</value>
+  </data>
+  <data name="UnmarkAsFavorite" xml:space="preserve">
+    <value>Seçili patchlerin veya bankPcgIdaların Favori işaretini kaldır</value>
+  </data>
+  <data name="UnsetFavorite" xml:space="preserve">
+    <value>_Favoriden kaldır</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>_Yukarı</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versiyon</value>
+  </data>
+  <data name="WaveSequencesInRadioButton" xml:space="preserve">
+    <value>wave sequenceler</value>
+  </data>
+  <data name="WorkstationModel" xml:space="preserve">
+    <value>Workstation Modeli</value>
+  </data>
+  <data name="Xml" xml:space="preserve">
+    <value>_XML</value>
+  </data>
+  <data name="XmlFileFilter" xml:space="preserve">
+    <value>XML dosyaları (*.xml)|*.xml|Tüm dosyalar (*.*)|*.*</value>
+  </data>
+  <data name="CompactList" xml:space="preserve">
+    <value>_Sıkıştır</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Almanca (German)</value>
+  </data>
+  <data name="LongList" xml:space="preserve">
+    <value>Uzun</value>
+  </data>
+  <data name="ShortList" xml:space="preserve">
+    <value>Kısa</value>
+  </data>
+  <data name="FilterCombiBanks_slg" xml:space="preserve">
+    <value>Combi Bankalarını Filtrele</value>
+  </data>
+  <data name="Loaded_mastd" xml:space="preserve">
+    <value>Açıldı</value>
+  </data>
+  <data name="NotPresent_mastd" xml:space="preserve">
+    <value>Mevcut değil</value>
+  </data>
+  <data name="Unassigned_mastd" xml:space="preserve">
+    <value>Atanmamış</value>
+  </data>
+  <data name="Unloaded_mastd" xml:space="preserve">
+    <value>Yüklenmemiş</value>
+  </data>
+  <data name="XOfYCharacters_editw" xml:space="preserve">
+    <value>{1}'de {0} karakter</value>
+  </data>
+  <data name="Aero_mainw_tt" xml:space="preserve">
+    <value>Windows Vista/Windows 7 tema</value>
+  </data>
+  <data name="Generic_mainw_tt" xml:space="preserve">
+    <value>Generik Görsel Stüdyo Tasarım teması</value>
+  </data>
+  <data name="IgnoreEmptyInitPrograms_slg" xml:space="preserve">
+    <value>_Boş/Sıfırlanmış Programları Yoksay</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="Luna_mainw_tt" xml:space="preserve">
+    <value>Mavi Windows XP teması</value>
+  </data>
+  <data name="OpenFileCommand_mainw_tt" xml:space="preserve">
+    <value>PCG ya da SNG dosyalarını aç</value>
+  </data>
+  <data name="SaveFileAsCommand_mainw_tt" xml:space="preserve">
+    <value>Seçili PCG veya SNG dosyasının üzerine yaz</value>
+  </data>
+  <data name="SaveFileCommand_mainw_tt" xml:space="preserve">
+    <value>Seçili PCG veya SNG dosyasını farklı bir dosyaya/yere kaydet</value>
+  </data>
+  <data name="ExternalLinksTranslators" xml:space="preserve">
+    <value>Çevirmenler Linkleri</value>
+  </data>
+  <data name="ExternalLinksTranslatorsMenuItem" xml:space="preserve">
+    <value>_Çevirmenler Linkleri...</value>
+  </data>
+  <data name="ClearProgramIsAssigned" xml:space="preserve">
+    <value>{0}:{1} Programı bir combi'deki sesleri temizleyecek program olarak atandı.</value>
+  </data>
+  <data name="Artist_settw" xml:space="preserve">
+    <value>Sanatçı</value>
+  </data>
+  <data name="Categories_setw" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="CategorySetA_setw" xml:space="preserve">
+    <value>Kategori A</value>
+  </data>
+  <data name="CategorySetB_setw" xml:space="preserve">
+    <value>Kategori B</value>
+  </data>
+  <data name="CategorySetSelect_setw" xml:space="preserve">
+    <value>Kategori Dizisi Seç (Sadece Korg Trinity)</value>
+  </data>
+  <data name="EFileTypePcg" xml:space="preserve">
+    <value>PCG</value>
+  </data>
+  <data name="EFileTypeSng" xml:space="preserve">
+    <value>SNG</value>
+  </data>
+  <data name="EModelTypeKarma" xml:space="preserve">
+    <value>Karma</value>
+  </data>
+  <data name="EModelTypeKrome" xml:space="preserve">
+    <value>Krome</value>
+  </data>
+  <data name="EModelTypeKross" xml:space="preserve">
+    <value>Kross</value>
+  </data>
+  <data name="EModelTypeKronos" xml:space="preserve">
+    <value>Kronos</value>
+  </data>
+  <data name="EModelTypeM3" xml:space="preserve">
+    <value>M3</value>
+  </data>
+  <data name="EModelTypeM50" xml:space="preserve">
+    <value>M50</value>
+  </data>
+  <data name="EModelTypeOasys" xml:space="preserve">
+    <value>Oasys</value>
+  </data>
+  <data name="EModelTypeTrinity" xml:space="preserve">
+    <value>Trinity</value>
+  </data>
+  <data name="EModelTypeTritonTrClassicStudioRack" xml:space="preserve">
+    <value>Triton TR/Classic/Studio/Rack</value>
+  </data>
+  <data name="EModelTypeTritonExtreme" xml:space="preserve">
+    <value>Triton Extreme</value>
+  </data>
+  <data name="EModelTypeTritonLE" xml:space="preserve">
+    <value>Triton LE</value>
+  </data>
+  <data name="ESynthesisTypeAi" xml:space="preserve">
+    <value>AI</value>
+  </data>
+  <data name="ESynthesisTypeAi2" xml:space="preserve">
+    <value>AI2</value>
+  </data>
+  <data name="ESynthesisTypeEds" xml:space="preserve">
+    <value>EDS</value>
+  </data>
+  <data name="ESynthesisTypeEdsi" xml:space="preserve">
+    <value>EDS-i</value>
+  </data>
+  <data name="ESynthesisTypeEdsx" xml:space="preserve">
+    <value>EDS-x</value>
+  </data>
+  <data name="ESynthesisTypeExi" xml:space="preserve">
+    <value>EXi</value>
+  </data>
+  <data name="ESynthesisTypeHd1" xml:space="preserve">
+    <value>HD-1</value>
+  </data>
+  <data name="ESynthesisTypeHi" xml:space="preserve">
+    <value>HI</value>
+  </data>
+  <data name="ESynthesisTypeMossZ1" xml:space="preserve">
+    <value>MOSS/Z1</value>
+  </data>
+  <data name="ESynthesisTypeProphecy" xml:space="preserve">
+    <value>Prophecy</value>
+  </data>
+  <data name="ESynthesisTypeRadias" xml:space="preserve">
+    <value>Radias</value>
+  </data>
+  <data name="FileTypeNotSupportedForThisWorkstation" xml:space="preserve">
+    <value>{1} workstation modelinin {0} dosya tipi desteklenmiyor.</value>
+  </data>
+  <data name="FilterDrumKitNames" xml:space="preserve">
+    <value>Drum Kitleri Filtrele</value>
+  </data>
+  <data name="FilterWaveSequenceNames" xml:space="preserve">
+    <value>Wave Sequenceleri Filtrele</value>
+  </data>
+  <data name="GotoNextWindow_menu" xml:space="preserve">
+    <value>_Sonraki Pencereye Git</value>
+  </data>
+  <data name="GotoPreviousWindow_menu" xml:space="preserve">
+    <value>_Önceki Pencereye Git</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="Remember_sortw" xml:space="preserve">
+    <value>_Hatırla</value>
+  </data>
+  <data name="SelectSortSelection_sortw" xml:space="preserve">
+    <value>Sıralama Seçimini Seç</value>
+  </data>
+  <data name="Select_menu" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="SetPcgFileAsMasterFileLong" xml:space="preserve">
+    <value>{0} dosyası {2} OS sürümlü Korg {1} için Ana Dosya olarak ayarlandı</value>
+  </data>
+  <data name="SetPcgFileAsMasterFileShort" xml:space="preserve">
+    <value>{0} dosyası Korg {1} için Ana Dosya olarak ayarlandı</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="PortugueseBrazil" xml:space="preserve">
+    <value>Portekizce, Brezilya (Portuguese, Brazil)</value>
+  </data>
+  <data name="PortuguesePortugal" xml:space="preserve">
+    <value>Portekizce, Portekiz (Portuguese, Portugal)</value>
+  </data>
+  <data name="SortArtistTitleCategory_sortw" xml:space="preserve">
+    <value>Sanatçı, Başlık, Kategori</value>
+  </data>
+  <data name="SortCategoryArtistTitle_sortw" xml:space="preserve">
+    <value>Kategori, Şarkıcı, Başlık</value>
+  </data>
+  <data name="SortCategoryName_sortw" xml:space="preserve">
+    <value>Kategori, İsim</value>
+  </data>
+  <data name="SortCategoryTitleArtist_sortw" xml:space="preserve">
+    <value>Kategori, Başlık, Sanatçı</value>
+  </data>
+  <data name="SortNameCategory_sortw" xml:space="preserve">
+    <value>İsim, Kategori</value>
+  </data>
+  <data name="SortOrder_settw" xml:space="preserve">
+    <value>Sıralama dizimi</value>
+  </data>
+  <data name="SortTitleArtistCategory_sortw" xml:space="preserve">
+    <value>Başlık, Sanatçı, Kategori</value>
+  </data>
+  <data name="Sort_menu" xml:space="preserve">
+    <value>_Sırala</value>
+  </data>
+  <data name="Sort_tab" xml:space="preserve">
+    <value>Sıralama</value>
+  </data>
+  <data name="SplitCharacter_settw" xml:space="preserve">
+    <value>Karakter Ayır:</value>
+  </data>
+  <data name="SynthesisType_pcgw" xml:space="preserve">
+    <value>Sentez Tipi</value>
+  </data>
+  <data name="TitleArtistOrder_settw" xml:space="preserve">
+    <value>Başlık/Sanatçı Sırası</value>
+  </data>
+  <data name="Title_settw" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="Version1011" xml:space="preserve">
+    <value>1.0/1.1</value>
+  </data>
+  <data name="Version1516" xml:space="preserve">
+    <value>1.5/1.6</value>
+  </data>
+  <data name="Version1x" xml:space="preserve">
+    <value>1.x</value>
+  </data>
+  <data name="Version2x" xml:space="preserve">
+    <value>2.x</value>
+  </data>
+  <data name="VersionV2" xml:space="preserve">
+    <value>V2</value>
+  </data>
+  <data name="VersionV3" xml:space="preserve">
+    <value>V3</value>
+  </data>
+  <data name="Windows_menu" xml:space="preserve">
+    <value>_Pencereler</value>
+  </data>
+  <data name="Czech" xml:space="preserve">
+    <value>Çekçe (Czech)</value>
+  </data>
+  <data name="PcgToolsHomePage" xml:space="preserve">
+    <value>PCG Tools Ana Sayfa</value>
+  </data>
+  <data name="Croatian" xml:space="preserve">
+    <value>Hırvatça (Croatian)</value>
+  </data>
+  <data name="EModelTypeMicroStation" xml:space="preserve">
+    <value>microSTATION</value>
+  </data>
+  <data name="SerbianCyrillic" xml:space="preserve">
+    <value>Sırp Krli Dili (Serbian Cyrillic)</value>
+  </data>
+  <data name="SerbianLatin" xml:space="preserve">
+    <value>Sırp Latincesi (Serbian Latin)</value>
+  </data>
+  <data name="Swedish" xml:space="preserve">
+    <value>İsveççe (Swedish)</value>
+  </data>
+  <data name="Version20" xml:space="preserve">
+    <value>2.0</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Web sitesi</value>
+  </data>
+  <data name="GenreThanPatchName_control" xml:space="preserve">
+    <value>_Tarz, ardından Patch (Program, Combi ya da Set List ögesi) Adı</value>
+  </data>
+  <data name="Genre_control" xml:space="preserve">
+    <value>_Tarz</value>
+  </data>
+  <data name="FileOpenDialogFiles" xml:space="preserve">
+    <value>dosyalar</value>
+  </data>
+  <data name="FileSaveDialogFile" xml:space="preserve">
+    <value>dosya</value>
+  </data>
+  <data name="GM" xml:space="preserve">
+    <value>GM</value>
+  </data>
+  <data name="RenameFileWhenPatchNameChanges_checkBox" xml:space="preserve">
+    <value>_Patch (Program, Combi ya da Set List ögesi) adı değiştiğinde dosyayı yeniden isimlendir</value>
+  </data>
+  <data name="SinglePatchFiles_groupbox" xml:space="preserve">
+    <value>Tek Patch (Program, Combi ya da Set List ögesi) Dosyaları</value>
+  </data>
+  <data name="VirtualBanks" xml:space="preserve">
+    <value>Sanal Bankalar</value>
+  </data>
+  <data name="Programs" xml:space="preserve">
+    <value>programlar</value>
+  </data>
+  <data name="Stb_MultipleCombisInMultipleBanks" xml:space="preserve">
+    <value>{1} Bankada {0} Combi</value>
+  </data>
+  <data name="Stb_MultipleCombisInOneBank" xml:space="preserve">
+    <value>1 Bankada {0} Combi</value>
+  </data>
+  <data name="Stb_MultipleDrumKitsInMultipleBanks" xml:space="preserve">
+    <value>{1} Bankada {0} Drum Kit</value>
+  </data>
+  <data name="Stb_MultipleDrumKitsInOneBank" xml:space="preserve">
+    <value>1 Bankada {0} Drum Kit</value>
+  </data>
+  <data name="Stb_MultipleProgramsInMultipleBanks" xml:space="preserve">
+    <value>{1} Bankada {0} Program</value>
+  </data>
+  <data name="Stb_MultipleProgramsInOneBank" xml:space="preserve">
+    <value>1 Bankada {0} Program</value>
+  </data>
+  <data name="Stb_MultipleSetListSlotsInMultipleSetLists" xml:space="preserve">
+    <value>{0} Set Listte {0} Set List Ögesi</value>
+  </data>
+  <data name="Stb_MultipleSetListSlotsInOneSetList" xml:space="preserve">
+    <value>1 Set Listte {0} Set List Ögesi</value>
+  </data>
+  <data name="Stb_MultipleWaveSequencesInMultipleBanks" xml:space="preserve">
+    <value>{1} Bankada {0} Wave Sequence</value>
+  </data>
+  <data name="Stb_MultipleWaveSequencesInOneBank" xml:space="preserve">
+    <value>1 Bankada {0} Wave Sequence</value>
+  </data>
+  <data name="Stb_OneCombiInMultipleBanks" xml:space="preserve">
+    <value>{0} Bankada 1 Combi</value>
+  </data>
+  <data name="Stb_OneCombiInOneBank" xml:space="preserve">
+    <value>1 Bankada 1 Combi</value>
+  </data>
+  <data name="Stb_OneDrumKitInMultipleBanks" xml:space="preserve">
+    <value>{0} Bankada 1 Drum Kit</value>
+  </data>
+  <data name="Stb_OneDrumKitInOneBank" xml:space="preserve">
+    <value>1 Bankada 1 Drum Kit</value>
+  </data>
+  <data name="Stb_OneProgramInMultipleBanks" xml:space="preserve">
+    <value>{0} Bankada 1 Program</value>
+  </data>
+  <data name="Stb_OneProgramInOneBank" xml:space="preserve">
+    <value>1 Bankada 1 Program</value>
+  </data>
+  <data name="Stb_OneSetListSlotInMultipleSetLists" xml:space="preserve">
+    <value>{0} Set Listte 1 Set List Ögesi</value>
+  </data>
+  <data name="Stb_OneSetListSlotInOneSetList" xml:space="preserve">
+    <value>1 Set Listte 1 Set List Ögesi</value>
+  </data>
+  <data name="Stb_OneWaveSequenceInMultipleBanks" xml:space="preserve">
+    <value>{0} Bankada 1 Wave Sequence</value>
+  </data>
+  <data name="Stb_OneWaveSequenceInOneBank" xml:space="preserve">
+    <value>1 Bankada 1 Wave Sequence</value>
+  </data>
+  <data name="SelectAll_menu" xml:space="preserve">
+    <value>_Tümünü Seç</value>
+  </data>
+  <data name="ThanksAlso" xml:space="preserve">
+    <value>Ayrıca teşekkürler:</value>
+  </data>
+  <data name="ThanksForTranslating" xml:space="preserve">
+    <value>çeviri için.</value>
+  </data>
+  <data name="ThanksSpecial" xml:space="preserve">
+    <value>Özel Teşekkürler:</value>
+  </data>
+  <data name="ThanksSpecialReason" xml:space="preserve">
+    <value>test edip ve/veya yararlı bilgi sağladığı için.</value>
+  </data>
+  <data name="Bank_2str" xml:space="preserve">
+    <value>Banka</value>
+  </data>
+  <data name="CheckTypeContainsIllegalCharacters" xml:space="preserve">
+    <value>{0} yasak karakterler içeriyor</value>
+  </data>
+  <data name="ColorAzure" xml:space="preserve">
+    <value>Azure</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorBrick" xml:space="preserve">
+    <value>Brick</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorBurgundy" xml:space="preserve">
+    <value>Burgundy</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorCacao" xml:space="preserve">
+    <value>Cacao</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorCharcoal" xml:space="preserve">
+    <value>Charcoal</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorDanim" xml:space="preserve">
+    <value>Danim</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorDefault" xml:space="preserve">
+    <value>Default</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorGold" xml:space="preserve">
+    <value>Gold</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorIndigo" xml:space="preserve">
+    <value>Indigo</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorIvy" xml:space="preserve">
+    <value>Ivy</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorLavender" xml:space="preserve">
+    <value>Lavender</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorNavy" xml:space="preserve">
+    <value>Navy</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorOlive" xml:space="preserve">
+    <value>Olive</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorRose" xml:space="preserve">
+    <value>Rose</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorSilver" xml:space="preserve">
+    <value>Silver</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColorSlate" xml:space="preserve">
+    <value>Slate</value>
+    <comment>In Edit Set List Slot</comment>
+  </data>
+  <data name="ColumnCrcValueExcludingName" xml:space="preserve">
+    <value>_CRC değeri -isim hariç</value>
+    <comment>A column to show the CRC value of a patch excluding its name</comment>
+  </data>
+  <data name="ColumnCrcValueIncludingName" xml:space="preserve">
+    <value>_CRC değeri -isim dahil</value>
+    <comment>A column to show the CRC value of a patch including its name</comment>
+  </data>
+  <data name="CombiReferenceChanger" xml:space="preserve">
+    <value>Combi Referans Değiştirici</value>
+  </data>
+  <data name="ControlColor" xml:space="preserve">
+    <value>_Renk</value>
+    <comment>Color of a set list slot)</comment>
+  </data>
+  <data name="ControlTextSize" xml:space="preserve">
+    <value>_Yazı Büyüklüğü</value>
+    <comment>Text size of a set list slot</comment>
+  </data>
+  <data name="ControlTextSizeL" xml:space="preserve">
+    <value>_L</value>
+    <comment>Text size L(arge) of a set list slot</comment>
+  </data>
+  <data name="ControlTextSizeM" xml:space="preserve">
+    <value>_M</value>
+    <comment>Text size M(edium) of a set list slot</comment>
+  </data>
+  <data name="ControlTextSizeS" xml:space="preserve">
+    <value>_S</value>
+    <comment>Text size S(mall) of a set list slot</comment>
+  </data>
+  <data name="ControlTextSizeXl" xml:space="preserve">
+    <value>X_L</value>
+    <comment>Text size X(tra)L(arge) of a set list slot</comment>
+  </data>
+  <data name="ControlTextSizeXs" xml:space="preserve">
+    <value>XS</value>
+    <comment>Text size X(tra)S(mall) of a set list slot</comment>
+  </data>
+  <data name="ControlTranspose" xml:space="preserve">
+    <value>_Transpoze</value>
+    <comment>Transpose of a set list slot</comment>
+  </data>
+  <data name="ControlVolume" xml:space="preserve">
+    <value>_Volume</value>
+    <comment>Volume of a set list slot</comment>
+  </data>
+  <data name="CouldNotOpenHomePageWarning" xml:space="preserve">
+    <value>"PCG Tools Anasayfası açılamadı, internet bağlantınız olduğundan emin olun. 
+Sebep:
+{0}
+
+Inner exception:
+{1}"</value>
+  </data>
+  <data name="CrcExcludingName" xml:space="preserve">
+    <value>CRC hariç</value>
+  </data>
+  <data name="CrcIncludingName" xml:space="preserve">
+    <value>CRCdahil</value>
+  </data>
+  <data name="DefaultOutputDirectory_settw" xml:space="preserve">
+    <value>_Varsayılan çıktı klasörü</value>
+  </data>
+  <data name="EFileTypeBnk" xml:space="preserve">
+    <value>Bnk</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeExl" xml:space="preserve">
+    <value>Exl</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeLib" xml:space="preserve">
+    <value>LIB</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeMid" xml:space="preserve">
+    <value>Mid</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeMkP0" xml:space="preserve">
+    <value>MkP0</value>
+    <comment>Enumeration of file type (Microkorg)</comment>
+  </data>
+  <data name="EFileTypeMkxlAll" xml:space="preserve">
+    <value>mkxl_all</value>
+    <comment>Enumeration of file type (Microkorg XL)</comment>
+  </data>
+  <data name="EFileTypeMkxlPAll" xml:space="preserve">
+    <value>mkxlp_all</value>
+    <comment>Enumeration of file type (Microkorg XL Plus)</comment>
+  </data>
+  <data name="EFileTypeMkxlPProg" xml:space="preserve">
+    <value>mkxlp_prog</value>
+    <comment>Enumeration of file type (Microkorg XL Plus)</comment>
+  </data>
+  <data name="EFileTypeMkxlp_prog" xml:space="preserve">
+    <value>mkxlp_prog</value>
+    <comment>Enumeration of file type (Microkorg XL Plus)</comment>
+  </data>
+  <data name="EFileTypeRaw" xml:space="preserve">
+    <value>Raw</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeSyx" xml:space="preserve">
+    <value>Syx</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EFileTypeTr" xml:space="preserve">
+    <value>TR</value>
+    <comment>Enumeration of file type</comment>
+  </data>
+  <data name="EModelTypeM1" xml:space="preserve">
+    <value>M1</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeM3R" xml:space="preserve">
+    <value>M3R</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeMicroKorg" xml:space="preserve">
+    <value>microKORG</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeMicroKorgXl" xml:space="preserve">
+    <value>microKORG XL</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeMicroKorgXlPlus" xml:space="preserve">
+    <value>microKORG XL PLUS</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeMs2000" xml:space="preserve">
+    <value>MS2000</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeTSeries" xml:space="preserve">
+    <value>T1/T2/T3</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeXSeries" xml:space="preserve">
+    <value>X2/X3/X3R</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeZ1" xml:space="preserve">
+    <value>Z1</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeZero3Rw" xml:space="preserve">
+    <value>03R/W</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="EModelTypeZeroSeries" xml:space="preserve">
+    <value>01/W Series</value>
+    <comment>Enumeration of Model Type</comment>
+  </data>
+  <data name="ESynthesisTypeAccess" xml:space="preserve">
+    <value>Access</value>
+    <comment>Synthesis Type</comment>
+  </data>
+  <data name="ESynthesisTypeAnalogModeling" xml:space="preserve">
+    <value>Analog Modeling</value>
+    <comment>Synthesis Type</comment>
+  </data>
+  <data name="ESynthesisTypeMmt" xml:space="preserve">
+    <value>MMT</value>
+    <comment>Synthesis Type</comment>
+  </data>
+  <data name="ExcludingPatchName" xml:space="preserve">
+    <value>Patch ismi hariç</value>
+  </data>
+  <data name="FromFile" xml:space="preserve">
+    <value>_Dosyadan Ekle...</value>
+  </data>
+  <data name="Genre" xml:space="preserve">
+    <value>Tarz</value>
+  </data>
+  <data name="IncludingPatchName" xml:space="preserve">
+    <value>Patch ismi dahil</value>
+  </data>
+  <data name="Manual_grt" xml:space="preserve">
+    <value>Kullanma Kılavuzu</value>
+  </data>
+  <data name="OptionalColumns" xml:space="preserve">
+    <value>_Opsiyonal Kolonlar</value>
+  </data>
+  <data name="ProgramReferenceChanger" xml:space="preserve">
+    <value>_Program Referans Değiştirici...</value>
+  </data>
+  <data name="ProgramReferenceChanger_wt" xml:space="preserve">
+    <value>Program Referans Değiştirici</value>
+  </data>
+  <data name="ReferenceId" xml:space="preserve">
+    <value>ID</value>
+    <comment>ID of a patch</comment>
+  </data>
+  <data name="ReferenceName" xml:space="preserve">
+    <value>İsim</value>
+    <comment>Name of a patch</comment>
+  </data>
+  <data name="ReferenceRules" xml:space="preserve">
+    <value>_Referans Kuralları...</value>
+  </data>
+  <data name="ReferenceType" xml:space="preserve">
+    <value>Seçili Patch tipi</value>
+    <comment>Program, Combi or Song</comment>
+  </data>
+  <data name="ReferenceTypeCombi" xml:space="preserve">
+    <value>Combi</value>
+    <comment>Combi (type)</comment>
+  </data>
+  <data name="ReferenceTypeProgram" xml:space="preserve">
+    <value>Program</value>
+    <comment>Program (type)</comment>
+  </data>
+  <data name="ReferenceTypeSong" xml:space="preserve">
+    <value>Song</value>
+    <comment>Song (type)</comment>
+  </data>
+  <data name="SelectFolderForGeneratedFiles_settw" xml:space="preserve">
+    <value>Oluşturulan Dosyalar İçin Klasör Seçin</value>
+  </data>
+  <data name="SelectFolderOfManual_settw" xml:space="preserve">
+    <value>Manual İçin Klasör Seçin</value>
+  </data>
+  <data name="SequencerFiles" xml:space="preserve">
+    <value>Sequencer Dosyaları</value>
+  </data>
+  <data name="SetListGenerator_settw" xml:space="preserve">
+    <value>Set List Oluşturucu</value>
+  </data>
+  <data name="SetList_2str" xml:space="preserve">
+    <value>Set List</value>
+  </data>
+  <data name="TimbreOff" xml:space="preserve">
+    <value>Timbre Kapalı</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Türkçe (Turkish)</value>
+  </data>
+  <data name="Version3x" xml:space="preserve">
+    <value>3.x</value>
+  </data>
+  <data name="ExternalLinksOasysVoucherCodeSponsorsMenuItem" xml:space="preserve">
+    <value>_Oasys Kupon Sponsorları Linkler...</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>_Ata</value>
+  </data>
+  <data name="AssignToSetListSlot" xml:space="preserve">
+    <value>_Set Liste Ata</value>
+  </data>
+  <data name="AutoFillInSetListSlotNames" xml:space="preserve">
+    <value>_Set List İsimlerini Otomatik Doldur</value>
+  </data>
+  <data name="Capitalization" xml:space="preserve">
+    <value>_Büyük Harf</value>
+  </data>
+  <data name="CapitalizeName" xml:space="preserve">
+    <value>_Büyük Harfe Çevir</value>
+  </data>
+  <data name="ClearDuplicates" xml:space="preserve">
+    <value>_Kopyaları Temizle</value>
+  </data>
+  <data name="ClearPatches" xml:space="preserve">
+    <value>Patchleri (Program, Combi ya da Set List ögesi) Temizle</value>
+  </data>
+  <data name="ClearPatchesAsk" xml:space="preserve">
+    <value>_Sor</value>
+  </data>
+  <data name="ClearPatchesNone" xml:space="preserve">
+    <value>_Hiç Biri</value>
+  </data>
+  <data name="ClearPatchesUnusedAndUsed" xml:space="preserve">
+    <value>_Kullanılmayan ve Kullanılan</value>
+  </data>
+  <data name="ClearPatchesUnusedOnly" xml:space="preserve">
+    <value>_Sadece Kullanılmamışlar</value>
+  </data>
+  <data name="ClearWarning" xml:space="preserve">
+    <value>En az bir patch basşka bir patch tarafından referans olarak kullanılıyor. Kullanılan patch'leri temizlemek ister misin?</value>
+  </data>
+  <data name="ColumnVolume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="DecapitalizeName" xml:space="preserve">
+    <value>_Küçük Harfe Çevir</value>
+  </data>
+  <data name="DoNotUsePatchNamesForPatchDuplicationChecking" xml:space="preserve">
+    <value>_Patch Kopya Taramasında Patch İsimlerini Kullanma</value>
+  </data>
+  <data name="ExternalLinksContributors" xml:space="preserve">
+    <value>Destekçilere Linkler</value>
+  </data>
+  <data name="ExternalLinksContributorsMenuItem" xml:space="preserve">
+    <value>_Destekçilere Linkler...</value>
+  </data>
+  <data name="FixReferencesToClearedUsedPatches" xml:space="preserve">
+    <value>_Temizlenmiş kullanılan patch'lerin referanslarını düzelt</value>
+  </data>
+  <data name="IgnoreCharachtersParts" xml:space="preserve">
+    <value>_Karakterleri/Bölümleri Yoksay</value>
+  </data>
+  <data name="MasterFileClose" xml:space="preserve">
+    <value>_Kapat</value>
+  </data>
+  <data name="MasterFileOpen" xml:space="preserve">
+    <value>_Aç</value>
+  </data>
+  <data name="MasterFileUnassign" xml:space="preserve">
+    <value>_Atamayı Kaldır</value>
+  </data>
+  <data name="NumberOfReferences" xml:space="preserve">
+    <value>#Refr</value>
+  </data>
+  <data name="OasysVoucherCodeSponsors" xml:space="preserve">
+    <value>Oasys Kupon Sponsorları...</value>
+  </data>
+  <data name="PcgWindow" xml:space="preserve">
+    <value>PCG Penceresi</value>
+  </data>
+  <data name="ProcessingRules" xml:space="preserve">
+    <value>İşlem Kuralları...</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>_Kurallar</value>
+  </data>
+  <data name="ShowNumberOfReferencesColumn" xml:space="preserve">
+    <value>_#Referanslar kolonunu (Ref. sayısı) göster</value>
+  </data>
+  <data name="ShowWarningWhenClearingUsedPatches" xml:space="preserve">
+    <value>_Kullanılan patch'leri temizlerken uyarı göster</value>
+  </data>
+  <data name="TitleCaseName" xml:space="preserve">
+    <value>_Başlık biçimi ismi</value>
+  </data>
+  <data name="TreatEquallyNamedPatchesAsDuplicates" xml:space="preserve">
+    <value>_Aynı İsimdeki Patch'leri Kopya Olarak Say</value>
+  </data>
+  <data name="TreatLikeNamedPatchesAsDuplicates" xml:space="preserve">
+    <value>_Benzer İsimdeki Patch'leri Kopya Olarak Say</value>
+  </data>
+  <data name="AllPatchesRadioButton" xml:space="preserve">
+    <value>_Tüm patchler</value>
+  </data>
+  <data name="AutoBackupFiles" xml:space="preserve">
+    <value>Dosyaları otomatik yedekle</value>
+  </data>
+  <data name="AutoBackupIntervalTime" xml:space="preserve">
+    <value>Yedek zaman aralığı (dakika)</value>
+  </data>
+  <data name="AutoBackupMaxStorage" xml:space="preserve">
+    <value>_Minimum Depolama (MB)</value>
+  </data>
+  <data name="DrumKit" xml:space="preserve">
+    <value>Drum Kit</value>
+  </data>
+  <data name="PatchType" xml:space="preserve">
+    <value>Patch Tipi</value>
+  </data>
+  <data name="WaveSequence" xml:space="preserve">
+    <value>Wave Sequence</value>
+  </data>
+  <data name="EModelTypeKross2" xml:space="preserve">
+    <value>Kross 2</value>
+  </data>
+</root>

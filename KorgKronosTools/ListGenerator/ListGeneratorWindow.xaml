@@ -1,0 +1,313 @@
+﻿<Window x:Class="PcgTools.ListGenerator.ListGeneratorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding ListGenerator, Source={StaticResource LocStrings}}" ResizeMode="CanResizeWithGrip"
+        Icon="/PcgTools;component/Gui/pcgtools.ico" Loaded="Window_Loaded" Closed="Window_Closed"
+        ShowInTaskbar="True" WindowStartupLocation="CenterOwner" Width="1000" 
+        SizeToContent="Height">
+    <WrapPanel Name="wrapPanel" Margin="4" Orientation="Horizontal">
+
+        <Expander Header="{Binding ListType, Source={StaticResource LocStrings}}" Margin="4" Padding="4" IsExpanded="True">
+            <StackPanel>
+                <RadioButton Content="{Binding PatchList, Source={StaticResource LocStrings}}" 
+        			    Margin="4" x:Name="radioButtonPatchList" Checked="RadioButtonPatchListChecked"/>
+                <RadioButton Content="{Binding ProgramUsageList, Source={StaticResource LocStrings}}"
+            		    Margin="4" x:Name="radioButtonProgramUsageList" Checked="RadioButtonProgramUsageListChecked" />
+                <RadioButton Content="{Binding CombiContentList, Source={StaticResource LocStrings}}"
+        		        Margin="4" Checked="RadioButtonCombiContentListChecked"
+            		    x:Name="radioButtonCombiContentList"/>
+                <RadioButton Content="{Binding DifferencesList, Source={StaticResource LocStrings}}"
+        			    Margin="4" x:Name="radioButtonDifferencesList" Checked="RadioButtonDifferencesListChecked"/>
+                <RadioButton Content="{Binding FileContentList, Source={StaticResource LocStrings}}"
+            		    Margin="4" x:Name="radioButtonFileContentList" Checked="RadioButtonFileContentListChecked"/>
+
+                <Label Content="{Binding ListSubType, Source={StaticResource LocStrings}}" 
+        			    Margin="4" x:Name="labelListSubType"/>
+                    <ComboBox Margin="4" x:Name="comboBoxListSubType"
+        			    SelectionChanged="ComboBoxListSubTypeSelectionChanged"/>
+                </StackPanel>
+            </Expander>
+
+            <Expander Header="{Binding DifferencesListOptions, Source={StaticResource LocStrings}}"
+                        x:Name="groupBoxDifferencesListOptions" Padding="4" Margin="4" IsExpanded="True">
+                <StackPanel>
+                    <Label Content="{Binding MaxNumberOfDifferences, Source={StaticResource LocStrings}}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Slider x:Name="sliderDiffListMaxNumberOfDifferences"
+                                Width="180" Interval="1" Maximum="500" TickPlacement="Both"
+                                TickFrequency="1" ValueChanged="SliderDiffListMaxNumberOfDifferencesValueChanged" SmallChange="1"
+                                IsSnapToTickEnabled="True" Delay="50" LargeChange="10" Margin="4" />
+                        <TextBox HorizontalAlignment="Right" LostFocus="TextBoxSetListsFromLostFocus" 
+                                x:Name="textBoxDiffListMaxNumberOfDifferences" Margin="4" MinWidth="20"
+                                IsReadOnly="True" />
+                    </StackPanel>
+
+                    <CheckBox Checked="CheckBoxSetListsEnableCheckedChanged"
+                                Content="{Binding IgnorePatchNames, Source={StaticResource LocStrings}}" DataContext="{Binding}"
+                                IsThreeState="False" Margin="4"
+                                x:Name="checkBoxDiffListIgnorePatchNames" Unchecked="CheckBoxSetListsEnableCheckedChanged"
+                                IsChecked="False"/>
+                    <CheckBox Content="{Binding IgnoreSetListSlotDescriptions, Source={StaticResource LocStrings}}"
+                                DataContext="{Binding}" IsChecked="False" IsThreeState="False" Margin="4"
+                                x:Name="checkBoxDiffListIgnoreSetListSlotDescriptions"/>
+                    <CheckBox Content="{Binding SearchBothDirections, Source={StaticResource LocStrings}}" DataContext="{Binding}"
+                                IsChecked="False" IsThreeState="False" Margin="4" x:Name="checkBoxDiffListSearchBothDirections"/>
+                </StackPanel>
+            </Expander>
+
+            <Expander Header="{Binding FilterProgramBanks, Source={StaticResource LocStrings}}" Margin="4" Padding="4"
+                    x:Name="groupBoxFilterProgramBanks" IsExpanded="True">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="checkBoxProgramBankIa" Content="I-_A" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankIb" Content="I-_B" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankIc" Content="I-_C" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankId" Content="I-_D" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankIe" Content="I-_E" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankIf" Content="I-_F" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankIg" Content="I-_G" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankIh" Content="I-_H" Margin="4"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="checkBoxProgramBankGm" Content="_GM"  Margin="4"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="checkBoxProgramBankUa" Content="U-_A" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUb" Content="U-_B" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUc" Content="U-_C" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUd" Content="U-_D" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUe" Content="U-_E" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUf" Content="U-_F" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUg" Content="U-_G" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUh" Content="U-_H" Margin="4"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="checkBoxProgramBankUaa" Content="U-_AA" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUbb" Content="U-_BB" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUcc" Content="U-_CC" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUdd" Content="U-_DD" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUee" Content="U-_EE" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUff" Content="U-_FF" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUgg" Content="U-_GG" Margin="4"/>
+                        <CheckBox x:Name="checkBoxProgramBankUhh" Content="U-_HH" Margin="4"/>
+                    </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox x:Name="checkBoxProgramBanksVirtual" Content="_All Virtual Banks"  Margin="4"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <CheckBox Content="{Binding IgnoreEmptyInitPrograms_slg, Source={StaticResource LocStrings}}"
+                                HorizontalAlignment="Left" Margin="4"
+                                x:Name="checkBoxProgramBanksIgnoreInitPrograms" />
+                            <CheckBox Content="{Binding IgnoreFirstProgram, Source={StaticResource LocStrings}}"
+                                Margin="4" x:Name="checkBoxIgnoreFirstProgram"/>
+                        </StackPanel>
+
+                        <StackPanel  Orientation="Horizontal" VerticalAlignment="Top">
+                            <Button Content="{Binding SelectAll, Source={StaticResource LocStrings}}"
+                				    Margin="4" Padding="4" Click="ButtonProgramBanksSelectAllClick"/>
+                            <Button Content="{Binding DeselectAll, Source={StaticResource LocStrings}}"
+                				    Margin="4" Padding="4" Click="ButtonProgramBanksDeselectAllClick"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+
+            <Expander Header="{Binding FilterCombiBanks_slg, Source={StaticResource LocStrings}}"
+            		Margin="4" Padding="4" x:Name="groupBoxFilterCombiBanks" IsExpanded="True">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="I-_A" Margin="4" x:Name="checkBoxCombiBankIa"/>
+                        <CheckBox Content="I-_B" Margin="4" x:Name="checkBoxCombiBankIb"/>
+                        <CheckBox Content="I-_C" Margin="4" x:Name="checkBoxCombiBankIc"/>
+                        <CheckBox Content="I-_D" Margin="4" x:Name="checkBoxCombiBankId"/>
+                        <CheckBox Content="I-_E" Margin="4" x:Name="checkBoxCombiBankIe"/>
+                        <CheckBox Content="I-_F" Margin="4" x:Name="checkBoxCombiBankIf"/>
+                        <CheckBox Content="I-_G" Margin="4" x:Name="checkBoxCombiBankIg"/>
+                        <CheckBox Content="I-_H" Margin="4" x:Name="checkBoxCombiBankIh"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="U-_A" Margin="4" x:Name="checkBoxCombiBankUa"/>
+                        <CheckBox Content="U-_B" Margin="4" x:Name="checkBoxCombiBankUb"/>
+                        <CheckBox Content="U-_C" Margin="4" x:Name="checkBoxCombiBankUc"/>
+                        <CheckBox Content="U-_D" Margin="4" x:Name="checkBoxCombiBankUd"/>
+                        <CheckBox Content="U-_E" Margin="4" x:Name="checkBoxCombiBankUe"/>
+                        <CheckBox Content="U-_F" Margin="4" x:Name="checkBoxCombiBankUf"/>
+                        <CheckBox Content="U-_G" Margin="4" x:Name="checkBoxCombiBankUg"/>
+                        <CheckBox Content="U-_H" Margin="4" x:Name="checkBoxCombiBankUh"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox x:Name="checkBoxCombiBanksVirtual" Content="_All Virtual Banks"  Margin="4"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <CheckBox Content="{Binding IgnoreEmptyInitCombis, Source={StaticResource LocStrings}}"
+                				HorizontalAlignment="Left" Margin="4" x:Name="checkBoxCombiBanksIgnoreInitCombis"  />
+                            <CheckBox Content="{Binding IgnoreMutedOffTimbres, Source={StaticResource LocStrings}}" 
+                				Margin="4" x:Name="checkBoxIgnoreMutedOffTimbres"/>
+                        <CheckBox Content="{Binding IgnoreMutedOffFirstProgramTimbre, Source={StaticResource LocStrings}}" 
+                				Margin="4" x:Name="checkBoxIgnoreMutedOffFirstProgramTimbre"/>
+                    </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="{Binding SelectAll, Source={StaticResource LocStrings}}"
+                				Margin="4" Padding="4" Click="ButtonCombiBanksSelectAllClick" Height="23"/>
+                            <Button Content="{Binding DeselectAll, Source={StaticResource LocStrings}}"
+                				Margin="4" Padding="4" Click="ButtonCombiBanksDeselectAllClick" Height="23"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+
+            <Expander Header="{Binding FilterSetLists, Source={StaticResource LocStrings}}"
+            		    Margin="4" Padding="4" x:Name="groupBoxSetLists" IsExpanded="True">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="{Binding Enabled, Source={StaticResource LocStrings}}" 
+            					    Margin="4" x:Name="checkBoxSetListsEnable" IsThreeState="False" DataContext="{Binding}"
+            					    Checked="CheckBoxSetListsEnableCheckedChanged" Unchecked="CheckBoxSetListsEnableCheckedChanged"
+            					    VerticalAlignment="Center"/>
+                        <Label Content="{Binding Range, Source={StaticResource LocStrings}}"
+            					    Margin="4" x:Name="labelSetListRange" VerticalAlignment="Center"/>
+                        <TextBox HorizontalAlignment="Left" Margin="4" MinWidth="20" x:Name="textBoxSetListsFrom" 
+            					    LostFocus="TextBoxSetListsFromLostFocus"/>
+                        <Label Content="{Binding To, Source={StaticResource LocStrings}}"
+            					    Margin="4" x:Name="labelSetListsRangeTo" VerticalAlignment="Center"/>
+                        <TextBox  HorizontalAlignment="Right" Margin="4" MinWidth="20" x:Name="textBoxSetListsTo"
+            					    LostFocus="TextBoxSetListsToLostFocus"/>
+                        <Button Content="{Binding SelectAll, Source={StaticResource LocStrings}}" 
+            					    Margin="4" Padding="4" x:Name="buttonSetListsSelectAll" Click="ButtonSetListsSelectAllClick"/>
+                    </StackPanel>
+                    <CheckBox Content="{Binding IgnoreEmptyInitSetListSlots, Source={StaticResource LocStrings}}"
+            				    x:Name="checkBoxSetListsIgnoreInitSetListSlots" Margin="4"   />
+                </StackPanel>
+            </Expander>
+
+            <Expander Header="{Binding FilterWaveSequences, Source={StaticResource LocStrings}}" 
+                            x:Name="groupBoxFilterWaveSequences" Margin="4" Padding="4" IsExpanded="True">
+                <StackPanel>
+                    <CheckBox Margin="4" x:Name="checkBoxFilterWaveSequences"
+                                    Content="{Binding Enabled, Source={StaticResource LocStrings}}" />
+                    <CheckBox Content="{Binding IgnoreEmptyInitWaveSequences, Source={StaticResource LocStrings}}"
+                                    x:Name="checkBoxWaveSequencesIgnoreInitWaveSequences" Margin="4" />
+                </StackPanel>
+            </Expander>
+
+        <Expander x:Name="groupBoxFilterDrumKits" Header="{Binding FilterDrumKits, Source={StaticResource LocStrings}}"
+                           Margin="4"  Padding="4" IsExpanded="True">
+            <StackPanel>
+                <CheckBox Margin="4" x:Name="checkBoxFilterDrumKits"
+                                Content="{Binding Enabled, Source={StaticResource LocStrings}}" />
+                <CheckBox Content="{Binding IgnoreEmptyInitDrumKits, Source={StaticResource LocStrings}}"
+                                x:Name="checkBoxDrumKitsIgnoreInitDrumKits" Margin="4"/>
+            </StackPanel>
+        </Expander>
+
+        <Expander x:Name="groupBoxFilterDrumPatterns" Header="{Binding FilterDrumPatterns, Source={StaticResource LocStrings}}"
+                           Margin="4"  Padding="4" IsExpanded="True">
+            <StackPanel>
+                <CheckBox Margin="4" x:Name="checkBoxFilterDrumPatterns"
+                                Content="{Binding Enabled, Source={StaticResource LocStrings}}" />
+                <CheckBox Content="{Binding IgnoreEmptyInitDrumPatterns, Source={StaticResource LocStrings}}"
+                                x:Name="checkBoxDrumPatternsIgnoreInitDrumPatterns" Margin="4"/>
+            </StackPanel>
+        </Expander>
+
+        <Expander Header="{Binding FilterOnFavorites, Source={StaticResource LocStrings}}"  Margin="4" Padding="4"
+                             x:Name="groupBoxFilterOnFavorites" IsExpanded="True">
+                <StackPanel>
+                    <CheckBox Margin="4" x:Name="threeStateCheckBoxFavorites"
+                                           IsThreeState="True" Content="{Binding Favorites, Source={StaticResource LocStrings}}" />
+                </StackPanel>
+            </Expander>
+
+            <Expander Header="{Binding FilterOnText, Source={StaticResource LocStrings}}"
+                           Margin="4"  Padding="4" x:Name="groupBoxFilterOnText" IsExpanded="True">
+
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="{Binding FilterOnTextControl, Source={StaticResource LocStrings}}"
+                                      x:Name="checkBoxFilterOnText" Checked="CheckBoxFilterOnTextChecked"
+                                      Unchecked="CheckBoxFilterOnTextChecked" Margin="4"/>
+                        <TextBox HorizontalAlignment="Left" Margin="4" x:Name="textBoxTextToFilterOn"
+                                      VerticalAlignment="Top" MinWidth="50"/>
+                    </StackPanel>
+                    <CheckBox Content="{Binding CaseSensitive, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxCaseSensitive"/>
+                    <CheckBox Content="{Binding FilterProgramNames, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterProgramNames"/>
+                    <CheckBox Content="{Binding FilterCombiNames, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterCombiNames"/>
+                    <CheckBox Content="{Binding FilterSetListSlotNames, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterSetListSlotNames"/>
+                    <CheckBox Content="{Binding FilterSetListSlotDescriptions, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterSetListSlotDescriptions"/>
+                    <CheckBox Content="{Binding FilterWaveSequenceNames, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterWaveSequenceNames"/>
+                    <CheckBox Content="{Binding FilterDrumKitNames, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterDrumKitNames"/>
+                <CheckBox Content="{Binding FilterDrumPatternNames, Source={StaticResource LocStrings}}"
+                                  Margin="4" x:Name="checkBoxFilterDrumPatternNames"/>
+            </StackPanel>
+            </Expander>
+
+        <Expander  x:Name="groupBoxOptionalColumns" Header="{Binding OptionalColumns, Source={StaticResource LocStrings}}" Margin="4" Padding="4" IsExpanded="True">
+            <StackPanel>
+                <CheckBox Content="{Binding ColumnCrcValueExcludingName, Source={StaticResource LocStrings}}"
+                    x:Name="checkBoxCrcExcludingName" Margin="4"/>
+                <CheckBox Content="{Binding ColumnCrcValueIncludingName, Source={StaticResource LocStrings}}"
+                    x:Name="checkBoxCrcIncludingName" Margin="4"/>
+                <CheckBox Content="{Binding ColumnSetListSlotReferenceId, Source={StaticResource LocStrings}}"
+                    x:Name="checkBoxSetListSlotReferenceId" Margin="4"/>
+                <CheckBox Content="{Binding ColumnSetListSlotReferenceName, Source={StaticResource LocStrings}}"
+                    x:Name="checkBoxSetListSlotReferenceName" Margin="4"/>
+            </StackPanel>
+        </Expander>
+        
+            <Expander Header="{Binding Sorting, Source={StaticResource LocStrings}}"
+                    Margin="4" Padding="4" x:Name="groupBoxSorting" IsExpanded="True">
+                <StackPanel>
+                    <RadioButton Content="{Binding TypeBankIndex, Source={StaticResource LocStrings}}"
+                                Margin="4" x:Name="radioButtonTypeBankIndex"/>
+                    <RadioButton Content="{Binding CategoryThanPatchName, Source={StaticResource LocStrings}}"
+                                Margin="4" x:Name="radioButtonCategorical"/>
+                    <RadioButton Content="{Binding PatchName, Source={StaticResource LocStrings}}"
+                                Margin="4" x:Name="radioButtonAlphabetical"/>
+                </StackPanel>
+            </Expander>
+        
+            <Expander Header="{Binding Output, Source={StaticResource LocStrings}}"  HorizontalAlignment="Left"
+                    Margin="4" Padding="4" IsExpanded="True">
+                <StackPanel>
+                    <RadioButton Content="{Binding AsciiTable, Source={StaticResource LocStrings}}" 
+                            x:Name="radioButtonAsciiTable" Checked="RadioButtonAsciiTableChecked" Margin="4"/>
+                    <RadioButton Content="{Binding Text, Source={StaticResource LocStrings}}"
+                            x:Name="radioButtonText" Checked="RadioButtonTextChecked" Margin="4" />
+                    <RadioButton Content="{Binding CommaSeparatedValues, Source={StaticResource LocStrings}}"
+                            Margin="4" x:Name="radioButtonCsv" Checked="RadioButtonCsvChecked" />
+                    <RadioButton Content="{Binding Xml, Source={StaticResource LocStrings}}" 
+                            Margin="4" x:Name="radioButtonXml" Checked="RadioButtonXmlChecked"/>
+                
+                    <Label Content="{Binding OutputFile, Source={StaticResource LocStrings}}" Margin="4"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Margin="4" x:Name="textBoxOutputFile" 
+                                    IsReadOnly="False" />
+                        <Button Content="..."  Margin="4" Padding="8,0" Click="ButtonOutputFileBrowseClick"/>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+
+            <Button Content="{Binding Generate, Source={StaticResource LocStrings}}" HorizontalAlignment="Left"
+                    Margin="4" Padding="8" IsDefault="True" Click="ButtonGenerateClick" FontWeight="Bold" FontSize="16"/>
+
+        </WrapPanel>
+    
+</Window>

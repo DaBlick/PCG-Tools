@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PcgTools.Synths.Common.PCG.KorgFileReader" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\File\KorgFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.PCG.PcgFileReader" Collapsed="true">
+    <Position X="1.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAABAAAIAEAAAgmGKAAAEABAQAAAAAAKUIRAA=</HashCode>
+      <FileName>Model\Common\File\PcgFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.PCG.SongFileReader" Collapsed="true">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAEAAAAAAAABAgAAAAQAAABAAAAAAAAAABAAA=</HashCode>
+      <FileName>Model\Common\File\SongFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Bank" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAQAAECAAAAAAQASAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Bank.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Chunk" Collapsed="true">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Model\Common\Synth\Chunk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Chunks" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Chunks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Client" Collapsed="true">
+    <Position X="5.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAACAAAAAAEAA=</HashCode>
+      <FileName>Model\Common\Synth\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Combi" Collapsed="true">
+    <Position X="5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAQAYBAAAAAAAQABEAAA=</HashCode>
+      <FileName>Model\Common\Synth\Combi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.CombiBank" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASgAAEAQABACAAAAACQAQIAAAAAIAAAUBAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\CombiBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.CombiBanks" Collapsed="true">
+    <Position X="8" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAARAAECAACAAEQAQACAAACAAAAEAAAAAAACA=</HashCode>
+      <FileName>Model\Common\Synth\CombiBanks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Factory" Collapsed="true">
+    <Position X="4.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIQAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Model\Common\Synth\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Global" Collapsed="true">
+    <Position X="7" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAADgAAAoAAAAAAYEAAAAAAAAAgAAAAAEAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Memory" Collapsed="true">
+    <Position X="1.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQgAAAgAEACBACAAAQAACABAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Memory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Patch" Collapsed="true">
+    <Position X="4.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAiQAAEAAABICQJAAAAQIQIAABAgAQAAAEEAADBIAA=</HashCode>
+      <FileName>Model\Common\Synth\Patch.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.CategoricalComparer" Collapsed="true">
+    <Position X="4.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Patch.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.PcgMemory" Collapsed="true">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICQkAACAABACAAAAUAQAAhAQAASIEghAAAAAJhAAE=</HashCode>
+      <FileName>Model\Common\Synth\PcgMemory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Program" Collapsed="true">
+    <Position X="2.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAQAYBAAAAAAAAABAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.ProgramBank" Collapsed="true">
+    <Position X="2.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAEAQAgACABAAACQAQIAAAQAAAQAUAIABAAAAw=</HashCode>
+      <FileName>Model\Common\Synth\ProgramBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.ProgramBanks" Collapsed="true">
+    <Position X="6.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAARAAkCAACAAAQAQAAAAACAAAAEAAABAAACE=</HashCode>
+      <FileName>Model\Common\Synth\ProgramBanks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Region" Collapsed="true">
+    <Position X="0.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Region.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Regions" Collapsed="true">
+    <Position X="2.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Regions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.SetList" Collapsed="true">
+    <Position X="2.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAMAQABACAACAACQAAIAAAQAAAAAFAAAAgAICA=</HashCode>
+      <FileName>Model\Common\Synth\SetList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.SetLists" Collapsed="true">
+    <Position X="7.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAARAAECAACAAAQAQAAAAAmCBAAEAAAAAAAAE=</HashCode>
+      <FileName>Model\Common\Synth\SetLists.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.SetListSlot" Collapsed="true">
+    <Position X="7.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAACgAAABAAAAAAAAAAAYBAAAAQAAQABBAAA=</HashCode>
+      <FileName>Model\Common\Synth\SetListSlot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Song" Collapsed="true">
+    <Position X="3.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAgEAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Song.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.SongMemory" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQ0AAAAAAACAAAAAEQAAAAAAACAAABAAAAABAAAA=</HashCode>
+      <FileName>Model\Common\Synth\SongMemory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Songs" Collapsed="true">
+    <Position X="3.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Songs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Timbre" Collapsed="true">
+    <Position X="4.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgSAFhEAABUCAAAICCUABAAAAFhgBAAwEEEABAAAA=</HashCode>
+      <FileName>Model\Common\Synth\Timbre.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Synth.Timbres" Collapsed="true">
+    <Position X="1" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAACAAAABAQAAAAAAACCEAAAAAEAAQAAA=</HashCode>
+      <FileName>Model\Common\Synth\Timbres.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PcgTools.Synths.Common.Util" Collapsed="true">
+    <Position X="0.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAQAAAAAABAAAQAAAAACACAAAg=</HashCode>
+      <FileName>Model\Common\Util.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PcgTools.Synths.KronosOasysSpecific.PCG.KronosOasysPcgFileReader" Collapsed="true">
+    <Position X="2.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAGAAAAAAAAQAAAAAAKAAAAA=</HashCode>
+      <FileName>Model\KronosOasysSpecific\Pcg\KronosOasysPcgFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PcgTools.Synths.Common.Synth.INavigable" Collapsed="true">
+    <Position X="6.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\INavigable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PcgTools.Synths.Common.Synth.ISetNavigation" Collapsed="true">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAEAAAAAAAAAQAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Model\Common\Synth\ISetNavigation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
