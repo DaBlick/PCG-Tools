@@ -1,0 +1,88 @@
+﻿Files
+=====
+
+All files are equal, therefor used: Korg\n364pl (Preload)\PRELOAD.PCG.
+
+Length: 69.416 bytes.
+
+Content
+-------
+Program A00 Hyper:Wave
+Program B00 PipeDreams
+Program C00 TheSunrise (ROM)
+Program D00 ElastikPad (ROM)
+Program GM01 Piano
+
+Combi A00 FirstLight
+Combi B00 SolarFlare
+Combi C00 Star*Burst (ROM)
+Combi D00 Sea Horses (ROM)
+
+Drum Kit A1, A2, B1, B2, C1, C2, D1, D2, Rom D.Kit 1-8
+
+Offset		Data				Length	Description
+--------    -------------------	------	----------------------------------------------
+0000 0000	KORG 35 00 00 00			35 = N series
+0000 0008	All zeroes					
+0000 0010	58 00 00 00					
+0000 0014	D0 07 00 00					
+0000 0018	28 08 00 00					
+0000 001C	D0 07 00 00					
+0000 0020	F8 0F 00 00					
+0000 0024	30 00 00 00					
+0000 0028	28 10 00 00					
+0000 002C	50 0A 00 00					
+0000 0030	78 1A 00 00					
+0000 0034	20 35 00 00					
+0000 0038	98 4F 00 00					
+0000 003C	10 40 00 00					
+0000 0040	A8 8F 00 00										
+0000 0044	50 0A 00 00					
+0000 0048	F8 99 00 00					
+0000 004C	20 35 00 00					
+0000 0050	18 CF 00 00					
+0000 0054	10 40 00 00					
+0000 0058	FirstLig			10		Name Combi A00
+0000 0060   thGrinding			10		Name Combi A01
+..
+0000 0440	SolarFlare			10		Name Combi B00
+..
+
+0000 0828   Hyper:Wave			10		Name Program A00
+..
+0000 0C10	PipeDreams			10		Name Program B00
+..
+0000 0FEE   [JetStar]			10		Name Program B99
+0000 0FF8	???
+...
+0000 1A78	FirstLig			136		Combi A00 (see document)
+
+0000 1B00	Grinding B					Combi A01
+
+
+
+
+Program parameters (dec):
+Offset	Length	Description
+------- ------- ----------------------
+  0		10		Name
+
+Combi parameters (dec):
+Offset	Length	Description
+------- ------- ----------------------
+  0		10		Name
+ 40		 1		Program number: 00~63=B00~A99 or C00~C99
+								64~C7=B00~B99 or D00~D99
+								00~87=G01~G136
+ 41		 1		Output level	
+ 42		 1		Transpose:		E8~18:-24~24
+ 43		 1		Detune:			CE~32:-50~50
+ 46		 1		Key Window Top:	00~7F:C1~C9
+ 47		 1		Key Window Bot:	00~7F:C1~C9
+ 48		 1		Vel Window Top:	00~7F:C1~C9
+ 49		 1		Vel Window Bot:	00~7F:C1~C9
+ 50		 1		Control Filter: 
+ 51		 1		Midi Channel:	bit 0~3: 1~16
+				Timbre Mode:	bit4=0:On, 1:Off, bit5=0:INT, 1:Ext
+ 52..135		Timbres 2..8
+

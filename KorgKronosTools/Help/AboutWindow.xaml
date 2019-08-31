@@ -16,7 +16,7 @@
                      FontWeight="Bold"   />
                 </StackPanel>
                 
-                <Label Content="(c) 2011-2017" HorizontalAlignment="Left" Margin="4,0" Name="label2" FontWeight="Bold"  />
+                <Label Content="(c) 2011-2019" HorizontalAlignment="Left" Margin="4,0" Name="label2" FontWeight="Bold"  />
                 <!--Label Content="{Binding ForumDiscussionLink, Source={StaticResource LocStrings}}"
                HorizontalAlignment="Left" Margin="4" Name="label3" VerticalAlignment="Top" FontWeight="Bold"  /-->
 

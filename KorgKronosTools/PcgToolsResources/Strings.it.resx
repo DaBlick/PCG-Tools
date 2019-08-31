@@ -1824,4 +1824,22 @@ Eccezione interna:
   <data name="EModelTypeKross2" xml:space="preserve">
     <value>Kross 2</value>
   </data>
+  <data name="ChangeVolume_chvolwin" xml:space="preserve">
+    <value>Cambia Volume</value>
+  </data>
+  <data name="Fixed_chvolwin" xml:space="preserve">
+    <value>_Fisso</value>
+  </data>
+  <data name="Mapped_chvolwin" xml:space="preserve">
+    <value>_Mappato</value>
+  </data>
+  <data name="Percentage_chvolwin" xml:space="preserve">
+    <value>_Percentuale</value>
+  </data>
+  <data name="Relative_chvolwin" xml:space="preserve">
+    <value>_Relativo</value>
+  </data>
+  <data name="SmartMapped_chvolwin" xml:space="preserve">
+    <value>_Smart</value>
+  </data>
 </root>

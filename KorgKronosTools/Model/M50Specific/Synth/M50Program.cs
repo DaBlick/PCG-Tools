@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 
 using System.Collections.Generic;

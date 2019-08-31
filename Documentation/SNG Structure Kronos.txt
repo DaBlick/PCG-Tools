@@ -1,0 +1,146 @@
+﻿residentevil.SNG
+
+
+Lvl	Index/Offs.	Data_____	Description____________ Value/Structure
+	0000 0000	KORG		Korg Header				FileHdKorg
+			4	x68			Model					x68 = Kronos	
+			5	x01			Type					x01 = PCG
+		   20               0x44                    Size of header          Starting after
+ 1		   68   SNG1		Chunk					ChunckIdSng				Length: xB9B6 = rest of file
+ 2		   74	SDK1		Chunk					ChunkIdSongDesc			Length: xCC
+           78   xCC		Length of Chunk
+		   7C	x100
+		   80	x3
+		   84	x40
+		   88	0
+		   8C	SAVE ROOM	Name of song: 24 chars
+		   A4	B0270000	sizeofsong sizeofmiditracks sizeofmastertracks sizeofaudiotracks sizeofpatterns numofpattern 
+		   A8	800F0000	 seekoffsetofsongdatachunk sizeofsongdatachunk sizeoftrackschunk?
+		   AC	A0030000
+		   B0	00000000
+		   B4	00000000
+		   B8	00000000
+		   BC	00000000
+		   C0	64010000
+		   C4	6A470000
+		   C8	6A470000
+		   CC	NEW SONG 2	Name of song: 24 chars
+
+ 2        14C   SGS1		Chunk					ChunkIdSongs			Length: xB8A2 = rest of file
+ 3        158   SDT1		Chunk					ChunkIdSongsData		Length: x476A -> until SPR1
+ 4       48DA   SPR1		Chunk					ChunkIdSongControl		Length: x149C -> until BMT1
+													See SongControl.txt
+ 4       5D82   BMT1		Chunk					ChunkIdTimbreSetSong 	Length: x1E8E -> until TRK1
+													SEe CombiAndSongTimbreSet, 7810 bytes (=0x1E82)
+ 4       7C2C   TRK1		Chunk					ChunkIdTracks			Length: x069C -> until SDT1 (repeat)
+ 
+#define ChunkIdPatternsDesc (0x50445831) // ('PDX1')
+#define ChunkIdPatternDesc (0x50444b31) // ('PDK1')
+#define ChunkIdCueList (0x43554531) // ('CUE1')
+#define ChunkIdRegion (0x52474e31) // ('RGN1')
+#define ChunkIdSongParam (0x504d5431) // ('PMT1') // !!! unused ?
+#define ChunkIdTimbreSetSongExtended (0x424d5432) // ('BMT2')
+#define ChunkIdMidiData (0x4d445431) // ('MDT1')
+#define ChunkIdMidiTracks (0x4d544b31) // ('MTK1')
+#define ChunkIdMasterTracks (0x544d4131) // ('TMA1')
+#define ChunkIdMidiEvent (0x4d544531) // ('MTE1')
+#define ChunkIdMasterEvent (0x45564d31) // ('EVM1')
+#define ChunkIdAudioData (0x41445431) // ('ADT1')
+#define ChunkIdAudioTracks (0x41544b31) // ('ATK1')
+#define ChunkIdAudioEvent (0x41544531) // ('ATE1')
+#define ChunkIdAutomationTracks (0x4b544131) // ('KTA1')
+#define ChunkIdAutomationEvent (0x45544131) // ('ETA1')
+#define ChunkIdPatterns (0x50544e31) // ('PTN1')
+#define ChunkIdPatternEvent (0x50455631) // ('PEV1')
+
+
+}
+:
+SongDescriptor (SongN)(N < kMaxNumOfSong)
+Patterns Information Chunk;
+PatternDescriptor Chunk (Song0) {..........save/load as 
+1bank......used to display information of patterns of a song
+PatternDescriptor (pattern0 in Song0){........save/load as 1 item, 
+structure = "CPatternDescriptor"
+patternname[constNumOfNameByte]
+sizeofpattern;
+}
+:
+PatternDescriptor (patternN in Song0) (N < kNumOfUserPattern){
+patternname[constNumOfNameByte]
+sizeofpattern;
+}
+}
+:
+PatternDescriptor Chunk (SongN)(N < kMaxNumOfSong)
+Cue Lists Chunk.....save/load as 1bank
+CueList0........save/load as 1 item
+     :
+CueListN
+Regions Chunk.......save/load as 1bank
+Region0........save/load as 1 item
+     :
+RegionN
+Songs Chunk
+Song Data Chunk(Song0)
+ControlChunk.......structure = "CSongControl"......save/load as 
+1bank[sizeof(CSongControl) * 1]
+Control Data
+TimbreSetChunk.......structure = "CTimbreSetSong" derived from 
+"CCombi"......save/load as 1bank[sizeof(CTimbreSetSong) * 1]
+TimbreSet Data
+TimbreSetExtendedChunk.......structure = 
+"CTimbreSetExtendedChunk"......save/load as 
+1bank[sizeof(CTimbreSetExtendedChunk) * 1]
+TimbreSetExtended Data
+Tracks Chunk
+MIDI Data Chunk
+MIDI Tracks Chunk
+MIDI Track Chunk (Track0)......save/load as 
+1bank[sizeof(CSeqEvent) * n]
+MIDI Track Chunk (Track1)
+:
+MIDI Track Chunk (TrackN) (N < kNumOfSeqMIDITrack);
+Master Tracks Chunk
+Master Track Chunk................save/load as 
+1bank[sizeof(CMasterEvent) * n]
+Audio Data Chunk
+Audio Tracks Chunk
+Audio Track Chunk (Track0)................save/load as 
+1bank[sizeof(CAudioEvent) * n]
+Audio Track Chunk (Track1)
+:
+Audio Track Chunk (TrackN) (N < kNumOfSeqAudioTrack);
+Automation(Mixer) Tracks Chunk
+Automation Track Chunk (Track0)...............save/load as 
+1bank[sizeof(CAutomationEvent) * n]
+Automation Track Chunk (Track1)
+:
+Automation Track Chunk (TrackN) (N < kNumOfSeqAudioTrack);
+Patterns Chunk
+Pattern Chunk (No0)...............save/load as 
+1bank[sizeof(CPatternEvent) * n]
+Pattern Chunk (No1)
+:
+Pattern Chunk (NoN) (N < kNumOfUserPattern);
+:
+Song Data Chunk(Song1)
+ControlChunk.......structure = "CSongControl"......save/load as 
+1bank[sizeof(CSongControl) * 1]
+:
+Song Data Chunk(SongN) (N < kMaxNumOfSong)
+------------end of SNG file--------------------------
+*/
+
+
+
+
+
+
+
+
+FILES
+=====
+
+Korg Triton
+

@@ -1,9 +1,10 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using PcgTools.Model.Common.Synth.Meta;
 using PcgTools.Model.Common.Synth.OldParameters;
 using PcgTools.Model.Common.Synth.PatchInterfaces;
 using PcgTools.Model.Common.Synth.PatchPrograms;
+using PcgTools.ViewModels.Commands.PcgCommands;
 
 namespace PcgTools.Model.Common.Synth.PatchCombis
 {
@@ -46,5 +47,28 @@ namespace PcgTools.Model.Common.Synth.PatchCombis
         /// <param name="name"></param>
         /// <returns></returns>
         IParameter GetParam(ParameterNames.CombiParameterName name);
+
+
+        /// <summary>
+        /// Minimum volume of all (used) timbres
+        /// </summary>
+        /// <returns></returns>
+        int GetMinimumVolume();
+
+
+        /// <summary>
+        /// Maximum volume of all (used) timbres
+        /// </summary>
+        /// <returns></returns>
+        int GetMaximumVolume();
+
+
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="parameters"></param>
+       /// <param name="minimumVolume"></param>
+       /// <param name="maximumVolume"></param>
+        void ChangeVolume(ChangeVolumeParameters parameters, int minimumVolume, int maximumVolume);
     }
 }

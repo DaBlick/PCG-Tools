@@ -1,0 +1,972 @@
+﻿ADDING ICONS
+============
+
+
+
+
+
+Differences List
+================
+
+Triton Studio
+                
+                Programs                             Combis                  Multisamples
+                Banks               SAMPLING  MOSS   Banks                   Rom                Other                Drums
+Studio        INT A-F,GM,EXB A-G       E       F     INT A-E, EXB A-G        424                Piano:4                416
+Rack          INT A-F,GM,EXT A-H       E       F     INT A-E, EXB A-H
+Classic       A-F,GM                   E	   F     A-D                     424                                        412
+LE            A-D,GM                                 A-C                     424                                        412
+Karma         A-F,GM                                 A-F
+Extreme       A-D,F,GM,H-M                     F     A-N
+
+TR                                                                                    424                 EX: 44       416  EX: 100
+
+
+
+
+Copying patches (programs, combis, set list slots)
+===============
+
+Sizes
+
+Model        Prg   Cat  Cmb   Timbr Cat
+        Size  Prg  Size   in   Com
+                                 Comb
+Karma   
+Triton
+Tr.Ex
+M3
+M50
+Oasys   6174 2568? 11288 4802? 4790
+Kronos  4960 2568   7810 4802  4790
+
+
+
+Check Oasys
+Calculate Triton ('50')  and possibly others 57?
+
+
+
+SORTING
+=======
+Patch list
+
+Copy selected items to SortList List<PatchSortInfo>    PatchSortInfo = src:Patch, dst:Patch
+1. I-A000 -> I-A000
+2. I-A010 -> I-A010
+3. I-A050 -> I-A050
+4. I-A070 -> I-A070
+5. I-B040 -> I-B040
+
+Sort:
+1. I-A000 -> I-A050
+2. I-A010 -> I-A070
+3. I-A050 -> I-B040
+4. I-A070 -> I-A010
+5. I-B040 -> I-A000
+
+COPY:
+  swap 1Src (I-A000) with 1Dst (I-A050) 
+
+  Fix 1Dst in Src with 1Src
+1. I-A000 -> I-A050
+2. I-A010 -> I-A070
+3. I-A000 -> I-B040
+4. I-A070 -> I-A010
+5. I-B040 -> I-A000
+
+  Remove 1 from list
+1. I-A010 -> I-A070
+2. I-A000 -> I-B040
+3. I-A070 -> I-A010
+4. I-B040 -> I-A000
+
+Swap 1Src (I-A010) with 1Dst (I-A070)
+1. I-A010 -> I-A070
+2. I-A000 -> I-B040
+3. I-A070 -> I-A010
+4. I-B040 -> I-A000
+
+Fix 1DST in Src with 1Src
+1. I-A010 -> I-A070
+2. I-A000 -> I-B040
+3. I-A010 -> I-A010
+4. I-B040 -> I-A000
+
+  Remove 1 from list
+1. I-A000 -> I-B040
+2. I-A010 -> I-A010
+3. I-B040 -> I-A000
+     
+Swap I-A000 with I-B040
+Swap I-B040 with I-A000
+
+
+
+
+
+
+                
+[code]
+
+Group					Parameter						Offset		Bits	Value
+						Name							0					0~FF * 24
+TODO: Check IFX/		TFX/MFX parameters
+Insert Effects			Effect Type						88 +i*74			00~B9	No Effect~MultiTap
+  (0<=i<12)				Channel							89			5~0		00~11   1~ll Routed
+						Switch							89			6		00~01	Off~On, bypass, invert value
+						Chain Switch					89			7		00~01	Chain Off~Chain On, Chain To
+						Chain To						90			3~0		0c~0C	2~12, Chain To
+						Panpot							92					00~7F	L000~R127
+						Bus Select						93			3~0		00~0D	L/R~Off
+						Fx Control Bus					93			5~4		00~02	Off~FX Control2
+						Send1							94					00~7F	0-127
+						Send2							95					00~7F	0-127
+						Rec Bus							96					00~06	Off~3/4
+Master Effect			Effect Type						976 +i*				00~B9	No Effect~MultiTap
+  (0<=i<12)				Channel							977			5~0		00~11   1~ll Routed
+						Switch							977			6		00~01	Off~On, bypass, invert value
+Master Effect			Return 1						1048				00~7F	0~127
+             			Return 2						1049				00~7F	0~127
+						Chain Direction					1050		0		00~01	M.Fx -> M.Fx2~M.Fx
+						Chain Switch					1050		1		00~01	Chain Off~Chain On, Chain To
+						Chain Level						1051				00~7F	0~127
+Total Effect			Effect Type						1116 +i*			00~B9	No Effect~MultiTap
+  90<=i<12)				Channel							1117		5~0		00~11   1~ll Routed
+						Switch							1118		6		00~01	Off~On, bypass, invert value
+Total Effect			Master Volume					1188				00~7F	0~127
+Effect LFO				Frequency						1190 +i*8			01~E6	0.02~20.00		
+   0<=i<2				Sync							1191		0		00~01	Off~On
+						Source							1192				00~25	Off~Tempo
+						MIDI Channel					1193				00~10	1~Global
+						BPM								1194/1195			0F9F~7530 MIDI~300.00
+						MIDI Sync Base Note				1196		3~0		00~09	1/32~1/1
+						MIDI Sync						1196		7		00~01	Off~On
+						MIDI Sync Base Times			1197				01~20	1/32
+Vector Control			TODO							1206
+Controller				TODO							1252
+Audio Input 1-4			TODO							1256
+S/PDIF L/R				TODO							1280
+Drum Track Comm			TODO							1292
+KARMA Common			TODO							1304
+Common					Category						4790		4~0		00~11
+						Sub Category					4790		7~5		00~07
+						Favorite						4791				00~01	Off~On
+						Auto Load Program Tone Adjust	4792				00~01	Off~On
+						Scale Type						4793				00~1A	Equal Temperatment~O
+						Scale Key						4794				00~0B	C~B
+						Scale Random					4795				00~07	0~7
+Assignable Controller	Switch1 Assign					4796		4~0		00~0F	Off~Chord SWitch
+						Switch1 Mode					4796		6		00~01	Toggle~Momentary
+						Switch1 Status					4796		7		00~01	Off~On
+						Switch2 Assign					4797		4~0		00~0F	Off~Chord SWitch
+						Switch2 Mode					4797		6		00~01	Toggle~Momentary
+						Switch2 Status					4797		7		00~01	Off~On
+						Knob5 Assign					4798				00~8E	Off~CC#119
+						Knob6 Assign					4799				00~8E	Off~CC#119
+						Knob7 Assign					4800				00~8E	Off~CC#119
+						Knob8 Assign					4801				00~8E	Off~CC#119
+Timbre1					Program Number					4802				00~7F	00~127
+						Bank Number						4803				00~17	INT-A~U-G
+						MIDI Channel					4804		4~0		00~10	1~Global
+						Status							4804		7~5		00~04	Off~External2
+						Bank MSB						4805				00~7F	00~127
+						Bank LSB						4806				00~7F	00~127
+						Volume							4807				00~7F	00~127
+						Bend Range						4808				E7~18	PRG~+24
+						Transpose						4809				C4~3C	-60~60
+						Detune							4810/4811			FB50~04B0 -1200~+1200
+						Delay Time						4812/4813			0~1771	0~Off
+						Delay Time Base Note			4814		3~0		00~09	1/32~1/1
+						Delay Mode						4814		7		00~01	Off~On
+						Delay Tempo Times				4815				01~20	1/32
+						Pan								4816				00~7F	00~127
+						Send1							4817				00~7F	00~127
+						Send2							4818				00~7F	00~127
+
+
+
+
+
+Tab					Page				Parameter				Value		 Remarks
+Play                ProgSelect/Mixer    Program                 I-A000       (default)
+										On/Off                  Off          You have to do this manually
+										Mute                    Mute
+										Pan                     Center       Default
+										Volume                  0            Stands out more
+EQ Vector Control   Timbre EQ           Auto Load Program EQ    Off
+										Bypass                  Off
+										Input Trim              0            Stands out more
+										EQ Knobs (Gains/Freq)   Lowest value
+					Vector Volume       VJS Assign              Off
+										Prg Vector Vol.         Off
+					Vector CC           Combi Vector CC         Off
+										Prg Vector CC           Off
+Timbre Parameters   MIDI                Status                  Off
+										MIDI Channel            16?
+										Timbre Priority         Off
+					OSC                 Force OSC Mode          Legato
+										OSC Select              OSC2
+										Portamento              Off
+										Max # of Notes          Dyn
+										Chord                   Off
+										Chord Source Pad        4
+					Pitch               Transpose               42
+										Detune                  42
+										Bend Range              4              42 is not possible.
+										Use Program's Scale     Off
+					Delay               Mode                    Tempo
+										Time                    KeyOff
+					Wave Seq/Karma      Wave Sequence Key Sync  Off
+										Wave Sequence Swing (%) 42
+										Wave Seq. Quant.Trigger Off
+										Karma Timbre Off Contr. by Off
+					EXI Audio Input     EXi1/2 Input Source     Off           Default
+										EXi1/2 Channel Select   L
+MIDI Filter/Zones   MIDI Filter1/2/3    All checkboxes          Off
+					Keyboard Zones      Top Key / Low Key       C#-1          Stands out more
+					Velocity Zones      Top Velocity            42            Stands out more
+Karma                                   No changes                            Not timbres related
+IFX                                     Routing1                Bus Select    Off
+										Send1/2                 42
+					Routing2            Bus Select              Off
+										FX Control Bus          Off           Default
+										REC Bus                 Off           Default
+[/code]
+	
+
+
+
+
+
+
+
+LONG
+ 
++------------+-----------------------------+---------------------+-------------------------+---------------+---------+---------+
+|Combi I-A034|Name:<Name of the combi>     | Cat:Soft Synth      | Sub Cat:Slow Release    | Tempo: 097.00 | Fav:Yes |         |
++------------+-----------------------------+---------------------+-------------------------+---------------+---------+---------+
+|Timbres List                                                                                                                  |
++---+-------+------------------------+----------------+----------------+---+---+----+----+----+-------+-------+----+---+---+---+
+|Tim|Pro-   |Name of the program     |Category        |Sub Category    |Vol|Sta|Mute|Prio|MIDI| Key   |Key Vel|OSC |Pit|Por|PB |
+|bre|gram   |                        |                |                |ume|tus|    |    |    | Zone  | Zone  |    |ch |tam|Rng|
++---+-------+------------------------+----------------+----------------+---+---+----+----+----+-------+-------+----+---+---+---+
+| 1 |I-A000 |<Name of timbre 0>      |<Category of t1 |SubCat of tim1  |128|INT|Play|Yes |GLB1|Cb1~Db8|000-050|Prg |-24|127|-12|
+| 2 |U-CC001|<Name of timbre 1>      |<Category of t2 |SubCat of tim2  |128|OFF|Mute|No  |GLB1|Cb1~Db8|000-050|Both|-24|127|-12|
+...
+|16 |I-A001 |<Name of timbre16>      |<Category of t16|SubCat of tim16 |128|OFF|Mute|    |GLB1|Cb1~Db8|000-050|Both|-24|127|-12|
++---+-------+------------------------+----------------+----------------+---+---+----+----+----+-------+-------+----+---+---+---+
+
+
+ 
+Multi Program/Combi Edit
+==================
++------------------------------------------------------------------------------------------+
+| Selected Programs: 45                                                                    |
+| Category: Keyboards  V     Sub Category: A. Piano    V                                   |
+| Average volume: 127 &     3X Favorite                                                    |
+|                                                                            <OK> <CANCEL> |
++------------------------------------------------------------------------------------------+
+ 
+
+
+
+
+
+MVVM
+====
+
+User						Main VM				Main View		KorgFileReader
+
+Select Open file dialog		OpenFileCommand
+							OpenFile
+												OpenFileDialog
+Select file(s)			
+							ReadAndShowFileName 
+																Read
+
+
+
+
+
+
+Close Functionality
+===================
+Use MS Photo Editor as MDI example
+
+
+if dirty
+   Do you want to save changes to <filename>? Y/N
+   Y    -> Save()
+   N    -> -
+   Exit -> return false
+
+CloseWindow()
+return true
+
+Revert
+======
+if Close()
+   Open
+   
+
+Exit
+====
+For each file:
+   Do you want to save changes to <filename>? Y/N/C
+   Y      -> Save()
+   N      -> -
+   C/Exit -> return
+   
+MainWindow.Close()
+
+
+
+
+
+			==== Main ====        ==== Child ====
+			View    ModelView    View        ModelView
+Close				 Close
+										    Close()
+											If dirty ---
+											   ShowMessageBox    
+											      Close: Y: Save()
+												  Revert: N: 
+										    End dirty ---
+											CloseWindow()
+
+Revert				Close
+										    if Close()
+												Open()
+                           
+Exit		      For each file:
+										   return Close()
+				  if Close()
+					return
+           
+				  MainWindow.Close()
+
+
+
+
+
+
+
+
+Copy programs
+=============
+Copy()
+	if Patches selected
+		if Programs selected 
+		   foreach program in selectedPrograms
+			   CopyProgramToClipboard(program)
+		else if Combis selected
+		   foreach combi in selectedCombis
+			   if ProgramsOfCombiPresentInPcgFile(combi) or Settings.CopyIncompleteCombis
+				   CopyCombiToClipBoard(combi)
+		elif SetListSlots selected
+			f
+
+CopyProgramToClipBoard(program)
+    clipboard += program
+
+CopyCombiToClipBoard(combi)
+    clipboard += combi
+	foreach timbre in combi.Timbres
+	    if timbre is program and program present
+
+
+
+
+Extra copy/paste options
+========================
+Auto paste existing programs from combis/set list slots
+-------------------------------------------------------
+
+Auto paste existing combis   from set list slots
+------------------------------------------------
+When unchecked, and set list slots are pasted, references to combis are not automatically assigned to duplicates.
+
+o Do not delete copied patches after pasting (Copy/Paste)
+o Delete copied patches after pasting within same PCG file (Cut/Paste within same PCG file, Copy/Paste outside PCG file)
+o Delete copied patches after pasting always (Copy/Paste)
+
+
+
+
+
+
+M3 PCG File v2.0 met radias
+===========================
+see x4100pcg.txt (Steve Pavao)
+
+Offset   |Bytes                   |ASCII   |Description
+                                           |            |            |            |           \|/           |            |            |            |
+0000 0000|4B 4F 52 47  75 00 02 01|KORG    |Name (Korg)                                        |ProductId M3|FileType PCG|MajorVersion|MinorVersion|
+0000 0008|01 01 00 00  00 00 00 00|        |PCMVersFlag |ChecksumFlag| Reserved                                                                    |
+                                           |1=2.0       |1 = on      |                                                                             |
+0000 0010|50 43 47 31  01 57 62 C4|PCG1    |ChunkID (PCG1)                                     |Size of Chunk                                      |
+0000 0018|00 00 04 00  44 49 56 31|    DIV1|Version Number of chunk  |Flags(fixed)|Reserved    |Chunk ID (DIV1)                                    |
+0000 0020|00 00 00 2C  00 00 00 00|        |Size of Chunk                                      |Version Number of Chunk  |Flags(fixed)|Reserved    |
+0000 0028|00 00 00 00  1F FF 00 0E|        |DividedInfo,0=not divided|Random ID (other file)   |Prg Mask                 |Prg NumOfBit             |
+0000 0030|00 0D 00 00  3F FF 00 0F|        |Prg Padding                                        |Cmb Mask                 |Cmb NumOfBit             |
+0000 0038|00 0E 00 00  00 FF 00 09|        |Cmb Padding                                        |Drum Kit Mask            |Drum Kit NumOfBit        |
+0000 0040|00 08 00 00  01 00 00 0A|        |Drum Kit Padding                                   |Formant/Drum Track Mask  |Formant/Drum Track NumOfB|
+0000 0048|00 00 00 00  00 00 00 00|        |Formant/Drum Track Padding                         |Has Global
+0000 0050|00 05 00 78  49 4E 49 32|    INI2|Number of Items(not used)|Padding                  |ChunkID (INI2)
+0000 0058|00 00 0A 04  00 01 00 00|        |
+0000 0060|00 00 00 28  50 52 47 31|    PRG1|
+0000 0068|00 00 00 00  00 00 00 14|        |
+0000 0070|00 6A D9 38  00 00 12 A0|        |
+0000 0078|00 00 00 00  00 00 00 00|        |
+0000 0080|00 00 00 00  50 72 6F 67|    Prog|
+0000 0088|72 61 6D 73  00 00 00 00|rams    |
+0000 0090|00 00 00 00  00 00 00 00|        |
+0000 0098|00 00 00 00  00 00 00 00|        |
+0000 00A0|00 00 00 00  50 42 4B 31|    PBK1|
+
+
+
+
+Triton Banks
+============
+                ProdId SubId	Program Banks										Combi Banks                     #IFX #MFX #TFX Bytesize 
+																																   Prg MOSS Cmb  
+				====== ======   =================================================== =============================== ==== ==== ==== === ==== ===  
+		Byte:	  4     8
+Triton Extreme	  50	01		    A..    F, G, g(1)..g(9), g(d), H..N				    A..    E, H..N                             540 604  448  
+Triton Studio	  50	00		INT-A..INT-F, G, g(1)..g(9), g(d), EXB-A..EXB-G		INT-A..INT-E, EXB-A..EXB-G                     540 604  448
+Triton Classic    50                A..    E, G,             g(d)                       A..    D                      5    2
+Triton TR/Rack    50
+Triton LE		  63			    A..    D, G,             g(d)                       A..    C
+Triton Karma	  5D			    A..    F, G, g(1)..g(9), g(d)                       A..    F
+
+
+PCG Files
+=========
+FileName				Workstation Model	Prg Banks		Cmb Banks		First 9 bytes
+----------------------- ------------------- --------------- --------------	-------------------
+microX                  Triton Studio/Rack  ABCDE			ABC             KORG 50 00 00 01 00
+triton_PRELOAD          Triton Studio/Rack  ABCD			ABCD			KORG 50 00 00 01 00
+triton_PRELOAD_sorted	Triton Studio/Rack  ABCD			ABCD            KORG 50 00 00 01 00
+default x50				Triton Studio/Rack  ABCD			ABC				KORG 50 00 00 01 00
+
+TritonExtreme_NEWFILE	Triton Extreme		ABCDE HIJKLMN	ABCDE HIJKLMN	KORG 50 00 00 01 00
+
+karma_PRELD_V2			Karma               ABE				ABE				KORG 5D 00 00 00 00 
+
+
+SONG Files
+==========
+FileName			Workstation Model	#Songs	#Samples
+------------------- -------------------	------	--------
+KRS-01.sng			Kronos				9		0				
+m50NEWFILE.SNG		M50					4		0
+MOSS.sng			Triton Classic/St/R	2		0
+Oasys Preload		Oasys				5		0
+PRELD_V2.sng		Karma				8		0
+PRELOAD.SNG         Kronos              4		8
+PROSHARP.SNG		Triton Classic/St/R	2		0
+residentevil.SNG	Kronos				3		0
+smallsong.SNG		Kronos				1		0
+
+
+
+S2.sng (Kronos, 1 song, empty)
+==============================
+
+0000 0058 SNG1			Length: 36 2E
+0000 0064   SDK1		Length: 00 4C
+0000 00B8   SGS1		Length: 35 CA
+0000 00C8     SDT1		Length: 35 BE  (per song)
+0000 00D4       SPR1	Length: 14 C9
+0000 1578       BMT1    Length: 1E 8E
+0000 3416       BMT2    Length: 00 24
+0000 341E               8 bytes padding (00)
+0000 3426               Bank Index * 16 timbres
+0000 3436				Program Index * 16 timbres
+0000 3446       TRK1    Length: 02 40
+ 
+						
+
+Offset   |Bytes                   |ASCII   |Description
+                                           |            |            |            |           \|/           |            |            |            |
+0000 0000|4B 4F 52 47  68 01 02 01|KORG    |Name (Korg)                                        |ProductId M3|FileType SNG|MajorVersion|MinorVersion|
+0000 0008|
+
+
+
+
+COMBI MODE
+ 
+=======1========
+PrgI-A001
+Kronos 
+Keyboard
+INT
+PLAY
+SOLO
+Pan
+OOO
+OOO
+Vol
+|| 
+|| 
+|| 
+|| 
+|| 
+---EQ----
+[AutoLd]
+[Bypass]
+InputTrim 34
+High  
+Gain
+OOO
+OOO
++02.5
+MidFreq
+OOO
+OOO
+3.20k
+Mid
+Gain
+OOO
+OOO
++03.0
+Low
+Gain
++04.0
+---------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 TIMBRE EDIT
+=============   
+----General---- ---EQ--- ----OSC---- -MIDI Fil-- ---Zones----
+Vol Prg I-A001  AutoLoad OscMode PRG X PrgChange Key F#2-C#-5
+||  Kronos Gran Bypass   OScSel Both X Aftertouc Slo 00 - 34
+||  Keyboard    ITrim 34 Port PRG    X Damper    Vel 000-127
+||  Acoustic Pi HighGain MaxNotes 34 X Port SW   Slo 000-123
+||  Pan INT     OOO      Chord   PRG X JSXasAMS
+||  OO/ PLAY    OOO      ChSrcPd PRG X JS+Y
+||  OOO SOLO    +34      ---Pitch--- X JS-Y
+127 +10         MidFreq  Trans   +00 X Ribbon
+                                OOO      Detun +1234   RTC Knob1
+                                OOO      BendR   PRG X1 X2 X3 X4
+                                3.20     UsePrSc   X X5 X6 X7 X8
+                                MidGain  GEN:Sc C V  X SW1 X SW2
+                                OOO          Random0 X FSw X FPd
+                                OOO      ----Delay-- X OtherCC 
+                                +34      Mode Time   X KarmaWfSx
+                         Time 0345
+                                                BaseN 1t
+                                                Times 01
+ 
+HD1 Basic
+=========
+OSC1
+--------
+Freq Oct +0[8'] Transpose +00 Tune +0000 Frequency Offset +00.0[Hz]
+Note-On Control: Delay 0000[ms] Mode [Key] Velocity Zone: Top 127 Bottom: 001
+ 
+ 
+PCG/SNG file connection
+=======================
+
+Status in PCG Window
+--------------------
+Internally a PCG window gets a status value (Shown/hidden).
+Check if possible. Yes : Container -> Visibility
+ 
+Show Master PCG Files Window
+----------------------------
+In View menu add item 'Show Master PCG Files Connections'
+Shows a window like:
+   Workstation model     PCG File Name       Status
+   --------------------- ------------------- ---------
+   Korg Kronos           Kronos_preload.pcg  Loaded
+   Korg Oasys            Oasys_pl.pcg        Unloaded
+   Korg Triton           Triton.pcg          No File
+   Korg Karma                                Unset
+   
+   Options:   Edit   Delete   Show/Hide   Load
+   
+   Edit       Show edit screen (for changing path)
+   Delete     Deletes the connection.
+   Show/Hide: Shows/hide the PCG file (only available if loaded)
+   Load:      Loads the PCG file (only available if Present)
+ 
+These are stored in settings.
+ 
+Auto Load Master/Reference File
+-------------------------------
+When loading a file, the user can select to load the Master PCG file or equally named PCG file (in case of SNG).
+ 
+Auto Load Behavior when loading PCG file
+o Auto load & show Master PCG file
+o Auto load & hide Master PCG file
+o Ask
+o Never
+
+Auto Load Behavior when loading SNG file
+o Auto connect & show equally named PCG file
+o Auto connect & hide equally named PCG file
+o Auto connect & show Master PCG file
+o Auto connect & hide Master PCG file
+o Ask connected file (from opened PCG windows)
+o Do not make a connection
+
+tored/shown in preferences.
+ 
+Tab in Song window: PCG Reference file
+--------------------------------------
+   Default is equally named PCG file, otherwise Master PCG file
+   Browse: Select a different file
+   
+Timbres Window for songs
+------------------------
+Show timbres with names if reference file is assigned and name is present.
+Show category/sub category if reference file is assigned and if category is present (possibly with reference file
+to reference PCG file).
+   
+Categories
+----------
+For PCG files without categories, search category in reference file if assigned.
+ 
+ 
+
+
+ TODO
+
+ when PCG file opened -> CHeck if it is master file, if so -> set to loaded
+                      -> Check if it has master file, if so -> load or autoload & set master file window
+when SNG file opened -> -> Check if it has master file, if so -> load or autoload & set master file window
+when PCG file closed -> check if it is master file -> set to unload
+Check file exit/close / x window icon / x app icon / ctrl f4 
+
+
+
+
+ 
+DISK SIZE
+========= 
+ 
+Application                          5 MB
+DotNET Framework                    42 MB
+Manual PCG Tools                     6 MB
+Master File Kronos X/2.0            46 MB
+Master File Kronos 1.5/1.6          43 MB
+Master File Kronos 1.0/1.1          35 MB
+Master File Oasys                   16 MB
+Master File M3                      22 MB
+Master File M50                      4 MB
+Master File Triton Extreme           3 MB
+Master File Other models            10 MB
+-----------------------------------------
+Total                              232 MB
+
+PCG Files
+---------
+Kronos                             169 MB
+
+ 
+ 
+ 
+MULTI EDIT
+==========
+ 
+Multi Program Edit
+------------------
+ 
+Screen:
+ 
+    Selected Programs: [20]: I-A000..I-A010, I-A012, I-A030..I-A038
+              Current 
+    Volume    000..127
+    Transpose -10..+ 5
+    
+    Details
+ 
+Details shows depending on selected line (e.g. volume):
+    Selected Programs: [20]: I-A000..I-A010, I-A012, I-A030..I-A038
+    
+    Program  CurMin CurMax NewMin NewMax Clipped
+    I-A000     000    080    000    100     -
+    I-A010     000    127    000    127    YES
+    ...
+    
+    x Multiply Factor            : [1.10] 
+    x Add Absolute Value  : [010 ] 
+    
+    Cancel OK
+   
+Multi Combi Edit
+----------------
+    Selected Combis: [20]: I-A000..I-A010, I-A012, I-A030..I-A038
+                                Current 
+    Volume                            000..127
+    Transpose                       -10..+ 5
+    VJS MIDI Filter               OFF       ON
+    
+    Details  
+
+
+
+
+SUMMARY LIST
+
++-----------+---------------+-------+----------+--------+-------+----------------------------------------------+
+|Bank Type  |Content Type   |Bank ID|# Writable|# Filled|# Empty|Patch IDs of Filled and Non-empty/init patches|
++-----------+---------------+-------+----------+--------+-------+----------------------------------------------+
+|ProgramBank|ModeledPrograms|I-A    |128       |128     |0      |I-A000~127
+|ProgramBank|SampledPrograms|I-B    |128       |128     |0      |I-B000~127
+|ProgramBank|SampledPrograms|I-C    |128       |128     |0      |I-C000~127
+|ProgramBank|SampledPrograms|I-D    |128       |128     |0      |I-D000~127
+|ProgramBank|SampledPrograms|I-E    |128       |128     |0      |I-E000~I-E127
+|ProgramBank|SampledPrograms|I-F    |128       |128     |0      |I-F000~I-F127
+|ProgramBank|SampledPrograms|U-A    |128       |128     |0      |U-A000~U-A127
+|ProgramBank|ModeledPrograms|U-B    |128       |128     |0      |U-B000~U-B127
+|ProgramBank|ModeledPrograms|U-C    |128       |128     |0      |U-C000~U-C127
+|ProgramBank|ModeledPrograms|U-D    |128       |128     |0      |U-D000~U-D127
+|ProgramBank|ModeledPrograms|U-E    |128       |128     |0      |U-E000~U-E127
+|ProgramBank|ModeledPrograms|U-F    |128       |128     |0      |U-F000~U-F127
+|CombiBank  |Combis         |I-A    |128       |128     |0      |I-A000~I-A127
+|CombiBank  |Combis         |I-B    |128       |128     |0      |I-B000~I-B127
+|CombiBank  |Combis         |I-C    |128       |128     |0      |I-C000~I-C127
+|CombiBank  |Combis         |I-D    |128       |96      |32     |I-D000~I-D095
+|SetList    |SetListSlots   |000    |128       |32      |96     |000/000~031
+
+
+
+
+
+
+
+
+
+					  
+German D Dark 1       Japanese C Dark 1       Austrian I Dark 1
+German D Dark 2       Japanese C Dark 2       Austrian I Dark 2
+German D Dark 3       Japanese C Dark 3       Austrian I Dark 3
+Ferrante German D     Rudess Japanese C (*)   Austrian I (*)
+German D 1            Japanese C 1
+Mays German D         Rudess Japanese C (*)
+German D 2            Japanese C 2            Austrian I Bright 1 (*)
+                                              Austrian I Bright 2 (*)
+                                              Austrian I Hard 1 (*)
+                                              Austrian I Hard 2 (*)
+German D Bright       Japanese C Bright
+German D Dark 1 s     Japanese C Dark 1 s     Austrian I Dark 1 s
+German D Dark 2 s     Japanese C Dark 2 s     Austrian I Dark 2 s
+German D Dark 3 s     Japanese C Dark 3 s     Austrian I Dark 3 s
+Ferrante German D s   Japanese C s (*)    
+German D 1 s          Japanese C 1 s          Austrian I s (*)
+Mays German D s       Japanese C s (*)
+German D 2 s          Japanese C 2 s
+                      Japanese C 3 s (*)
+German D Bright s     Japanese C Bright s      
+				 
+
+https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XC8G28GYMV4VY&lc=US&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
+
+			              Bits 
++------------------+---------------+----------------------+-------+
+| Category         | Content       | Bits                 | Byte  |
+|                  |               | FEDC BA98  7654 3210 |       |
++------------------+---------------+----------------------+-------+
+| Program Banks    | None          | 000- ----  ---- ---- | 00 00 | 
+|                  | PB I-A        | 001- ----  ---- ---- | 20 00 | 1
+|                  | PB I-A..I-F   | 100- ----  ---- ---- | 80 00 | 2 
+|                  | PB All        | 111- ----  ---- ---- | E0 00 | 3
++------------------+---------------+----------------------+-------+
+| Combi Banks      | None          | ---0 00--  ---- ---- | 00 00 |            				  
+|                  | CB I-A        | ---0 01--  ---- ---- | 04 00 | 4  
+|                  | CB I-A..I-G   | ---1 00--  ---- ---- | 10 00 | 5
+|                  | CB All        | ---1 11--  ---- ---- | 1C 00 | 6
++------------------+---------------+----------------------+-------+
+| Drumkits         | None          | ---- --00  0--- ---- | 00 00 | 
+|                  | DB Int	       | ---- --00  1--- ---- | 00 80 | 7
+|                  | DB All	       | ---- --11  1--- ---- | 03 10 | 8
++------------------+---------------+----------------------+-------+
+| Wave Sequences   | None          | ---- ----  -000 ---- | 00 00 |
+|                  | WB Int	       | ---- ----  -001 ---- | 00 10 | 9
+|                  | WB All	       | ---- ----  -111 ---- | 00 70 | 10
++------------------+---------------+----------------------+-------+
+| Global           | No            | ---- ----  ---- 0--- | 00 00 |  		
+|                  | Yes           | ---- ----  ---- 1--- | 00 08 | 11
++------------------+---------------+----------------------+-------+
+| Drum Track       | No    		   | ---- ----  ---- -0-- | 00 00 |
+|  Patterns        | Yes           | ---- ----  ---- -1-- | 00 04 | 12
++------------------+---------------+----------------------+-------+
+| Set List         | No            | ---- ----  ---- --0- | 00 00 | 
+|                  | Yes		   | ---- ----  ---- --1- | 00 02 |13
++------------------+---------------+----------------------+-------+
+
+14: PB I-A + CB I-A
+15: + Gl
+16: PB I-A + SL
+17: + Gl
+18: CB I-A + SL
+19 + Gl
+20: PB I-A + CB I-A + SL 
+21: + Gl
+
+22: PB All + CB All
+23 + Gl
+24: PB All + SL
+25 + Gl
+26 CB All + SL
+27 + Gl
+28 PB All + CB All + SL
+29 + Gl
+
+30 All
+
+
+
+
+
+Conventions for string resource
+_editw	Edit window (any kind)
+_errd	Error dialog
+_helpd	Dialogs from help menu (about, links etc)
+_lgenw	List generator window
+_main	Main (like title of main window)
+_mastd	Master File dialog
+_menu	Menu
+_pcgw	PCG window
+_settd	Settings dialog
+_songw	Song window
+_splw	Splash window
+_statb	Statusbar
+_timbw	Timbres window
+_toolb	Tool bar
+
+
+_tt = tooltip (can be added to others)
+
+
+
+Trinity PCG Files
+
+File Name				Program Banks		Combi Banks		Drum Kits	Global		20    30    40		Bytes
+.Access.pcg				A																				00000010 00 00 00 00  00 00 00 00 | 00 00 00 50  0C C2 76 94         | ??
+																										00000020 00 00 00 01  00 00 D8 82 | FF FF 00 00  00 00 00 00   PRG AB| S64 or S128
+																										00000030 FF FF 00 00  00 00 00 00 | FF 00 00 00  00 00 00 00   CMB AB| DK
+																										00000040 FF FF 00 00  00 00 00 00 | FF FF 00 00  00 00 00 00   GL    | M! 
+																										00000050 first 2 bytes: 00=a, 01=b, 02=c, 03=d, 04=s
+																					00 FF FF FF FF FF	20->Prg A 00 00 00 01 00 00 D8 82 (1 bank: A)
+Customs					A, B, S				A, B			12			?
+.General.pcg			A, B								12			Y			02 FF FF 03 04 FF	20->Prg AB 00 00 00 02 00 01 B1 04 (2 banks: AB)
+																										38: 00 03 00 0C 00 00 42 DA (12 drum kits?)
+INITMOSS.pcg			M	
+Italian					A, B, S				A, B			12			Y
+
+KAIS.pcg				A, B, C, D, M		A, B, C, D		24			Y
+PROMO.pcg				A									24			Y
+.Korg M1.pcg			A												Y		    00 FF FF FF 00 FF	40->Global 00 04 00 01 00 00 04 99 (Fixed)
+.MC303.pcg				A, B, C, D, S(128)					24											38: 00 03 00 18 00 00 85 B2  (24 drum kits)
+
+_MOSS.pcg				M64															FF FF FF FF FF 05	48->M 
+_MOSS_2.pcg				M64															FF FF FF FF FF 05	48->M 00 05 00 01 00 00 82 42 (1 bank of 64)
+P_LOAD1.pcg				A, B, M				A, B			12			?
+PRELOAD.pcg				A, B				A, B			12			Y
+Producer.pcg			A, B, S				A, B			12			Y
+PROMO.pcg				A									12			Y
+SOLO.pcg				A, B, S(64)			A, B			12			Y
+SOLO_TRI.pcg			M						
+STESCO.pcg				A, B, M				A, B			12			?
+TECHNO-2.pcg				S(128)
+TRINITYE.pcg			A, B				A, B			12			Y
+V3_PLOAD.pcg			A, B, M				A, B			12			Y
+V3_PROD.pcg				A, B, M				A, B			12			Y
+
+	
+d:\Muziek\Korg\Workstations\Trinity and Trinity Plus\Sounds and Templates\Dan Stesco\Dan_sesco_souundpack\trinity\MOSS2.pcg			OK
+d:\Muziek\Korg\Workstations\Trinity and Trinity Plus\Sounds and Templates\Dan Stesco\Dan_sesco_souundpack\trinity\STESCO.pcg		OK
+
+d:\Muziek\Korg\Workstations\Trinity and Trinity Plus\Sounds and Templates\Korg\EBC Trinity\CUSTOMS.PCG								FAILED
+
+
+
+
+TIMBRE PARAMETERS
+=================
+
+Parameter		Kronos/Oasys				M (M3/M50)					Triton						Trinity
+
+Bend Range		Int							Int							Int							Int							
+Bottom Key		Int							Int							Int							Int
+Bottom Velocity	Int							Int							Int							Int
+MIDI Channel	Int							Int							Int							Int
+Mute			Bool						Bool						-							-
+OSC Mode		Prg, Poly, Mono, Legato		Prg, Poly, Mono, Legato		Prg, Poly, Mono, Legato		Prg, Force Poly
+OSC Select		Both, Osc1, Osc2			Both, Osc1, Osc2			Both, Osc1, Osc2			Both, Hide OSC2
+Portamento		Int							Int							Int							Int
+Status			Off, Int, Both, Ext, Ex2	Off, Int, Ext, Ex2			Int, Off, Both, Ext, Ex2	Int, Off, Both, Ext
+Top Key			Int							Int							Int							Int
+Top Velocity	Int							Int							Int							Int
+Transpose		Int							Int							Int							Int							
+Volume			Int							Int							Int							Int							
+
+
+
+=> Gaps are only active if Status is selected as FIRST sort key!
+
+sel = selected timbres
+t10 = timbre 10 (if drums and keep10)
+if keep 10 and t10:
+   sel -= t10
+sor = sort(sel)
+
+int = sor which are INT/BOTH
+off = sor which are OFF
+ext = sor which are EXT/EX2
+
+diff_midi = #different midi channels in int
+diff_key_zones = #different key zones in int(ignoring MIDI channel, since that is the higher sort order or not)
+
+
+free = timbres.count - (1 if t10 != null)
+TODO check t10 below ???
+
+if int + ext < 8 and use8max:
+    free = 8
+else
+    max = timbres.count
+
+
+
+total = int inserted with gaps: (if dynamic -> select TImbres.Count - 2) # 2 for left/right, rest is maximum space between two timbres
+use an array gaps where gaps[i] is gaps after index i for 0<=i<=Timbres.Count, last is always 0.
+
+i.e. 
+1234567890123456
+iii-ii-ii--iii-i
+eee
+
+Total: int.count + ext.count + sum of gaps
+
+Possibly remove 1 for t10
+
+while (int.count + ext.count + sum of gaps < free):
+- decrease rightmost max value in gaps
+
+
+
+
+
+
+
+     
+else // non dynamic gaps
+  
+
+
+
+
+

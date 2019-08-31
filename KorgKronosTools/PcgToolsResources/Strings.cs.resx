@@ -1035,6 +1035,9 @@ spravny typ bankPcgIdy k vlozeni zkopirovanych patchu.</value>
   <data name="EModelTypeKrome" xml:space="preserve">
     <value>Krome</value>
   </data>
+  <data name="EModelTypeKromeEx" xml:space="preserve">
+    <value>Krome EX</value>
+  </data>
   <data name="EModelTypeKross" xml:space="preserve">
     <value>Kross</value>
   </data>

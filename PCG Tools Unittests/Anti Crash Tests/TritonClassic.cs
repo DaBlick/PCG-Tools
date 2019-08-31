@@ -1,4 +1,4 @@
-﻿// (c) 2011-2017 Michel Keijzers
+﻿// (c) 2011-2019 Michel Keijzers
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

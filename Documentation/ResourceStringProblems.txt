@@ -1,0 +1,911 @@
+Culture cs does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture cs does not contain from reference language, fragment ColorAzure with value Azure
+Culture cs does not contain from reference language, fragment ColorBrick with value Brick
+Culture cs does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture cs does not contain from reference language, fragment ColorCacao with value Cacao
+Culture cs does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture cs does not contain from reference language, fragment ColorDanim with value Danim
+Culture cs does not contain from reference language, fragment ColorDefault with value Default
+Culture cs does not contain from reference language, fragment ColorGold with value Gold
+Culture cs does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture cs does not contain from reference language, fragment ColorIvy with value Ivy
+Culture cs does not contain from reference language, fragment ColorLavender with value Lavender
+Culture cs does not contain from reference language, fragment ColorNavy with value Navy
+Culture cs does not contain from reference language, fragment ColorOlive with value Olive
+Culture cs does not contain from reference language, fragment ColorRose with value Rose
+Culture cs does not contain from reference language, fragment ColorSilver with value Silver
+Culture cs does not contain from reference language, fragment ColorSlate with value Slate
+Culture cs does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture cs does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture cs does not contain from reference language, fragment ColumnVolume with value Volume
+Culture cs does not contain from reference language, fragment ControlColor with value _Color
+Culture cs does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture cs does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture cs does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture cs does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture cs does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture cs does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture cs does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture cs does not contain from reference language, fragment ControlVolume with value _Volume
+Culture cs does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture cs does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture cs does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture cs does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture cs does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture cs does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture cs does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture cs does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture cs does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture cs does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture cs does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture cs does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture cs does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture cs does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture cs does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture cs does not contain from reference language, fragment EFileTypeTr with value TR
+Culture cs does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture cs does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture cs does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture cs does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture cs does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture cs does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture cs does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture cs does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture cs does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture cs does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture cs does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture cs does not contain from reference language, fragment FromFile with value _From File...
+Culture cs does not contain from reference language, fragment Genre with value Genre
+Culture cs does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture cs does not contain from reference language, fragment Manual_grt with value Manual
+Culture cs does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture cs does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture cs does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture cs does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture cs does not contain from reference language, fragment ReferenceId with value ID
+Culture cs does not contain from reference language, fragment ReferenceName with value Name
+Culture cs does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture cs does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture cs does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture cs does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture cs does not contain from reference language, fragment Rules with value _Rules
+Culture cs does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture cs does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture cs does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture cs does not contain from reference language, fragment SetList_2str with value Set List
+Culture cs does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture cs does not contain from reference language, fragment String1 with value 
+Culture cs does not contain from reference language, fragment SynthesisTypeAccess with value Access
+Culture cs does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture cs does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture cs does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture cs does not contain from reference language, fragment Version3x with value 3.x
+Culture de does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture de does not contain from reference language, fragment ColorAzure with value Azure
+Culture de does not contain from reference language, fragment ColorBrick with value Brick
+Culture de does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture de does not contain from reference language, fragment ColorCacao with value Cacao
+Culture de does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture de does not contain from reference language, fragment ColorDanim with value Danim
+Culture de does not contain from reference language, fragment ColorDefault with value Default
+Culture de does not contain from reference language, fragment ColorGold with value Gold
+Culture de does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture de does not contain from reference language, fragment ColorIvy with value Ivy
+Culture de does not contain from reference language, fragment ColorLavender with value Lavender
+Culture de does not contain from reference language, fragment ColorNavy with value Navy
+Culture de does not contain from reference language, fragment ColorOlive with value Olive
+Culture de does not contain from reference language, fragment ColorRose with value Rose
+Culture de does not contain from reference language, fragment ColorSilver with value Silver
+Culture de does not contain from reference language, fragment ColorSlate with value Slate
+Culture de does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture de does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture de does not contain from reference language, fragment ColumnVolume with value Volume
+Culture de does not contain from reference language, fragment ControlColor with value _Color
+Culture de does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture de does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture de does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture de does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture de does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture de does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture de does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture de does not contain from reference language, fragment ControlVolume with value _Volume
+Culture de does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture de does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture de does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture de does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture de does not contain from reference language, fragment EditSelectedPatch with value Edit the selected patch
+Culture de does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture de does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture de does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture de does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture de does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture de does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture de does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture de does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture de does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture de does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture de does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture de does not contain from reference language, fragment EFileTypeTr with value TR
+Culture de does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture de does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture de does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture de does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture de does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture de does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture de does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture de does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture de does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture de does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture de does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture de does not contain from reference language, fragment FromFile with value _From File...
+Culture de does not contain from reference language, fragment Genre with value Genre
+Culture de does not contain from reference language, fragment German with value German (German)
+Culture de does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture de does not contain from reference language, fragment Manual_grt with value Manual
+Culture de does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture de does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture de does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture de does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture de does not contain from reference language, fragment ReferenceId with value ID
+Culture de does not contain from reference language, fragment ReferenceName with value Name
+Culture de does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture de does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture de does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture de does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture de does not contain from reference language, fragment Rules with value _Rules
+Culture de does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture de does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture de does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture de does not contain from reference language, fragment SetList_2str with value Set List
+Culture de does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture de does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture de does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture de does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture de does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture de does not contain from reference language, fragment Version3x with value 3.x
+Culture el does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture el does not contain from reference language, fragment ColorAzure with value Azure
+Culture el does not contain from reference language, fragment ColorBrick with value Brick
+Culture el does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture el does not contain from reference language, fragment ColorCacao with value Cacao
+Culture el does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture el does not contain from reference language, fragment ColorDanim with value Danim
+Culture el does not contain from reference language, fragment ColorDefault with value Default
+Culture el does not contain from reference language, fragment ColorGold with value Gold
+Culture el does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture el does not contain from reference language, fragment ColorIvy with value Ivy
+Culture el does not contain from reference language, fragment ColorLavender with value Lavender
+Culture el does not contain from reference language, fragment ColorNavy with value Navy
+Culture el does not contain from reference language, fragment ColorOlive with value Olive
+Culture el does not contain from reference language, fragment ColorRose with value Rose
+Culture el does not contain from reference language, fragment ColorSilver with value Silver
+Culture el does not contain from reference language, fragment ColorSlate with value Slate
+Culture el does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture el does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture el does not contain from reference language, fragment ColumnVolume with value Volume
+Culture el does not contain from reference language, fragment ControlColor with value _Color
+Culture el does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture el does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture el does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture el does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture el does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture el does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture el does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture el does not contain from reference language, fragment ControlVolume with value _Volume
+Culture el does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture el does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture el does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture el does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture el does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture el does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture el does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture el does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture el does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture el does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture el does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture el does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture el does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture el does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture el does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture el does not contain from reference language, fragment EFileTypeTr with value TR
+Culture el does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture el does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture el does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture el does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture el does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture el does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture el does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture el does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture el does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture el does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture el does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture el does not contain from reference language, fragment FromFile with value _From File...
+Culture el does not contain from reference language, fragment Genre with value Genre
+Culture el does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture el does not contain from reference language, fragment Manual_grt with value Manual
+Culture el does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture el does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture el does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture el does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture el does not contain from reference language, fragment ReferenceId with value ID
+Culture el does not contain from reference language, fragment ReferenceName with value Name
+Culture el does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture el does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture el does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture el does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture el does not contain from reference language, fragment Rules with value _Rules
+Culture el does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture el does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture el does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture el does not contain from reference language, fragment SetList_2str with value Set List
+Culture el does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture el does not contain from reference language, fragment String1 with value 
+Culture el does not contain from reference language, fragment SynthesisTypeAccess with value Access
+Culture el does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture el does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture el does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture el does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture el does not contain from reference language, fragment Version3x with value 3.x
+Culture es does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture es does not contain from reference language, fragment ColorAzure with value Azure
+Culture es does not contain from reference language, fragment ColorBrick with value Brick
+Culture es does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture es does not contain from reference language, fragment ColorCacao with value Cacao
+Culture es does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture es does not contain from reference language, fragment ColorDanim with value Danim
+Culture es does not contain from reference language, fragment ColorDefault with value Default
+Culture es does not contain from reference language, fragment ColorGold with value Gold
+Culture es does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture es does not contain from reference language, fragment ColorIvy with value Ivy
+Culture es does not contain from reference language, fragment ColorLavender with value Lavender
+Culture es does not contain from reference language, fragment ColorNavy with value Navy
+Culture es does not contain from reference language, fragment ColorOlive with value Olive
+Culture es does not contain from reference language, fragment ColorRose with value Rose
+Culture es does not contain from reference language, fragment ColorSilver with value Silver
+Culture es does not contain from reference language, fragment ColorSlate with value Slate
+Culture es does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture es does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture es does not contain from reference language, fragment ColumnVolume with value Volume
+Culture es does not contain from reference language, fragment ControlColor with value _Color
+Culture es does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture es does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture es does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture es does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture es does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture es does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture es does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture es does not contain from reference language, fragment ControlVolume with value _Volume
+Culture es does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture es does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture es does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture es does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture es does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture es does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture es does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture es does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture es does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture es does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture es does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture es does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture es does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture es does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture es does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture es does not contain from reference language, fragment EFileTypeTr with value TR
+Culture es does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture es does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture es does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture es does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture es does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture es does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture es does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture es does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture es does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture es does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture es does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture es does not contain from reference language, fragment FromFile with value _From File...
+Culture es does not contain from reference language, fragment Genre with value Genre
+Culture es does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture es does not contain from reference language, fragment Manual_grt with value Manual
+Culture es does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture es does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture es does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture es does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture es does not contain from reference language, fragment ReferenceId with value ID
+Culture es does not contain from reference language, fragment ReferenceName with value Name
+Culture es does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture es does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture es does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture es does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture es does not contain from reference language, fragment Rules with value _Rules
+Culture es does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture es does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture es does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture es does not contain from reference language, fragment SetList_2str with value Set List
+Culture es does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture es does not contain from reference language, fragment String1 with value 
+Culture es does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture es does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture es does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture es does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture es does not contain from reference language, fragment Version3x with value 3.x
+Culture fr does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture fr does not contain from reference language, fragment ColorAzure with value Azure
+Culture fr does not contain from reference language, fragment ColorBrick with value Brick
+Culture fr does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture fr does not contain from reference language, fragment ColorCacao with value Cacao
+Culture fr does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture fr does not contain from reference language, fragment ColorDanim with value Danim
+Culture fr does not contain from reference language, fragment ColorDefault with value Default
+Culture fr does not contain from reference language, fragment ColorGold with value Gold
+Culture fr does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture fr does not contain from reference language, fragment ColorIvy with value Ivy
+Culture fr does not contain from reference language, fragment ColorLavender with value Lavender
+Culture fr does not contain from reference language, fragment ColorNavy with value Navy
+Culture fr does not contain from reference language, fragment ColorOlive with value Olive
+Culture fr does not contain from reference language, fragment ColorRose with value Rose
+Culture fr does not contain from reference language, fragment ColorSilver with value Silver
+Culture fr does not contain from reference language, fragment ColorSlate with value Slate
+Culture fr does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture fr does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture fr does not contain from reference language, fragment ColumnVolume with value Volume
+Culture fr does not contain from reference language, fragment ControlColor with value _Color
+Culture fr does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture fr does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture fr does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture fr does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture fr does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture fr does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture fr does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture fr does not contain from reference language, fragment ControlVolume with value _Volume
+Culture fr does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture fr does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture fr does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture fr does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture fr does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture fr does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture fr does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture fr does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture fr does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture fr does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture fr does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture fr does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture fr does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture fr does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture fr does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture fr does not contain from reference language, fragment EFileTypeTr with value TR
+Culture fr does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture fr does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture fr does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture fr does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture fr does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture fr does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture fr does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture fr does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture fr does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture fr does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture fr does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture fr does not contain from reference language, fragment FromFile with value _From File...
+Culture fr does not contain from reference language, fragment Genre with value Genre
+Culture fr does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture fr does not contain from reference language, fragment Manual_grt with value Manual
+Culture fr does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture fr does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture fr does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture fr does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture fr does not contain from reference language, fragment ReferenceId with value ID
+Culture fr does not contain from reference language, fragment ReferenceName with value Name
+Culture fr does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture fr does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture fr does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture fr does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture fr does not contain from reference language, fragment Rules with value _Rules
+Culture fr does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture fr does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture fr does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture fr does not contain from reference language, fragment SetList_2str with value Set List
+Culture fr does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture fr does not contain from reference language, fragment String1 with value 
+Culture fr does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture fr does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture fr does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture fr does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture fr does not contain from reference language, fragment Version3x with value 3.x
+Culture nl does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture nl does not contain from reference language, fragment ColorAzure with value Azure
+Culture nl does not contain from reference language, fragment ColorBrick with value Brick
+Culture nl does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture nl does not contain from reference language, fragment ColorCacao with value Cacao
+Culture nl does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture nl does not contain from reference language, fragment ColorDanim with value Danim
+Culture nl does not contain from reference language, fragment ColorDefault with value Default
+Culture nl does not contain from reference language, fragment ColorGold with value Gold
+Culture nl does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture nl does not contain from reference language, fragment ColorIvy with value Ivy
+Culture nl does not contain from reference language, fragment ColorLavender with value Lavender
+Culture nl does not contain from reference language, fragment ColorNavy with value Navy
+Culture nl does not contain from reference language, fragment ColorOlive with value Olive
+Culture nl does not contain from reference language, fragment ColorRose with value Rose
+Culture nl does not contain from reference language, fragment ColorSilver with value Silver
+Culture nl does not contain from reference language, fragment ColorSlate with value Slate
+Culture nl does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture nl does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture nl does not contain from reference language, fragment ColumnVolume with value Volume
+Culture nl does not contain from reference language, fragment ControlColor with value _Color
+Culture nl does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture nl does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture nl does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture nl does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture nl does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture nl does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture nl does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture nl does not contain from reference language, fragment ControlVolume with value _Volume
+Culture nl does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture nl does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture nl does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture nl does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture nl does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture nl does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture nl does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture nl does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture nl does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture nl does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture nl does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture nl does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture nl does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture nl does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture nl does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture nl does not contain from reference language, fragment EFileTypeTr with value TR
+Culture nl does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture nl does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture nl does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture nl does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture nl does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture nl does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture nl does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture nl does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture nl does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture nl does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture nl does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture nl does not contain from reference language, fragment FromFile with value _From File...
+Culture nl does not contain from reference language, fragment Genre with value Genre
+Culture nl does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture nl does not contain from reference language, fragment Manual_grt with value Manual
+Culture nl does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture nl does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture nl does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture nl does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture nl does not contain from reference language, fragment ReferenceId with value ID
+Culture nl does not contain from reference language, fragment ReferenceName with value Name
+Culture nl does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture nl does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture nl does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture nl does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture nl does not contain from reference language, fragment Rules with value _Rules
+Culture nl does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture nl does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture nl does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture nl does not contain from reference language, fragment SetList_2str with value Set List
+Culture nl does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture nl does not contain from reference language, fragment String1 with value 
+Culture nl does not contain from reference language, fragment SynthesisTypeAccess with value Access
+Culture nl does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture nl does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture nl does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture nl does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture nl does not contain from reference language, fragment Version3x with value 3.x
+Culture nl does not contain from reference language, fragment VirtualBanks with value Virtual Banks
+Culture pl does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture pl does not contain from reference language, fragment ColorAzure with value Azure
+Culture pl does not contain from reference language, fragment ColorBrick with value Brick
+Culture pl does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture pl does not contain from reference language, fragment ColorCacao with value Cacao
+Culture pl does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture pl does not contain from reference language, fragment ColorDanim with value Danim
+Culture pl does not contain from reference language, fragment ColorDefault with value Default
+Culture pl does not contain from reference language, fragment ColorGold with value Gold
+Culture pl does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture pl does not contain from reference language, fragment ColorIvy with value Ivy
+Culture pl does not contain from reference language, fragment ColorLavender with value Lavender
+Culture pl does not contain from reference language, fragment ColorNavy with value Navy
+Culture pl does not contain from reference language, fragment ColorOlive with value Olive
+Culture pl does not contain from reference language, fragment ColorRose with value Rose
+Culture pl does not contain from reference language, fragment ColorSilver with value Silver
+Culture pl does not contain from reference language, fragment ColorSlate with value Slate
+Culture pl does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture pl does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture pl does not contain from reference language, fragment ColumnVolume with value Volume
+Culture pl does not contain from reference language, fragment ControlColor with value _Color
+Culture pl does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture pl does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture pl does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture pl does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture pl does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture pl does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture pl does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture pl does not contain from reference language, fragment ControlVolume with value _Volume
+Culture pl does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture pl does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture pl does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture pl does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture pl does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture pl does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture pl does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture pl does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture pl does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture pl does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture pl does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture pl does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture pl does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture pl does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture pl does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture pl does not contain from reference language, fragment EFileTypeTr with value TR
+Culture pl does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture pl does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture pl does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture pl does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture pl does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture pl does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture pl does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture pl does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture pl does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture pl does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture pl does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture pl does not contain from reference language, fragment FromFile with value _From File...
+Culture pl does not contain from reference language, fragment Genre with value Genre
+Culture pl does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture pl does not contain from reference language, fragment Manual_grt with value Manual
+Culture pl does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture pl does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture pl does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture pl does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture pl does not contain from reference language, fragment ReferenceId with value ID
+Culture pl does not contain from reference language, fragment ReferenceName with value Name
+Culture pl does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture pl does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture pl does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture pl does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture pl does not contain from reference language, fragment Rules with value _Rules
+Culture pl does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture pl does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture pl does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture pl does not contain from reference language, fragment SetList_2str with value Set List
+Culture pl does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture pl does not contain from reference language, fragment String1 with value 
+Culture pl does not contain from reference language, fragment SynthesisTypeAccess with value Access
+Culture pl does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture pl does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture pl does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture pl does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture pl does not contain from reference language, fragment Version3x with value 3.x
+Culture pt-BR does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture pt-BR does not contain from reference language, fragment ColorAzure with value Azure
+Culture pt-BR does not contain from reference language, fragment ColorBrick with value Brick
+Culture pt-BR does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture pt-BR does not contain from reference language, fragment ColorCacao with value Cacao
+Culture pt-BR does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture pt-BR does not contain from reference language, fragment ColorDanim with value Danim
+Culture pt-BR does not contain from reference language, fragment ColorDefault with value Default
+Culture pt-BR does not contain from reference language, fragment ColorGold with value Gold
+Culture pt-BR does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture pt-BR does not contain from reference language, fragment ColorIvy with value Ivy
+Culture pt-BR does not contain from reference language, fragment ColorLavender with value Lavender
+Culture pt-BR does not contain from reference language, fragment ColorNavy with value Navy
+Culture pt-BR does not contain from reference language, fragment ColorOlive with value Olive
+Culture pt-BR does not contain from reference language, fragment ColorRose with value Rose
+Culture pt-BR does not contain from reference language, fragment ColorSilver with value Silver
+Culture pt-BR does not contain from reference language, fragment ColorSlate with value Slate
+Culture pt-BR does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture pt-BR does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture pt-BR does not contain from reference language, fragment ColumnVolume with value Volume
+Culture pt-BR does not contain from reference language, fragment ControlColor with value _Color
+Culture pt-BR does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture pt-BR does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture pt-BR does not contain from reference language, fragment ControlVolume with value _Volume
+Culture pt-BR does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture pt-BR does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture pt-BR does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture pt-BR does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture pt-BR does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture pt-BR does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture pt-BR does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture pt-BR does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture pt-BR does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture pt-BR does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture pt-BR does not contain from reference language, fragment EFileTypeTr with value TR
+Culture pt-BR does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture pt-BR does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture pt-BR does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture pt-BR does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture pt-BR does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture pt-BR does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture pt-BR does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture pt-BR does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture pt-BR does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture pt-BR does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture pt-BR does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture pt-BR does not contain from reference language, fragment FromFile with value _From File...
+Culture pt-BR does not contain from reference language, fragment Genre with value Genre
+Culture pt-BR does not contain from reference language, fragment German with value German (German)
+Culture pt-BR does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture pt-BR does not contain from reference language, fragment Manual_grt with value Manual
+Culture pt-BR does not contain from reference language, fragment No with value No
+Culture pt-BR does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture pt-BR does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture pt-BR does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture pt-BR does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture pt-BR does not contain from reference language, fragment ReferenceId with value ID
+Culture pt-BR does not contain from reference language, fragment ReferenceName with value Name
+Culture pt-BR does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture pt-BR does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture pt-BR does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture pt-BR does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture pt-BR does not contain from reference language, fragment Rules with value _Rules
+Culture pt-BR does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture pt-BR does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture pt-BR does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture pt-BR does not contain from reference language, fragment SetList_2str with value Set List
+Culture pt-BR does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture pt-BR does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture pt-BR does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture pt-BR does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture pt-BR does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture pt-BR does not contain from reference language, fragment Version3x with value 3.x
+Culture pt-BR does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture pt-BR does not contain from reference language, fragment ColorAzure with value Azure
+Culture pt-BR does not contain from reference language, fragment ColorBrick with value Brick
+Culture pt-BR does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture pt-BR does not contain from reference language, fragment ColorCacao with value Cacao
+Culture pt-BR does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture pt-BR does not contain from reference language, fragment ColorDanim with value Danim
+Culture pt-BR does not contain from reference language, fragment ColorDefault with value Default
+Culture pt-BR does not contain from reference language, fragment ColorGold with value Gold
+Culture pt-BR does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture pt-BR does not contain from reference language, fragment ColorIvy with value Ivy
+Culture pt-BR does not contain from reference language, fragment ColorLavender with value Lavender
+Culture pt-BR does not contain from reference language, fragment ColorNavy with value Navy
+Culture pt-BR does not contain from reference language, fragment ColorOlive with value Olive
+Culture pt-BR does not contain from reference language, fragment ColorRose with value Rose
+Culture pt-BR does not contain from reference language, fragment ColorSilver with value Silver
+Culture pt-BR does not contain from reference language, fragment ColorSlate with value Slate
+Culture pt-BR does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture pt-BR does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture pt-BR does not contain from reference language, fragment ColumnVolume with value Volume
+Culture pt-BR does not contain from reference language, fragment ControlColor with value _Color
+Culture pt-BR does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture pt-BR does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture pt-BR does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture pt-BR does not contain from reference language, fragment ControlVolume with value _Volume
+Culture pt-BR does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture pt-BR does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture pt-BR does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture pt-BR does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture pt-BR does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture pt-BR does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture pt-BR does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture pt-BR does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture pt-BR does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture pt-BR does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture pt-BR does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture pt-BR does not contain from reference language, fragment EFileTypeTr with value TR
+Culture pt-BR does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture pt-BR does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture pt-BR does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture pt-BR does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture pt-BR does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture pt-BR does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture pt-BR does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture pt-BR does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture pt-BR does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture pt-BR does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture pt-BR does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture pt-BR does not contain from reference language, fragment FromFile with value _From File...
+Culture pt-BR does not contain from reference language, fragment Genre with value Genre
+Culture pt-BR does not contain from reference language, fragment German with value German (German)
+Culture pt-BR does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture pt-BR does not contain from reference language, fragment Manual_grt with value Manual
+Culture pt-BR does not contain from reference language, fragment No with value No
+Culture pt-BR does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture pt-BR does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture pt-BR does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture pt-BR does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture pt-BR does not contain from reference language, fragment ReferenceId with value ID
+Culture pt-BR does not contain from reference language, fragment ReferenceName with value Name
+Culture pt-BR does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture pt-BR does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture pt-BR does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture pt-BR does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture pt-BR does not contain from reference language, fragment Rules with value _Rules
+Culture pt-BR does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture pt-BR does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture pt-BR does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture pt-BR does not contain from reference language, fragment SetList_2str with value Set List
+Culture pt-BR does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture pt-BR does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture pt-BR does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture pt-BR does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture pt-BR does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture pt-BR does not contain from reference language, fragment Version3x with value 3.x
+Culture sr-Latn-RS does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture sr-Latn-RS does not contain from reference language, fragment ColorAzure with value Azure
+Culture sr-Latn-RS does not contain from reference language, fragment ColorBrick with value Brick
+Culture sr-Latn-RS does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture sr-Latn-RS does not contain from reference language, fragment ColorCacao with value Cacao
+Culture sr-Latn-RS does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture sr-Latn-RS does not contain from reference language, fragment ColorDanim with value Danim
+Culture sr-Latn-RS does not contain from reference language, fragment ColorDefault with value Default
+Culture sr-Latn-RS does not contain from reference language, fragment ColorGold with value Gold
+Culture sr-Latn-RS does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture sr-Latn-RS does not contain from reference language, fragment ColorIvy with value Ivy
+Culture sr-Latn-RS does not contain from reference language, fragment ColorLavender with value Lavender
+Culture sr-Latn-RS does not contain from reference language, fragment ColorNavy with value Navy
+Culture sr-Latn-RS does not contain from reference language, fragment ColorOlive with value Olive
+Culture sr-Latn-RS does not contain from reference language, fragment ColorRose with value Rose
+Culture sr-Latn-RS does not contain from reference language, fragment ColorSilver with value Silver
+Culture sr-Latn-RS does not contain from reference language, fragment ColorSlate with value Slate
+Culture sr-Latn-RS does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture sr-Latn-RS does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture sr-Latn-RS does not contain from reference language, fragment ColumnVolume with value Volume
+Culture sr-Latn-RS does not contain from reference language, fragment ControlColor with value _Color
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture sr-Latn-RS does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture sr-Latn-RS does not contain from reference language, fragment ControlVolume with value _Volume
+Culture sr-Latn-RS does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture sr-Latn-RS does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture sr-Latn-RS does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture sr-Latn-RS does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture sr-Latn-RS does not contain from reference language, fragment EFileTypeTr with value TR
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture sr-Latn-RS does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture sr-Latn-RS does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture sr-Latn-RS does not contain from reference language, fragment FromFile with value _From File...
+Culture sr-Latn-RS does not contain from reference language, fragment Genre with value Genre
+Culture sr-Latn-RS does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture sr-Latn-RS does not contain from reference language, fragment Manual_grt with value Manual
+Culture sr-Latn-RS does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture sr-Latn-RS does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture sr-Latn-RS does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture sr-Latn-RS does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture sr-Latn-RS does not contain from reference language, fragment ReferenceId with value ID
+Culture sr-Latn-RS does not contain from reference language, fragment ReferenceName with value Name
+Culture sr-Latn-RS does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture sr-Latn-RS does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture sr-Latn-RS does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture sr-Latn-RS does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture sr-Latn-RS does not contain from reference language, fragment Rules with value _Rules
+Culture sr-Latn-RS does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture sr-Latn-RS does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture sr-Latn-RS does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture sr-Latn-RS does not contain from reference language, fragment SetList_2str with value Set List
+Culture sr-Latn-RS does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture sr-Latn-RS does not contain from reference language, fragment String1 with value 
+Culture sr-Latn-RS does not contain from reference language, fragment SynthesisTypeAccess with value Access
+Culture sr-Latn-RS does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture sr-Latn-RS does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture sr-Latn-RS does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture sr-Latn-RS does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture sr-Latn-RS does not contain from reference language, fragment Version3x with value 3.x
+Culture tr does not contain from reference language, fragment CheckTypeContainsIllegalCharacters with value {0} contains illegal character(s)
+Culture tr does not contain from reference language, fragment ColorAzure with value Azure
+Culture tr does not contain from reference language, fragment ColorBrick with value Brick
+Culture tr does not contain from reference language, fragment ColorBurgundy with value Burgundy
+Culture tr does not contain from reference language, fragment ColorCacao with value Cacao
+Culture tr does not contain from reference language, fragment ColorCharcoal with value Charcoal
+Culture tr does not contain from reference language, fragment ColorDanim with value Danim
+Culture tr does not contain from reference language, fragment ColorDefault with value Default
+Culture tr does not contain from reference language, fragment ColorGold with value Gold
+Culture tr does not contain from reference language, fragment ColorIndigo with value Indigo
+Culture tr does not contain from reference language, fragment ColorIvy with value Ivy
+Culture tr does not contain from reference language, fragment ColorLavender with value Lavender
+Culture tr does not contain from reference language, fragment ColorNavy with value Navy
+Culture tr does not contain from reference language, fragment ColorOlive with value Olive
+Culture tr does not contain from reference language, fragment ColorRose with value Rose
+Culture tr does not contain from reference language, fragment ColorSilver with value Silver
+Culture tr does not contain from reference language, fragment ColorSlate with value Slate
+Culture tr does not contain from reference language, fragment ColumnCrcValueExcludingName with value C_RC Value Excluding Name
+Culture tr does not contain from reference language, fragment ColumnCrcValueIncludingName with value _CRC Value Including Name
+Culture tr does not contain from reference language, fragment ColumnVolume with value Volume
+Culture tr does not contain from reference language, fragment ControlColor with value _Color
+Culture tr does not contain from reference language, fragment ControlTextSize with value _Text Size
+Culture tr does not contain from reference language, fragment ControlTextSizeL with value _L
+Culture tr does not contain from reference language, fragment ControlTextSizeM with value _M
+Culture tr does not contain from reference language, fragment ControlTextSizeS with value _S
+Culture tr does not contain from reference language, fragment ControlTextSizeXl with value X_L
+Culture tr does not contain from reference language, fragment ControlTextSizeXs with value XS
+Culture tr does not contain from reference language, fragment ControlTranspose with value _Transpose
+Culture tr does not contain from reference language, fragment ControlVolume with value _Volume
+Culture tr does not contain from reference language, fragment CouldNotOpenHomePageWarning with value The PCG Tools home page could not be opened, make sure an internet connection is established. Reason:<NL><NL>{0}<NL><NL>Inner exception: {1}
+Culture tr does not contain from reference language, fragment CrcExcludingName with value CRC Exc
+Culture tr does not contain from reference language, fragment CrcIncludingName with value CRC Inc
+Culture tr does not contain from reference language, fragment DefaultOutputDirectory_settw with value _Default Output Directory
+Culture tr does not contain from reference language, fragment EFileTypeBnk with value Bnk
+Culture tr does not contain from reference language, fragment EFileTypeExl with value Exl
+Culture tr does not contain from reference language, fragment EFileTypeLib with value LIB
+Culture tr does not contain from reference language, fragment EFileTypeMid with value Mid
+Culture tr does not contain from reference language, fragment EFileTypeMkP0 with value MkP0
+Culture tr does not contain from reference language, fragment EFileTypeMkxlAll with value mkxl_all
+Culture tr does not contain from reference language, fragment EFileTypeMkxlp_prog with value mkxlp_prog
+Culture tr does not contain from reference language, fragment EFileTypeMkxlPAll with value mkxlp_all
+Culture tr does not contain from reference language, fragment EFileTypeMkxlPProg with value mkxlp_prog
+Culture tr does not contain from reference language, fragment EFileTypeRaw with value Raw
+Culture tr does not contain from reference language, fragment EFileTypeSyx with value Syx
+Culture tr does not contain from reference language, fragment EFileTypeTr with value TR
+Culture tr does not contain from reference language, fragment EModelTypeM1 with value M1
+Culture tr does not contain from reference language, fragment EModelTypeM3R with value M3R
+Culture tr does not contain from reference language, fragment EModelTypeMicroKorgXl with value MicroKORG XL
+Culture tr does not contain from reference language, fragment EModelTypeMicroKorgXlPlus with value microKORG XL Plus
+Culture tr does not contain from reference language, fragment EModelTypeMs2000 with value MS2000
+Culture tr does not contain from reference language, fragment EModelTypeTSeries with value T1/T2/T3
+Culture tr does not contain from reference language, fragment EModelTypeXSeries with value X2/X3/X3R
+Culture tr does not contain from reference language, fragment EModelTypeZ1 with value Z1
+Culture tr does not contain from reference language, fragment EModelTypeZero3Rw with value 03R/W
+Culture tr does not contain from reference language, fragment EModelTypeZeroSeries with value 01/W series
+Culture tr does not contain from reference language, fragment ExcludingPatchName with value Excluding Patch Name
+Culture tr does not contain from reference language, fragment FromFile with value _From File...
+Culture tr does not contain from reference language, fragment Genre with value Genre
+Culture tr does not contain from reference language, fragment IncludingPatchName with value Including Patch Name
+Culture tr does not contain from reference language, fragment Manual_grt with value Manual
+Culture tr does not contain from reference language, fragment OptionalColumns with value _Optional Columns
+Culture tr does not contain from reference language, fragment ProcessingRules with value Processing Rules ...
+Culture tr does not contain from reference language, fragment ProgramReferenceChanger with value _Program Reference Changer
+Culture tr does not contain from reference language, fragment ProgramReferenceChanger_wt with value Program Reference Changer
+Culture tr does not contain from reference language, fragment ReferenceId with value ID
+Culture tr does not contain from reference language, fragment ReferenceName with value Name
+Culture tr does not contain from reference language, fragment ReferenceType with value Selected Patch Type
+Culture tr does not contain from reference language, fragment ReferenceTypeCombi with value Combi
+Culture tr does not contain from reference language, fragment ReferenceTypeProgram with value Program
+Culture tr does not contain from reference language, fragment ReferenceTypeSong with value Song
+Culture tr does not contain from reference language, fragment Rules with value _Rules
+Culture tr does not contain from reference language, fragment SelectFolderForGeneratedFiles_settw with value Select Folder for Generated Files
+Culture tr does not contain from reference language, fragment SelectFolderOfManual_settw with value Select Folder of Manual
+Culture tr does not contain from reference language, fragment SequencerFiles with value Sequencer Files
+Culture tr does not contain from reference language, fragment SetList_2str with value Set List
+Culture tr does not contain from reference language, fragment SetListGenerator_settw with value Set List Generator
+Culture tr does not contain from reference language, fragment String1 with value 
+Culture tr does not contain from reference language, fragment SynthesisTypeAccess with value Access
+Culture tr does not contain from reference language, fragment SynthesisTypeAnalogModeling with value AnalogModeling
+Culture tr does not contain from reference language, fragment SynthesisTypeMmt with value MMT
+Culture tr does not contain from reference language, fragment TimbreOff with value Timbre OFF
+Culture tr does not contain from reference language, fragment Turkish with value Turkish (Turkish)
+Culture tr does not contain from reference language, fragment Version3x with value 3.x

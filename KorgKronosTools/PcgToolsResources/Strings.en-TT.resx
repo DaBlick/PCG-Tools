@@ -1747,4 +1747,22 @@
   <data name="EModelTypeKross2" xml:space="preserve">
     <value>EModelTypeKross2</value>
   </data>
+  <data name="ChangeVolume_chvolwin" xml:space="preserve">
+    <value>ChangeVolume_chvolwin</value>
+  </data>
+  <data name="Fixed_chvolwin" xml:space="preserve">
+    <value>Fixed_chvolwin</value>
+  </data>
+  <data name="Mapped_chvolwin" xml:space="preserve">
+    <value>Mapped_chvolwin</value>
+  </data>
+  <data name="Percentage_chvolwin" xml:space="preserve">
+    <value>Percentage_chvolwin</value>
+  </data>
+  <data name="Relative_chvolwin" xml:space="preserve">
+    <value>Relative_chvolwin</value>
+  </data>
+  <data name="SmartMapped_chvolwin" xml:space="preserve">
+    <value>SmartMapped_chvolwin</value>
+  </data>
 </root>

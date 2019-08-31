@@ -1,0 +1,77 @@
+﻿Files
+=====
+
+Directory			File			File Type	Length
+-------------------- --------------- ------------ --------
+
+Ben Hall\bens_ws3	Bens_ws3.syx	4D*			 65512
+Korg\ws1preld		ws1preld.syx	50*			134661
+
+
+4C = All Patch Dump (within Bank)
+4D = All Performance Dump (within Bank)
+50 = All Data (system, patch, performance, wave sequence) Dump
+54 = All Wave Sequence Dump (single bank?)
+55 = Multi Mode Setup Dump
+
+
+File type 50 depends on WS type.
+
+Synth			 RAM  ROM	#Perf #Pat- #Wave #Wave #Multi  ---- Length of SYSEX file ------
+                Banks banks       ches  Seqs   Seq   sets    4C     4D     50     54     55
+				                        Steps
+--------------	----- ----- ----- ----- ----- ------ ------ ------- ------ ------ ------ ------- ----- -----
+WaveStation WS	  2     1    150   105    96   1500   16	29828  18108                                                    
+WaveStation EX	  2     1    150   105    96   1500   16	       47936 134609  65512  133785                                             
+WaveStation A/D	  3     1    200   140   128   2000   16    65512        203450                                             
+WaveStation SR	  3     8    550   385   352   5500   32	       65512 211559                                                  
+???														           65809?       
+
+File: ws1preld\ws1preld.syx
+============================
+
+Address   Len   Header/Content				Description
+========= ===== ==========================  ==================
+0000 0000       F0 42 30 28					F0=SYSEX, 42=Korg 30=Channel 0 28=WS
+0000 0004       50							50=All data
+
+(par 5.9)
+system system_all
+0000 0005	 34   	
+
+multiset_block multiset_all
+0000 0039									multiset_block (total size: 16 * (1 + 21 + 16 * (1 + 1 + 1 + 1)) + 1 = 16 * (22 + 16 * 4) + 1 = 1377 (0x561)
+0000 0039									-multisets[0 of 16]
+0000 0039									--Multiset_FX_chan
+0000 0040									--Fx_Multi_Block[21]
+0000 0055									--Multiset_Map[0 of 16]
+0000 0055									---Multimap_Chan_Enable
+0000 0056									---Multimap_Bank
+0000 0057									---Multimap_Prog
+0000 0058									---Multimap_Level
+0000 0059									--Multiset_Map 1..15 of 16]
+											-spare_multiset_byte
+
+mtune_block mtune_all
+???											mtune_block (total size: 12 * 12 + 1 = 145
+											-mtunes[0 of 12]
+
+
+perfmap_block perfmap_all
+????										perfmap_block (total size: 128 * (1 + 1) + 1 = 257
+
+performance perf_ram1[50]					performance (0 of 50) (total of 50 performances: 50 * (16 + 21 + 8 * 18) = 9050 
+????										
+
+performance perf_ram2[50]					performance (0 of 50) (total of 50 performances: 50 * (16 + 21 + 8 * 18) = 9050 
+
+patch_ram1[35]								patch (0 of 35): 35 * (16 + 74 + 4 * 84) = 14910 (0x3A3E)
+
+patch_ram2[35]								patch (0 of 35): 35 * (16 + 74 + 4 * 84) = 14910 (0x3A3E)
+
+ws_block ws_ram1							ws_block: 32 * (16) + 501 * (16) + 32 * (16) = 9040 (0x2350)
+
+ws_block ws_ram2
+
+0002 0DCF       6D							6D=checksum (MSB=0)
+0002 0DD0       F7							F7=End of SYSEX

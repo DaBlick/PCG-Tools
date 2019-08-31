@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PatchDatabaseBackEnd")]
-[assembly: AssemblyCopyright("Copyright ©2011-2017")]
+[assembly: AssemblyCopyright("Copyright ©2011-2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

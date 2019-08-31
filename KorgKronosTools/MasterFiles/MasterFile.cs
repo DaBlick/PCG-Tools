@@ -115,6 +115,10 @@ namespace PcgTools.MasterFiles
                     Settings.Default.MasterFile_Krome = fileName;
                     break;
 
+                case Models.EOsVersion.EOsVersionKromeEx:
+                    Settings.Default.MasterFile_Krome = fileName;
+                    break;
+
                 case Models.EOsVersion.EOsVersionKross:
                     Settings.Default.MasterFile_Kross = fileName;
                     break;

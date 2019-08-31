@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PcgTools Application", "KorgKronosTools\PcgTools Application.csproj", "{D18ED6C7-B8D0-4D9E-B498-744DC88A06AA}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -37,6 +37,33 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installation", "Installation", "{A2499352-B10A-438B-9E97-7E2FB3F1AE56}"
 	ProjectSection(SolutionItems) = preProject
 		Installation\PCG Tools.aip = Installation\PCG Tools.aip
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{AF044B5B-17D8-4CE9-8388-2DF221FD79B3}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\contact.html = Documentation\contact.html
+		Documentation\Design.eap = Documentation\Design.eap
+		Documentation\Documentation.vcxproj = Documentation\Documentation.vcxproj
+		Documentation\Documentation.vcxproj.filters = Documentation\Documentation.vcxproj.filters
+		Documentation\EULA.rtf = Documentation\EULA.rtf
+		Documentation\GoogleDocsStringIds.xlsx = Documentation\GoogleDocsStringIds.xlsx
+		Documentation\History.txt = Documentation\History.txt
+		Documentation\Interfaces.txt = Documentation\Interfaces.txt
+		Documentation\Manual - Copy.docx = Documentation\Manual - Copy.docx
+		Documentation\Manual.docx = Documentation\Manual.docx
+		Documentation\Manual.pdf = Documentation\Manual.pdf
+		Documentation\Menu.txt = Documentation\Menu.txt
+		Documentation\NewCutCopyPasteSettings.pdf = Documentation\NewCutCopyPasteSettings.pdf
+		Documentation\Notes.txt = Documentation\Notes.txt
+		Documentation\PCG Structure Kronos.txt = Documentation\PCG Structure Kronos.txt
+		Documentation\PCG Structure M3.txt = Documentation\PCG Structure M3.txt
+		Documentation\PCG Structure N264.txt = Documentation\PCG Structure N264.txt
+		Documentation\PCG Structure Oasys.txt = Documentation\PCG Structure Oasys.txt
+		Documentation\PCG Structure Wavestation.txt = Documentation\PCG Structure Wavestation.txt
+		Documentation\readme.txt = Documentation\readme.txt
+		Documentation\ResourceStringProblems.txt = Documentation\ResourceStringProblems.txt
+		Documentation\SNG Structure Kronos.txt = Documentation\SNG Structure Kronos.txt
+		Documentation\wpfmdi_license.txt = Documentation\wpfmdi_license.txt
 	EndProjectSection
 EndProject
 Global
@@ -323,6 +350,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07BB12D7-22A9-4634-B327-30C5BEDA14EA}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PcgTools.vsmdi

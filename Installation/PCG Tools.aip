@@ -17,7 +17,7 @@
     <ROW Property="ProductCode" Value="1033:{155A3A33-898C-458B-AA5C-BE563D64084F} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="PCG Tools"/>
-    <ROW Property="ProductVersion" Value="3.0.1" Type="32"/>
+    <ROW Property="ProductVersion" Value="3.1.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{367E4A88-7933-4EC5-963B-8B3B4EC1AB78}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME#ExeBuild:Windows 9x/ME" ValueLocId="-"/>

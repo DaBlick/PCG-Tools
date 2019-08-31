@@ -133,6 +133,11 @@
                                 Command="{Binding Path=CurrentChildViewModel.MoveDownCommand}" 
                               InputGestureText="NumPad2"/>
                     <Separator/>
+                    <MenuItem Header="{Binding ChangeVolume, Source={StaticResource LocStrings}}"
+                              Style="{StaticResource menuItemWithCommand}"
+                                Command="{Binding Path=CurrentChildViewModel.ChangeVolumeCommand}"/>
+
+                  <Separator/>
                     <MenuItem Header="{Binding InitAsMpeCombi, Source={StaticResource LocStrings}}" 
                               Style="{StaticResource menuItemWithCommand}" 
                                 Command="{Binding Path=CurrentChildViewModel.InitAsMpeCombiCommand}"/>

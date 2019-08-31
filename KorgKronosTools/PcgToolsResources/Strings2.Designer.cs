@@ -19,7 +19,7 @@ namespace PcgTools.PcgToolsResources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Strings {
@@ -66,15 +66,6 @@ namespace PcgTools.PcgToolsResources {
         public static string ___ConnectedPcgFile {
             get {
                 return ResourceManager.GetString("___ConnectedPcgFile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to _Absolute Value.
-        /// </summary>
-        public static string ___EditParameterAbsoluteValue {
-            get {
-                return ResourceManager.GetString("___EditParameterAbsoluteValue", resourceCulture);
             }
         }
         
@@ -147,6 +138,15 @@ namespace PcgTools.PcgToolsResources {
         public static string ___EditParameterDecimalValue {
             get {
                 return ResourceManager.GetString("___EditParameterDecimalValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Fixed Value.
+        /// </summary>
+        public static string ___EditParameterFixedValue {
+            get {
+                return ResourceManager.GetString("___EditParameterFixedValue", resourceCulture);
             }
         }
         
@@ -714,6 +714,24 @@ namespace PcgTools.PcgToolsResources {
         public static string ChangePcgFileName {
             get {
                 return ResourceManager.GetString("ChangePcgFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Change Volume.
+        /// </summary>
+        public static string ChangeVolume {
+            get {
+                return ResourceManager.GetString("ChangeVolume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Volume.
+        /// </summary>
+        public static string ChangeVolume_chvolwin {
+            get {
+                return ResourceManager.GetString("ChangeVolume_chvolwin", resourceCulture);
             }
         }
         
@@ -1896,6 +1914,15 @@ namespace PcgTools.PcgToolsResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Krome EX.
+        /// </summary>
+        public static string EModelTypeKromeEx {
+            get {
+                return ResourceManager.GetString("EModelTypeKromeEx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kronos.
         /// </summary>
         public static string EModelTypeKronos {
@@ -2711,6 +2738,15 @@ namespace PcgTools.PcgToolsResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to _Fixed.
+        /// </summary>
+        public static string Fixed_chvolwin {
+            get {
+                return ResourceManager.GetString("Fixed_chvolwin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to _Fix References To Cleared Used Patches.
         /// </summary>
         public static string FixReferencesToClearedUsedPatches {
@@ -3285,6 +3321,15 @@ namespace PcgTools.PcgToolsResources {
         public static string Manual_grt {
             get {
                 return ResourceManager.GetString("Manual_grt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Mapped.
+        /// </summary>
+        public static string Mapped_chvolwin {
+            get {
+                return ResourceManager.GetString("Mapped_chvolwin", resourceCulture);
             }
         }
         
@@ -3969,6 +4014,15 @@ namespace PcgTools.PcgToolsResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to _Percentage.
+        /// </summary>
+        public static string Percentage_chvolwin {
+            get {
+                return ResourceManager.GetString("Percentage_chvolwin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Polish (Polish).
         /// </summary>
         public static string Polish {
@@ -4181,6 +4235,15 @@ namespace PcgTools.PcgToolsResources {
         public static string ReferenceTypeSong {
             get {
                 return ResourceManager.GetString("ReferenceTypeSong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Relative.
+        /// </summary>
+        public static string Relative_chvolwin {
+            get {
+                return ResourceManager.GetString("Relative_chvolwin", resourceCulture);
             }
         }
         
@@ -4685,6 +4748,15 @@ namespace PcgTools.PcgToolsResources {
         public static string SinglePatchFiles_groupbox {
             get {
                 return ResourceManager.GetString("SinglePatchFiles_groupbox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Smart Mapped.
+        /// </summary>
+        public static string SmartMapped_chvolwin {
+            get {
+                return ResourceManager.GetString("SmartMapped_chvolwin", resourceCulture);
             }
         }
         

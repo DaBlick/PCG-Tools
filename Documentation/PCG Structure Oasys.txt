@@ -1,0 +1,170 @@
+﻿Address   Len/4 Header/Content				Description
+========= ===== ==========================  ==================
+# 0. Intro
+0000 0000		"KORG"
+0000 0004       70							70 = Oasys, 68 = Kronos
+0000 0010		"PCG1"
+0000 001C		"DIV1" 00 00 00 2C
+
+# 1.  PCG Containment
+0000 0054		"INI2" 00 00 06 44
+0000 06A4       "INI1" 00 00 05 18 
+0000 0BC8		"PRG1" 00 90 B5 20
+
+
+INI2: # 1.2 Programs
+0000 0064		"PRG1" 						Programs contained in PCG
+0000 00A4		"OBK1" 						Bank I-A, HD1 bank contained in PCG
+0000 00E4		"PBK1" 						Bank I-B, HD1 bank contained in PCG
+0000 0164		"PBK1" 						Bank I-C, HD1 bank contained in PCG
+...
+0000 0364		"MBK1" 						Bank U-G, EXI bank contained in PCG
+
+# 1.3 Combis
+0000 03A4		"CMB1" 						Combinations contained in PCG
+0000 0464		"CBK1" 						Bank I-A contained in PCG
+0000 04A4		"CBK1" 						Bank I-B contained in PCG
+...
+0000 07A4		"CBK1" 						Bank U-G contained in PCG
+
+# 1.4 Drum Kits
+0000 07E4		"DKT1" 						Drum Kits contained in PCG
+0000 0824		"DBK1" 						000-039 (Int) contained in PCG
+0000 0864		"DBK1" 						040-055 (U-A) contained in PCG
+...
+0000 09E4		"DBK1" 						136-151 (U-G) contained in PCG
+
+# 1.5 Wave Sequences
+0000 0A24		"WSQ1"						Wave Sequences contained in PCG
+0000 0A64		"WBK1"						000-149 (Int) contained in PCG
+0000 0AA4		"WBK1"						150-181 (U-A) contained in PCG
+0000 0C24		"WBK1"						342-373 (U-G) contained in PCG
+
+# 1.6 Global Setting
+0000 0C64		"GLB1"						Global contained in PCG
+
+# 2.0 INI1		???
+0000 0CA4 "INI1"
+
+# 2.1 ...
+0000 0CB4		"SLS1"						Set Lists
+0000 0CE8		"PRG1"						Programs
+0000 0D1C		"MBK1" ...
+0000 0D50		"PBK1"
+...
+
+# 3. Set List
+0000 16A8		"SLS1"						Set Lists
+0000 16B4		"SLD1"
+0000 16C0		"SDB1"
+0000 16D8		"Preload Set List"			Name of set list 0 (followed by name of slots)
+0000 16F4       "SGX-1"						Name of slot 0
+0000 1710		"SGX-1"						Name of slot 1
+...
+0000 15A8		"Sequence"					Name of slot 31
+0000 24F4		"Set List 001"				Name of set list 1 (followed by name of slots)
+...
+0007 16BC		"Set List 127"				Name of set list 127 (followed by name of slots)
+
+0007 24D8		"STL1" Set Lists
+0007 24E4		"SBK1"
+0007 24E8       0087 940C					???
+0007 24EC		0000 01B8					???
+0007 24F0		0000 0080					#set lists
+0007 24F4		0001 0F28
+0007 24F8		0000
+0007 24FC		Preload Set List			
+0007 2514		"SGX-1"						Name of the first set list, slot 0
+0007 252C		01							Type (00=Combi, 01=Prg, 02=Song) 
+0007 252D		00							Bank / Song (?)
+0007 252E		00							Patch Index
+0007 252F		06							??
+0007 2532		"The SGX-1..."				Description of the first set list, slot 0
+...
+0007 2732		"SGX-1"						Name of the first set list, slot 1
+0007 2748		00							Type: 00 = Combi, 01 = Program 02 = Song
+0007 2749		00							Patch Bank
+0007 274A		08							Patch Index
+0007 2750       "An SGX-1 piano"			Description of slot 1
+...
+0007 66B8		"Sequence"					Name of the first set list, last slot
+0007 66D4		"A Set List ..."			Description of the first set list, last slot
+
+# 4. Programs
+008E B8FC		"PRG1" 						Programs
+008E B908		"MBK1" 						EXI Bank (1st bank)
+008E B920 [24]	"KRONOS German Grand"		Name of program 000
+008E CC80 [24]	"German Dark Grand"			Name of program 001
+...
+0098 55C0 [24]	"Sea World"					Name of program 127
+
+0098 6920 [24]	"PBK1"						HD1 Programs (2nd bank)
+0098 6938 [24]  "HD-1 Piano Damper"         Name of program 000
+...
+0102 E6C8 [24]  "Power Sync Lead"           Name of program 127, last bank (U-F)
+
+
+0102 Fa28       "MBK1"                      ???
+0102 FA40 [24]	"MS Zap"					???
+
+
+# 5. Combis
+0090 C0F4		"CMB1"
+0090 C100		"CBK1"
+0090 C118       "Particles & Waves"
+
+0090 D3CE									Start of timbre 1
+
+
+KRONOS:
+010C AA40		"CMB1"						Combinations
+010C AA44       D5 8F 50					Size of the chunk
+010C AA48       03 04 00
+010C AA4C		"CBK1"						Combinations Bank 
+010C AA50 [ 4]  0F 41 0C					Size of the chunk
+010C AA54 [ 4]  03 00 6D					???
+010C AA58 [ 4]  80 (128)					Number of combis in bank
+010C AA5C [ 4]  1E 82						Size of a combi
+010C AA60 [ 4]  0							Bank Id (= Int A)
+010C AA64 [24]  "    The Era of Kronos"     Name of combi 0, first bank
+010C C8E6 [24]  "Smooth Jazzmitazz (EP-1)	Name of combi 1, first bank
+...
+0145 BFEA [24]  "Ocean of Pearls"           Name of combi 95, bank D
+0145 DE6C [24]  "Michel's 7's!              Name of combi 96, bank D
+0145 F12E       07 00						Program/bank of timbre 0 (A7)
+0145 F130       00                          Status 20->00 = Off   2: 0010 Int  -> (byte && 0xE0)>>5  000-> Off 001->Int 011->Ext 100->EX2
+0145 F1EA       11 00						Program/bank of timbre 1 (A17)
+0145 F1Ec       21							21 = Int
+0145 F2A6		1B 01						Program/bank of timbre 2 (B27)
+0145 F2A8		62							22->62 EXT		6: 0110 EXT							
+0145 F362       25 02                       Program/bank of timbre 3 (C037)
+0145 F364		83							23->83 EX2 		8: 1000 EX2  
+...
+0145 F652       4D 11                       Program/bank of timbre 7 (UA77)
+...
+0145 F942                                   Program/bank of timbre 11 (
+0145 F9FE       7F 16                       Program/bank of timbre 12 (UF127)
+0145 FABA       7E 06                       GM126 ??? should be GM127
+0145 FB76       00 00
+
+
+0145 FCEE [24]  "Init Combi"                Name of combi 97, bank D
+
+
+			Hex
+0: A007		07   
+1: A017		11
+2: B027		1B
+3: C037		25
+4: D047		2F
+5: E057		39
+6: F067		43
+7: UA077	4D
+8: UB087	57
+9: UC097	61
+10: UD107   6B
+11: UE117	75
+12: UF127	7F
+13: GM127	7F
+
+

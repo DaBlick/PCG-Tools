@@ -1,0 +1,795 @@
+﻿Version	    Date        Type     Description
+----------- ------------ -------- --------------------------------------------------------------------------------------
+0.1.1.1     01-Jul-2011 Initial: Initial version.
+0.1.2.49    30-Jul-2011 Support: Support for any kind of Korg Kronos PCG files.
+                        Support: Support for any kind of Korg Oasys PCG files.
+                        Improv.: Check for unsupported PCG file.
+                        Improv.: In the list generation window, empty/init banks or setlists are disabled.
+                        Bug Fix: In the program usage list, muted timbres were taken into account.
+                        Bug Fix: In the file selection dialog, the 'All' files options did not work. 
+0.1.3.53    08-Aug-2011 Feature: Combi Content List.
+                        Support: Support for Korg Triton Extreme PCG files.
+                        Improv:  Added option to ignore first program and ignore muted or off timbres.
+                        Improv:  Added option for enabling filtering text in programs, combis, set list slot names.
+                        Bug Fix: Problem fixed with partial Korg Kronos/Oasys files.
+0.1.4.54    10-Aug-2011 Support: Support for Korg M50 PCG files.
+                        Support: Support for Korg M3 PCG files.
+                        Improv:  Wait cursor while generating lists.
+                        Improv:  (Much) Faster Combi Content List generation.
+0.1.5.62    14-Aug-2011 Feature: All lists can be generated in XML format.
+                        Improv:  Output file can be set (and opened by connected application)
+                        Improv:  Screen layout changed.
+                        Bug Fix: CSV File format improved (can handle commas in names of patches)
+                        Bug Fix: If the PCG file cannot be read, the app does not crash but gives a message box.
+0.1.6.64    18-Aug-2011 Feature: Differences List.
+                        Improv:  Changed parameters in command line interface.
+0.2.0.75     3-Sep-2011 Feature: Show banks with programs, combis and set list slots on GUI.
+                        Feature: Ability to change names of Programs, Combis and Set List Slots.
+                        Feature: Ability to change descriptions of Set List Slots.
+                        Improv:  CHanged text "Kronos PCG File Name" to "PCG File Name.
+                        Bug Fix: Default settings/enabling of UI checkboxes for filtering on text.
+0.2.0.76     4-Sep-2011 Bug Fix: Crash fixed when importing Oasys PCG files and pressing generate lists.
+0.2.1.78    10-Sep-2011 Feature: Moving programs, combis, set list slots up and down with automatic reference updating.
+                       	Support: Support for Korg Triton (Classic), Triton Rack, Triton Le, Triton Le88, Triton Studio,
+                                 Triton TR 61/76/88.
+                        Support: Support for Korg Karma.
+                        Bug Fix: Fixed reading of Korg Triton PCGs with MOSS programs.
+0.2.2.80    12-Sep-2011 Feature: Select multiple programs, combis, set list slots for moving up/down.
+                        Improv:  Added menu and moved buttons to menu.
+                        Improv:  Added About window.
+                        Improv:  Show set lists that have changed names or with non default set list slots (-> I-A000)
+                        Improv:  Changed warning text for Differences List.
+                        Bug Fix: Fixed exception in Differences list with 'To' option in set lists filtering.
+                        Bug Fix: Fixed Initial Programs radio button selected when only set lists contained in PCG.
+0.2.3.118   24-Sep-2011 Feature: Open multiple PCG files at the same time.
+                        Feature: Added Status bar showing the amount of programs, combis and set list slots and banks in the PCG.
+                        Feature: Added Status bar field showing the Korg model type of the loaded PCG.
+                        Feature: Added Revert to Saved menu option (undo changes).
+                        Improv:  Replaced Combo box for bank/set list selection by list view.
+                        Improv:  Moved Label with loaded PCG file name flag to the title bar.
+                        Improv:  Added dirty flag (meaning PCG file has changed) as * to the title bar.
+                        Improv:  Added warning when closing the app or close a changed PCG.
+                        Improv:  Added Move Up and Move Down to Actions menu.
+                        Improv:  Changed the default list generator sort order from alphabetical to type/bank/index.
+0.2.4.120    6-Oct-2011 Feature: Copy programs inside a PCG or to another PCG.
+                        Feature: Copy combis inside a PCG or to another PCG while copying the used programs together.
+                        Feature: Copy set list slots inside a PCG or to another PCG while copying the used programs and combis together.
+                        Improv:  Commands in windows depend on selection of bank/patch selection list view.
+                        Improv:  Added column in banks for content type (Program bank shows Sampled/Modeled programs).
+                        Improv:  Added column in patches for Description (showing set list slot descriptions).
+                        Improv:  Double clicking a single patch shows the Edit window.
+                        Improv:  The short cut for the edit button is Alt-E (and had to remove the Edit menu short cut).
+                        Improv:  All banks/set lists are shown, also empty ones (useful for copy/paste functionality).
+                        Bug Fix: Prevented some crashes related to the menu.
+                        Bug Fix: Removed maximizing a PCG window when double clicking on the title bar.
+                        Bug Fix: Prevented crash when loading a PCG without program, combi and set list slot data.
+                        Bug Fix: Prevented crash when closing changed file after message box.
+                        Bug Fix: Owner set correctly for message boxes; added icon for list generator.
+0.2.5.121  12-Oct-2011  Feature: Showing categories and sub categories for patches in GUI.
+                        Feature: Clear selected program(s) or bank(s).
+                        Improv:  Creation of XSL files for output generation in XML.
+                        Improv:  Removed Set Lists radio button if not supported by model.
+                        Improv:  Removed 'Content Type' column and 'Description' column from list views if not filled.
+                        Bug Fix: Prevented crash for program usage/combi content list generator for Karma PCGs.
+                        Bug Fix: Removed possibility to copy programs/combis between a Korg Triton PCG and Korg Karma PCG.
+                        Bug Fix: Edit window has an icon now to prevent being unnoticed when unfocused.
+0.2.5.121? 14-Oct-2011  Bug Fix: Fixed problem with saving PCG files.
+0.2.5.123  16-Oct-2011  Bug Fix: Fixed category crash for Korg Triton (Karma) models.
+0.2.6.125   2-Nov-2011  Feature: Support for (U-)AA- to (U-)GG banks, added with OS update 1.5 (Kronos only and UNTESTED!).
+                        Improv:  Patch List shows categories/sub categories (both Text, CSV and XML file format).
+                        Improv:  Patch List can be sorted by category.
+                        Improv:  Patch List output for CSV and XML slightly improved (and a bit changed).
+                        Improv:  Possibility to use new line characters in a set list slot description (Kronos only).
+                        Improv:  Number of characters for patch names/descriptions is shown in the edit screen.
+                        Bug Fix: Prevented crash when copying set lists slots using combis from U-A..U-G; Kronos only.
+                        Bug Fix: Prevented strange symbols for (sub) categories when loading PCGs without Global chunk.
+0.2.7.126  21-Nov-2011  Feature: Create instrument definition files for Cubase.
+                        Improv:  Create all generatable lists in ASCII table format.
+                        Improv:  Generate a new kind of Combi Content list (showing timbres by index)
+                        Improv:  Set list slots can be cleared.
+                        Improv:  Copy/Paste mode has a Recall button to recall the copied copy clipboard.
+                        Improv:  Added link to KronosHaven.com in the about box (new news site/forum for Korg Kronos).
+                        Improv:  Added link to Robert Rosen's site (keyboardist/repair/patches).
+                        Bug Fix: Enables the Copy and other buttons and disables Exit button when clipboard is empty.
+                        Bug Fix: Removed unused toolbar icon (arrow down).
+0.2.8.127  27-Nov-2011  Feature: Show favorite column for program/combis in PCG Window (Kronos only).
+                        Feature: Mark/Unmark programs/combis as favorite (in edit screen, menu and toolbar, Kronos only).
+                        Feature: Change categories and sub categories (depending on model) in edit screen.
+                        Improv:  Use favorite setting as filter for generating all type of lists (Kronos only).
+0.2.9.129  17-Dec-2011  Feature: Support for user banks U-AA to U-GG (Kronos only).
+                        Improv:  Clearing a program or combi also removes the favorite setting (Kronos only).
+                        Improv:  Added OS version in status bar (for Kronos OS1.5 only).
+                        Improv:  Added external link window (removed from about window).
+                        Improv:  Added more external links (Kid Nepro, Dreamland Studio and Onksor).
+                        Improv:  Added descriptional text with short combi content lists.
+                        Improv:  Added copyright symbol in title and copyright mark in each source file.
+                        Improv:  Show About box and External Links window in taskbar, for easier nvavigating if unfocussed.
+                        Bug Fix: Trinity MOSS/Z1 files froze the app, changed into a more clear error message.
+                        Bug Fix: Patch list ASCII table substitute new lines for \ characters preventing disrupted columns.
+                        Special: Christmass ball icon (will be removed in a next update).
+0.3.0.137  30-Dec-2011  Feature: Long combi content list generation with important parameters of the used timbres.
+                        Feature: Compact patches, i.e. move the empty patches downwards.
+                        Feature: Keyboard shortcut key html file added in Help menu.
+                        Improv:  The dirty flag now works correct (before it sometimes was shown without a real change).
+                        Improv:  When no patches are pasted, a message box is shown with possible reasons.
+                        Improv:  Added and changed some keyboard shortcuts.
+                        Bug Fix: Prevent a crash for trying to edit a program/combi from a PCG file without Global chunk.
+                        Bug Fix: The status bar does not show the model including " OS" if no OS version is displayed.
+                        Bug Fix: Pasting of multiple selected patches did not work (correctly).
+                        Bug Fix: Cleaned up footer line for compact combi content list.
+                        Bug Fix: Prevent crash for OS1.5 combi content list generation using GM programs.
+                        Special: Changed the Christmass ball into a Fireworks symbol.
+ 0.4.0.139   5-Jan-2012 Feature: Added a donation button (please consider if you think this app is useful).
+                        Feature: Timbres list for managing timbres inside a combi.
+                        Feature: Timbres can be moved up and down inside a combi (without affecting sound).
+                        Feature: Timbres can be cleared.
+                        Feature: Set list name can be changed in an edit window in the PCG window (Kronos only).
+                        Improv:  Set list name is shown in the bank list view in the PCG window (Kronos only).
+                        Improv:  When combis are cleared, timbres are cleared (several parameters are cleared).
+                        Improv:  Compacting patches can only be performed when at least 2 patches have been selected.
+                        Bug Fix: Fixed unfilled columns for GM/unpresent timbres in long combi content list.
+                        Bug Fix: Dirty flag was not reset after saving/saving as command.
+                        Special: Removed special event icon.
+0.4.1.140  15-Jan-2012  Improv:  Windows are opened at the same size as when closed the previous time.
+                        Improv:  Updates status bar with PCG info from a focused PCG window/combi window.
+                        Bug Fix: Prevent crash when combi banks selected in PCG window when I-A is not present (Kronos only).
+                        Bug Fix: Prevent crash/corrupt file for OS1.5 PCG files after moving/compacting patches (Kronos only).
+0.4.1.143  15-Jan-2012  Bug Fix: Prevent crash when opening complete but not filled PCG files (Kronos only).
+0.4.2.144  18-Jan-2012  Bug Fix: Prevent M3 PCG files showing 'file unavailable' (M3 only).
+0.4.2.145  19-Jan-2012  Bug Fix: Prevent incorrect moving/compacting/copying of set list slots for OS1.5 update (Kronos only).
+0.5.0.148  25-Jan-2012  Feature: Show song names of a SNG file.
+                        Feature: Show used samples/sample files of a SNG file.
+                        Improv:  Added two columns for set list slots: Timbre ID and name where it refers to. (Kronos only).
+                        Improv:  Multiple files can be selected in the open dialog window.
+                        Improv:  A wait cursor is shown while opening/saving files.
+                        Improv:  When opening a file that is already opened, the file name is displayed with an info message.
+                        Improv:  PCG file can only be saved if it has been changed (asterix symbol is shown).
+                        Improv:  Status bar shows active file type (PCG or SNG).
+                        Improv:  Status bar shows Triton model (i.e. LE, Extreme etc). Copy/Paste Triton in family works.
+                        Bug Fix: Increased speed of copy/paste/move up/down and compact functions.
+                        Bug Fix: Prevented unneccessary warnings of the same file being already opened.
+1.0.0.150  10-Apr-2012  Feature: Created a PDF manual (see www.korgforums.com/support/kronos/Manual%20PCG%20Tools.pdf).
+                        Improv:  Replaced shortcut keys help page with link to manual.
+                        Improv:  Changed the icon and logo in the about window to the new design (created by Mathieu Maes).
+                        Improv:  Added people and changes text in the about window.
+                        Improv:  Initial PCG/Song window size reduced to 400x300.
+                        Improv:  Defined minimum sizes for scalable windows to prevent distortion.
+                        Improv:  More shortcut keys are shown after menu items which already had a shortcut key.
+                        Improv:  Windows can be closed with Ctrl+F4.
+                        Improv:  Improved text of an information copy/paste window.
+                        Improv:  New external links added to PCGTools@KorgForums, korg.com, Keller12 and Kronoscopie.
+                        Improv:  Added error icon and default caption for several error/warning dialog windows.
+                        Improv:  All relevant dialog type windows are now centered in the middle of the application.
+                        Improv:  Improved checking for duplicated open files (case insensitive now).
+                        Bug Fix: Multiple items can be selected by keyboard in a correct way.
+                        Bug Fix: After moving up/down patches, extending a keyboard selection works correctly.
+                        Bug Fix: Fixed a formatting problem in the table output of the differences list.
+                        Bug Fix: Usage of return/line feeds in set list descriptions fixed (Kronos only).
+                        Bug Fix: Prevented crash when double clicking a non combi bank (in certain conditions).
+                        Bug Fix: Shown more timbre parameters for GM programs in combi window.
+                        Bug Fix: Fixed typo in the copy/paste Exit warning dialog.
+                        Bug Fix: Prevented several crashes related to copy/paste between incomplete PCG files.						
+                        Bug Fix: For a long Combi Content List, filtered program banks are now taken into account.
+                        Bug Fix: Prevented GM programs being shown in Programs Usage List when Favorite filtering is enabled.
+1.0.1.167  18-Apr-2012  Improv:  Added Karo to External links window.
+                        Bug Fix: To prevent issues, move up/down patches only works for single selection.
+1.1.0.168   6-May-2012  Feature: Cut/Paste functionality, renamed copy/paste occurences to cut/copy/paste.
+                        Improv:  Changed text of hints in Cut/Copy/Paste settings.
+                        Improv:  Removed Copy/Paste Help button and dialog text (not needed now manual is available).
+                        Improv:  Added Supernatural Heroes to External links window.
+                        Bug Fix: Prevented crash when clearing combis for workstation not supporting sub categories.
+                        Bug Fix: Fixed keyboard short cut text for Move Up and Move Down commands in menu.
+1.1.1.169   9-May-2012  Improv:  Added a chapter in the manual for history changes.
+                        Improv:  Added Toon Martens Project to the external links window (and manual).
+                        Improv:  Added kronos-mw, a French language Kronos site to the external links window (and manual).
+                        Bug Fix: Prevented copying programs in the clipboard when cutting combinations or set list slots.
+                        Bug Fix: Prevented wrongly cut combinations and set list slots including references.
+1.1.2.172  17-May-2012  Bug Fix: Fixed problems with cut/copy/paste Kronos (1.5 or later) PCG files.
+                        Bug Fix: Fixed problem with identical patches (from cut/copy/paste settings) between PCG files.
+1.2.0.174  25-Jun-2012  Improv:  New theme/UI look for the complete software (thanks to Vanni).
+                        Improv:  Added splash screen with a random donator name/logo.
+                        Improv:  New screen for thanking Oasys donators of Korg Kronos voucher codes.
+                        Bug Fix: Fixed menu items for setting cut/copy/paste settings and exiting cut/copy/paste mode.
+1.2.1.179   1-Jul-2012  Improv:  Automatically wrap buttons in a PCG window to accomodate small screen sizes.
+                        Improv:  Improved screen layout of a PCG window (stretched windows and visible scroll bars).
+                        Improv:  File Save As now shows the current file name as default in the Save File dialog.
+                        Improv:  In the list generator, the output file is not read only anymore.
+                        Improv:  In the list generator, file related errors are shown.
+                        Improv:  Added Music House (Muziekhuis) Lyana to external links.
+                        Improv:  Name added to Oasys donators of Korg Kronos voucher codes.
+                        Bug Fix: Widened program IDs of banks U-AA to U-GG in PCG Window (those were truncated).
+                        Bug Fix: XSL files are only created in case of XML output is selected.
+                        Bug Fix: Double clicking on scroll bar of a PCG window does not display edit window.
+                        Bug Fix: Removed column reordeing in PCG windows to prevent other problems.
+                        Bug Fix: After saving File As, the new name is shown in the PCG window title.
+                        Bug Fix: Splash screen is now shown for 5 seconds instead of 0.1.
+1.3.0.181   5-Aug-2012  Improv:  Added an Assigned Clear Program for clearing timbres in the Combi Window.
+                        Improv:  Added favorite column in patch list generation files (ASCII, table, CSV, XML).
+                        Improv:  Correctly aligned texts of controls in the List Generator, Filter Set Lists group box.
+                        Improv:  Korg Kronos PCG files always shows its OS/PCG number (1.0/1.1, 1.5/1.6 or 2.0).
+                        Improv:  Korg M3 PCG files always shows its OS/PCG number (OS1.x or OS2.0 for expanded version).
+                        Improv:  Swapped Show and Edit menu options in main menu.
+                        Improv:  When copying M3 patches, the version of the file is no longer changed (M3 only).
+                        Improv:  Added Options/Settings menu and redirect PCG windows button.
+                        Improv:  Settings menu unavailable during active copy/paste action.
+                        Improv:  Added (Kronos) AL-1 Editor to external links.
+                        Improv:  The workstation model and number of samples used by a SNG file are now shown.
+                        Improv:  Removed double menu item 'Show Timbres' in Tools menu in main window.
+                        Improv:  Song window size is now also memorized when closed.
+                        Bug Fix: Song files could not be closed by the File menu, Close sub menu item.
+                        Bug Fix: Widened program IDs of banks U-AA to U-GG in PCG Window (those were still truncated).
+                        Bug Fix: M3 patches between V1.x and V2.0 can no longer be cut/copy/pasted.
+                        Bug Fix: Show correct error when pasting patches between incompatible Korg workstation models.
+                        Bug Fix: Korg Triton Studio shows correct bank names for combis EXB-A and further.
+                        Bug Fix: Save last window dimensions of the Combi Window.
+                        Bug Fix: The Exit command from the File menu crashed the application in some cases.
+                        Support: Support for Korg Kronos OS2.0 generated PCG Files.
+                        Support: Support for Korg Kronos X generated PCG Files.
+                        Event:   Korg is going to release a new workstation: the Korg Kronos X.                        
+1.3.1.182   6-Aug-2012  Bug Fix: PCG Files could not be read at all (in version 1.3.0.181).
+                        Manual:  All changes/additions updated from version 1.2.1 upto 1.3.1.
+                        Manual:  Added history (these texts) and wish list.
+1.4.0.183   1-Sep-2012  Feature: Show (sub) categories even for files without a global section by master files.
+                        Feature: Show program names from timbres in combis from the master file if present.
+                        Feature: Set and automatically load master files (optionally in settings file).
+                        Improv:  Show workstation name and PCG/OS version in window title of each PCG and SNG file.
+                        Improv:  When opening a file without PCG content, the file name is shown in the message box.
+                        Improv:  Enable all set lists in the list generator also checks the set list check box.
+                        Improv:  Added Imprezariat.pl to the external links (Adrian Craig has become a donator)
+                        Improv:  Added Basari Studios to the external links.
+                        Bug Fix: Pure Triton LE PCG files (with ID 63) reads timbres now correctly.
+                        Bug Fix  The last line of an empty PCG file's patch list caused an incomplete header line.
+                        Special: Changed special event into 600+ users.
+1.5.0.188  24-Jan-2013  Support: Added support for Korg Krome.
+                        Feature: Added drum kits in PCG windows (shows ID/names of drum kits per bank) [KorganizR].
+                        Feature: Added wave Sequences in PCG windows (shows ID/names of wave seqs per bank) [KorganizR].
+                        Feature: Added drum kits/wave sequences in status bar [KorganizR].
+                        Feature: Added new list type in list generator: File Content List showing usage of banks.
+                        Feature: Added support for multiple languages, new languages will follow soon.
+                        Feature: Split external links into three different windows.
+                        Feature: Added new logo window for third party software (TM-Database, Assembla)
+                        Improv:  Added ignore init/empty set list slot items.
+                        Improv:  When master file is loaded in PCG Tools, it is only loaded once.
+                        Improv:  Added number of selected patches in PCG windows.
+                        Improv:  Added drum kits/wave sequences to command line arguments.
+                        Improv:  Do not show set list in differences list when set lists are not supported.
+                        Improv:  Improved layout of ASCII tables of differences list.
+                        Improv:  Set list descriptions are shown in patch list CSV files.
+					    Improv:  Added CJ Johansson to thanks list (for testing Krome).
+                        Bug Fix: Master file did not show category and sub category names.
+                        Bug Fix: Program banks U-AA..U-GG not selectable in command line arguments [KorganizR].
+                        Bug Fix: Ascii table not selectable in command line arguments [KorganizR].
+                        Bug Fix: Fixed layout of filter program banks in list generator.
+                        Typo:    Fixed typos in command line arguments help [KorganizR].
+                        Typo:    Added space in CmbI... or CmbU... in PCG Window when display set list slots.
+                        Special: Changed special event into 850+ users.
+1.6.0      15-Feb-2013  Support: PCG Tools is installable on Windows XP again.
+                        Improv:  Dedicated installer making it possible to install at definable location.
+                        Improv:  PCG files are shown in Windows Explorer with the PCG Tools icon.
+                        Improve: Opening/double clicking a PCG file in Windows Explorer opens it in PCG Tools.
+                        Improv:  Fixed Windows icon of PCG Tools.
+                        Improv:  Added a few more tool tips in the File menu.
+						Improv:  Screens layout changed due to languages and cleaner layout
+                        Improv:  Changed copyright notices from 2011-2012 to 2011-2015.
+                        Improv:  Splash screen is now displayed in the center of the screen.
+                        Improv:  New windows will default be shown on the upper left top (with cascading).
+                        Improv:  PCG Tools will start at same location/dimensions and state as previous time.
+                        Improv:  When changing assigned clear program, a message box is shown.
+                        Improv:  Widened the Master files window to prevent the last column being hidden.
+                        Improv:  Removed word Programs from program banks column in PCG windows.
+						Bug Fix: When pasting programs, set list slots were not referencing programs correctly.
+                        Bug Fix: When clearing programs, category/sub category were not shown correctly.
+                        Bug Fix: Exit menu was always grayed out.
+                        Language:Some English terms improved.
+                        Language:Dutch added, thanks to Yuma and Mathieu.
+                        Language:French added, thanks to Francois Rossi
+                        Language:German added, thanks to ...
+                        Language:Portuguese language added, thanks to 
+                        Language:Spanish language added, thanks to TODO
+                        Language:Translators mentioned in about screen.
+                        ExtLinks:External links screen for translators.
+                        ExtLinks:Logo/link added to Oostendorp Muziek (Music) shop in the Netherlands.
+                        ExtLinks:Logo/link added to Yuma.
+                        ExtLinks:Logo/link added to Brazilian Korg Forum added.
+                        ExtLinks:Removed logo for TM-Database since the tool is not used.
+1.7.0      27-Mar-2013  Support: Added support for Korg Trinity, Trinity v3, Trinity Solo and TR Rack.
+                        Support: Trinity programs from the M bank can be copied to the S bank and vice versa.
+                        Feature: Sort programs, combis and set lists.
+                        Improv:  Move to the next window with F6 and to the previous window with Ctrl+F6.
+                        Improv:  In A PCG window, in the bank list, the real synthesis engine is shown.
+                        Improv:  When copying programs, the real synthesis types are shown in the status bar.
+                        Improv:  When copying patches, the workstation model is shown in the status bar.
+                        Improv:  In a File Content list, the synthesis types are shown for programs.
+                        Improv:  Added list generator options for text filtering wave sequences and drum kits.
+                        Improv:  Show a message box when a PCG file has been set as Master file.
+                        Improv:  When PCG file is master file and is loaded, don't ask to load master file.
+                        Improv:  Increased with to fit PCG window's column of Triton Drumkits EXB banks.
+                        Improv:  Widened several columns in the Timbre window to accomodate title.
+                        Improv:  Increased speed of generating a differences list.
+                        Bug Fix: Master files fixed for Krome, Tritons and Karma.
+                        Bug Fix: Correct (sub) category shown when moving a program up or down.
+                        Bug Fix: Combi name text filtering was not taken into account in some cases.
+                        Bug Fix: Master Files could not be set for single OS version workstation models.
+                        Bug Fix: Fixed differences list for ASCII table output.
+                        Bug Fix: Fixed one menu item alignment in Portuguese.
+                        Bug Fix: Several texts/fragments (like Yes/No) were not translated.
+                        ExtLinks:Added logo/link to Co-Incidental (band of Michel Keijzers)
+                        ExtLinks:Added logo/link to PCGrid from KorganizR, a tool for PCG Files for Kronos.
+                        ExtLinks:Added logo/link to MailChimps.
+                        ExtLinks:Added logo/link to DropBox.
+                        ExtLinks:Added logo/link to Core FTP LE.
+                        ExtLinks:Added logo/link to KarmaLabs.com
+                        Special: Changed special event into 1050+ users (was 850+)
+1.7.1      31-Mar-2013  Improv:  All sort methods put empty/init patches at the end instead of the beginning.
+                        Improv:  Created simple website www.mkspace.nl and added link to menu item.
+                        Improv:  Created a black & blue background color gradient.
+                        Bug Fix: Sorting combis and set list slots does not crash the application.
+                        Bug Fix: Fixed online link to manual in PCG Tools.
+                        Bug Fix: Fixed clipping of the size of the Third Parties External Links window.
+1.8.0      25-Jan-2014  Support: Added support for Korg Kross.
+                        Improv:  Launched new website without zipped executable.
+                        Improv:  Add default directory for generated files in settings menu.
+                        Improv:  In Timbres window, the width of the assigned clear program text box is dynamic.
+                        Improv:  Added Korg TR to Korg Triton Classic/Studio/Rack in all related texts.
+                        Improv:  Added ToString() implementations for support for visually impaired application(s).
+                        Improv:  Changed all 2013 copyright notifications to 2014.
+                        Improv:  Added Honza (Czech translation) to thanks list.
+                        Improv:  Paul Hirschvogel to thanks list (for testing Kross).
+                        Bug Fix: In disk navigation mode in Kronos, set list and slot names are shown correctly.
+                        Bug Fix: In Timbres window, the program ID now fit new Kronos program banks.
+                        Bug Fix: Cleaning a Trinity combi does not make PCG Tools crash.
+                        Bug Fix: Kronos and M3 SNG files could not be loaded.
+                        Bug Fix: Prevented problem when double clicking files containing spaces in folder/file.
+                        Bug Fix: Prevented crash for Korg Triton Rack PCG files with program/combi Ext H bank.
+                        Bug Fix: Increased width of combi programs in PCG window to accomadate full combi name.
+                        Language:Czech language added, thanks to Honza.
+                        Language:Added some strings which were not translated in 1.7.1.
+                        ExtLinks:Added logo/link to KromeHeaven.
+                        ExtLinks:Fixed text from KronosHaven.
+                        ExtLinks:Added donators Fred Alberni/Farrokh Kouhang to splash screen. 					  
+                        ExtLinks:Changed link of band from Mathieu Maes to Deuce entertainment.
+                        ExtLinks:Fixed link to Lyana Muziek.
+                        Website: Removed the password from the PCG Tools installer zip file.
+                        Website: Added the current version number of PCG Tools on the home page.
+                        Website: Added names to thanks page.
+
+1.8.1      27-Jan-2014  BugFix  : Fixed Save function for certain PCG files.
+                        BugFix  : Fixed crash for Triton Studio/Rack PCG files in list generator.
+                        BugFix  : Fixed alignment of lists from list generator from Triton Studio/Rack PCG files.
+                        Improv  : Changed PCG Tools home site menu option in Help menu to correct URL.
+                        Improv  : Added web site in Help/About page.
+                        Improv  : Added Joost Wilgehof as tester.
+                        ExtLinks: Changed KorgForums/Website links.
+                        ExtLinks: Added Yahoo groups link (also in main lnks), removed MailChimp site.
+                        ExtLinks: Added robbie50 as donator (sorry for the long miscommunication).
+                        Website : Added Yahoo groups link, removed MailChimp site.
+                        Website : Added part for sending bug reports.
+                        Manual  : Added Yahoo groups link, removed MailChimp site.
+                       			
+1.9.0      30-Jan-2014  Bug Fix : Fixed problem of saving Kronos files without setlist content.        
+                        Language: Added Latin Servian language, thanks to Saša Rajak.
+
+2.0.0      22-Mar-2014  Support : Added support for Korg microStation PCG files.
+                        Support : Added support for Korg microKORG .syx files.
+                        Support : Added support for Korg microKORG XL .mkxl_all files.
+                        Support : Added support for Korg microKORG XL Plus .mkxlp_all files.
+                        Support : Added support for Korg microKORG XL Plus .mkxlp_prog files.
+                        Support : Added support for Korg MS2000 .syx files.
+                        Support : Added support for Korg MS2000 .syx with mkP0 chunks files.
+                        Support : Added support for Korg MS2000 .MID files with sysex info.
+                        Support : Added support for Korg MS2000 .bnk files.
+                        Support : Added support for Korg MS2000 .LIB files.
+                        Support : Added support for Korg MS2000 .exl files.
+                        Support : Added support for Korg MS2000 .prg files.
+                        Language: Greek language added, thanks to Dadanos.
+                        Language: Improved several texts in various languages thanks to translators.
+                        Feature : Virtual program and combi banks added (Kronos only for now).
+                        Improv  : List generator windows has been resizable and rearranged.
+                        Improv  : Hide list generator widgets when unsupported by workstation model.
+                        Improv  : The file content list does not enable wave seq/drum kit options anymore.
+                        Improv  : Items unsupported/useful in list generator are hidden/shown automatically.
+                        Improv  : Patch lists for text/XML without sub categories look nicer.
+                        Improv  : Patch lists for text/XML without set list slots look nicer.
+                        Improv  : Kronos 2.0 PCG files displayed as 2.x (because of OS version 2.1).
+                        Improv  : Widened FileContent list to accomodate all column texts.
+                        Improv  : Save As dialog shows the correct extention type.
+                        Improv  : Prevent selecting another file format in Save As dialog.
+                        Improv  : (Some) resizable windows show an icon when resizable.						
+                        Improv  : Remember tab index of the Settings window.
+                        BugFix  : Enabling of Settings functionality corrected.
+                        BugFix  : Status bar shows number of programs in clipboard correct during pasting.												   
+                        BugFix  : Prevented crash when generating certain lists for initialized PCG files.
+                        BugFix  : Master files fixed for Korg Trinity.
+                        BugFix  : Use correct combi sub categories.
+                        BugFix  : Fixed an issue in the text filter settings of the list generator.
+                        ExtLinks: Added link to Sounds of Planet.
+                        ExtLinks: Added link to MIDI-OX.
+                        ExtLinks: Removed unused/obsolete links.
+
+2.0.1      22-Mar-2014  Improv  : Added another type of installation.
+                        Improv  : When double clicking a PCG file, the file automatically opens in PCG Tools.
+                        Bug Fix : Fixed editing of categories/sub categories of programs and combis.
+                        ExtLinks: Fixed translators external links window.
+                        ExtLinks: Added link to AudioKeys and InstallShield.
+
+2.0.2      24-Mar-2014  Improv  :  Moved Virtual Banks after user banks in list generator screen and lists.
+                        Bug Fix : Preventing programs getting corrupted after copying (MS2000/microKorg only).
+                        Bug Fix : All extended user banks now selectable in list generator (Kronos only).
+
+2.0.3      25-Mar-2014  Bug Fix : Fixes installation problem from version 2.0.2.
+
+2.0.4      25-Mar-2014  Bug Fix : Fixes .syx reading problems for microKorg/MS2000.
+
+2.1.0       5-May-2014  Support : Added support for Korg M1, M1EX, M1R, M1R-EX files (sysex, Sysex Manager, mid format).
+                        Support : Addes support for Korg M3R files (sysex, MID format).
+                        Support : Added support for Korg 01/W, 01/W FD, 01/W pro, 01/W pro X, 01R/W (sysex/mid/01W/RAW format).
+                        Support : Added support for Korg T1, T1EX, T2, T2EX, T3, T3EX (sysex/mid format).
+                        Support : Added support for Korg 03R/W (sysex/mid format).
+                        Support : Added support for Korg Z1, Z1EX (sysex/mid format).
+                        Feature : Patch lists can optionally show CRC values (including/excluding name).
+                        Improv  : Differences list has the option to show patch names.
+                        Improv  : Added models and types to open file dialog.
+                        Improv  : Patch lists in text format do not have : after program ID anymore.
+                        Improv  : Patch lists do not show favorite column when not supported.
+                        Improv  : Patch lists do not show (sub) category column(s) when not supported.
+                        Improv  : Set list descriptions/categories in patch lists do not share same column.
+                        Improv  : Category sorting is hidden when categories are not supported.
+                        Bug Fix : Fixed checksum (preventing corrupted files) in Korg Kross PCG files.
+                        Bug Fix : Korg Kross user program/combi bank are now shown as U bank and treated as User type banks.
+                        Bug Fix : CSV files handle multi line set list slot descriptions correctly.
+                        Bug Fix : Text input in list generator is disabled when text filter is disabled.
+                        Bug Fix : Combi Content generator shows programs not present in files (for combi references).
+                        Bug Fix : Difference list now shows correct difference when name is unequal.
+                        Links   : Changed links to Kurt Ader Productions and Deuce Entertainment.
+											
+2.2.0       8-Jul-2014  Support : Support of Kross TR files (made by the official Korg Editor).
+                        Language: Turkish language added, thanks to Umut Erhan.
+                        Improv  : Added detune column to combi timbres list (and list generator).
+                        Improv  : Added set list name to set list slot rows in the set list generator's patch list.
+                        Improv  : Set lists slots are only considered empty when empty AND reference to program I-A000.
+                        Improv  : The path of the manual is now editable (local file or website location).
+                        Bug Fix : Prevented crash when Tools menu was opened without loading a PCG file.
+                        Bug Fix : Link to the manual from the About page now works correct.
+                        Bug Fix : Patch list in list generator does not show sub types.
+                        Bug Fix : Lists in list generator not having sub types show now empty sub lists.
+                        Bug Fix : XML patch output list generator sometimes did not show wave sequences correctly.
+                        Links   : Added JimG, RedKross2014 and re-added Joost Wilgehof as tester (sorry Joost).
+
+2.3.0      10-Aug-2014  Language: Polish language added, thanks to DamianoMusic.
+                        Improv  : Added volume to edit set list slot dialog (Kronos only).
+                        Improv  : Added volume column to set lists in PCG window (Kronos only).
+                        Improv  : Dynamically resizing of edit program, combi and set list slot dialogs.
+                        Improv  : Redesigned splash screen and about window.
+                        Bug Fix : Prevented changed program/combi references when pasting inside same file.
+                        Bug Fix : Prevented crash when selecting multiple banks with only one filled item.
+                        Bug Fix : One label not translated in the Edit Single Set List Slot dialog.
+                        Bug Fix : Fixed several texts in different languages (especially Greek).
+                        Bug Fix : Added several translators in some translations (sorry Umut Erhan, Jim Dijkstra, Syntey).
+
+2.4.0	   27-Dec-2015  Support : Support for Korg Kronos (X/2) OS3.0 PCG files.
+                        Improv  : Set list slot edit dialog shows now reference type, ID and name.
+                        Improv  : Redesigned set list slot window (text size, layout).
+                        Improv  : The default output folder for sequencer files can be changed in settings.
+                        Improv  : Move up and/or down multiple programs, combis or set list slots.
+                        Improv  : Set List Name shown in Patch List for XML output type.
+					    Improv  : My Documents folder used as default list generator folder.
+                        Improv  : Added more space for some text edit control in the set list generator.
+                        Improv  : Added grey lines in patches of PCG Window, useful for multi line set list slots.
+                        Improv  : Program creates icon in start menu and desk top (also for Windows 8).
+                        Bug Fix : Fixed loading Kronos files while in German language.
+                        Bug Fix : Alignment of copy/paste settings tab fixed from center to top.
+                        Bug Fix : Fixed typo in name of Polish translator: DamianoMusic (sorry Damian).
+                        Bug Fix : Fixed type of programs of Z1 program banks on a card.
+                        Bug Fix : Fixed layout of a Program Usage list in XML format.
+                        Bug Fix : Fixed loading SNG files.
+                        Bug Fix : In some cases end of strings in patch names were ignored.
+					    Bug Fix : Sequencer output could crash because of unauthorized file output.
+                        Links   : Added link to http://www.synthysounds.co.uk
+                        Links   : Added link to http://facebook.com/rsfmusictech for Rubinho/R.S. Felicio.
+                        Links   : Added link to http://indra.com/~cliffcan/01faq.htm#editors.
+                        Links   : Removed link to Kronos-MW works (website not available anymore).
+                        Links   : Removed link to Deuce Entertainment (not relevant anymore).
+                        Donators: Added Ralph Hopstaken to the list of donators in the splash screen.
+
+=============================================================================================
+Version : 2.5.0
+Date    : 24-Jan-2015
+---------------------------------------------------------------------------------------------
+Feature : Program reference changer (to change references in combis/set lists to programs).
+Improv  : Possibility to treat equal/like-named patches as duplicates while copy/pasting.
+Improv  : For Kronos set list slot editor: Added color/transpose controls.
+Bug Fix : For Kronos set list slot editor: Fixed XS/S mismatch for font size.
+Bug Fix : Fixed copy/pasting set list slots (Kronos only).
+Bug Fix : Fixed double clicking a PCG file to start up PCG Tools.
+Bug Fix : Prevented crash when loading Kronos files with set lists, without combis.
+Removed : Command Line window.
+Language: Italian language added, thanks to Enrico Puglisi.
+Language: Many greek texts improved, thanks to Giorgios (new translator) and Jim Dijkstra.
+Language: Corrected/translated (missing) language texts (thanks to various translators).
+Links   : Completely redesigned all external links windows.
+Links   : Added contributors window, for thanking testers, information/idea providers etc.
+Links   : Added Timo Lill, as translator for German (amongst others) and added various URLs.
+Donators: Added Kevin Nolan and added various URLs of donators.
+
+=============================================================================================
+Version 2.5.1
+Date: 25-Jan-2015
+---------------------------------------------------------------------------------------------
+Bug Fix : Prevented crash of set list generators with PCG files without set lists.
+
+=============================================================================================
+===   Version 2.6.0   Date: 22-Feb-2015
+Feature : Number of references are shown for programs and combis (switchable on/off).
+Feature : Capitalize/decapitalize or titlecase names of programs, combis and list slots.
+Feature : Assign a programs or combi to a set list slot (Kronos only).
+Feature : Auto fill in set list slots according program/combi name (Kronos only).
+Feature : Remove duplicate patches while fixing references to duplicate patch.
+Improv  : When clearing patches, used patches can be skipped (or warning being shown).
+Improv  : Master files can be opened, closed and unassigned within its window.
+Improv  : Improved layout and increased speed about 10x of Program Reference Changer.
+Improv  : Timbres button is not visible when a PCG file cannot contain combis.
+Improv  : Several timeconsuming actions (clear, compact etc) show a wait cursor.
+Bug Fix : Categories shown as numbers were reset after program/combi edit.
+Bug Fix : Prevented duplicate warning messages in Program Reference Changer.
+Bug Fix : Prevented crash for negative transpose on combi in set list slot (Kronos only).
+Language: Improved various texts, especially German (thanks to Timo Lill).
+
+=============================================================================================
+===   Version 2.7.0   Date: 31-Mar-2015
+Feature : Performing of most edit functions of mixed type of patches in PCG window.
+Feature : Auto-backup of changed PCG files every x minutes (thanks to Michael Trilby).
+Bug Fix : Prevented crash when assigning a PCG file as master file.
+Bug Fix : Fixed GUI behavior of move up/down buttons.
+Links   : Added several people, like translator for Portuguese(Brasil): Thiago Costa.
+
+
+Version 2.8 see earlier
+=======================
+
+=============================================================================================
+===   Version 3.0.0   Date: 03-Nov-2017
+Support : Added support for Korg Kross 2.
+Bug Fix : Prevented crash when copying certain Kronos/Oasys/M3/M50 patches.
+Bug Fix : Prevented crash in loading certain Korg Oasys PCG files.
+Bug Fix : Fixed name of internal drum kit bank name for Korg Kross (1).
+Links   : Added Dan Stesco, Audora and Synthesaurus.
+
+=============================================================================================
+===   Version 3.0.1   Date: 22-Jul-2018
+Bug Fix : Fixed List Generator's output file directory (Thanks to Tim Godfrey).
+Bug Fix : Fixed program categories for Korg Kross 2 (Thanks to Kronoseonok)
+
+=============================================================================================
+===   Version 3.1.0   Date: 27-Aug-2019
+Support : Added support for Korg Krome EX.
+Feature : Changing (multiple) volumes for combis, combi banks, set lists and set list slots.
+Bug Fix : Improved layout of patch sorting dialog.
+Links   : Added various donator's names, logos and websites.
+
+
+
+
+
+
+
+LInks:
+
+PCG Tools Free - support Korg Kronos, Oasys, M3, M50, Triton, Karma, Krome, Kross, MS2000, microKorg 
+English comments, Portuguese spoken
+https://www.youtube.com/watch?v=j3S5QR62Jt0
+
+PCG Tools - 2.6.0 - Auto assign patchs to your set list 
+English comments, Portuguese spoken
+https://www.youtube.com/watch?v=A_Xl5U86xlY
+
+Como USAR el PCG TOOLS - mover, copiar, eliminar un program/combi de 1 PCG o de 1 PCG a otro PCG 
+Portoguese comments
+https://www.youtube.com/watch?v=u0BAlOc5IvE
+
+PCG Tools - Como incorporar arquivos do Kronos à sua programação 
+Portuguese spoken
+https://www.youtube.com/watch?v=K8zd7X7tN9w
+
+
+debug "c:\users\michel\source\repos\PCG Tools TestFiles\Workstations\Kronos2\preload_v3.pcg" 
+
+
+
++Improv  : For Kronos set list slot editor: font usage and description size.
+				 KORG Font check + set font size, width of screen (also vertically?)
+					+Content="OK", also cancel
+                    - Bug Fix : Fixed CRC values / differences list generator mismatch.
+				   - manual: copy from file temp doc.docx -> manual
+				   
+					next
+					   *Sample lists
+				   - Check slot style to add?
+
+----------------------------------------------------------------------------------------------------------------
+
+Use this in download.php:
+ 
+       <!--table border="1">
+         <tr><td>Support</td><td></td></tr>
+         <tr><td>Language</td><td></td></tr>
+         <tr><td>Feature</td><td></td></tr>
+         <tr><td>Improvement</td><td></td></tr>
+         <tr><td>Bug Fix</td><td></td></tr>
+         <tr><td>Event</td><td></td></tr>
+         <tr><td>Link</td><td></td></tr>
+         <tr><td>Manual</td><td></td></tr>
+         <tr><td>Website</td><td></td></tr>
+       </table-->
+
+
+Sander Veeken: program for looping/transposing etc:
+	   www.seventhstring.com
+
+
+					for manual:
+						   Support : Support of Kross TR files (made by the official Korg Editor).
+                     
+			M Improv  : Added detune column to combi timbres list (and list generator).
+                      M Improv  : Added set list name to set list slot rows in the set list generator's patch list.
+                      M Improv  : The path of the manual is now editable (local file or website location).
+                       Language: Polish language added, thanks to DamianoMusic.
+Improv  : Added volume to edit set list slot dialog (Kronos only).
+                        Improv  : Added volume column to set lists in PCG window (Kronos only).
+                        Improv  : Dynamically resizing of edit program, combi and set list slot dialogs.
+						Improv  : Redesigned splash screen and about window.
+
+
+
+
+
+2.3.0      ??-???-2014 *Feature : Split concatenated .SYX files into multiple .SYX files.
+
+					   Busyboy destroyed
+
+
+
+
+					   *Website : Downloads of PCG Tools installers now contain version number in file name.
+		
+                       *Website : Removed PCG Tools for Web (not supported anymore), MailChimp, Deuce,DropBox
+                       *Manual  : Removed PCG Tools for Web (not supported anymore), MailChimp, Deuce,DropBox
+                       *Manual  : Added Joost Wilgehof as tester.
+                        Manual  : Only non empty patches are copied.
+
+					   *Manual:   Add copy /insert to wish list
+					  
+
+
+
+                       *Support: Added support for M1.
+                       *Support: Added support for T1, T2, T3, T3EX.
+                       *Support: Added support for 01W (FD), 01W Pro(X), 01R/W.
+                       *Support: Added support for WaveStation, EX, A/D, SR.
+                       *Support: Added support for N264, N364.
+                       *Support: Added support for X2, X3, X3R, X5, X5D, X5DR, 05R/W.
+                       *Support: Added support for N1, N1R, N5EX, N5.
+
+                        
+			           
+
+                       +Feature: Sort combis by Status / MIDI channel / Key zone / Vel zone with/without gaps.
+
+???                     Feature: Cleaning (which means clearing timbres in a combi under certain conditions).
+
+
+KNOWN ISSUE: scrolling / selected items
+
+TODO:
+- Check parameters (combine parameters with spaces)
+- Check isSelection in patches which are invisible
+- Check sort algorithm for timbres
+- Implement specific sort settings for timbres
+- Create a few extra words (like home page + related warning) for all languages
+
+
+
+Manual:
+- Add to wish list : Sort / filter mechanism
+- Known issues: Today I was notified about a bug, only for Kronos set lists: when a PCG file is opened on the Kronos (not loaded, but previewed), 
+  the set list slot names shown on the Kronos preview screen (in disk mode) are not reflecting the changes made by PCG Tools. However, when you 
+  load the PCG file and save it again, it will be corrected automatically (I cannot check this last part, but I am quite sure it is correct).
+  When loaded, the names in the set list slots are OK.
+- Add Korg TR to Korg Triton Classic/Studio/Rack.
+
+					   
+Clear Unused Timbres
+---------------------
+Clears all timbres which have Status OFF or Muted
+Can be used over one or more combis or one or more combi banks.
+
+SmartSort Timbres
+-----------------
+Should be added as button in Timbre window.
+But also can be used over one or more combis or one or more combi banks.
+
+Sort by:
+- Status
+- Mute
+- MIDI Channel
+- Key Zone (Bottom/Top)
+- Vel Zone (Bottom/Top)
+
+MG: x Create Gap between different MIDI channel(s)
+KG: x Create Gap between different Key zone(s)
+
+o Create no gaps
+o Create gap between different MIDI Channels
+o Create double gap between different MIDI Channel(s) and gap between different key zone(s)
+x Only sort within 8 timbres
+
+E.g.
+Timbre MIDI KeyZone    Result for: MG = Off, KG = Off       MG = Off, KG = On      MG = On, KG = On      MG = On, KG = On
+  1     2   C1-C3                    3 2 1                       3 - 2 1              3 1 - 2               3 - 1 - - 2
+  2     1   C3-C4            
+  3     1   C1-C3
+
+
+
+
+
+
+                        
+
+WISH: Check if MOSS programs from Trinity can be copied to Korg Triton Extreme program banks
+MANUAL: Trinity songs not supported.
+v Category B support (HOWEVER; NO AUTO REFRESH -> REVERT), add to wish list
+
+                       *Language:Czech language added, thanks to TODO
+                       *Language:Hebrew language added, thanks to TODO
+                       *Language:Hungarian language added, thanks to TODO
+                       *Language:Italian language added, thanks to TODO
+                       *Language:Portuguese for Portugal language added, thanks to TODO
+                       *Language:Russian language added, thanks to TODO 
+ Manual:
+- Improv:  Added list generator options for text filtering wave sequences and drum kits. (screenshot)
+- Improv:  Show a message box when a PCG file has been set as Master file.
+- ExtLinks:Added logo/link to Co-Incidental (band of Michel Keijzers)
+- ExtLinks:Added logo/link to PCGrid from KorganizR, a tool for PCG Files for Kronos.
+- ExtLinks:Added logo/link to MailChimps.
+- ExtLinks:Added logo/link to DropBox.
+- ExtLinks:Added logo/link to Core FTP LE.
+- ExtLinks:Added logo/link to KarmaLabs.com
+- Roberto Bazzano  add to wishlist: better/faster algorithm for sorting using arrays/reference, looping combis/set lists only once.
+
+- V2/V3 difference for Trinity but no V1.
+- Master file content (banks C D dependign on 64/128 size of MOss/Prophecy).
+
+
+PCG Tools Installer:
+https://www.dropbox.com/s/g0aaqsnw71godzt/PCG%20Tools%201.6.0.zip
+Download this file, unzip it with the password below and start the installer.
+Password: 74G56-Y8456-UIH54-YIGHI-5YU4H     Do not spread!
+
+Manual:
+
+PCG Tools forum at KorgForums:
+http://www.korgforums.com/forum/phpBB2/viewtopic.php?t=63765
+
+Facebook:
+http://www.facebook.com/pcgtools
+Press Like to receive messages about PCG Tools in Facebook
+
+Twitter:
+#pcgtools
+www.twitter.com/pcgtools
+
+Google Plus
+http://www.googleplus.com/pcgtools
+
+Mail contact:
+michelkeijzers@hotmail.com
+ 
+
+
+
+
+
+
+
+
+

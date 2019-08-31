@@ -73,6 +73,7 @@ namespace PcgTools.MasterFiles
             Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionKronos10_11), Settings.Default.MasterFile_KronosOS10_11));
             Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionOasys), Settings.Default.MasterFile_Oasys));
             Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionKrome), Settings.Default.MasterFile_Krome));
+            Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionKromeEx), Settings.Default.MasterFile_KromeEx));
             Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionKross), Settings.Default.MasterFile_Kross));
             Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionKross2), Settings.Default.MasterFile_Kross2));
             Add(new MasterFile(Models.Find(Models.EOsVersion.EOsVersionM3_1X), Settings.Default.MasterFile_M3_OS1x));

@@ -2116,8 +2116,8 @@ Inner exception:
     <value>_Parameter</value>
     <comment>Menu item</comment>
   </data>
-  <data name="___EditParameterAbsoluteValue" xml:space="preserve">
-    <value>_Absolute Value</value>
+  <data name="___EditParameterFixedValue" xml:space="preserve">
+    <value>_Fixed Value</value>
     <comment>Radio button name</comment>
   </data>
   <data name="___EditParameterByteOffset" xml:space="preserve">
@@ -2437,5 +2437,36 @@ Inner exception:
   <data name="IgnoreMutedOffFirstProgramTimbre" xml:space="preserve">
     <value>_Ignore Muted/Off First Program Timbre</value>
     <comment>Check box (ignore only I-A000 muted/off timbre)</comment>
+  </data>
+  <data name="ChangeVolume" xml:space="preserve">
+    <value>_Change Volume</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="EModelTypeKromeEx" xml:space="preserve">
+    <value>Krome EX</value>
+  </data>
+  <data name="Fixed_chvolwin" xml:space="preserve">
+    <value>_Fixed</value>
+    <comment>Change volume window</comment>
+  </data>
+  <data name="ChangeVolume_chvolwin" xml:space="preserve">
+    <value>Change Volume</value>
+    <comment>Change volume window</comment>
+  </data>
+  <data name="Mapped_chvolwin" xml:space="preserve">
+    <value>_Mapped</value>
+    <comment>Change volume window</comment>
+  </data>
+  <data name="Percentage_chvolwin" xml:space="preserve">
+    <value>_Percentage</value>
+    <comment>Change volume window</comment>
+  </data>
+  <data name="Relative_chvolwin" xml:space="preserve">
+    <value>_Relative</value>
+    <comment>Change volume window</comment>
+  </data>
+  <data name="SmartMapped_chvolwin" xml:space="preserve">
+    <value>_Smart Mapped</value>
+    <comment>Change volume window</comment>
   </data>
 </root>

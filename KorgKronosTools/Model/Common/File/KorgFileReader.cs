@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using System;
 using System.Linq;
@@ -6,6 +6,7 @@ using System.Linq;
 using PcgTools.Model.Common.Synth.MemoryAndFactory;
 using PcgTools.Model.Common.Synth.Meta;
 using PcgTools.Model.KromeSpecific.Synth;
+using PcgTools.Model.KromeExSpecific.Synth;
 using PcgTools.Model.KronosSpecific.Synth;
 using PcgTools.Model.Kross2Specific.Synth;
 using PcgTools.Model.KrossSpecific.Synth;
@@ -144,6 +145,10 @@ namespace PcgTools.Model.Common.File
 
                     case Models.EModelType.Krome:
                         factory = new KromeFactory();
+                        break;
+
+                    case Models.EModelType.KromeEx:
+                        factory = new KromeExFactory();
                         break;
 
                     case Models.EModelType.Kross:
@@ -439,6 +444,7 @@ namespace PcgTools.Model.Common.File
         ///                            95                                       Krome
         ///                            96                                       Kross
         ///                            C9                                       Kross2
+        ///                            D2                                       Krome Ex                            
         /// 
         /// MemoryFileType: 00 = PCG 01=SNG 02=EXL
         /// </summary>
@@ -700,6 +706,10 @@ namespace PcgTools.Model.Common.File
 
                 case 0xC9:
                     ModelType = Models.EModelType.Kross2;
+                    break;
+
+                case 0xD2:
+                    ModelType = Models.EModelType.KromeEx;
                     break;
 
                 default:

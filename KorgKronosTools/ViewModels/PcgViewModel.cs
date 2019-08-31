@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using System;
 using System.Collections.Generic;
@@ -2597,8 +2597,150 @@ namespace PcgTools.ViewModels
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        ICommand _changeVolumeCommand;
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        // ReSharper disable once UnusedMember.Global
+        [UsedImplicitly]
+        public ICommand ChangeVolumeCommand
+        {
+            get
+            {
+                return _changeVolumeCommand ?? (_changeVolumeCommand = new RelayCommand(param => ChangeVolume(),
+                    param => CanExecuteChangeVolumeCommand));
+            }
+        }
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        bool CanExecuteChangeVolumeCommand
+        {
+            get
+            {
+                // Memory selected
+                return (SelectedPcgMemory != null) &&
+                       // Patches set
+                       (Patches != null) &&
+                       // Combi banks or set list slots selected
+                       (CombiBanksSelected || (SetListsSelected) &&
+                       // Banks selected and at least one nonempty combi 
+                       (((SelectedScopeSet == ScopeSet.Banks) &&
+                         (Banks.Count(item => item.IsSelected) > 0) &&
+                         (Banks.Sum(item => item.CountFilledAndNonEmptyPatches)) > 0)
+                        ||
+                        // Patches selected and at least one nonempty combi or set list slot
+                        ((SelectedScopeSet == ScopeSet.Patches) &&
+                         (Patches.Count(item => item.IsSelected && !item.IsEmptyOrInit) > 0))) &&
+                       // Not busy with paste action
+                       (!PcgClipBoard.PasteDuplicatesExecuted || PcgClipBoard.IsEmpty) &&
+                       // Only combis selected
+                       Patches.All(item => !item.IsSelected || (item is ICombi) || (item is ISetListSlot)));
+            }
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        void ChangeVolume()
+        {
+            var parameters = new ChangeVolumeParameters();
+            var window = new ChangeVolumeWindow(parameters);
+            window.ShowDialog();
+            if ((!window.DialogResult.HasValue) || !window.DialogResult.Value)
+            {
+                return;
+            }
+
+            // In case of mapping, find min/max.
+            int minValue = Int32.MaxValue;
+            int maxValue = Int32.MinValue;
+
+            if (parameters.ChangeType == ChangeVolumeParameters.EChangeType.SmartMapped)
+            {
+                if (SelectedScopeSet == ScopeSet.Banks)
+                {
+                    // Iterate through banks.
+                    foreach (var patch in Banks.Where(bank => bank.IsSelected).SelectMany(
+                        bank => bank.Patches).Where(patch => !patch.IsEmptyOrInit))
+                    {
+                        if (patch is ICombi)
+                        {
+                            minValue = Math.Min(minValue, ((ICombi)patch).GetMinimumVolume());
+                            maxValue = Math.Max(minValue, ((ICombi)patch).GetMaximumVolume());
+                        }
+                        else if (patch is ISetListSlot)
+                        {
+                            minValue = Math.Min(minValue, ((ISetListSlot)patch).Volume);
+                            maxValue = Math.Max(maxValue, ((ISetListSlot)patch).Volume);
+                        }
+                    }
+                }
+                else
+                {
+                    // Iterate through patches.
+                    foreach (var patch in Patches.Where(patch => patch.IsSelected).Where(patch => !patch.IsEmptyOrInit))
+                    {
+                        if (patch is ICombi)
+                        {
+                            minValue = Math.Min(minValue, ((ICombi)patch).GetMinimumVolume());
+                            maxValue = Math.Max(minValue, ((ICombi)patch).GetMaximumVolume());
+                        }
+                        else if (patch is ISetListSlot)
+                        {
+                            minValue = Math.Min(minValue, ((ISetListSlot)patch).Volume);
+                            maxValue = Math.Max(maxValue, ((ISetListSlot)patch).Volume);
+                        }
+                    }
+                }
+            }
+
+            // Change volume.
+            if (SelectedScopeSet == ScopeSet.Banks)
+            {
+                // Iterate through banks.
+                foreach (var patch in Banks.Where(bank => bank.IsSelected).SelectMany(
+                    bank => bank.Patches).Where(patch => !patch.IsEmptyOrInit))
+                {
+                    if (patch is ICombi)
+                    {
+                        ((ICombi)patch).ChangeVolume(parameters, minValue, maxValue);
+                    }
+                    else if (patch is ISetListSlot)
+                    {
+                        ((ISetListSlot)patch).ChangeVolume(parameters, minValue, maxValue);
+                    }
+                }
+            }
+            else
+            {
+                // Iterate through patches.
+                foreach (var patch in Patches.Where(patch => patch.IsSelected).Where(patch => !patch.IsEmptyOrInit))
+                {
+                    if (patch is ICombi)
+                    {
+                        ((ICombi)patch).ChangeVolume(parameters, minValue, maxValue);
+                    }
+                    else if (patch is ISetListSlot)
+                    {
+                        ((ISetListSlot)patch).ChangeVolume(parameters, minValue, maxValue);
+                    }
+                }
+            }
+
+            UpdateTimbresWindows();
+        }
+
+               
         /// <summary>
         /// 
         /// </summary>
@@ -2618,7 +2760,7 @@ namespace PcgTools.ViewModels
                     param => CanExecuteInitAsMpeCombiCommand));
             }
         }
-
+        
 
         /// <summary>
         /// 

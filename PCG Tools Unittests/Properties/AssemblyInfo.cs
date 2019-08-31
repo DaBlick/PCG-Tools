@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -12,7 +12,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MiKeSoft")]
 [assembly: AssemblyProduct("PcgTools")]
-[assembly: AssemblyCopyright("Copyright © MiKeSoft 2011-2017")]
+[assembly: AssemblyCopyright("Copyright © MiKeSoft 2011-2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

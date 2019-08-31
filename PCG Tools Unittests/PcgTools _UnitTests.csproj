@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Anti Crash Tests\0Series.cs" />
     <Compile Include="Anti Crash Tests\03Rw.cs" />
+    <Compile Include="Anti Crash Tests\KromeEx.cs" />
     <Compile Include="Anti Crash Tests\Kronos2.cs" />
     <Compile Include="Anti Crash Tests\Kross2.cs" />
     <Compile Include="Anti Crash Tests\Z1.cs" />

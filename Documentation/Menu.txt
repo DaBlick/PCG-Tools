@@ -1,0 +1,245 @@
+﻿			Phase 1					
+File	New		x					
+	Open		x					
+	Batch Processing / for list generation							
+	Revert to Saved		x					
+	Save		x					
+	Save As		x					
+	Close		x					
+	Properties			Shows file name/path, contents				
+	Print							
+	Print Setup							
+	Exit		x					
+	<Most recent files>							
+								
+								
+								
+Edit	Select All							
+	Deselect All							
+	Find & Mark							
+	Find							
+	Find Next							
+	Invert							
+	Edit		x					
+	Clear							
+	Delete			0,3				
+	Insert		x	0,3				
+	Copy		x	0,09				
+	Paste		x					
+	Move Up		x	11,1111111111111				
+	Move Down		x					
+	Sort	Alphabetical						
+	 	Categorical		9,45				
+	 							
+	Settings							
+								
+Lists	Patch List							
+	Program Usage List							
+	 Combi Reference List							
+	Differences List							
+	Instrument Definition File	Cubase						
+		Cakewalk						
+		Logic/Sonar ?						
+	Full List Generator							
+	Hex Output							
+								
+								
+Global	Edit Category Names							
+								
+								
+								
+Windows	Theme / Generic		x					
+	Theme / Luna		x					
+	Theme / Aero		x					
+	Cascade							
+	Tile							
+	Close							
+	Close All							
+	Close All but This							
+	Properties							
+	<window 1>							
+	<window 2>							
+								
+About	Help							
+	About		x					
+	Website							
+	Shortcut Keys							
+	External Links							
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+Menu Structure								
+#ERROR!								
+								
+File / New / PCG File								
+       Open...								
+       Most Recent / File 1								
+                     File 2								
+		     ...						
+       Revert								
+       ----								
+       Save								
+       Save As...								
+       ----								
+       Merge...								
+       Differ...								
+       ----								
+       Export / Sequencers / Cubase								
+                             Ableton								
+			     Cakewalk					
+			     Sonar					
+			     Reaper					
+                Text File / ...								
+		Text Table File / ...						
+		XML File / ...						
+		CSV File / ...						
+       ----								
+       Close								
+       Quit								
+     								
+Mark / Select Group...								
+       Unselect Group...								
+       Select All								
+       Unselect All								
+       Invert Selection								
+       								
+             								
+Edit /     Undo								
+           Redo								
+           ----								
+           Cut								
+           Copy								
+           Paste								
+           Copy/Paste Exit								
+           Recall								
+           ----								
+           Export Selection As / Text File / ...								
+                                 Text Table File / ...								
+                                 XML File / ...								
+                                 CSV File / ...								
+           ----			     					
+           Edit								
+           Clear								
+           ----								
+           Capitalize     / Patch Names								
+	                    Set List Slot Descriptions							
+           (Decapitalize  / Patch Names								
+	                    Set List Slot Descriptions)							
+	   ----							
+	   Favorite							
+	   Unfavorite							
+	   ----							
+	   Tidy Up (combis)							
+           Auto Rename								
+	   ----       							
+           Options    / All								
+                        Cut/Copy/Paste Settings								
+			MIDI Settings					
+			Auto Rename					
+			Auto Save					
+			Tip of the Day					
+			Clear Warning					
+			List Settings					
+			Theme					
+			Language					
+Commands / Change Bank Type...								
+           ----								
+           Sort / by Name								
+                / by Category								
+           ----								
+           Move Up								
+           Move Down								
+	   Swap							
+	   Delete							
+	   Insert							
+	   ----							
+	   Convert to / Set List Slots							
+	                Songs							
+	                Combis							
+           ----								
+           Set as Assigned Clear patch								
+           ----								
+           MIDI Receive								
+           MIDI Send								
+	   ----							
+           Combi Window								
+	   Master Files / Show							
+	                  Set as Master File							
+           Set as Assigned Clear Patch								
+       								
+Lists  Patch List / Short / As Text File								
+                            As Text Table File								
+			    As XML File					
+			    As CSV File					
+		    Long  / As Text File						
+                            As Text Table File								
+			    As XML File					
+			    As CSV File					
+       Differences List / ...								
+       List Generator...			    					
+								
+Window Maximize All								
+       Minimize All								
+       ----								
+       Rectangular								
+       Layout Horizontally								
+       Layout Vertically								
+       ----								
+       Close Window								
+       Close All but This								
+       ----								
+       Show List								
+								
+       								
+Help   About								
+       Help								
+       Tip of the Day								
+       ----								
+       Show Oasys Voucher Donors								
+       Show Donors								
+       Show External Links								
+       ----								
+       Show Special Event								
+								
+								
+File				Mark					Edit			Order			Commands			MIDI					Lists				Language	Window					Help
+New					Select Group ...		Undo			Cut				Change Bank Type	MIDI Setup				Patch List /		Dutch		Theme /					Help
+Open				Unselect Group ...		Redo			Copy			Tidy Up (Combis)	---						Differences List /	English		---						Shortcut Keys
+Open Master File	---						---				Paste			Auto Rename			MIDI Receive All		Usage List /		French		Minimize All			Tip of the Day
+Most Recent Files	Select Favorites		Edit Global		Copy/Paste Exit	Synchronize			MIDI Send All			Combi List /		Italian		Maximize All			---
+Revert to Saved		Select All				Edit Patch		Recall			---					---						File Contents List	Spanish		---						Show Oasys Vouch
+---					Unselect All			Clear Patch		---				Convert To /		MIDI Receive Selected	Samples List /		German		Cascade					Show Korg Related Links
+Save				---						---				Move Up			---					MIDI Send Selected		---					Portuguese	Tile					Show Donors
+Save As ...			Invert Selection		Capitalize /	Move Down		Create Hex File		---						Settings			Polish		Layout Horizontally		Show Ext Links
+---					---						Favorite		Swap			---					Create MIDI File		---								Layout Vertically		---
+Merge ...			Set Patch Mark Filter	Unfavorite		Delete			Combi Window		---						List Generator ...				---						Show Special Event
+Differ ...									---				Insert			Master Files /		Audition Current Patch									Close Window			---
+---											Find ...						---																			Close All But This		About
+Export /									Find Next						Set as Assigned Clear Patch													Close All	
+---											Find Previous					---																			---	
+Close										---								Export Selection															Window /	
+Quit										Settings																									 Show List	
+								
+								
+								
+
+
+In case you don't have a google account:
+  Goto docs.google.com
+  Select Join (I think; I have a Dutch version) in the right upper corner.
+  Create an account.
+
+Then when you have an account:
+  Email me your account name.
+  I will share the PCG Tools language spreadsheet with you.
+
+

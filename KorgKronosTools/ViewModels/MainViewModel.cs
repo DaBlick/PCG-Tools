@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using System;
 using System.Collections.Generic;
@@ -32,7 +32,7 @@ namespace PcgTools.ViewModels
         /// <summary>
         /// 
         /// </summary>
-        public const string Version = "3.0.1";
+        public const string Version = "3.1.0";
 
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace PcgTools.ViewModels
         /// </summary>
         public void UpdateAppTitle()
         {
-            AppTitle = $"{Strings.PcgTools} {Version}  ©2011-2017 Michel Keijzers";
+            AppTitle = $"{Strings.PcgTools} {Version}  ©2011-2019 Michel Keijzers";
         }
 
 
@@ -119,6 +119,7 @@ namespace PcgTools.ViewModels
                 "Korg microSTATION {0} (*.pcg)|*.pcg|" +
                 "Korg Karma {0} (*.pcg)|*.pcg|" +
                 "Korg Krome {0} (*.pcg)|*.pcg|" +
+                "Korg Krome EX {0} (*.pcg)|*.pcg|" +
                 "Korg Kronos series {0} (*.pcg)|*.pcg|" +
                 "Korg Kross {0} (*.pcg)|*.pcg|" +
                 "Korg Kross {0} (*.pcg,*.KRSall,*.KRSapr,*.KRSbpr,*.KRSpr,*.KRSacm,*.KRSbcm,*.KRScm)|" +
@@ -875,6 +876,7 @@ namespace PcgTools.ViewModels
         {
             Settings,
             About,
+            ChangeVolume,
             ExternalLinksKorgRelated,
             ExternalLinksContributors,
             ExternalLinksVideoCreators,

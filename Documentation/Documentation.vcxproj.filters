@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="Design.eap" />
+    <None Include="EULA.rtf" />
+    <None Include="GoogleDocsStringIds.xlsx" />
+    <None Include="Manual for translating texts.docx" />
+    <None Include="Manual PCG Tools.pdf" />
+    <None Include="Manual.docx" />
+    <None Include="Manual.pdf" />
+    <None Include="WishList.xlsx" />
+    <None Include="Temp Doc.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="History.txt" />
+    <Text Include="Menu.txt" />
+    <Text Include="Notes.txt" />
+    <Text Include="PCG Structure Kronos.txt" />
+    <Text Include="PCG Structure Oasys.txt" />
+    <Text Include="SNG Structure Kronos.txt" />
+    <Text Include="Tests.txt" />
+    <Text Include="TODO.txt" />
+    <Text Include="Website Links.txt" />
+    <Text Include="wpfmdi_license.txt" />
+    <Text Include="PCG Structure Wavestation.txt" />
+    <Text Include="PCG Structure N264.txt" />
+    <Text Include="readme.txt" />
+    <Text Include="PCG Structure M3.txt" />
+    <Text Include="Interfaces.txt" />
+    <Text Include="ResourceStringProblems.txt" />
+  </ItemGroup>
+</Project>

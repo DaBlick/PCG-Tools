@@ -54,6 +54,7 @@ namespace PcgTools.Model.Common.Synth.MemoryAndFactory
                 {Models.EModelType.Kronos, Strings.EModelTypeKronos},
                 {Models.EModelType.Oasys, Strings.EModelTypeOasys},
                 {Models.EModelType.Krome, Strings.EModelTypeKrome},
+                {Models.EModelType.KromeEx, Strings.EModelTypeKromeEx},
                 {Models.EModelType.Kross, Strings.EModelTypeKross},
                 {Models.EModelType.Kross2, Strings.EModelTypeKross2},
                 {Models.EModelType.M1, Strings.EModelTypeM1},

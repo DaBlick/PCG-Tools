@@ -502,6 +502,21 @@ namespace PcgTools.Properties {
                 this["MasterFile_Krome"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MasterFile_KromeEx
+        {
+            get
+            {
+                return ((string)(this["MasterFile_KromeEx"]));
+            }
+            set
+            {
+                this["MasterFile_KromeEx"] = value;
+            }
+        }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

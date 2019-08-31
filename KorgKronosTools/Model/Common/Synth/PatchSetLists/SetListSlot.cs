@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using System;
 using System.ComponentModel;
@@ -14,6 +14,7 @@ using PcgTools.Model.Common.Synth.PatchCombis;
 using PcgTools.Model.Common.Synth.PatchPrograms;
 using PcgTools.PcgToolsResources;
 using PcgTools.Properties;
+using PcgTools.ViewModels.Commands.PcgCommands;
 
 namespace PcgTools.Model.Common.Synth.PatchSetLists
 {
@@ -452,6 +453,42 @@ namespace PcgTools.Model.Common.Synth.PatchSetLists
             {
                 return 0;
             }
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parameters"></param>
+        public void ChangeVolume(ChangeVolumeParameters parameters, int minimumValue, int maximumValue)
+        {
+            switch (parameters.ChangeType)
+            {
+                case ChangeVolumeParameters.EChangeType.Fixed:
+                    Volume = parameters.Value;
+                    break;
+
+                case ChangeVolumeParameters.EChangeType.Relative:
+                    Volume = MathUtils.ClipValue(Volume + parameters.Value, 0, 127);
+                    break;
+
+                case ChangeVolumeParameters.EChangeType.Percentage:
+                    Volume = (int)(Volume * (float)parameters.Value / 100.0 + 0.5);
+                    break;
+
+                case ChangeVolumeParameters.EChangeType.Mapped:
+                    Volume = MathUtils.MapValue(Volume, 0, 127, parameters.Value, parameters.ToValue);
+                    break;
+
+                case ChangeVolumeParameters.EChangeType.SmartMapped:
+                    Volume = MathUtils.MapValue(Volume, minimumValue, maximumValue, parameters.Value, parameters.ToValue);
+                    break;
+
+                default:
+                    throw new ApplicationException("Illegal ChangeVolumeParameter");
+            }
+
+            Update("ContentChanged");
         }
     }
 }

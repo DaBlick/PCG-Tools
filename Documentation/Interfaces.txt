@@ -1,0 +1,87 @@
+﻿
+INavigable: IOffset
+   INavigable Root { get; }
+   INavigable Parent { get; }
+
+IMemory : INavigable, IDirtiable
+   string FileName { get;  }
+   byte[] Content { get; }
+   Model Model { get; }
+
+IPcgMemory: IMemory
+   ProgramBanks ProgramBanks { get; }
+   CombiBanks CombiBanks { get; }
+   SetLists SetLists { get; }
+   DrumKitBanks { get; }
+   WaveSequenceBanks WaveSequenceBanks { get; }
+
+
+IDirtiable
+   bool IsDirty { get; set;}
+
+ISelectable
+   bool IsSelected { get; set; }
+
+ICountable
+   int Count { get; }
+   int CountFilled { get; }
+
+INamable
+   string Name { get; set; }
+
+ILocatable
+   int ByteOffset { get;  }
+   int ByteLength { get;  }
+
+?IWritable
+    bool IsWritable { get; }
+ 
+
+
+?IFillable
+   bool IsFilled { get; }
+
+IPatch: INamable, ISelectable, IOffsettable, INavigable, ?IFillable
+   
+
+IBank: ICountable, INamable, ISelectable, IOffsettable, ICountable, INavigable, ?IFillable
+   IEnumerable<IPatch> Patches { get; }
+
+IProgramBank: IBank
+
+ICombiBank: IBank
+
+ITimbres :  ILocatable
+
+ISetList: IBank
+
+IWaveSequenceBank: IBank
+
+IDrumKitBank: IBank
+
+IBanks: ICountable, INavigable, ISelectable, IOffsettable, ICountable, IFillable
+
+IProgramBanks : IBanks
+   int CountModeledPrograms { get; }
+
+   int CountSampledPrograms { get; }
+
+ICombiBanks: IBanks
+
+ISetLists: IBanks
+
+IWaveSequenceBanks: IBanks
+
+IDrumKitBanks: IBanks
+
+PcgMemory: IPcgMemory
+
+ProgramBanks: IPatchCollection
+
+ 
+
+ 
+
+ 
+
+ 

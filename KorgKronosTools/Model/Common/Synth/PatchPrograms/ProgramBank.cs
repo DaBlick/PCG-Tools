@@ -1,4 +1,4 @@
-﻿// (c) Copyright 2011-2017 MiKeSoft, Michel Keijzers, All rights reserved
+﻿// (c) Copyright 2011-2019 MiKeSoft, Michel Keijzers, All rights reserved
 
 using System;
 using System.Collections.Generic;
@@ -26,7 +26,7 @@ namespace PcgTools.Model.Common.Synth.PatchPrograms
             Hi,             // Triton/Karma Sample engine
             Eds,            // M3/M50 Sample engine
             Edsi,           // MicroStation Sample engine
-            Edsx,           // Krome/Kross(2) Sample engine
+            Edsx,           // Krome (EX)/Kross(2) Sample engine
             Hd1,            // Kronos/Oasys Sample engine
 
             // Modeled types

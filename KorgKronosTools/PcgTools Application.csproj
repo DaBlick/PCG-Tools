@@ -225,6 +225,9 @@
     <Compile Include="Edit\WindowEditParameter.xaml.cs">
       <DependentUpon>WindowEditParameter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gui\ChangeVolumeWindow.xaml.cs">
+      <DependentUpon>ChangeVolumeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gui\SelectSortWindow.xaml.cs">
       <DependentUpon>SelectSortWindow.xaml</DependentUpon>
     </Compile>
@@ -379,6 +382,28 @@
     <Compile Include="Model\Common\Synth\SongsRelated\ISongTimbres.cs" />
     <Compile Include="Model\Common\Synth\SongsRelated\SongTimbre.cs" />
     <Compile Include="Model\Common\Synth\SongsRelated\SongTimbres.cs" />
+    <Compile Include="Model\KromeExSpecific\Pcg\KromeExPcgFileReader.cs" />
+    <Compile Include="Model\KromeExSpecific\Pcg\KromeExPcgMemory.cs" />
+    <Compile Include="Model\KromeExSpecific\Song\KromeExSongFileReader.cs" />
+    <Compile Include="Model\KromeExSpecific\Song\KromeExSongMemory.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExCombi.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExCombiBank.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExCombiBanks.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExDrumKit.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExDrumKitBank.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExDrumKitBanks.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExDrumPattern.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExDrumPatternBank.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExDrumPatternBanks.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExFactory.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExGlobal.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExGmProgram.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExGmProgramBank.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExProgram.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExProgramBank.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExProgramBanks.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExTimbre.cs" />
+    <Compile Include="Model\KromeExSpecific\Synth\KromeExTimbres.cs" />
     <Compile Include="Model\KromeSpecific\Synth\KromeDrumPattern.cs" />
     <Compile Include="Model\KromeSpecific\Synth\KromeDrumPatternBank.cs" />
     <Compile Include="Model\KromeSpecific\Synth\KromeDrumPatternBanks.cs" />
@@ -930,6 +955,7 @@
     <Compile Include="Tools\ReferenceChanger.cs" />
     <Compile Include="Tools\RuleParser.cs" />
     <Compile Include="ViewModels\CombiViewModel.cs" />
+    <Compile Include="ViewModels\Commands\PcgCommands\ChangeVolumeParameters.cs" />
     <Compile Include="ViewModels\Commands\PcgCommands\ClearCommands.cs" />
     <Compile Include="ViewModels\Commands\PcgCommands\DoubleToSingleKeyboardCommands.cs" />
     <Compile Include="ViewModels\Commands\PcgCommands\DoubleToSingleKeyboardWindow.xaml.cs">
@@ -975,6 +1001,10 @@
     <Page Include="Edit\WindowEditParameter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gui\ChangeVolumeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Gui\SelectSortWindow.xaml">
       <SubType>Designer</SubType>
