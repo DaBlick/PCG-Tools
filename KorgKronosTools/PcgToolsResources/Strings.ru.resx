@@ -1887,4 +1887,22 @@
   <data name="EModelTypeKross2" xml:space="preserve">
     <value>Kross 2</value>
   </data>
+  <data name="ChangeVolume" xml:space="preserve">
+    <value>_Изменить громкость</value>
+  </data>
+  <data name="Fixed_chvolwin" xml:space="preserve">
+    <value>_фиксированное значение</value>
+  </data>
+  <data name="Mapped_chvolwin" xml:space="preserve">
+    <value>_отображение</value>
+  </data>
+  <data name="Percentage_chvolwin" xml:space="preserve">
+    <value>_процент</value>
+  </data>
+  <data name="Relative_chvolwin" xml:space="preserve">
+    <value>_относительное значение</value>
+  </data>
+  <data name="SmartMapped_chvolwin" xml:space="preserve">
+    <value>_умное отображение</value>
+  </data>
 </root>

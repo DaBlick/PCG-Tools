@@ -36,7 +36,14 @@ namespace PcgTools.Help
                     Description = "FB Page of Co-Incidental",
                     Url = "https://www.facebook.com/Co-incidental-204155766341066/?ref=hl",
                     BitmapPath = "Co-incidental.png"
-                },  
+                },
+                new ExternalItem
+                {
+                    Name = "Peaky Blinders Rockcovers",
+                    Description = "FB Page of Peaky Blinders Rockcovers",
+                    Url = "https://www.facebook.com/PeakyBlindersrockcovers/",
+                    BitmapPath = "peakyblinderslogo.png"
+                },
                 new ExternalItem
                 {
                     Name = "Nothing Else Matters",

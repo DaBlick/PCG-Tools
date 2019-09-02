@@ -572,7 +572,7 @@ Links   : Added various donator's names, logos and websites.
 
 
 
-LInks:
+Links:
 
 PCG Tools Free - support Korg Kronos, Oasys, M3, M50, Triton, Karma, Krome, Kross, MS2000, microKorg 
 English comments, Portuguese spoken
@@ -622,43 +622,6 @@ Use this in download.php:
        </table-->
 
 
-Sander Veeken: program for looping/transposing etc:
-	   www.seventhstring.com
-
-
-					for manual:
-						   Support : Support of Kross TR files (made by the official Korg Editor).
-                     
-			M Improv  : Added detune column to combi timbres list (and list generator).
-                      M Improv  : Added set list name to set list slot rows in the set list generator's patch list.
-                      M Improv  : The path of the manual is now editable (local file or website location).
-                       Language: Polish language added, thanks to DamianoMusic.
-Improv  : Added volume to edit set list slot dialog (Kronos only).
-                        Improv  : Added volume column to set lists in PCG window (Kronos only).
-                        Improv  : Dynamically resizing of edit program, combi and set list slot dialogs.
-						Improv  : Redesigned splash screen and about window.
-
-
-
-
-
-2.3.0      ??-???-2014 *Feature : Split concatenated .SYX files into multiple .SYX files.
-
-					   Busyboy destroyed
-
-
-
-
-					   *Website : Downloads of PCG Tools installers now contain version number in file name.
-		
-                       *Website : Removed PCG Tools for Web (not supported anymore), MailChimp, Deuce,DropBox
-                       *Manual  : Removed PCG Tools for Web (not supported anymore), MailChimp, Deuce,DropBox
-                       *Manual  : Added Joost Wilgehof as tester.
-                        Manual  : Only non empty patches are copied.
-
-					   *Manual:   Add copy /insert to wish list
-					  
-
 
 
                        *Support: Added support for M1.
@@ -687,14 +650,6 @@ TODO:
 - Create a few extra words (like home page + related warning) for all languages
 
 
-
-Manual:
-- Add to wish list : Sort / filter mechanism
-- Known issues: Today I was notified about a bug, only for Kronos set lists: when a PCG file is opened on the Kronos (not loaded, but previewed), 
-  the set list slot names shown on the Kronos preview screen (in disk mode) are not reflecting the changes made by PCG Tools. However, when you 
-  load the PCG file and save it again, it will be corrected automatically (I cannot check this last part, but I am quite sure it is correct).
-  When loaded, the names in the set list slots are OK.
-- Add Korg TR to Korg Triton Classic/Studio/Rack.
 
 					   
 Clear Unused Timbres
